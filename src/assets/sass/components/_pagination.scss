@@ -1,0 +1,71 @@
+/* ========================= Pagination CSS Start ========================= */
+.pagination {
+  @include msm-screen {
+    margin: 0 auto;
+  }
+
+  .page-item {
+    &.active {
+      .page-link {
+        font-weight: 600;
+        color: hsl(var(--white));
+        background-color: hsl(var(--base));
+
+        &:hover,
+        &:focus {
+          color: hsl(var(--white));
+        }
+      }
+    }
+
+    &.disabled {
+      .page-link {
+        color: hsl(var(--black) / 0.5);
+        border-color: hsl(var(--border-color)/0.5);
+        background-color: hsl(var(--gray-l-300));
+        pointer-events: none;
+      }
+    }
+
+    .page-link {
+      padding: 9px 17px;
+      background-color: transparent;
+      font-size: rem(16px);
+      font-weight: 500;
+      line-height: 20px;
+      color: hsl(var(--gray));
+      border: 1px solid hsl(var(--border-color));
+      white-space: nowrap;
+
+      &:hover,
+      &:focus {
+        color: hsl(var(--black));
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.pagination-wrapper {
+  margin-top: 24px;
+
+  nav>* {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  p {
+    font-size: rem(16px);
+    font-weight: 400;
+    line-height: 150%;
+    color: hsl(var(--gray)) !important;
+
+    span {
+      color: hsl(var(--black)) !important;
+      font-weight: 500;
+    }
+  }
+}
+
+/* ========================= Pagination CSS End ========================= */

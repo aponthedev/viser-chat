@@ -1,0 +1,114 @@
+.pricing-plans {
+  background-color: hsl(var(--white));
+}
+
+.pricing-plan {
+  height: 100%;
+  border-radius: 16px;
+  border: 1px solid hsl(var(--gray-l-300));
+  background-color: hsl(var(--white));
+  padding: 26px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 28px hsl(var(--black) / 0.08);
+  }
+
+  &__badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 999px;
+    background-color: hsl(var(--base));
+    color: hsl(var(--white));
+    padding: 6px 14px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    color: hsl(var(--gray-d-300));
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+  }
+
+  &__price-wrap {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+
+    span {
+      color: hsl(var(--gray));
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
+  &__price {
+    font-size: clamp(2rem, 1.6rem + 1.6vw, 3rem);
+    color: hsl(var(--base));
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  &__tagline {
+    margin: 0 0 14px;
+    color: hsl(var(--gray-d-100));
+    font-size: 15px;
+    min-height: 2.6em;
+  }
+
+  &__features {
+    margin: 0 0 22px;
+    padding: 18px 0 0;
+    border-top: 1px solid hsl(var(--gray-l-300));
+    list-style: none;
+    text-align: left;
+    display: grid;
+    gap: 10px;
+    flex: 1;
+
+    li {
+      display: flex;
+      align-items: start;
+      gap: 9px;
+      color: hsl(var(--gray-d-200));
+      font-size: 15px;
+
+      i {
+        margin-top: 4px;
+        color: hsl(var(--base-two));
+      }
+
+      &.is-off {
+        color: hsl(var(--gray));
+
+        i {
+          color: hsl(var(--gray-l-100));
+        }
+      }
+    }
+  }
+
+  &--popular {
+    border-color: hsl(var(--base));
+    box-shadow: 0 20px 32px hsl(var(--base) / 0.15);
+
+    .pricing-plan__price {
+      color: hsl(var(--base-two));
+    }
+  }
+}

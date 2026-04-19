@@ -1,0 +1,122 @@
+.faq {
+  background-color: hsl(var(--gray-l-500));
+  position: relative;
+  overflow: hidden;
+
+  &__intro__wrap{
+  display: flex;
+justify-content: space-between;
+flex-direction: column;
+height: 90%;
+  }
+
+  &__intro {
+    position: sticky;
+    top: 110px;
+    padding: 28px;
+    border-radius: 20px;
+    background: linear-gradient(160deg, hsl(var(--white)) 0%, hsl(var(--white)) 60%, hsl(var(--base-two) / 0.08) 100%);
+    border: 1px solid hsl(var(--gray-l-300));
+    box-shadow: 0 20px 40px hsl(var(--black) / 0.06);
+    height: 100%;
+
+    h2 {
+      font-size: 40px;
+      line-height: 1.08;
+      margin-bottom: 20px;
+      
+    }
+
+    p {
+      color: hsl(var(--gray-d-100));
+      font-size: 18px;
+      margin-bottom: 20px;
+   
+    }
+  }
+
+  .custom--accordion {
+    .accordion-item {
+      border-radius: 16px !important;
+      margin-bottom: 14px;
+      border: 1px solid hsl(var(--gray-l-300));
+      background-color: hsl(var(--white));
+      box-shadow: 0 10px 24px hsl(var(--black) / 0.04);
+      overflow: hidden;
+    }
+
+    .accordion-button {
+      font-size: 20px;
+      padding: 18px 22px;
+      background-color: hsl(var(--white));
+      color: hsl(var(--heading-color));
+      font-weight: 700;
+      box-shadow: none;
+      gap: 12px;
+
+      &::after {
+        width: 18px;
+        height: 18px;
+        background-size: 18px;
+      }
+
+      &:not(.collapsed) {
+        color: hsl(var(--base));
+        background-color: hsl(var(--base-two) / 0.08);
+      }
+    }
+
+    .accordion-body {
+      padding: 0 22px 18px;
+      background-color: hsl(var(--white));
+
+      .accordion-text {
+        color: hsl(var(--gray-d-100));
+        font-size: 16px;
+        line-height: 1.7;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .faq {
+    &__intro {
+      position: static;
+      margin-bottom: 24px;
+    }
+  }
+
+  .faq__intro__wrap{
+    height: 82%;
+  }
+  .faq__intro h2{
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 575px) {
+  .faq {
+    .custom--accordion {
+      .accordion-button {
+        font-size: 17px;
+      }
+    }
+  }
+}
+@media (max-width: 424px) {
+    .faq__intro h2 {
+        font-size: 22px;
+    }
+
+    .faq__intro p{
+      font-size: 15px;
+    }
+        .faq .custom--accordion .accordion-button {
+        font-size: 15px;
+    }
+}
+
+.accordion-item{
+  overflow: hidden;
+}

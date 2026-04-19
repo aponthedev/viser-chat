@@ -1,0 +1,31 @@
+{
+    "name": "starter-pack",
+    "version": "2.0.1",
+    "description": "",
+    "main": "gulpfile.js",
+    "type": "module",
+    "scripts": {
+        "start": "gulp",
+        "build": "gulp zip"
+    },
+    "repository": {
+        "type": "git"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^3.0.2",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^9.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-cssbeautify": "^3.0.0",
+        "gulp-file-include": "^2.3.0",
+        "gulp-sass": "5.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-zip": "^5.1.0"
+    },
+    "dependencies": {
+        "del": "^7.1.0",
+        "sass": "1.49.9"
+    }
+}

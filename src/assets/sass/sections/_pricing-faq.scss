@@ -1,0 +1,29 @@
+.pricing-faq {
+  background-color: hsl(var(--white));
+
+  .section-heading {
+    max-width: 680px;
+    margin-inline: auto;
+  }
+
+  .custom--accordion {
+    .accordion-item {
+      border-radius: 12px !important;
+      margin-bottom: 12px;
+    }
+
+    .accordion-button {
+      font-size: 19px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .pricing-faq {
+    .custom--accordion {
+      .accordion-button {
+        font-size: 16px;
+      }
+    }
+  }
+}

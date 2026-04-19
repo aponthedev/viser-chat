@@ -1,0 +1,21 @@
+@@include('../layout/_template-top.html')
+@@include('../layout/_header.html')
+
+<main class="page-wrapper">
+    @@include('../sections/_page-banner.html', {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose the plan that fits your stage today and scale without hidden fees.",
+    "current": "Pricing"
+    })
+
+    @@include('../sections/_pricing-toggle.html')
+    @@include('../sections/_pricing-plans.html')
+    @@include('../sections/_pricing-comparison.html')
+    @@include('../sections/_pricing-faq.html')
+    @@include('../sections/_pricing-calculator.html')
+    @@include('../sections/_testimonials.html')
+    @@include('../sections/_cta-banner.html')
+</main>
+
+@@include('../layout/_footer.html')
+@@include('../layout/_template-bottom.html')

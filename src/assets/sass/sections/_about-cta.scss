@@ -1,0 +1,37 @@
+.about-cta {
+  background-color: hsl(var(--base-two) / 0.05);
+
+  &__content {
+    background-color: hsl(var(--base-two));
+    padding: 30px;
+    border-radius: 24px;
+    width: 100%;
+
+  }
+
+  &__buttons {
+    display: inline-flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__outline-btn {
+    border: 1px solid hsl(var(--black));
+    color: hsl(var(--black));
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: hsl(var(--base));
+      background-color: hsl(var(--base));
+      color: hsl(var(--white));
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .about-cta__content{
+    padding: 16px;
+  }
+}

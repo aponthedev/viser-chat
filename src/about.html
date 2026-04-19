@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>ViserChat - AI Live Chat SaaS Template</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <!-- Slick -->
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <!-- line awesome -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <!-- Odometer -->
+  <link rel="stylesheet" href="assets/css/odometer.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="assets/css/select2.min.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+
+  <!--==================== Body Overlay Start ====================-->
+  <div class="body-overlay"></div>
+  <!--==================== Body Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="sidebar-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!--==================== Scroll To Top Start ====================-->
+  <button class="scroll-top" type="button">
+    <svg class="scroll-top-progress" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98">
+      </path>
+    </svg>
+  </button>
+  <!--==================== Scroll to Top End ====================-->
+
+<!-- ==================== Header Start Here ==================== -->
+<header class="header" id="header">
+  <div class="container">
+    <nav class="header__frame" aria-label="Main navigation">
+      <a class="header__logo" href="index.html">Viser<span>Chat</span></a>
+
+      <div class="header__desktop d-none d-lg-flex">
+        <ul class="header-menu">
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="index.html">Home</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="about.html">About</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="blog.html">Blog</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__actions d-none d-lg-flex">
+        <a href="login.html" class="header__login">Login</a>
+        <a href="registration.html" class="btn btn--base-two header__trial-btn"
+          >Start Free Trial</a
+        >
+      </div>
+
+      <button
+        class="header__toggle d-lg-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#headerOffcanvas"
+        aria-controls="headerOffcanvas"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+
+  <div
+    class="offcanvas offcanvas-end header-offcanvas"
+    tabindex="-1"
+    id="headerOffcanvas"
+    aria-labelledby="headerOffcanvasLabel"
+  >
+    <div class="offcanvas-header">
+      <h5
+        class="offcanvas-title header-offcanvas__title"
+        id="headerOffcanvasLabel"
+      >
+        Viser<span>Chat</span>
+      </h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="header-offcanvas__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="header-offcanvas__actions">
+        <a href="login.html" class="btn btn-outline--base">Login</a>
+        <a href="registration.html" class="btn btn--base-two"
+          >Start Free Trial</a
+        >
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+
+<main class="page-wrapper">
+    <section class="page-banner">
+    <div class="container position-relative">
+        <span class="page-banner__shape page-banner__shape--ring" aria-hidden="true"></span>
+        <span class="page-banner__shape page-banner__shape--dot" aria-hidden="true"></span>
+
+        <div class="page-banner__content text-center">
+            <h1>About ViserChat</h1>
+            <p>The team, mission, and story behind the platform trusted by modern support and sales teams.</p>
+            <ul class="page-banner__breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><span>About</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+    <section class="about-intro py-120">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <div class="about-intro__media">
+          <img
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&h=680&fit=crop"
+            alt="ViserChat team in office"
+          />
+          <div class="about-intro__badge">
+            <i class="fas fa-calendar-alt"></i>
+            <div>
+              <strong>Founded 2021</strong>
+              <p>Built by support and product operators</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="section-heading text-start">
+          <p
+            class="section-heading__subtitle justify-content-start text-base-two"
+          >
+            About ViserChat
+          </p>
+          <h2 class="section-heading__title">
+            We Help Businesses Talk to Their Customers
+            <span>Better and Faster</span>
+          </h2>
+          <p class="section-heading__desc mb-4">
+            ViserChat started when our founders saw teams miss qualified buyers
+            because they could not respond fast enough. Most chat tools were
+            expensive, hard to set up, or lacked context for agents.
+          </p>
+          <p class="section-heading__desc">
+            We built ViserChat to combine live chat, AI automation, and visitor
+            intelligence in one workspace. Today, thousands of businesses rely
+            on it to answer faster, support better, and convert more
+            conversations.
+          </p>
+        </div>
+
+        <div class="about-intro__stats">
+          <article>
+            <strong
+              ><span class="odometer" data-odometer-final="3000">0</span
+              >+</strong
+            >
+            <span>Businesses</span>
+          </article>
+          <article>
+            <strong
+              ><span class="odometer" data-odometer-final="15">0</span
+              >M+</strong
+            >
+            <span>Conversations</span>
+          </article>
+          <article>
+            <strong
+              ><span class="odometer" data-odometer-final="45">0</span>+</strong
+            >
+            <span>Countries</span>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="about-vision py-120">
+  <div class="container">
+    <div class="section-heading text-center">
+      <h2 class="section-heading__title">
+        Vision and Mission that Guide
+        <span class="title-highlight">Every Product Decision</span>
+      </h2>
+      <p class="section-heading__desc">
+        We focus on practical outcomes for support teams, sales teams, and the
+        customers they serve.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <article class="about-vision__card">
+          <span class="about-vision__icon"><i class="fas fa-eye"></i></span>
+          <h5>Our Vision</h5>
+          <p>
+            A world where no customer question goes unanswered, and every
+            business, regardless of size, can provide instant, intelligent
+            support.
+          </p>
+        </article>
+      </div>
+      <div class="col-lg-6">
+        <article class="about-vision__card">
+          <span class="about-vision__icon"
+            ><i class="fas fa-bullseye"></i
+          ></span>
+          <h5>Our Mission</h5>
+          <p>
+            To build the simplest, smartest customer communication platform that
+            helps businesses turn every visitor into a conversation and every
+            conversation into a customer.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="about-story py-120">
+  <div class="container">
+    <div class="section-heading text-center">
+      <h2 class="section-heading__title">Our Journey <span> So Far</span></h2>
+      <p class="section-heading__desc">
+        From a side project to a global support platform, each stage shaped how
+        we build today.
+      </p>
+    </div>
+
+    <div class="about-story__timeline">
+      <article class="about-story__item about-story__item--left">
+        <div class="about-story__card">
+          <span class="about-story__tag">Launch Phase</span>
+          <h6>The Beginning</h6>
+          <p>
+            Started as a side project by two engineers frustrated with
+            expensive, complicated live chat tools.
+          </p>
+          <span class="about-story__meta">Small team, sharp product focus</span>
+        </div>
+        <span class="about-story__year">2021</span>
+      </article>
+
+      <article class="about-story__item about-story__item--right">
+        <div class="about-story__card">
+          <span class="about-story__tag">Growth Spike</span>
+          <h6>First 500 Customers</h6>
+          <p>
+            Launched publicly and reached 500 paying customers in six months.
+          </p>
+          <span class="about-story__meta">Strong early product-market fit</span>
+        </div>
+        <span class="about-story__year">2022</span>
+      </article>
+
+      <article class="about-story__item about-story__item--left">
+        <div class="about-story__card">
+          <span class="about-story__tag">Product Expansion</span>
+          <h6>AI Integration</h6>
+          <p>
+            Introduced AI chatbot with auto-resolution, reducing support load by
+            60% for our users.
+          </p>
+          <span class="about-story__meta"
+            >Automation became a core advantage</span
+          >
+        </div>
+        <span class="about-story__year">2023</span>
+      </article>
+
+      <article class="about-story__item about-story__item--right">
+        <div class="about-story__card">
+          <span class="about-story__tag">Scale Up</span>
+          <h6>Series A Funding</h6>
+          <p>
+            Raised $12M to expand the team and build enterprise-grade features.
+          </p>
+          <span class="about-story__meta">Built for reliability and scale</span>
+        </div>
+        <span class="about-story__year">2024</span>
+      </article>
+
+      <article class="about-story__item about-story__item--left">
+        <div class="about-story__card">
+          <span class="about-story__tag">Global Reach</span>
+          <h6>3,000+ Businesses</h6>
+          <p>
+            Serving customers in 45 countries with a 99.9% uptime commitment.
+          </p>
+          <span class="about-story__meta"
+            >Trusted across markets and teams</span
+          >
+        </div>
+        <span class="about-story__year">2025</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+    <section class="counter py-80">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-heading heading-animation text-center">
+          <p class="section-heading__subtitle">
+            <i class="fas fa-gem"></i> PROOF AT SCALE
+          </p>
+          <h2 class="section-heading__title text-white">
+            Launch in Minutes, Start Winning <span>Conversations Today</span>
+          </h2>
+          <p class="section-heading__desc">
+            A simple rollout flow that helps your team launch quickly and start
+            converting conversations immediately.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="counter__strip">
+      <div class="counter__item">
+        <h3><span class="odometer" data-odometer-final="3000">0</span>+</h3>
+        <p>Businesses trust ViserChat</p>
+      </div>
+      <div class="counter__item">
+        <h3><span class="odometer" data-odometer-final="15">0</span>M</h3>
+        <p>Conversations handled</p>
+      </div>
+      <div class="counter__item">
+        <h3><span class="odometer" data-odometer-final="89">0</span>%</h3>
+        <p>AI auto-resolution rate</p>
+      </div>
+      <div class="counter__item">
+        <h3><span class="odometer" data-odometer-final="99.9">0</span>%</h3>
+        <p>Uptime commitment</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="about-values py-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-heading text-center">
+          <h2 class="section-heading__title">
+            What We <span>Believe In</span>
+          </h2>
+          <p class="section-heading__desc">
+            Our values keep us focused on what matters for teams and their
+            customers.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-xl-3 col-md-6">
+        <article class="about-values__card">
+          <span><i class="fas fa-bolt"></i></span>
+          <h6>Speed Matters</h6>
+          <p>
+            Every second counts in customer support. We obsess over making
+            things faster.
+          </p>
+        </article>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <article class="about-values__card">
+          <span><i class="fas fa-users"></i></span>
+          <h6>Customer First</h6>
+          <p>
+            Every feature starts with one question, does this help our users
+            help their customers.
+          </p>
+        </article>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <article class="about-values__card">
+          <span><i class="fas fa-lightbulb"></i></span>
+          <h6>Keep It Simple</h6>
+          <p>
+            Powerful does not have to mean complicated. We remove complexity,
+            not add it.
+          </p>
+        </article>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <article class="about-values__card">
+          <span><i class="fas fa-shield-alt"></i></span>
+          <h6>Trust Is Everything</h6>
+          <p>
+            We earn trust through transparency, reliability, and careful data
+            stewardship.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="about-team py-120">
+  <div class="container">
+    <div class="row">
+      <div class="section-heading">
+        <h2 class="section-heading__title">
+          The People Behind <span> ViserChat</span>
+        </h2>
+        <p class="section-heading__desc">
+          A focused team obsessed with making customer support better.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-xl-3 col-md-6">
+        <article class="about-team__card">
+          <div class="about-team__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=700&fit=crop"
+              alt="Alex Chen"
+            />
+            <div class="about-team__social">
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="X"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="about-team__content">
+            <h6>Alex Chen</h6>
+            <p>Co-Founder &amp; CEO</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <article class="about-team__card">
+          <div class="about-team__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=700&fit=crop"
+              alt="Maya Patel"
+            />
+            <div class="about-team__social">
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="X"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="about-team__content">
+            <h6>Maya Patel</h6>
+            <p>Co-Founder &amp; CTO</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <article class="about-team__card">
+          <div class="about-team__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&h=700&fit=crop"
+              alt="Jordan Rivera"
+            />
+            <div class="about-team__social">
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="X"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="about-team__content">
+            <h6>Jordan Rivera</h6>
+            <p>Head of Product</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <article class="about-team__card">
+          <div class="about-team__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=700&fit=crop"
+              alt="Sarah Kim"
+            />
+            <div class="about-team__social">
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="X"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="about-team__content">
+            <h6>Sarah Kim</h6>
+            <p>Head of Customer Success</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="testimonials py-120">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading heading-animation text-center mb-60">
+          <p class="section-heading__subtitle">
+            <i class="fas fa-gem"></i>TESTIMONIALS
+          </p>
+          <h2 class="section-heading__title">
+            Trusted by Teams that Measure<span>Real Business Impact</span>
+          </h2>
+          <p class="section-heading__desc">
+            Real outcomes from companies using ViserChat to improve response
+            speed and conversion quality.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials__slider-wrap">
+      <div class="home-testimonial-slider">
+        <article class="testimonials__item">
+          <p class="testimonials__quote-text">
+            ViserChat helped us recover more carts and close sales faster
+            because our agents now meet buyers exactly when intent peaks.
+          </p>
+          <ul class="testimonials__stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <div class="testimonials__author">
+            <img
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&fit=crop"
+              alt="James Parker"
+            />
+            <div>
+              <h6>James Parker</h6>
+              <span>Founder, PeakCart</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonials__item">
+          <p class="testimonials__quote-text">
+            AI now resolves most repetitive tickets before they hit our agents,
+            and our team can spend more time on high-impact conversations.
+          </p>
+          <ul class="testimonials__stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <div class="testimonials__author">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&h=80&fit=crop"
+              alt="Mia Lopez"
+            />
+            <div>
+              <h6>Mia Lopez</h6>
+              <span>Support Lead, OrbitHQ</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonials__item">
+          <p class="testimonials__quote-text">
+            Visitor tracking changed how we prioritize outreach. We know who to
+            talk to, when to engage, and how to convert better.
+          </p>
+          <ul class="testimonials__stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <div class="testimonials__author">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop"
+              alt="Ethan Reed"
+            />
+            <div>
+              <h6>Ethan Reed</h6>
+              <span>Marketing Director, Looply</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonials__item">
+          <p class="testimonials__quote-text">
+            Setup was fast and practical. Our startup launched in one afternoon
+            and immediately started capturing better leads.
+          </p>
+          <ul class="testimonials__stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <div class="testimonials__author">
+            <img
+              src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=80&h=80&fit=crop"
+              alt="Nora Patel"
+            />
+            <div>
+              <h6>Nora Patel</h6>
+              <span>Founder, Sprintly</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonials__item">
+          <p class="testimonials__quote-text">
+            Managing support for multiple client sites used to be fragmented.
+            ViserChat unified it and cut operational overhead.
+          </p>
+          <ul class="testimonials__stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <div class="testimonials__author">
+            <img
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop"
+              alt="Olivia Shaw"
+            />
+            <div>
+              <h6>Olivia Shaw</h6>
+              <span>Owner, Bright Agency</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="testimonials__arrows"></div>
+    </div>
+  </div>
+</section>
+
+    <section class="brand py-80">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-heading heading-animation text-center">
+          <p class="section-heading__subtitle">
+            <i class="fas fa-gem"></i>Trusted Network
+          </p>
+          <h2 class="section-heading__title">
+            Chosen by <span class="title-highlight">3,000+ Growth Teams</span>
+          </h2>
+          <p class="section-heading__desc">
+            Used daily by high-volume support and sales teams worldwide.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-slider">
+      <div class="brand-slider__item">
+        <div class="brand-mark">
+          <i class="fab fa-slack"></i><span>Slack</span>
+        </div>
+      </div>
+      <div class="brand-slider__item">
+        <div class="brand-mark">
+          <i class="fab fa-shopify"></i><span>Shopify</span>
+        </div>
+      </div>
+      <div class="brand-slider__item">
+        <div class="brand-mark">
+          <i class="fab fa-wordpress"></i><span>WordPress</span>
+        </div>
+      </div>
+      <div class="brand-slider__item">
+        <div class="brand-mark">
+          <i class="fab fa-hubspot"></i><span>HubSpot</span>
+        </div>
+      </div>
+      <div class="brand-slider__item">
+        <div class="brand-mark">
+          <i class="fab fa-jira"></i><span>Jira</span>
+        </div>
+      </div>
+      <div class="brand-slider__item">
+        <div class="brand-mark">
+          <i class="fab fa-salesforce"></i><span>Salesforce</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="about-careers py-120">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <div class="section-heading">
+          <p class="section-heading__subtitle justify-content-start">
+            <i class="fas fa-gem"></i> Careers
+          </p>
+          <h2 class="section-heading__title">We Are <span> Hiring</span></h2>
+          <p class="section-heading__desc">
+            We are a remote-first team of 35 people across 12 countries. We
+            value ownership, curiosity, and shipping fast. If you care about
+            building great products, we want to hear from you.
+          </p>
+        </div>
+        <div class="about-careers__jobs">
+          <article>
+            <h6>Senior Backend Engineer</h6>
+            <p><span>Engineering</span><span>Remote</span></p>
+          </article>
+          <article>
+            <h6>Product Designer</h6>
+            <p><span>Design</span><span>Remote</span></p>
+          </article>
+          <article>
+            <h6>Customer Success Manager</h6>
+            <p><span>Support</span><span>New York</span></p>
+          </article>
+        </div>
+
+        <a href="#" class="btn btn--base">View All Openings</a>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="about-careers__media">
+          <img
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&h=620&fit=crop"
+            alt="Team collaboration"
+          />
+          <div class="about-careers__float">
+            <i class="fas fa-globe"></i>
+            <div>
+              <strong>35 team members</strong>
+              <p>Operating across 12 countries</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="about-cta py-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="about-cta__content text-center">
+          <div class="section-heading">
+            <h2 class="section-heading__title pb-4">
+              Ready to See ViserChat in Action?
+            </h2>
+            <p class="section-heading__desc">
+              Start your free 14-day trial today. No credit card. No commitment.
+            </p>
+          </div>
+
+          <div class="about-cta__buttons">
+            <a href="registration.html" class="btn btn--base"
+              >Start Free Trial</a
+            >
+            <a href="#" class="btn about-cta__outline-btn">Book a Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== Footer Start Here ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__cta">
+        <div class="footer__cta-content">
+          <span class="footer__eyebrow"
+            ><i class="fas fa-gem"></i> Premium Conversation Stack</span
+          >
+          <h3>
+            Transform every visitor message into trusted revenue momentum.
+          </h3>
+          <p>
+            Combine AI automation, context-rich live support, and performance
+            analytics in one intentionally crafted workspace.
+          </p>
+        </div>
+        <div class="footer__cta-actions">
+          <a href="registration.html" class="btn btn--base-two btn--lg"
+            >Start Free Trial</a
+          >
+          <a href="#" class="btn footer__ghost-btn btn--lg">Book a Demo</a>
+        </div>
+      </div>
+
+      <div class="row gy-4 footer__main">
+        <div class="col-lg-5 col-md-12">
+          <div class="footer__brand">
+            <a href="index.html" class="footer__logo">Viser<span>Chat</span></a>
+            <p class="footer__desc">
+              ViserChat helps teams turn customer conversations into faster
+              resolutions, stronger trust, and measurable growth across every
+              channel.
+            </p>
+            <ul class="footer__highlights">
+              <li><strong>3,000+</strong><span>Teams Active</span></li>
+              <li><strong>15M+</strong><span>Chats Processed</span></li>
+              <li><strong>99.99%</strong><span>Platform Uptime</span></li>
+            </ul>
+            <div class="footer__social-wrap">
+              <ul class="footer__social-list">
+                <li>
+                  <a href="https://www.facebook.com" aria-label="Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com" aria-label="X"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com" aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com" aria-label="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com" aria-label="YouTube"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-sm-center"
+        >
+          <div class="footer__widget">
+            <h5 class="footer__widget-title">Platform</h5>
+            <ul class="footer__links">
+              <li><a href="#">Live Chat</a></li>
+              <li><a href="#">AI Assistant</a></li>
+              <li><a href="#">Team Inbox</a></li>
+              <li><a href="#">Visitor Analytics</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-sm-center"
+        >
+          <div class="footer__widget">
+            <h5 class="footer__widget-title">Resources</h5>
+            <ul class="footer__links">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">API Reference</a></li>
+              <li><a href="#">System Guides</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Release Notes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-sm-center"
+        >
+          <div class="footer__widget">
+            <h5 class="footer__widget-title">Company</h5>
+            <ul class="footer__links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#">Customer Stories</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Status Page</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        2026 ViserChat. Crafted for modern support teams.
+      </p>
+      <ul class="footer__legal">
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+      <p class="footer__status"><span></span> All systems operational</p>
+    </div>
+  </div>
+</footer>
+<!-- ==================== Footer End Here ==================== -->
+
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- Select js -->
+<script src="assets/js/select2.min.js"></script>
+<!-- scrollreveal-->
+<script src="assets/js/scrollreveal.min.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
+

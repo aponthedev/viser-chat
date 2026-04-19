@@ -1,0 +1,210 @@
+/* ========================= Table CSS Start ========================= */
+.table {
+  $table: &;
+  $table-custom: '#{$table}--custom';
+  $table-responsive: '#{$table}--responsive';
+  margin-bottom: 0;
+
+  @at-root {
+    #{$table-custom} {
+      overflow: hidden;
+      min-width: max-content;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: 20px;
+      border: 1px solid hsl(var(--border-color));
+      background-color: hsl(var(--white));
+
+      thead {
+        tr {
+          th {
+            font-size: rem(16px);
+            font-weight: 600;
+            line-height: 150%;
+            padding: 16px 12px;
+            text-align: left;
+            vertical-align: middle;
+            color: hsl(var(--black));
+            border-color: hsl(var(--border-color));
+            background-color: hsl(var(--gray-l-400));
+
+            &:first-child {
+              padding-left: 32px;
+
+              @include lg-screen {
+                padding-left: 24px;
+              }
+            }
+
+            &:last-child {
+              text-align: right;
+              padding-right: 32px;
+
+              @include lg-screen {
+                padding-right: 24px;
+              }
+            }
+          }
+        }
+      }
+
+      tbody {
+        position: relative;
+
+        &::before,
+        &::after {
+          content: '';
+          width: 32px;
+          height: 100%;
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          background-color: hsl(var(--white));
+
+          @include lg-screen {
+            width: 24px;
+          }
+        }
+
+        &::before {
+          left: 0;
+        }
+
+        &::after {
+          right: 0;
+        }
+
+        tr {
+          td {
+            font-size: rem(16px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            padding: 16px 12px;
+            text-align: left;
+            vertical-align: middle;
+            color: hsl(var(--gray));
+            border-color: transparent;
+            background-color: hsl(var(--dark));
+
+            &:first-child {
+              padding-left: 32px;
+
+              @include lg-screen {
+                padding-left: 24px;
+              }
+            }
+
+            &:last-child {
+              text-align: right;
+              padding-right: 32px;
+
+              @include lg-screen {
+                padding-right: 24px;
+              }
+            }
+          }
+
+          &:not(:last-child) {
+            td {
+              border-color: hsl(var(--border-color));
+            }
+          }
+        }
+      }
+
+      &:has([colspan="100%"]) {
+        thead {
+          tr {
+            th {
+              &:first-child {
+                border-bottom-left-radius: 0;
+              }
+
+              &:last-child {
+                border-bottom-right-radius: 0;
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td[colspan="100%"] {
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;
+              color: hsl(var(--gray-d-100));
+              border: 1px solid hsl(var(--gray-l-100));
+              border-top: none;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      &#{$table-responsive}-sm {
+        @include sm-screen {
+          @include make-custom-table-responsive();
+        }
+      }
+
+      &#{$table-responsive}-md {
+        @include md-screen {
+          @include make-custom-table-responsive();
+        }
+      }
+
+      &#{$table-responsive}-lg {
+        @include lg-screen {
+          @include make-custom-table-responsive();
+        }
+      }
+
+      &#{$table-responsive}-xl {
+        @include xl-screen {
+          @include make-custom-table-responsive();
+        }
+      }
+    }
+  }
+
+  @at-root {
+    #{$table-responsive} {
+      &:has(&-empty) {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      &:has(&-sm) {
+        @media screen and (min-width: 768px) {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+
+      &:has(&-md) {
+        @media screen and (min-width: 992px) {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+
+      &:has(&-lg) {
+        @media screen and (min-width: 1200px) {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+
+      &:has(&-xl) {
+        @media screen and (min-width: 1400px) {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+    }
+  }
+}
+
+/* ========================= Table CSS End =========================== */

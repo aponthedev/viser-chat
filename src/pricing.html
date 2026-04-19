@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>ViserChat - AI Live Chat SaaS Template</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <!-- Slick -->
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <!-- line awesome -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <!-- Odometer -->
+  <link rel="stylesheet" href="assets/css/odometer.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="assets/css/select2.min.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+
+  <!--==================== Body Overlay Start ====================-->
+  <div class="body-overlay"></div>
+  <!--==================== Body Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="sidebar-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!--==================== Scroll To Top Start ====================-->
+  <button class="scroll-top" type="button">
+    <svg class="scroll-top-progress" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98">
+      </path>
+    </svg>
+  </button>
+  <!--==================== Scroll to Top End ====================-->
+
+<!-- ==================== Header Start Here ==================== -->
+<header class="header" id="header">
+  <div class="container">
+    <nav class="header__frame" aria-label="Main navigation">
+      <a class="header__logo" href="index.html">Viser<span>Chat</span></a>
+
+      <div class="header__desktop d-none d-lg-flex">
+        <ul class="header-menu">
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="index.html">Home</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="about.html">About</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="blog.html">Blog</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__actions d-none d-lg-flex">
+        <a href="login.html" class="header__login">Login</a>
+        <a href="registration.html" class="btn btn--base-two header__trial-btn"
+          >Start Free Trial</a
+        >
+      </div>
+
+      <button
+        class="header__toggle d-lg-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#headerOffcanvas"
+        aria-controls="headerOffcanvas"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+
+  <div
+    class="offcanvas offcanvas-end header-offcanvas"
+    tabindex="-1"
+    id="headerOffcanvas"
+    aria-labelledby="headerOffcanvasLabel"
+  >
+    <div class="offcanvas-header">
+      <h5
+        class="offcanvas-title header-offcanvas__title"
+        id="headerOffcanvasLabel"
+      >
+        Viser<span>Chat</span>
+      </h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="header-offcanvas__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="header-offcanvas__actions">
+        <a href="login.html" class="btn btn-outline--base">Login</a>
+        <a href="registration.html" class="btn btn--base-two"
+          >Start Free Trial</a
+        >
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+
+<main class="page-wrapper">
+    <section class="page-banner">
+    <div class="container position-relative">
+        <span class="page-banner__shape page-banner__shape--ring" aria-hidden="true"></span>
+        <span class="page-banner__shape page-banner__shape--dot" aria-hidden="true"></span>
+
+        <div class="page-banner__content text-center">
+            <h1>Simple, Transparent Pricing</h1>
+            <p>Choose the plan that fits your stage today and scale without hidden fees.</p>
+            <ul class="page-banner__breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><span>Pricing</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+    <section class="pricing-toggle pt-120 pb-60">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-heading text-center">
+          <h2 class="section-heading__title">
+            Choose the Right <span> Plan for Your Team</span>
+          </h2>
+          <p class="section-heading__desc">
+            Start monthly, switch anytime, and save more when billed annually.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="pricing-toggle__inner text-center">
+      <div
+        class="pricing-toggle__switch"
+        role="group"
+        aria-label="Billing period selector"
+      >
+        <button
+          type="button"
+          class="pricing-toggle__btn active"
+          data-billing="monthly"
+        >
+          Monthly
+        </button>
+        <button type="button" class="pricing-toggle__btn" data-billing="annual">
+          Annual
+        </button>
+        <span class="pricing-toggle__save">Save 20%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="pricing-plans pb-120" data-pricing-plans>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-xl-3 col-md-6">
+                <article class="pricing-plan">
+                    <p class="pricing-plan__name">Free</p>
+                    <div class="pricing-plan__price-wrap">
+                        <strong class="pricing-plan__price">$0</strong>
+                        <span>/mo</span>
+                    </div>
+                    <p class="pricing-plan__tagline">For personal projects and testing</p>
+                    <ul class="pricing-plan__features">
+                        <li><i class="fas fa-check"></i>1 agent seat</li>
+                        <li><i class="fas fa-check"></i>100 chats/month</li>
+                        <li><i class="fas fa-check"></i>Basic AI chatbot</li>
+                        <li><i class="fas fa-check"></i>Chat widget customization</li>
+                        <li><i class="fas fa-check"></i>30-day chat history</li>
+                        <li class="is-off"><i class="fas fa-times"></i>Email support (Community only)</li>
+                        <li class="is-off"><i class="fas fa-times"></i>Visitor tracking</li>
+                        <li class="is-off"><i class="fas fa-times"></i>Integrations</li>
+                    </ul>
+                    <a href="registration.html" class="btn btn-outline--base w-100">Get Started Free</a>
+                </article>
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+                <article class="pricing-plan">
+                    <p class="pricing-plan__name">Starter</p>
+                    <div class="pricing-plan__price-wrap">
+                        <strong class="pricing-plan__price" data-monthly="$29" data-annual="$23">$29</strong>
+                        <span>/mo</span>
+                    </div>
+                    <p class="pricing-plan__tagline">For small teams getting started</p>
+                    <ul class="pricing-plan__features">
+                        <li><i class="fas fa-check"></i>3 agent seats</li>
+                        <li><i class="fas fa-check"></i>1,000 chats/month</li>
+                        <li><i class="fas fa-check"></i>AI chatbot with training</li>
+                        <li><i class="fas fa-check"></i>Full widget customization</li>
+                        <li><i class="fas fa-check"></i>1-year chat history</li>
+                        <li><i class="fas fa-check"></i>Email support</li>
+                        <li><i class="fas fa-check"></i>Basic visitor tracking</li>
+                        <li><i class="fas fa-check"></i>5 integrations</li>
+                    </ul>
+                    <a href="registration.html" class="btn btn--base w-100">Start Free Trial</a>
+                </article>
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+                <article class="pricing-plan pricing-plan--popular">
+                    <span class="pricing-plan__badge">Most Popular</span>
+                    <p class="pricing-plan__name">Pro</p>
+                    <div class="pricing-plan__price-wrap">
+                        <strong class="pricing-plan__price" data-monthly="$79" data-annual="$63">$79</strong>
+                        <span>/mo</span>
+                    </div>
+                    <p class="pricing-plan__tagline">For growing teams that need more</p>
+                    <ul class="pricing-plan__features">
+                        <li><i class="fas fa-check"></i>10 agent seats</li>
+                        <li><i class="fas fa-check"></i>Unlimited chats</li>
+                        <li><i class="fas fa-check"></i>Advanced AI auto-resolution</li>
+                        <li><i class="fas fa-check"></i>Custom branding</li>
+                        <li><i class="fas fa-check"></i>Unlimited chat history</li>
+                        <li><i class="fas fa-check"></i>Priority support</li>
+                        <li><i class="fas fa-check"></i>Advanced tracking and analytics</li>
+                        <li><i class="fas fa-check"></i>Unlimited integrations</li>
+                        <li><i class="fas fa-check"></i>Chat routing and departments</li>
+                        <li><i class="fas fa-check"></i>Canned responses library</li>
+                    </ul>
+                    <a href="registration.html" class="btn btn--base-two w-100">Start Free Trial</a>
+                </article>
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+                <article class="pricing-plan">
+                    <p class="pricing-plan__name">Enterprise</p>
+                    <div class="pricing-plan__price-wrap">
+                        <strong class="pricing-plan__price">Custom</strong>
+                    </div>
+                    <p class="pricing-plan__tagline">For large organizations with custom needs</p>
+                    <ul class="pricing-plan__features">
+                        <li><i class="fas fa-check"></i>Unlimited agents</li>
+                        <li><i class="fas fa-check"></i>Unlimited everything</li>
+                        <li><i class="fas fa-check"></i>AI with custom training</li>
+                        <li><i class="fas fa-check"></i>White-label solution</li>
+                        <li><i class="fas fa-check"></i>Unlimited history and export</li>
+                        <li><i class="fas fa-check"></i>Dedicated account manager</li>
+                        <li><i class="fas fa-check"></i>Full analytics plus API</li>
+                        <li><i class="fas fa-check"></i>All integrations and webhooks</li>
+                        <li><i class="fas fa-check"></i>SSO and SAML authentication</li>
+                        <li><i class="fas fa-check"></i>SLA guarantee and onboarding</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline--base w-100">Contact Sales</a>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="pricing-comparison py-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-heading text-center mb-60">
+          <h2 class="section-heading__title">
+            Compare All <span>Features</span>
+          </h2>
+          <p class="section-heading__desc">
+            See how each plan scales with your team across support, automation,
+            and analytics.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-comparison__table-wrap">
+      <table class="pricing-comparison__table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Free</th>
+            <th>Starter</th>
+            <th class="is-pro">Pro</th>
+            <th>Enterprise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="pricing-comparison__group">
+            <td colspan="5">Chat Features</td>
+          </tr>
+          <tr>
+            <td>Live Chat Widget</td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>AI Chatbot</td>
+            <td>Basic</td>
+            <td>Trained</td>
+            <td>Advanced</td>
+            <td>Custom</td>
+          </tr>
+          <tr>
+            <td>Canned Responses</td>
+            <td>10</td>
+            <td>50</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+          </tr>
+          <tr>
+            <td>File Sharing</td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>Chat Tags</td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>Chat Routing</td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>Departments</td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td>5</td>
+            <td>Unlimited</td>
+          </tr>
+
+          <tr class="pricing-comparison__group">
+            <td colspan="5">Visitor Tracking</td>
+          </tr>
+          <tr>
+            <td>Real-time Visitors</td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td>Basic</td>
+            <td>Advanced</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>Visitor History</td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td>30 days</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+          </tr>
+          <tr>
+            <td>Page Flow Tracking</td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>Visitor Segmentation</td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+
+          <tr class="pricing-comparison__group">
+            <td colspan="5">Analytics and Reporting</td>
+          </tr>
+          <tr>
+            <td>Basic Reports</td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>Agent Performance</td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>Custom Dashboards</td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>Data Export</td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td>CSV</td>
+            <td>CSV + API</td>
+          </tr>
+
+          <tr class="pricing-comparison__group">
+            <td colspan="5">Security and Support</td>
+          </tr>
+          <tr>
+            <td>SSL Encryption</td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>GDPR Tools</td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>SSO / SAML</td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-check"></i></td>
+          </tr>
+          <tr>
+            <td>Support</td>
+            <td>Community</td>
+            <td>Email</td>
+            <td>Priority</td>
+            <td>Dedicated</td>
+          </tr>
+          <tr>
+            <td>SLA Guarantee</td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td><i class="fas fa-times is-off"></i></td>
+            <td>99.9%</td>
+            <td>Custom</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+    <section class="pricing-faq py-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-heading text-center mb-60">
+          <h2 class="section-heading__title">Pricing <span>Questions</span></h2>
+          <p class="section-heading__desc">
+            Answers to the most common questions before your team upgrades.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="accordion custom--accordion" id="pricingFaqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="priceFaqHeadingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#priceFaqOne"
+                aria-expanded="true"
+                aria-controls="priceFaqOne"
+              >
+                Can I try ViserChat before buying?
+              </button>
+            </h2>
+            <div
+              id="priceFaqOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="priceFaqHeadingOne"
+              data-bs-parent="#pricingFaqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  Yes. Every paid plan comes with a 14-day free trial. No credit
+                  card required. You get full access to all features during the
+                  trial.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="priceFaqHeadingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#priceFaqTwo"
+                aria-expanded="false"
+                aria-controls="priceFaqTwo"
+              >
+                What happens when my trial ends?
+              </button>
+            </h2>
+            <div
+              id="priceFaqTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="priceFaqHeadingTwo"
+              data-bs-parent="#pricingFaqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  Your account switches to the Free plan automatically. No
+                  charges and no surprises. You can upgrade anytime.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="priceFaqHeadingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#priceFaqThree"
+                aria-expanded="false"
+                aria-controls="priceFaqThree"
+              >
+                Can I change plans later?
+              </button>
+            </h2>
+            <div
+              id="priceFaqThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="priceFaqHeadingThree"
+              data-bs-parent="#pricingFaqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  Absolutely. Upgrade, downgrade, or cancel anytime from your
+                  dashboard. Changes take effect on your next billing cycle.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="priceFaqHeadingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#priceFaqFour"
+                aria-expanded="false"
+                aria-controls="priceFaqFour"
+              >
+                Do you offer discounts for nonprofits or startups?
+              </button>
+            </h2>
+            <div
+              id="priceFaqFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="priceFaqHeadingFour"
+              data-bs-parent="#pricingFaqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  Yes. We offer 50% off for registered nonprofits and
+                  early-stage startups. Contact our sales team with proof of
+                  status.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="priceFaqHeadingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#priceFaqFive"
+                aria-expanded="false"
+                aria-controls="priceFaqFive"
+              >
+                What payment methods do you accept?
+              </button>
+            </h2>
+            <div
+              id="priceFaqFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="priceFaqHeadingFive"
+              data-bs-parent="#pricingFaqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  We accept all major credit cards, PayPal, and wire transfer
+                  for annual Enterprise plans.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="priceFaqHeadingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#priceFaqSix"
+                aria-expanded="false"
+                aria-controls="priceFaqSix"
+              >
+                Is there a setup fee?
+              </button>
+            </h2>
+            <div
+              id="priceFaqSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="priceFaqHeadingSix"
+              data-bs-parent="#pricingFaqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  No. Zero setup fees and zero hidden charges. You pay the plan
+                  price and nothing else.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="pricing-calculator py-120">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <div class="section-heading">
+          <p class="section-heading__subtitle justify-content-start">
+            <i class="fas fa-gem"></i>ROI Calculator
+          </p>
+
+          <h2 class="section-heading__title">
+            See How Much ViserChat <span>Can Save You</span>
+          </h2>
+        </div>
+
+        <div class="pricing-calculator__sliders">
+          <article>
+            <div class="pricing-calculator__slider-head">
+              <h6>Monthly website visitors</h6>
+              <span>25,000</span>
+            </div>
+            <input
+              type="range"
+              min="1000"
+              max="100000"
+              value="25000"
+              aria-label="Monthly website visitors"
+            />
+          </article>
+          <article>
+            <div class="pricing-calculator__slider-head">
+              <h6>Current support agents</h6>
+              <span>12</span>
+            </div>
+            <input
+              type="range"
+              min="1"
+              max="50"
+              value="12"
+              aria-label="Current support agents"
+            />
+          </article>
+          <article>
+            <div class="pricing-calculator__slider-head">
+              <h6>Average ticket cost</h6>
+              <span>$18</span>
+            </div>
+            <input
+              type="range"
+              min="5"
+              max="50"
+              value="18"
+              aria-label="Average ticket cost"
+            />
+          </article>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="pricing-calculator__result-card">
+          <h5>Your Estimated Savings</h5>
+          <strong>$4,200/month</strong>
+
+          <ul>
+            <li><span>AI handles 60% of chats</span><b>$2,520 saved</b></li>
+            <li><span>Faster resolution time</span><b>$1,080 saved</b></li>
+            <li><span>Reduced agent workload</span><b>$600 saved</b></li>
+          </ul>
+
+          <a href="registration.html" class="btn btn--base-two"
+            >Start saving today</a
+          >
+          <p>Based on industry averages. Your results may vary.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="testimonials py-120">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading heading-animation text-center mb-60">
+          <p class="section-heading__subtitle">
+            <i class="fas fa-gem"></i>TESTIMONIALS
+          </p>
+          <h2 class="section-heading__title">
+            Trusted by Teams that Measure<span>Real Business Impact</span>
+          </h2>
+          <p class="section-heading__desc">
+            Real outcomes from companies using ViserChat to improve response
+            speed and conversion quality.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials__slider-wrap">
+      <div class="home-testimonial-slider">
+        <article class="testimonials__item">
+          <p class="testimonials__quote-text">
+            ViserChat helped us recover more carts and close sales faster
+            because our agents now meet buyers exactly when intent peaks.
+          </p>
+          <ul class="testimonials__stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <div class="testimonials__author">
+            <img
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&fit=crop"
+              alt="James Parker"
+            />
+            <div>
+              <h6>James Parker</h6>
+              <span>Founder, PeakCart</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonials__item">
+          <p class="testimonials__quote-text">
+            AI now resolves most repetitive tickets before they hit our agents,
+            and our team can spend more time on high-impact conversations.
+          </p>
+          <ul class="testimonials__stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <div class="testimonials__author">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&h=80&fit=crop"
+              alt="Mia Lopez"
+            />
+            <div>
+              <h6>Mia Lopez</h6>
+              <span>Support Lead, OrbitHQ</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonials__item">
+          <p class="testimonials__quote-text">
+            Visitor tracking changed how we prioritize outreach. We know who to
+            talk to, when to engage, and how to convert better.
+          </p>
+          <ul class="testimonials__stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <div class="testimonials__author">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop"
+              alt="Ethan Reed"
+            />
+            <div>
+              <h6>Ethan Reed</h6>
+              <span>Marketing Director, Looply</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonials__item">
+          <p class="testimonials__quote-text">
+            Setup was fast and practical. Our startup launched in one afternoon
+            and immediately started capturing better leads.
+          </p>
+          <ul class="testimonials__stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <div class="testimonials__author">
+            <img
+              src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=80&h=80&fit=crop"
+              alt="Nora Patel"
+            />
+            <div>
+              <h6>Nora Patel</h6>
+              <span>Founder, Sprintly</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonials__item">
+          <p class="testimonials__quote-text">
+            Managing support for multiple client sites used to be fragmented.
+            ViserChat unified it and cut operational overhead.
+          </p>
+          <ul class="testimonials__stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <div class="testimonials__author">
+            <img
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop"
+              alt="Olivia Shaw"
+            />
+            <div>
+              <h6>Olivia Shaw</h6>
+              <span>Owner, Bright Agency</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="testimonials__arrows"></div>
+    </div>
+  </div>
+</section>
+
+    <section class="cta-banner py-120">
+  <div class="container">
+    <div class="cta-banner__shell">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-8">
+          <h2>Ready to Turn Traffic into Pipeline Conversations?</h2>
+          <p>
+            Join 3,000+ teams using ViserChat to improve support speed, capture
+            better leads, and close faster.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <div class="cta-banner__actions">
+            <a href="registration.html" class="btn btn--base"
+              >Start Free Trial</a
+            >
+            <a href="#" class="btn cta-banner__outline-btn">Book a Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== Footer Start Here ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__cta">
+        <div class="footer__cta-content">
+          <span class="footer__eyebrow"
+            ><i class="fas fa-gem"></i> Premium Conversation Stack</span
+          >
+          <h3>
+            Transform every visitor message into trusted revenue momentum.
+          </h3>
+          <p>
+            Combine AI automation, context-rich live support, and performance
+            analytics in one intentionally crafted workspace.
+          </p>
+        </div>
+        <div class="footer__cta-actions">
+          <a href="registration.html" class="btn btn--base-two btn--lg"
+            >Start Free Trial</a
+          >
+          <a href="#" class="btn footer__ghost-btn btn--lg">Book a Demo</a>
+        </div>
+      </div>
+
+      <div class="row gy-4 footer__main">
+        <div class="col-lg-5 col-md-12">
+          <div class="footer__brand">
+            <a href="index.html" class="footer__logo">Viser<span>Chat</span></a>
+            <p class="footer__desc">
+              ViserChat helps teams turn customer conversations into faster
+              resolutions, stronger trust, and measurable growth across every
+              channel.
+            </p>
+            <ul class="footer__highlights">
+              <li><strong>3,000+</strong><span>Teams Active</span></li>
+              <li><strong>15M+</strong><span>Chats Processed</span></li>
+              <li><strong>99.99%</strong><span>Platform Uptime</span></li>
+            </ul>
+            <div class="footer__social-wrap">
+              <ul class="footer__social-list">
+                <li>
+                  <a href="https://www.facebook.com" aria-label="Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com" aria-label="X"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com" aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com" aria-label="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com" aria-label="YouTube"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-sm-center"
+        >
+          <div class="footer__widget">
+            <h5 class="footer__widget-title">Platform</h5>
+            <ul class="footer__links">
+              <li><a href="#">Live Chat</a></li>
+              <li><a href="#">AI Assistant</a></li>
+              <li><a href="#">Team Inbox</a></li>
+              <li><a href="#">Visitor Analytics</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-sm-center"
+        >
+          <div class="footer__widget">
+            <h5 class="footer__widget-title">Resources</h5>
+            <ul class="footer__links">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">API Reference</a></li>
+              <li><a href="#">System Guides</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Release Notes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-sm-center"
+        >
+          <div class="footer__widget">
+            <h5 class="footer__widget-title">Company</h5>
+            <ul class="footer__links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#">Customer Stories</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Status Page</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        2026 ViserChat. Crafted for modern support teams.
+      </p>
+      <ul class="footer__legal">
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+      <p class="footer__status"><span></span> All systems operational</p>
+    </div>
+  </div>
+</footer>
+<!-- ==================== Footer End Here ==================== -->
+
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- Select js -->
+<script src="assets/js/select2.min.js"></script>
+<!-- scrollreveal-->
+<script src="assets/js/scrollreveal.min.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
+

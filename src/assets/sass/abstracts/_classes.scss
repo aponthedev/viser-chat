@@ -1,0 +1,138 @@
+/* ========================= Classes CSS Start ========================= */
+.page-wrapper {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.custom--container {
+  @media screen and (min-width: 1600px) {
+    max-width: 1392px;
+  }
+}
+
+.col-xsm-6 {
+  @media screen and (min-width: 425px) and (max-width: 575px) {
+    width: 50%;
+  }
+}
+
+.bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.mask-img {
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+}
+
+.rounded-full {
+  border-radius: 999px !important;
+}
+
+.fs-10 {
+  font-size: rem(10px);
+}
+
+.fs-11 {
+  font-size: rem(11px);
+}
+
+.fs-12 {
+  font-size: rem(12px);
+}
+
+.fs-13 {
+  font-size: rem(13px);
+}
+
+.fs-14 {
+  font-size: rem(14px);
+}
+
+.fs-15 {
+  font-size: rem(15px);
+}
+
+.fs-16 {
+  font-size: rem(16px);
+}
+
+.fs-17 {
+  font-size: rem(17px);
+}
+
+.fs-18 {
+  font-size: rem(18px);
+}
+
+.fs-19 {
+  font-size: rem(19px);
+}
+
+.fs-20 {
+  font-size: rem(20px);
+}
+
+.scroll-hide {
+  position: absolute;
+  overflow-y: hidden;
+  padding-right: 17px;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  @include md-screen {
+    padding-right: 0;
+  }
+}
+
+.scroll-hide-sm {
+  position: absolute;
+  overflow-y: hidden;
+  top: 0;
+  left: 0;
+  width: calc(100% - 0px);
+}
+
+.body-overlay,
+.sidebar-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(4px);
+  background-color: hsl(var(--black) / 0.5);
+  transition: 0.2s linear;
+  visibility: hidden;
+  opacity: 0;
+
+  @include md-screen {
+    &.show {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.body-overlay {
+  z-index: 999;
+}
+
+.sidebar-overlay {
+  z-index: 1049;
+}
+
+.modal-backdrop,
+.offcanvas-backdrop {
+  backdrop-filter: blur(4px);
+  background-color: hsl(var(--black) / 0.15);
+
+  &.show {
+    opacity: 1;
+  }
+}
+
+/* ========================= Classes CSS End ========================= */

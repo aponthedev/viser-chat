@@ -1,0 +1,54 @@
+/* ========================= Scroll To Top Start ===================== */
+.scroll-top {
+  --size: 48px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: inline-block;
+  position: fixed;
+  right: 48px;
+  bottom: 72px;
+  z-index: 998;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 200ms linear;
+  box-shadow: inset 0 0 0 2px hsl(var(--base) / 0.5);
+  border: none;
+  background-color: hsl(var(--white) / 0.02);
+  backdrop-filter: blur(5px);
+
+  &::after {
+    content: '\f062';
+    position: absolute;
+    inset: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: rem(18px);
+    color: hsl(var(--base));
+  }
+
+  &-progress {
+    path {
+      fill: none;
+      stroke: hsl(var(--base));
+      stroke-width: 4;
+      box-sizing: border-box;
+      transition: stroke-dashoffset 10ms linear;
+      stroke-dasharray: 307.919px, 307.919px;
+      stroke-dashoffset: 133.505px;
+    }
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) !important;
+  }
+}
+
+/* ========================= Scroll To Top End ======================= */

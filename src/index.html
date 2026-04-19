@@ -1,0 +1,2470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>ViserChat - AI Live Chat SaaS Template</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <!-- Slick -->
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <!-- line awesome -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <!-- Odometer -->
+  <link rel="stylesheet" href="assets/css/odometer.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="assets/css/select2.min.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+
+  <!--==================== Body Overlay Start ====================-->
+  <div class="body-overlay"></div>
+  <!--==================== Body Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="sidebar-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!--==================== Scroll To Top Start ====================-->
+  <button class="scroll-top" type="button">
+    <svg class="scroll-top-progress" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98">
+      </path>
+    </svg>
+  </button>
+  <!--==================== Scroll to Top End ====================-->
+ <!-- ==================== Header Start Here ==================== -->
+<header class="header" id="header">
+  <div class="container">
+    <nav class="header__frame" aria-label="Main navigation">
+      <a class="header__logo" href="index.html">Viser<span>Chat</span></a>
+
+      <div class="header__desktop d-none d-lg-flex">
+        <ul class="header-menu">
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="index.html">Home</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="about.html">About</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="blog.html">Blog</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__actions d-none d-lg-flex">
+        <a href="login.html" class="header__login">Login</a>
+        <a href="registration.html" class="btn btn--base-two header__trial-btn"
+          >Start Free Trial</a
+        >
+      </div>
+
+      <button
+        class="header__toggle d-lg-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#headerOffcanvas"
+        aria-controls="headerOffcanvas"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+
+  <div
+    class="offcanvas offcanvas-end header-offcanvas"
+    tabindex="-1"
+    id="headerOffcanvas"
+    aria-labelledby="headerOffcanvasLabel"
+  >
+    <div class="offcanvas-header">
+      <h5
+        class="offcanvas-title header-offcanvas__title"
+        id="headerOffcanvasLabel"
+      >
+        Viser<span>Chat</span>
+      </h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="header-offcanvas__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="header-offcanvas__actions">
+        <a href="login.html" class="btn btn-outline--base">Login</a>
+        <a href="registration.html" class="btn btn--base-two"
+          >Start Free Trial</a
+        >
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+
+<main class="page-wrapper">
+  <section class="banner py-120">
+  <span class="banner__texture banner__texture--square"></span>
+  <span class="banner__texture banner__texture--mini-ring"></span>
+  <div class="banner__bg">
+    <img src="assets/images/thumbs/banner-bg.png" alt="image" />
+  </div>
+
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-xl-6 col-lg-10">
+        <div class="banner__content heading-animation">
+          <span class="banner__badge"
+            ><i class="fas fa-bolt"></i> AI-Driven Customer Conversations</span
+          >
+          <h1 class="banner__title">
+            Turn <span class="banner__title-focus">High-Intent</span> Visitors
+            into
+            <span class="banner__title-focus banner__title-focus--soft"
+              >Paying</span
+            >
+            Customers
+          </h1>
+          <p class="banner__desc">
+            Launch live chat, train AI on your content, and give agents
+            real-time visitor context so
+            <span>every message moves people closer to checkout</span>.
+          </p>
+
+          <div class="banner__buttons">
+            <a href="registration.html" class="btn btn--base-two btn--lg"
+              >Start Free Trial</a
+            >
+            <a href="#" class="btn btn-outline--white btn--lg"
+              ><i class="fas fa-play-circle"></i> Watch Demo</a
+            >
+          </div>
+
+          <div class="banner__trust">
+            <span><i class="fas fa-lock"></i> No credit card required</span>
+            <span class="banner__dot"></span>
+            <span>Live in under 5 minutes</span>
+          </div>
+
+          <div class="banner__proof">
+            <div class="banner__proof-item">
+              <span class="banner__proof-value"
+                ><span class="odometer" data-odometer-final="15">0</span
+                >M+</span
+              >
+              <span class="banner__proof-label">Chats handled</span>
+            </div>
+            <div class="banner__proof-item">
+              <span class="banner__proof-value"
+                ><span class="odometer" data-odometer-final="89">0</span>%</span
+              >
+              <span class="banner__proof-label">AI auto-resolution</span>
+            </div>
+            <div class="banner__proof-item">
+              <span class="banner__proof-value"
+                ><span class="odometer" data-odometer-final="3.2">0</span
+                >x</span
+              >
+              <span class="banner__proof-label">Conversion lift</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6">
+        <!-- <div class="banner__visual">
+          <div class="hero-panel">
+            <div class="hero-panel__top">
+              <div class="hero-panel__dots">
+                <span></span><span></span><span></span>
+              </div>
+              <p>Live Monitor</p>
+              <span class="hero-panel__sync"
+                ><i class="fas fa-circle"></i> Syncing</span
+              >
+            </div>
+            <div class="hero-panel__body">
+              <aside class="hero-panel__side">
+                <span class="hero-panel__side-item active"></span>
+                <span class="hero-panel__side-item"></span>
+                <span class="hero-panel__side-item"></span>
+                <span class="hero-panel__side-item"></span>
+              </aside>
+              <div class="hero-panel__main">
+                <div class="hero-panel__cards">
+                  <article>
+                    <h6>Visitors online</h6>
+                    <strong>2,847</strong>
+                  </article>
+                  <article>
+                    <h6>Average response</h6>
+                    <strong>28s</strong>
+                  </article>
+                  <article>
+                    <h6>Active agents</h6>
+                    <strong>37</strong>
+                  </article>
+                </div>
+                <div class="hero-panel__chart">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="hero-panel__thread">
+                  <div class="hero-panel__thread-user">
+                    <img
+                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop"
+                      alt="Customer avatar"
+                    />
+                    <div>
+                      <h6>Sarah, Product Question</h6>
+                      <p>
+                        Can someone help me choose the best plan for my store
+                        size?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="hero-panel__thread-ai">
+                    <i class="fas fa-robot"></i>
+                    <p>AI qualified this lead and routed to Sales Team.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="banner__float banner__float--top">
+            <span class="banner__float-dot"></span>
+            <strong>2,847 visitors online now</strong>
+          </div>
+          <div class="banner__float banner__float--middle">
+            <i class="fas fa-bell"></i>
+            <strong>12 high-intent visitors this minute</strong>
+          </div>
+          <div class="banner__float banner__float--bottom">
+            <i class="fas fa-comment-dots"></i>
+            <strong>AI resolved 89% of support chats</strong>
+          </div>
+        </div> -->
+
+        <div class="banner__thumb">
+          <img src="assets/images/thumbs/chat-thumb.png" alt="image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="why-viserchat py-120">
+  <div class="container">
+    <div class="why-viserchat__shell">
+      <div class="row gy-4 align-items-stretch">
+        <div class="col-lg-6">
+          <div class="heading-animation">
+            <div class="why-viserchat__content mb-60">
+              <p class="section-heading__subtitle justify-content-start">
+                <i class="fas fa-gem"></i> Why ViserChat
+              </p>
+              <h2 class="section-heading__title">
+                Turn Visitor Questions into <span>Revenue Momentum</span>
+              </h2>
+              <p class="section-heading__desc">
+                ViserChat combines AI automation, live support, and visitor
+                context so teams reply faster and close with more confidence.
+              </p>
+            </div>
+            <div class="why-viserchat__panel why-viserchat__panel--content">
+              <ul class="why-viserchat__benefits">
+                <li>
+                  <span class="why-viserchat__benefit-icon"
+                    ><i class="fas fa-bullseye"></i
+                  ></span>
+                  <div class="why-viserchat__benefit-content">
+                    <h6>Catch Buyer Intent Earlier</h6>
+                    <p>
+                      Detect high-value visitors from behavior signals before
+                      they leave your funnel.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="why-viserchat__benefit-icon"
+                    ><i class="fas fa-robot"></i
+                  ></span>
+                  <div class="why-viserchat__benefit-content">
+                    <h6>Automate Repeats with AI</h6>
+                    <p>
+                      Resolve common questions instantly and escalate only when
+                      a specialist is needed.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="why-viserchat__benefit-icon"
+                    ><i class="fas fa-chart-line"></i
+                  ></span>
+                  <div class="why-viserchat__benefit-content">
+                    <h6>Convert More Chats into Revenue</h6>
+                    <p>
+                      Reply with context-rich recommendations that move
+                      prospects from interest to action.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="why-viserchat__actions">
+                <a href="registration.html" class="btn btn--base-two"
+                  >Explore Plans</a
+                >
+                <a href="dashboard.html" class="btn btn-outline--base"
+                  >View Live Demo</a
+                >
+              </div>
+
+              <ul class="why-viserchat__trust">
+                <li>
+                  <i class="fas fa-check-circle"></i>Trusted by SaaS,
+                  e-commerce, and support-first teams.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 d-flex">
+          <article class="why-viserchat__panel why-viserchat__panel--visual">
+            <div class="why-viserchat__halo why-viserchat__halo--one"></div>
+            <div class="why-viserchat__halo why-viserchat__halo--two"></div>
+
+            <header class="why-viserchat__visual-head">
+              <span>Live Intent Engine</span>
+              <p>How ViserChat Helps Your Team</p>
+              <small
+                >One streamlined flow from first message to conversion.</small
+              >
+            </header>
+
+            <div class="why-viserchat__metrics">
+              <article class="why-viserchat__metric">
+                <strong>+38%</strong>
+                <span>Qualified leads</span>
+              </article>
+              <article class="why-viserchat__metric">
+                <strong>-52%</strong>
+                <span>Response time</span>
+              </article>
+              <article class="why-viserchat__metric">
+                <strong>3.2x</strong>
+                <span>More conversions</span>
+              </article>
+            </div>
+
+            <div class="why-viserchat__journey">
+              <article class="why-viserchat__journey-item">
+                <span class="why-viserchat__journey-index">01</span>
+                <div>
+                  <h6>Visitor lands on product or pricing pages</h6>
+                  <p>
+                    Behavior events and visit depth are captured in real time.
+                  </p>
+                </div>
+                <span class="why-viserchat__journey-time">+2s</span>
+              </article>
+              <article class="why-viserchat__journey-item">
+                <span class="why-viserchat__journey-index">02</span>
+                <div>
+                  <h6>AI qualifies intent and routes the conversation</h6>
+                  <p>
+                    Lead quality and topic urgency decide the best queue
+                    instantly.
+                  </p>
+                </div>
+                <span class="why-viserchat__journey-time">+6s</span>
+              </article>
+              <article class="why-viserchat__journey-item">
+                <span class="why-viserchat__journey-index">03</span>
+                <div>
+                  <h6>Agent replies with full context in one view</h6>
+                  <p>
+                    Conversation history, plan details, and intent notes stay
+                    aligned.
+                  </p>
+                </div>
+                <span class="why-viserchat__journey-time">+12s</span>
+              </article>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="features-overview py-120">
+  <div class="container">
+    <div class="features__content">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7">
+          <div class="section-heading heading mb-5">
+            <p class="section-heading__subtitle justify-content-start">
+              <i class="fas fa-gem"></i> Why ViserChat
+            </p>
+            <h2 class="section-heading__title">
+              Turn Visitor Questions into <span>Revenue Momentum</span>
+            </h2>
+            <p class="section-heading__desc">
+              ViserChat combines AI automation, live support, and visitor
+              context so teams reply faster and close with more confidence.
+            </p>
+          </div>
+        </div>
+        <!-- <div class="col-lg-7">
+          <span class="section-eyebrow">Core Platform</span>
+          <h2 class="features-overview__title">
+            Everything You Need to Run
+            <span class="title-highlight">Revenue-Ready Conversations</span>
+          </h2>
+          <p class="features-overview__subtitle">
+            ViserChat combines live support, AI automation, visitor
+            intelligence, and team workflows into one premium support stack.
+          </p>
+        </div> -->
+        <div class="col-lg-5">
+          <div class="features-overview__intro-card">
+            <strong>One workspace, full visibility</strong>
+            <p>
+              Track intent, route chats, and convert faster with tools built to
+              work together.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 features-overview__grid">
+      <div class="col-lg-6">
+        <article
+          class="features-overview-card features-overview-card--featured"
+        >
+          <span class="features-overview-card__icon"
+            ><i class="fas fa-robot"></i
+          ></span>
+          <div>
+            <h5>AI Chatbot</h5>
+            <p>
+              Smart AI handles repetitive questions around the clock and
+              escalates high-value leads to your team.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-6">
+        <article
+          class="features-overview-card features-overview-card--featured"
+        >
+          <span class="features-overview-card__icon"
+            ><i class="fas fa-comments"></i
+          ></span>
+          <div>
+            <h5>Live Chat</h5>
+            <p>
+              Respond in real time with a fast chat interface built to increase
+              trust and close opportunities sooner.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-xl-3 col-md-6">
+        <article class="features-overview-card">
+          <span class="features-overview-card__icon"
+            ><i class="fas fa-eye"></i
+          ></span>
+          <h6>Visitor Tracking</h6>
+          <p>
+            See who is active, where they came from, and what pages they view
+            before messaging.
+          </p>
+        </article>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <article class="features-overview-card">
+          <span class="features-overview-card__icon"
+            ><i class="fas fa-inbox"></i
+          ></span>
+          <h6>Team Inbox</h6>
+          <p>
+            Unify conversations in one shared inbox so agents collaborate
+            without collisions.
+          </p>
+        </article>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <article class="features-overview-card">
+          <span class="features-overview-card__icon"
+            ><i class="fas fa-random"></i
+          ></span>
+          <h6>Chat Routing</h6>
+          <p>
+            Route chats by intent, department, or workload to keep response
+            quality high.
+          </p>
+        </article>
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <article class="features-overview-card">
+          <span class="features-overview-card__icon"
+            ><i class="fas fa-chart-bar"></i
+          ></span>
+          <h6>Analytics</h6>
+          <p>
+            Monitor conversion impact, response speed, and support efficiency in
+            one dashboard.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="ai-chat py-120">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6">
+        <div class="heading-animation">
+          <div class="section-heading">
+            <p class="section-heading__subtitle justify-content-start">
+              <i class="fas fa-gem"></i>AI Assistant
+            </p>
+            <h2 class="section-heading__title">
+              Let AI Handle Repetitive Support and Free Your Team for
+              <span class="title-highlight">High-Value Deals</span>
+            </h2>
+            <p class="section-heading__desc">
+              Train ViserChat AI using your docs and site content. It answers
+              common questions, qualifies leads, captures intent, and routes
+              complex issues to human agents instantly.
+            </p>
+          </div>
+          <ul class="ai-chat__checklist">
+            <li>
+              <i class="fas fa-check-circle"></i>Learns from your help center
+              and product pages
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>Collects contact details from
+              high-intent visitors
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>Escalates with context when
+              human support is needed
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>Improves suggestions from every
+              conversation
+            </li>
+          </ul>
+          <a href="#" class="section-link"
+            >See how AI chat works <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <!-- <div class="ai-chat__studio mt-5">
+          <div class="ai-chat__studio-head">
+            <h6>AI Conversation Studio</h6>
+            <span><i class="fas fa-circle"></i>Active</span>
+          </div>
+
+          <div class="ai-chat__studio-grid">
+            <div class="ai-chat__studio-body">
+              <div class="ai-chat__message ai-chat__message--user">
+                <strong>Visitor</strong>
+                <p>Can your platform route chats based on product interest?</p>
+              </div>
+              <div class="ai-chat__message ai-chat__message--bot">
+                <strong>ViserChat AI</strong>
+                <p>
+                  Yes. I can tag intent, route to your sales queue, and include
+                  visited pages before handoff.
+                </p>
+              </div>
+              <div class="ai-chat__message ai-chat__message--user">
+                <strong>Visitor</strong>
+                <p>Can you connect this to our CRM?</p>
+              </div>
+              <div class="ai-chat__message ai-chat__message--bot">
+                <strong>ViserChat AI</strong>
+                <p>
+                  I can push lead details to CRM instantly and notify your
+                  assigned account owner.
+                </p>
+              </div>
+            </div>
+
+            <aside class="ai-chat__assist">
+              <h6>AI Actions</h6>
+              <ul>
+                <li>Tagged as pricing intent</li>
+                <li>Qualified with budget captured</li>
+                <li>Suggested enterprise plan card</li>
+                <li>Prepared CRM sync payload</li>
+              </ul>
+              <div class="ai-chat__assist-score">
+                <span>Confidence</span>
+                <strong>94%</strong>
+              </div>
+            </aside>
+          </div>
+
+          <div class="ai-chat__confidence">
+            <span>AI Confidence</span>
+            <strong>94%</strong>
+            <div class="ai-chat__confidence-bar"><span></span></div>
+          </div>
+        </div> -->
+        <div class="ai-chat__thumb">
+          <img src="assets/images/thumbs/ai-chat.png" alt="image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="visitor-tracking py-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-heading heading-animation text-center mb-60">
+          <p class="section-heading__subtitle">
+            <i class="fas fa-gem"></i> REAL-TIME MONITORING
+          </p>
+          <h2 class="section-heading__title">
+            Launch in Minutes, Start Winning <span>Conversations Today</span>
+          </h2>
+          <p class="section-heading__desc">
+            Track location, source, visit depth, and behavior signals in real
+            time so every reply is timely and relevant.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row gy-3">
+      <div class="col-lg-6">
+        <div class="visitor-tracking__feature-panel">
+          <h6>Tracking Layers</h6>
+          <div class="visitor-tracking__feature-list">
+            <article>
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h6>Live Visitor Map</h6>
+                <p>See active audiences by country, city, and segment.</p>
+              </div>
+            </article>
+            <article>
+              <i class="fas fa-route"></i>
+              <div>
+                <h6>Page Flow Tracking</h6>
+                <p>Follow each visitor path from entry to conversion intent.</p>
+              </div>
+            </article>
+            <article>
+              <i class="fas fa-history"></i>
+              <div>
+                <h6>Visit History</h6>
+                <p>View returning visitor history before starting a reply.</p>
+              </div>
+            </article>
+          </div>
+          <a href="#" class="section-link"
+            >Explore visitor tracking <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="visitor-tracking__board">
+          <div class="visitor-tracking__board-head">
+            <h6>Live Visitor Radar</h6>
+            <span><i class="fas fa-circle"></i>142 Active</span>
+          </div>
+          <div class="visitor-tracking__map-grid">
+            <div class="visitor-tracking__map-card">
+              <strong>USA</strong>
+              <span>47 visitors</span>
+            </div>
+            <div class="visitor-tracking__map-card">
+              <strong>UK</strong>
+              <span>19 visitors</span>
+            </div>
+            <div class="visitor-tracking__map-card">
+              <strong>Germany</strong>
+              <span>14 visitors</span>
+            </div>
+            <div class="visitor-tracking__map-card">
+              <strong>Australia</strong>
+              <span>11 visitors</span>
+            </div>
+          </div>
+          <div class="visitor-tracking__path-list">
+            <article>
+              <span>#1847</span>
+              <p>Homepage to Pricing to Checkout Intent</p>
+            </article>
+            <article>
+              <span>#2759</span>
+              <p>Feature Page to Integration Docs to Demo Form</p>
+            </article>
+            <article>
+              <span>#3218</span>
+              <p>Blog Article to Product Tour to Sales Chat</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="how-it-works py-120">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading heading-animation text-center">
+          <p class="section-heading__subtitle">
+            <i class="fas fa-gem"></i>HOW IT WORK
+          </p>
+          <h2 class="section-heading__title">
+            Launch in Minutes, Start Winning <span>Conversations Today</span>
+          </h2>
+          <p class="section-heading__desc">
+            A simple rollout flow that helps your team launch quickly and start
+            converting conversations immediately.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 how-it-works__timeline">
+      <div class="col-xl-3 col-sm-6">
+        <article class="how-it-works__step">
+          <span class="how-it-works__step-num">01</span>
+          <i class="fas fa-user-plus"></i>
+          <h6>Create Workspace</h6>
+          <p>
+            Set up your account, invite teammates, and choose your support inbox
+            structure.
+          </p>
+        </article>
+      </div>
+      <div class="col-xl-3 col-sm-6">
+        <article class="how-it-works__step">
+          <span class="how-it-works__step-num">02</span>
+          <i class="fas fa-code"></i>
+          <h6>Install Widget</h6>
+          <p>
+            Paste one script on your site and place the chat launcher exactly
+            where you need it.
+          </p>
+        </article>
+      </div>
+      <div class="col-xl-3 col-sm-6">
+        <article class="how-it-works__step">
+          <span class="how-it-works__step-num">03</span>
+          <i class="fas fa-brain"></i>
+          <h6>Train AI</h6>
+          <p>
+            Upload docs and FAQs so AI can resolve routine questions and collect
+            lead details.
+          </p>
+        </article>
+      </div>
+      <div class="col-xl-3 col-sm-6">
+        <article class="how-it-works__step">
+          <span class="how-it-works__step-num">04</span>
+          <i class="fas fa-comments"></i>
+          <h6>Start Converting</h6>
+          <p>
+            Monitor visitor intent in real time and close more conversations
+            with faster support.
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <div class="how-it-works__cta text-center mt-5">
+      <a href="registration.html" class="btn btn--base-two">Start Free Trial</a>
+    </div>
+  </div>
+</section>
+
+  <section class="counter py-80">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-heading heading-animation text-center">
+          <p class="section-heading__subtitle">
+            <i class="fas fa-gem"></i> PROOF AT SCALE
+          </p>
+          <h2 class="section-heading__title text-white">
+            Launch in Minutes, Start Winning <span>Conversations Today</span>
+          </h2>
+          <p class="section-heading__desc">
+            A simple rollout flow that helps your team launch quickly and start
+            converting conversations immediately.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="counter__strip">
+      <div class="counter__item">
+        <h3><span class="odometer" data-odometer-final="3000">0</span>+</h3>
+        <p>Businesses trust ViserChat</p>
+      </div>
+      <div class="counter__item">
+        <h3><span class="odometer" data-odometer-final="15">0</span>M</h3>
+        <p>Conversations handled</p>
+      </div>
+      <div class="counter__item">
+        <h3><span class="odometer" data-odometer-final="89">0</span>%</h3>
+        <p>AI auto-resolution rate</p>
+      </div>
+      <div class="counter__item">
+        <h3><span class="odometer" data-odometer-final="99.9">0</span>%</h3>
+        <p>Uptime commitment</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="live-chat py-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-heading heading-animation text-center mb-60">
+          <p class="section-heading__subtitle">
+            <i class="fas fa-gem"></i>LIVE CHAT
+          </p>
+          <h2 class="section-heading__title">
+            Launch in Minutes, Start Winning <span>Conversations Today</span>
+          </h2>
+          <p class="section-heading__desc">
+            ViserChat helps agents respond in context while visitors are still
+            deciding. Faster replies, clearer answers, and stronger conversion
+            confidence.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="live-chat__window">
+          <div class="live-chat__window-head">
+            <h6>Sales Conversation</h6>
+            <span><i class="fas fa-circle"></i>Agent Online</span>
+          </div>
+          <div class="live-chat__thread">
+            <div class="live-chat__bubble live-chat__bubble--incoming">
+              <p>Do you support multiple websites under one account?</p>
+              <span>Visitor, 10:04</span>
+            </div>
+            <div class="live-chat__bubble live-chat__bubble--reply">
+              <p>
+                Yes, Pro and Enterprise plans include multi-site support and
+                shared team inboxes.
+              </p>
+              <span>Sophia, 10:05</span>
+            </div>
+            <div class="live-chat__bubble live-chat__bubble--incoming">
+              <p>Can we route demo requests to sales only?</p>
+              <span>Visitor, 10:05</span>
+            </div>
+            <div class="live-chat__bubble live-chat__bubble--reply">
+              <p>
+                Absolutely. I can help you set routing rules by page, tag, and
+                intent.
+              </p>
+              <span>Sophia, 10:06</span>
+            </div>
+          </div>
+          <div class="live-chat__window-foot">
+            <i class="fas fa-bell"></i>
+            <p>New high-intent message from pricing page visitor.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="live-chat__capabilities">
+          <article>
+            <i class="fas fa-keyboard"></i>
+            <div>
+              <h6>Typing Signals</h6>
+              <p>See when visitors are drafting a message.</p>
+            </div>
+          </article>
+          <article>
+            <i class="fas fa-paperclip"></i>
+            <div>
+              <h6>File Sharing</h6>
+              <p>Send docs, visuals, and quick references.</p>
+            </div>
+          </article>
+          <article>
+            <i class="fas fa-tags"></i>
+            <div>
+              <h6>Conversation Tags</h6>
+              <p>Organize chats by intent and pipeline stage.</p>
+            </div>
+          </article>
+          <article>
+            <i class="fas fa-sticky-note"></i>
+            <div>
+              <h6>Private Notes</h6>
+              <p>Coordinate internally without exposing details.</p>
+            </div>
+          </article>
+          <article>
+            <i class="fas fa-tags"></i>
+            <div>
+              <h6>Conversation Tags</h6>
+              <p>Organize chats by intent and pipeline stage.</p>
+            </div>
+          </article>
+          <article>
+            <i class="fas fa-sticky-note"></i>
+            <div>
+              <h6>Private Notes</h6>
+              <p>Coordinate internally without exposing details.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="team-inbox py-120">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="section-heading heading-animation">
+          <p class="section-heading__subtitle justify-content-start">
+            <i class="fas fa-gem"></i>TEAM COLLABORATION
+          </p>
+          <h2 class="section-heading__title">
+            <span>One Inbox</span>for Every Agent, Queue, and Conversation
+          </h2>
+          <p class="section-heading__desc">
+            A simple rollout flow that helps your team launch quickly and start
+            converting conversations immediately.
+          </p>
+        </div>
+
+        <div class="team-inbox__feature-grid">
+          <article>
+            <i class="fas fa-check-circle"></i>
+            <p>Assign chats by department or priority</p>
+          </article>
+          <article>
+            <i class="fas fa-check-circle"></i>
+            <p>Leave internal notes and handoff context</p>
+          </article>
+          <article>
+            <i class="fas fa-check-circle"></i>
+            <p>Use collision detection for cleaner teamwork</p>
+          </article>
+          <article>
+            <i class="fas fa-check-circle"></i>
+            <p>Set follow-up reminders and SLA alerts</p>
+          </article>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="team-inbox__workspace">
+          <div class="team-inbox__workspace-head">
+            <h6>Unified Team Inbox</h6>
+            <span>12 unread</span>
+          </div>
+          <div class="team-inbox__workspace-body">
+            <aside class="team-inbox__lanes">
+              <article><strong>Sales</strong><span>5</span></article>
+              <article><strong>Support</strong><span>4</span></article>
+              <article><strong>Billing</strong><span>3</span></article>
+            </aside>
+            <div class="team-inbox__queue">
+              <article>
+                <h6>Pricing Question from #3472</h6>
+                <p>Assigned to Alex, waiting for product recommendation.</p>
+              </article>
+              <article>
+                <h6>Checkout Issue from #8134</h6>
+                <p>Tagged billing, internal note added by Priya.</p>
+              </article>
+              <article>
+                <h6>Integration Request from #9021</h6>
+                <p>Auto-routed to technical support queue.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="section-link"
+      >See team features <i class="fas fa-arrow-right"></i
+    ></a>
+  </div>
+</section>
+
+  <section class="integrations py-120">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading heading-animation text-center">
+          <p class="section-heading__subtitle">
+            <i class="fas fa-gem"></i>INTEGRATIONS
+          </p>
+          <h2 class="section-heading__title">
+            Connect ViserChat with the<span>Stack You Already Trust</span>
+          </h2>
+          <p class="section-heading__desc">
+            Drop ViserChat into your workflow with direct integrations and
+            automation-ready actions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="integrations__cloud">
+      <div class="integrations__row integrations__row--ltr">
+        <div class="integrations__track">
+          <article><i class="fab fa-slack"></i><span>Slack</span></article>
+          <article>
+            <i class="fab fa-wordpress"></i><span>WordPress</span>
+          </article>
+          <article><i class="fab fa-shopify"></i><span>Shopify</span></article>
+          <article><i class="fas fa-bolt"></i><span>Zapier</span></article>
+          <article><i class="fab fa-hubspot"></i><span>HubSpot</span></article>
+          <article>
+            <i class="fab fa-salesforce"></i><span>Salesforce</span>
+          </article>
+          <article>
+            <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+          </article>
+          <article>
+            <i class="fab fa-telegram-plane"></i><span>Telegram</span>
+          </article>
+          <article>
+            <i class="fab fa-facebook-messenger"></i><span>Messenger</span>
+          </article>
+          <article>
+            <i class="fas fa-store"></i><span>WooCommerce</span>
+          </article>
+          <article><i class="fab fa-jira"></i><span>Jira</span></article>
+          <article>
+            <i class="fab fa-google"></i><span>Google Analytics</span>
+          </article>
+        </div>
+        <div class="integrations__track" aria-hidden="true">
+          <article><i class="fab fa-slack"></i><span>Slack</span></article>
+          <article>
+            <i class="fab fa-wordpress"></i><span>WordPress</span>
+          </article>
+          <article><i class="fab fa-shopify"></i><span>Shopify</span></article>
+          <article><i class="fas fa-bolt"></i><span>Zapier</span></article>
+          <article><i class="fab fa-hubspot"></i><span>HubSpot</span></article>
+          <article>
+            <i class="fab fa-salesforce"></i><span>Salesforce</span>
+          </article>
+          <article>
+            <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+          </article>
+          <article>
+            <i class="fab fa-telegram-plane"></i><span>Telegram</span>
+          </article>
+          <article>
+            <i class="fab fa-facebook-messenger"></i><span>Messenger</span>
+          </article>
+          <article>
+            <i class="fas fa-store"></i><span>WooCommerce</span>
+          </article>
+          <article><i class="fab fa-jira"></i><span>Jira</span></article>
+          <article>
+            <i class="fab fa-google"></i><span>Google Analytics</span>
+          </article>
+        </div>
+      </div>
+      <div class="integrations__row integrations__row--rtl">
+        <div class="integrations__track">
+          <article><i class="fab fa-slack"></i><span>Slack</span></article>
+          <article>
+            <i class="fab fa-wordpress"></i><span>WordPress</span>
+          </article>
+          <article><i class="fab fa-shopify"></i><span>Shopify</span></article>
+          <article><i class="fas fa-bolt"></i><span>Zapier</span></article>
+          <article><i class="fab fa-hubspot"></i><span>HubSpot</span></article>
+          <article>
+            <i class="fab fa-salesforce"></i><span>Salesforce</span>
+          </article>
+          <article>
+            <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+          </article>
+          <article>
+            <i class="fab fa-telegram-plane"></i><span>Telegram</span>
+          </article>
+          <article>
+            <i class="fab fa-facebook-messenger"></i><span>Messenger</span>
+          </article>
+          <article>
+            <i class="fas fa-store"></i><span>WooCommerce</span>
+          </article>
+          <article><i class="fab fa-jira"></i><span>Jira</span></article>
+          <article>
+            <i class="fab fa-google"></i><span>Google Analytics</span>
+          </article>
+        </div>
+        <div class="integrations__track" aria-hidden="true">
+          <article><i class="fab fa-slack"></i><span>Slack</span></article>
+          <article>
+            <i class="fab fa-wordpress"></i><span>WordPress</span>
+          </article>
+          <article><i class="fab fa-shopify"></i><span>Shopify</span></article>
+          <article><i class="fas fa-bolt"></i><span>Zapier</span></article>
+          <article><i class="fab fa-hubspot"></i><span>HubSpot</span></article>
+          <article>
+            <i class="fab fa-salesforce"></i><span>Salesforce</span>
+          </article>
+          <article>
+            <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+          </article>
+          <article>
+            <i class="fab fa-telegram-plane"></i><span>Telegram</span>
+          </article>
+          <article>
+            <i class="fab fa-facebook-messenger"></i><span>Messenger</span>
+          </article>
+          <article>
+            <i class="fas fa-store"></i><span>WooCommerce</span>
+          </article>
+          <article><i class="fab fa-jira"></i><span>Jira</span></article>
+          <article>
+            <i class="fab fa-google"></i><span>Google Analytics</span>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="integrations__footer text-center">
+      <a href="#" class="section-link"
+        >View all 50+ integrations <i class="fas fa-arrow-right"></i
+      ></a>
+    </div>
+  </div>
+</section>
+
+  <section class="widget-customization py-120">
+  <div class="container">
+    <div class="row gy-4 align-items-center">
+      <div class="col-lg-6">
+        <div class="section-heading heading-animation">
+          <p class="section-heading__subtitle justify-content-start">
+            <i class="fas fa-gem"></i>BRAND CONTROL
+          </p>
+          <h2 class="section-heading__title">
+            Launch in Minutes, Start Winning <span>Conversations Today</span>
+          </h2>
+          <p class="section-heading__desc">
+            A simple rollout flow that helps your team launch quickly and start
+            converting conversations immediately.
+          </p>
+        </div>
+
+        <ul class="widget-customization__list">
+          <li>
+            <i class="fas fa-check-circle"></i>Match brand colors, logos, and
+            team avatars
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>Add lead capture before chat
+            starts
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>Trigger greetings by page and
+            visitor behavior
+          </li>
+        </ul>
+        <div>
+          <a href="#" class="btn btn-outline--base">Try Widget Configurator</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="widget-customization__lab">
+          <div
+            class="widget-customization__screen widget-customization__screen--one"
+          >
+            <h6>Theme A</h6>
+            <p>Sales-first onboarding</p>
+          </div>
+          <div
+            class="widget-customization__screen widget-customization__screen--two"
+          >
+            <h6>Theme B</h6>
+            <p>Support-first routing</p>
+          </div>
+          <div
+            class="widget-customization__screen widget-customization__screen--three"
+          >
+            <h6>Theme C</h6>
+            <p>Lead capture focus</p>
+          </div>
+          <div class="widget-customization__swatches">
+            <button
+              type="button"
+              class="is-active"
+              style="--swatch: 240 100% 11%"
+              data-lab="240 100% 11%"
+            ></button>
+            <button
+              type="button"
+              style="--swatch: 145 63% 49%"
+              data-lab="145 63% 49%"
+            ></button>
+            <button
+              type="button"
+              style="--swatch: 38 92% 55%"
+              data-lab="38 92% 55%"
+            ></button>
+            <button
+              type="button"
+              style="--swatch: 214 32% 91%"
+              data-lab="214 32% 91%"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="analytics py-120">
+  <div class="container">
+    <div class="row gy-4 align-items-end mb-4">
+      <div class="col-lg-8">
+        <div class="section-heading heading-animation">
+          <p class="section-heading__subtitle justify-content-start">
+            <i class="fas fa-gem"></i> ANALYTICE
+          </p>
+          <h2 class="section-heading__title">
+            Turn Conversation Data into<span>Smarter Revenue Decisions</span>
+          </h2>
+          <p class="section-heading__desc">
+            Track reply speed, chat outcomes, agent efficiency, and conversion
+            impact in one clean reporting system.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="analytics__quick-kpis">
+          <article>
+            <strong>28s</strong>
+            <p>Avg response time</p>
+          </article>
+          <article>
+            <strong>94%</strong>
+            <p>Satisfaction score</p>
+          </article>
+          <article>
+            <strong>3.2x</strong>
+            <p>Conversion lift</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="row gy-4">
+      <div class="col-lg-8">
+        <div class="analytics__dashboard">
+          <div class="analytics__dashboard-head">
+            <h6>Performance Intelligence</h6>
+            <span>Updated 2m ago</span>
+          </div>
+          <div class="analytics__chart-area">
+            <div class="analytics__bars">
+              <span></span><span></span><span></span><span></span><span></span
+              ><span></span><span></span>
+            </div>
+            <div class="analytics__summary">
+              <article>
+                <strong>28s</strong>
+                <p>Avg response</p>
+              </article>
+              <article>
+                <strong>94%</strong>
+                <p>Satisfaction</p>
+              </article>
+              <article>
+                <strong>3.2x</strong>
+                <p>Conversion lift</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="analytics__insights">
+          <article>
+            <i class="fas fa-clock"></i>
+            <div>
+              <h6>Response Insights</h6>
+              <p>Spot time windows where faster replies lift conversion.</p>
+            </div>
+          </article>
+          <article>
+            <i class="fas fa-smile"></i>
+            <div>
+              <h6>Quality Signals</h6>
+              <p>
+                Measure satisfaction and repeat engagement by team and channel.
+              </p>
+            </div>
+          </article>
+          <article>
+            <i class="fas fa-funnel-dollar"></i>
+            <div>
+              <h6>Revenue Tracking</h6>
+              <p>
+                Connect conversation activity to pipeline and closed revenue.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="use-cases py-120">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading heading-animation text-center">
+          <p class="section-heading__subtitle">
+            <i class="fas fa-gem"></i>USE-CASES
+          </p>
+          <h2 class="section-heading__title">
+            Built for Teams that Need <span>Speed and Precision</span>
+          </h2>
+          <p class="section-heading__desc">
+            A simple rollout flow that helps your team launch quickly and start
+            converting conversations immediately.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <article class="use-cases__card">
+          <span class="use-cases__icon"
+            ><i class="fas fa-shopping-cart"></i
+          ></span>
+          <h6>E-commerce</h6>
+          <p>
+            Recover abandoned carts and guide shoppers to purchase with
+            proactive chat prompts.
+          </p>
+        </article>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <article class="use-cases__card">
+          <span class="use-cases__icon"
+            ><i class="fas fa-laptop-code"></i
+          ></span>
+          <h6>SaaS</h6>
+          <p>
+            Reduce onboarding friction, qualify upgrades, and resolve product
+            questions in real time.
+          </p>
+        </article>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <article class="use-cases__card">
+          <span class="use-cases__icon"><i class="fas fa-heartbeat"></i></span>
+          <h6>Healthcare</h6>
+          <p>
+            Handle appointment requests and basic patient queries with secure
+            workflows and clear routing.
+          </p>
+        </article>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <article class="use-cases__card">
+          <span class="use-cases__icon"
+            ><i class="fas fa-graduation-cap"></i
+          ></span>
+          <h6>Education</h6>
+          <p>
+            Support applicants and students with faster responses across
+            admissions and service channels.
+          </p>
+        </article>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <article class="use-cases__card">
+          <span class="use-cases__icon"><i class="fas fa-home"></i></span>
+          <h6>Real Estate</h6>
+          <p>
+            Capture listing inquiries, qualify leads, and schedule viewings
+            directly from website chat.
+          </p>
+        </article>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <article class="use-cases__card">
+          <span class="use-cases__icon"><i class="fas fa-university"></i></span>
+          <h6>Financial Services</h6>
+          <p>
+            Provide compliant support while routing sensitive requests to the
+            right specialist quickly.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="testimonials py-120">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading heading-animation text-center mb-60">
+          <p class="section-heading__subtitle">
+            <i class="fas fa-gem"></i>TESTIMONIALS
+          </p>
+          <h2 class="section-heading__title">
+            Trusted by Teams that Measure<span>Real Business Impact</span>
+          </h2>
+          <p class="section-heading__desc">
+            Real outcomes from companies using ViserChat to improve response
+            speed and conversion quality.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials__slider-wrap">
+      <div class="home-testimonial-slider">
+        <article class="testimonials__item">
+          <p class="testimonials__quote-text">
+            ViserChat helped us recover more carts and close sales faster
+            because our agents now meet buyers exactly when intent peaks.
+          </p>
+          <ul class="testimonials__stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <div class="testimonials__author">
+            <img
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&fit=crop"
+              alt="James Parker"
+            />
+            <div>
+              <h6>James Parker</h6>
+              <span>Founder, PeakCart</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonials__item">
+          <p class="testimonials__quote-text">
+            AI now resolves most repetitive tickets before they hit our agents,
+            and our team can spend more time on high-impact conversations.
+          </p>
+          <ul class="testimonials__stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <div class="testimonials__author">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&h=80&fit=crop"
+              alt="Mia Lopez"
+            />
+            <div>
+              <h6>Mia Lopez</h6>
+              <span>Support Lead, OrbitHQ</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonials__item">
+          <p class="testimonials__quote-text">
+            Visitor tracking changed how we prioritize outreach. We know who to
+            talk to, when to engage, and how to convert better.
+          </p>
+          <ul class="testimonials__stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <div class="testimonials__author">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop"
+              alt="Ethan Reed"
+            />
+            <div>
+              <h6>Ethan Reed</h6>
+              <span>Marketing Director, Looply</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonials__item">
+          <p class="testimonials__quote-text">
+            Setup was fast and practical. Our startup launched in one afternoon
+            and immediately started capturing better leads.
+          </p>
+          <ul class="testimonials__stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <div class="testimonials__author">
+            <img
+              src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=80&h=80&fit=crop"
+              alt="Nora Patel"
+            />
+            <div>
+              <h6>Nora Patel</h6>
+              <span>Founder, Sprintly</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonials__item">
+          <p class="testimonials__quote-text">
+            Managing support for multiple client sites used to be fragmented.
+            ViserChat unified it and cut operational overhead.
+          </p>
+          <ul class="testimonials__stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+          <div class="testimonials__author">
+            <img
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop"
+              alt="Olivia Shaw"
+            />
+            <div>
+              <h6>Olivia Shaw</h6>
+              <span>Owner, Bright Agency</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="testimonials__arrows"></div>
+    </div>
+  </div>
+</section>
+
+  <section class="brand py-80">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-heading heading-animation text-center">
+          <p class="section-heading__subtitle">
+            <i class="fas fa-gem"></i>Trusted Network
+          </p>
+          <h2 class="section-heading__title">
+            Chosen by <span class="title-highlight">3,000+ Growth Teams</span>
+          </h2>
+          <p class="section-heading__desc">
+            Used daily by high-volume support and sales teams worldwide.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-slider">
+      <div class="brand-slider__item">
+        <div class="brand-mark">
+          <i class="fab fa-slack"></i><span>Slack</span>
+        </div>
+      </div>
+      <div class="brand-slider__item">
+        <div class="brand-mark">
+          <i class="fab fa-shopify"></i><span>Shopify</span>
+        </div>
+      </div>
+      <div class="brand-slider__item">
+        <div class="brand-mark">
+          <i class="fab fa-wordpress"></i><span>WordPress</span>
+        </div>
+      </div>
+      <div class="brand-slider__item">
+        <div class="brand-mark">
+          <i class="fab fa-hubspot"></i><span>HubSpot</span>
+        </div>
+      </div>
+      <div class="brand-slider__item">
+        <div class="brand-mark">
+          <i class="fab fa-jira"></i><span>Jira</span>
+        </div>
+      </div>
+      <div class="brand-slider__item">
+        <div class="brand-mark">
+          <i class="fab fa-salesforce"></i><span>Salesforce</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="comparison py-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="heading-animation">
+          <div class="section-heading text-center mb-60">
+            <p class="section-heading__subtitle">
+              <i class="fas fa-gem"></i>COMPARISON
+            </p>
+            <h2 class="section-heading__title">
+              Why Growth Teams Choose<span
+                >ViserChat Over Basic Chat Tools</span
+              >
+            </h2>
+            <p class="section-heading__desc">
+              A practical comparison focused on speed, automation, and
+              conversion impact.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comparison__matrix">
+      <div class="comparison__matrix-head">
+        <span>Feature</span>
+        <span>ViserChat</span>
+        <span>Other Tools</span>
+      </div>
+      <article>
+        <h6>AI chatbot included</h6>
+        <p><i class="fas fa-check-circle"></i>Included on core plans</p>
+        <p>Paid add-on</p>
+      </article>
+      <article>
+        <h6>Visitor tracking depth</h6>
+        <p>
+          <i class="fas fa-check-circle"></i>Real-time behavior + source data
+        </p>
+        <p>Limited visibility</p>
+      </article>
+      <article>
+        <h6>Chat history retention</h6>
+        <p><i class="fas fa-check-circle"></i>Unlimited searchable history</p>
+        <p>30 to 90 day limits</p>
+      </article>
+      <article>
+        <h6>Brand customization</h6>
+        <p>
+          <i class="fas fa-check-circle"></i>Widget, flow, and launcher controls
+        </p>
+        <p>Premium tier only</p>
+      </article>
+      <article>
+        <h6>Language support</h6>
+        <p><i class="fas fa-check-circle"></i>50+ languages</p>
+        <p>5 to 10 languages</p>
+      </article>
+      <article>
+        <h6>Time to launch</h6>
+        <p><i class="fas fa-check-circle"></i>Under 5 minutes</p>
+        <p>Often 1 to 2 hours</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+  <section class="security py-120">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <div class="section-heading heading-animation">
+          <p class="section-heading__subtitle justify-content-start">
+            <i class="fas fa-gem"></i>SECURITY AND COMPLIANCE
+          </p>
+          <h2 class="section-heading__title">
+            Enterprise-Grade Protection for<span>Every Conversation</span>
+          </h2>
+          <p class="section-heading__desc">
+            ViserChat is built with security controls that support modern
+            compliance requirements, data protection workflows, and reliable
+            uptime.
+          </p>
+        </div>
+        <a href="#" class="section-link"
+          >Read our security policy <i class="fas fa-arrow-right"></i
+        ></a>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="security__grid">
+          <article class="security__card">
+            <span><i class="fas fa-shield-alt"></i></span>
+            <h6>End-to-End Encryption</h6>
+            <p>Messages are encrypted in transit and at rest.</p>
+          </article>
+          <article class="securaty__card">
+            <span><i class="fas fa-user-shield"></i></span>
+            <h6>GDPR Controls</h6>
+            <p>Data access and privacy controls for global teams.</p>
+          </article>
+          <article class="securaty__card">
+            <span><i class="fas fa-server"></i></span>
+            <h6>99.9% Uptime SLA</h6>
+            <p>Reliable infrastructure with failover-ready design.</p>
+          </article>
+          <article class="securaty__card">
+            <span><i class="fas fa-lock"></i></span>
+            <h6>SOC 2 Type II</h6>
+            <p>Audited processes and secure operations practices.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="cta-banner py-120">
+  <div class="container">
+    <div class="cta-banner__shell">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-8">
+          <h2>Ready to Turn Traffic into Pipeline Conversations?</h2>
+          <p>
+            Join 3,000+ teams using ViserChat to improve support speed, capture
+            better leads, and close faster.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <div class="cta-banner__actions">
+            <a href="registration.html" class="btn btn--base"
+              >Start Free Trial</a
+            >
+            <a href="#" class="btn cta-banner__outline-btn">Book a Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="faq py-120">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-xl-5 col-lg-6">
+        <div class="faq__intro">
+          <div class="faq__intro__wrap">
+            <div>
+              <span class="section-eyebrow">FAQ</span>
+              <h2>
+                Questions Teams Ask Before
+                <span class="title-highlight">Scaling with ViserChat</span>
+              </h2>
+              <p>
+                Everything you need to evaluate setup time, AI behavior, support
+                capacity, and scaling options.
+              </p>
+            </div>
+          </div>
+          <div>
+            <a href="contact.html" class="btn btn-outline--base"
+              >Contact Support</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-7 col-lg-6">
+        <div class="accordion custom--accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqOne"
+                aria-expanded="true"
+                aria-controls="faqOne"
+              >
+                What is ViserChat?
+              </button>
+            </h2>
+            <div
+              id="faqOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="faqHeadingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  ViserChat is an AI-powered live chat and visitor tracking
+                  platform that helps teams improve support and conversion
+                  performance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqTwo"
+                aria-expanded="false"
+                aria-controls="faqTwo"
+              >
+                How does the AI chatbot work?
+              </button>
+            </h2>
+            <div
+              id="faqTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  AI learns from your docs and site content, resolves common
+                  requests, and routes high-value conversations to the right
+                  agent.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqThree"
+                aria-expanded="false"
+                aria-controls="faqThree"
+              >
+                How long does setup take?
+              </button>
+            </h2>
+            <div
+              id="faqThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  Most teams launch in under five minutes by adding one script
+                  and configuring routing rules.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqFour"
+                aria-expanded="false"
+                aria-controls="faqFour"
+              >
+                Can I try ViserChat for free?
+              </button>
+            </h2>
+            <div
+              id="faqFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  Yes. Every plan starts with a 14-day free trial and does not
+                  require a credit card.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqFive"
+                aria-expanded="false"
+                aria-controls="faqFive"
+              >
+                Does ViserChat work on mobile?
+              </button>
+            </h2>
+            <div
+              id="faqFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingFive"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  Yes. The chat widget is fully responsive and agents can manage
+                  conversations through mobile-friendly workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqSix"
+                aria-expanded="false"
+                aria-controls="faqSix"
+              >
+                How many agents can I add?
+              </button>
+            </h2>
+            <div
+              id="faqSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingSix"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  Agent seats depend on plan tier, with unlimited seats
+                  available on Enterprise.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingSeven">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqSeven"
+                aria-expanded="false"
+                aria-controls="faqSeven"
+              >
+                Can I use ViserChat on multiple websites?
+              </button>
+            </h2>
+            <div
+              id="faqSeven"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingSeven"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  Yes. Multi-site support is available on Pro and Enterprise
+                  plans.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="blog py-120">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="section-heading">
+          <p class="section-heading__subtitle justify-content-start">
+            <i class="fas fa-gem"></i>BLOG
+          </p>
+          <h2 class="section-heading__title">
+            Ideas, Playbooks, and <span>Winning Chat Tactics</span>
+          </h2>
+        </div>
+        <a href="blog.html" class="section-link"
+          >View all posts <i class="fas fa-arrow-right"></i
+        ></a>
+      </div>
+    </div>
+    <div class="row gy-4 mt-1 justify-content-center">
+      <div class="col-lg-4 col-md-6">
+        <article class="blog-card">
+          <div class="blog-card__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1556155092-490a1ba16284?w=600&h=400&fit=crop"
+              alt="AI chat and sales"
+            /><span class="blog-card__badge">Growth</span>
+          </div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">
+              <span><i class="fas fa-calendar"></i>Jan 18, 2026</span
+              ><span><i class="fas fa-clock"></i>7 min read</span>
+            </p>
+            <h5>
+              <a href="blog-details.html"
+                >How AI Chat Increased Our Sales by 40%</a
+              >
+            </h5>
+            <p>
+              A practical rollout plan covering prompts, routing logic, and lead
+              capture patterns.
+            </p>
+            <a href="blog-details.html" class="section-link"
+              >Read more <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <article class="blog-card">
+          <div class="blog-card__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop"
+              alt="Live chat best practices"
+            /><span class="blog-card__badge">Support</span>
+          </div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">
+              <span><i class="fas fa-calendar"></i>Feb 05, 2026</span
+              ><span><i class="fas fa-clock"></i>5 min read</span>
+            </p>
+            <h5>
+              <a href="blog-details.html"
+                >5 Live Chat Practices That Improve Response Quality</a
+              >
+            </h5>
+            <p>
+              Simple operating rules that keep conversations fast, useful, and
+              conversion-focused.
+            </p>
+            <a href="blog-details.html" class="section-link"
+              >Read more <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <article class="blog-card">
+          <div class="blog-card__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
+              alt="Visitor tracking insights"
+            /><span class="blog-card__badge">Analytics</span>
+          </div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">
+              <span><i class="fas fa-calendar"></i>Mar 10, 2026</span
+              ><span><i class="fas fa-clock"></i>6 min read</span>
+            </p>
+            <h5>
+              <a href="blog-details.html"
+                >Why Visitor Tracking Drives Better Sales Conversations</a
+              >
+            </h5>
+            <p>
+              How behavior context helps teams prioritize leads and respond with
+              precision.
+            </p>
+            <a href="blog-details.html" class="section-link"
+              >Read more <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="newsletter py-120">
+  <div class="container">
+    <div class="newsletter__shell">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7">
+          <div class="newsletter__content">
+            <i class="fas fa-paper-plane"></i>
+            <h2>
+              Weekly Tactics for
+              <span class="title-highlight"
+                >Faster Support and More Revenue</span
+              >
+            </h2>
+            <p>
+              Join 10,000+ operators getting practical customer conversation
+              playbooks every week.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <form class="newsletter__form" action="#">
+            <input
+              type="email"
+              class="form-control form--control"
+              placeholder="Enter your work email"
+              required
+            />
+            <button type="submit" class="btn btn--base-two">Subscribe</button>
+          </form>
+          <span class="newsletter__note"
+            ><i class="fas fa-lock"></i>No spam, unsubscribe anytime.</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="mobile-app py-120">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <div class="mobile-app__mockup">
+          <div class="mobile-app__phone">
+            <div class="mobile-app__phone-head">Agent Mobile Inbox</div>
+            <div class="mobile-app__phone-body">
+              <article>
+                <strong>#1847</strong>
+                <p>Pricing question, 1m ago</p>
+              </article>
+              <article>
+                <strong>#2759</strong>
+                <p>Demo request, 3m ago</p>
+              </article>
+              <article>
+                <strong>#3022</strong>
+                <p>Checkout issue, 7m ago</p>
+              </article>
+            </div>
+          </div>
+          <div class="mobile-app__float mobile-app__float--top">
+            <i class="fas fa-comment-dots"></i>
+            <p>New chat from visitor #1847</p>
+          </div>
+          <div class="mobile-app__float mobile-app__float--bottom">
+            <i class="fas fa-robot"></i>
+            <p>AI resolved 12 chats while you were away</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="heading-animation">
+          <div class="section-heading">
+            <p class="section-heading__subtitle justify-content-start">
+              <i class="fas fa-gem"></i>MOBILE APP
+            </p>
+            <h2 class="section-heading__title">
+              Support Buyers from Anywhere with<span>Full Context in Hand</span>
+            </h2>
+            <p class="section-heading__desc">
+              A simple rollout flow that helps your team launch quickly and
+              start converting conversations immediately.
+            </p>
+          </div>
+
+          <ul class="mobile-app__list">
+            <li>
+              <i class="fas fa-check-circle"></i>Push alerts for high-intent
+              chats
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>Full visitor activity timeline
+              on mobile
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>Agent handoff with context
+              included
+            </li>
+          </ul>
+          <div class="mobile-app__stores">
+            <a href="#"
+              ><img src="https://placehold.co/150x50" alt="App Store"
+            /></a>
+            <a href="#"
+              ><img src="https://placehold.co/150x50" alt="Play Store"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="chatbot-builder py-120">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-6">
+        <div class="section-heading mb-4">
+          <p class="section-heading__subtitle justify-content-start">
+            <i class="fas fa-gem"></i>O-CODE BOT BUILDER
+          </p>
+          <h2 class="section-heading__title">
+            Launch in Minutes, Start Winning <span>Conversations Today</span>
+          </h2>
+          <p class="section-heading__desc">
+            Use drag-and-drop logic to build qualification flows, fallback
+            replies, and routing rules tailored to your funnel.
+          </p>
+        </div>
+        <ul class="chatbot-builder__list">
+          <li>
+            <i class="fas fa-check-circle"></i>Visual flow editor with branching
+            logic
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>Templates for sales, support, and
+            onboarding
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>Behavior-based triggers and CRM
+            handoffs
+          </li>
+        </ul>
+        <a href="#" class="btn btn--base-two">Try the Bot Builder</a>
+      </div>
+      <div class="col-lg-6">
+        <div class="chatbot-builder__canvas">
+          <div class="chatbot-builder__node chatbot-builder__node--start">
+            <strong>Entry Trigger</strong>
+            <p>Visitor hits pricing page</p>
+          </div>
+          <div class="chatbot-builder__connector"></div>
+          <div class="chatbot-builder__node">
+            <strong>Intent Check</strong>
+            <p>Asks product or plan question</p>
+          </div>
+          <div class="chatbot-builder__connector"></div>
+          <div class="chatbot-builder__split">
+            <div class="chatbot-builder__node">
+              <strong>AI Answer</strong>
+              <p>Respond with docs and options</p>
+            </div>
+            <div class="chatbot-builder__node">
+              <strong>Human Handoff</strong>
+              <p>Route to sales with context</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== Footer Start Here ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__cta">
+        <div class="footer__cta-content">
+          <span class="footer__eyebrow"
+            ><i class="fas fa-gem"></i> Premium Conversation Stack</span
+          >
+          <h3>
+            Transform every visitor message into trusted revenue momentum.
+          </h3>
+          <p>
+            Combine AI automation, context-rich live support, and performance
+            analytics in one intentionally crafted workspace.
+          </p>
+        </div>
+        <div class="footer__cta-actions">
+          <a href="registration.html" class="btn btn--base-two btn--lg"
+            >Start Free Trial</a
+          >
+          <a href="#" class="btn footer__ghost-btn btn--lg">Book a Demo</a>
+        </div>
+      </div>
+
+      <div class="row gy-4 footer__main">
+        <div class="col-lg-5 col-md-12">
+          <div class="footer__brand">
+            <a href="index.html" class="footer__logo">Viser<span>Chat</span></a>
+            <p class="footer__desc">
+              ViserChat helps teams turn customer conversations into faster
+              resolutions, stronger trust, and measurable growth across every
+              channel.
+            </p>
+            <ul class="footer__highlights">
+              <li><strong>3,000+</strong><span>Teams Active</span></li>
+              <li><strong>15M+</strong><span>Chats Processed</span></li>
+              <li><strong>99.99%</strong><span>Platform Uptime</span></li>
+            </ul>
+            <div class="footer__social-wrap">
+              <ul class="footer__social-list">
+                <li>
+                  <a href="https://www.facebook.com" aria-label="Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com" aria-label="X"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com" aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com" aria-label="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com" aria-label="YouTube"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-sm-center"
+        >
+          <div class="footer__widget">
+            <h5 class="footer__widget-title">Platform</h5>
+            <ul class="footer__links">
+              <li><a href="#">Live Chat</a></li>
+              <li><a href="#">AI Assistant</a></li>
+              <li><a href="#">Team Inbox</a></li>
+              <li><a href="#">Visitor Analytics</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-sm-center"
+        >
+          <div class="footer__widget">
+            <h5 class="footer__widget-title">Resources</h5>
+            <ul class="footer__links">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">API Reference</a></li>
+              <li><a href="#">System Guides</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Release Notes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-sm-center"
+        >
+          <div class="footer__widget">
+            <h5 class="footer__widget-title">Company</h5>
+            <ul class="footer__links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#">Customer Stories</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Status Page</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        2026 ViserChat. Crafted for modern support teams.
+      </p>
+      <ul class="footer__legal">
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+      <p class="footer__status"><span></span> All systems operational</p>
+    </div>
+  </div>
+</footer>
+<!-- ==================== Footer End Here ==================== -->
+ <!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- Select js -->
+<script src="assets/js/select2.min.js"></script>
+<!-- scrollreveal-->
+<script src="assets/js/scrollreveal.min.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
+

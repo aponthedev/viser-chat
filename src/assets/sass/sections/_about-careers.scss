@@ -1,0 +1,110 @@
+.about-careers {
+  background-color: hsl(var(--gray-l-500));
+
+  &__title {
+    font-size: clamp(2rem, 1.58rem + 2vw, 3.15rem);
+    line-height: 1.08;
+    margin-bottom: 14px;
+    max-width: 16ch;
+  }
+
+  &__desc {
+    color: hsl(var(--gray-d-100));
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 48ch;
+  }
+
+  &__jobs {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 22px;
+
+    article {
+      border-radius: 12px;
+      border: 1px solid hsl(var(--gray-l-300));
+      background-color: hsl(var(--white));
+      padding: 14px;
+
+      h6 {
+        margin-bottom: 6px;
+        font-size: 21px;
+      }
+
+      p {
+        margin-bottom: 0;
+        display: inline-flex;
+        gap: 8px;
+
+        span {
+          border-radius: 999px;
+          padding: 4px 10px;
+          font-size: 12px;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          font-weight: 700;
+          background-color: hsl(var(--base-two) / 0.14);
+          color: hsl(var(--base));
+        }
+      }
+    }
+  }
+
+  &__media {
+    position: relative;
+
+    img {
+      width: 100%;
+      border-radius: 16px;
+      min-height: 360px;
+      object-fit: cover;
+    }
+  }
+
+  &__float {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    border-radius: 12px;
+    border: 1px solid hsl(var(--gray-l-300));
+    background-color: hsl(var(--white));
+    box-shadow: 0 12px 24px hsl(var(--black) / 0.1);
+    padding: 12px;
+    display: inline-flex;
+    gap: 10px;
+    align-items: start;
+
+    i {
+      color: hsl(var(--base-two));
+      margin-top: 4px;
+    }
+
+    strong {
+      display: block;
+      color: hsl(var(--gray-d-400));
+      margin-bottom: 2px;
+    }
+
+    p {
+      margin: 0;
+      color: hsl(var(--gray-d-100));
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .about-careers {
+    &__float {
+      position: static;
+      margin-top: 12px;
+    }
+  }
+}
+
+@media (max-width: 424px) {
+  .about-careers__jobs article h6 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+}

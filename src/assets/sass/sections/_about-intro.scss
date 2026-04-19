@@ -1,0 +1,116 @@
+.about-intro {
+  background-color: hsl(var(--white));
+
+  &__media {
+    position: relative;
+
+    img {
+      width: 100%;
+      border-radius: 16px;
+      min-height: 380px;
+      object-fit: cover;
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    border-radius: 12px;
+    border: 1px solid hsl(var(--gray-l-300));
+    background-color: hsl(var(--white));
+    box-shadow: 0 14px 26px hsl(var(--black) / 0.1);
+    padding: 12px;
+    display: inline-flex;
+    gap: 10px;
+    align-items: start;
+
+    i {
+      color: hsl(var(--base-two));
+      margin-top: 4px;
+    }
+
+    strong {
+      display: block;
+      font-size: 16px;
+      color: hsl(var(--gray-d-400));
+      margin-bottom: 2px;
+    }
+
+    p {
+      margin: 0;
+      color: hsl(var(--gray-d-100));
+      font-size: 13px;
+    }
+  }
+
+  // &__title {
+  //   font-size: clamp(2rem, 1.6rem + 2vw, 3.2rem);
+  //   line-height: 1.1;
+  //   margin-bottom: 16px;
+  //   max-width: 18ch;
+  // }
+
+  p {
+    color: hsl(var(--gray-d-100));
+
+    &:not(:last-of-type) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__stats {
+    margin-top: 22px;
+    border-radius: 14px;
+    border: 1px solid hsl(var(--gray-l-300));
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    article {
+      padding: 14px;
+      text-align: center;
+
+      &:not(:last-child) {
+        border-right: 1px solid hsl(var(--gray-l-300));
+      }
+    }
+
+    strong {
+      display: block;
+      color: hsl(var(--base));
+      font-size: 16px;
+      line-height: 1;
+      margin-bottom: 4px;
+
+      .odometer {
+        font-weight: inherit;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: hsl(var(--gray-d-100));
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .about-intro {
+    &__badge {
+      position: static;
+      margin-top: 12px;
+    }
+
+    &__stats {
+      grid-template-columns: 1fr;
+
+      article:not(:last-child) {
+        border-right: 0;
+        border-bottom: 1px solid hsl(var(--gray-l-300));
+      }
+    }
+  }
+}

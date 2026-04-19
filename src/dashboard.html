@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>ViserChat - AI Live Chat SaaS Template</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <!-- Slick -->
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <!-- line awesome -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <!-- Odometer -->
+  <link rel="stylesheet" href="assets/css/odometer.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="assets/css/select2.min.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+
+  <!--==================== Body Overlay Start ====================-->
+  <div class="body-overlay"></div>
+  <!--==================== Body Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="sidebar-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!--==================== Scroll To Top Start ====================-->
+  <button class="scroll-top" type="button">
+    <svg class="scroll-top-progress" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98">
+      </path>
+    </svg>
+  </button>
+  <!--==================== Scroll to Top End ====================-->
+
+
+<!-- ==================== Dashboard Start ==================== -->
+<div class="dashboard">
+  <aside class="dashboard-sidebar" id="dashboard-sidebar">
+  <div class="dashboard-sidebar__header">
+    <a class="dashboard-sidebar-logo" href="#">
+      <img src="assets/images/logo/logo.png" alt="" />
+    </a>
+    <button
+      class="btn btn--icon btn--sm btn--close d-lg-none"
+      type="button"
+    ></button>
+  </div>
+  <div class="dashboard-sidebar__body">
+    <ul class="dashboard-sidebar-menu">
+      <li class="dashboard-sidebar-menu__item active">
+        <a class="dashboard-sidebar-menu__link" href="dashboard.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="injected-svg"
+            data-src="https://cdn.hugeicons.com/icons/dashboard-circle-duotone-standard.svg?v=1.0.0"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            role="img"
+            color="CurrentColor"
+          >
+            <path
+              opacity="0.4"
+              d="M10.5 6.75C10.5 4.67893 8.82107 3 6.75 3C4.67893 3 3 4.67893 3 6.75C3 8.82107 4.67893 10.5 6.75 10.5C8.82107 10.5 10.5 8.82107 10.5 6.75Z"
+              fill="CurrentColor"
+            ></path>
+            <path
+              opacity="0.4"
+              d="M21 17.25C21 15.1789 19.3211 13.5 17.25 13.5C15.1789 13.5 13.5 15.1789 13.5 17.25C13.5 19.3211 15.1789 21 17.25 21C19.3211 21 21 19.3211 21 17.25Z"
+              fill="CurrentColor"
+            ></path>
+            <path
+              d="M21 6.75C21 4.67893 19.3211 3 17.25 3C15.1789 3 13.5 4.67893 13.5 6.75C13.5 8.82107 15.1789 10.5 17.25 10.5C19.3211 10.5 21 8.82107 21 6.75Z"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M10.5 6.75C10.5 4.67893 8.82107 3 6.75 3C4.67893 3 3 4.67893 3 6.75C3 8.82107 4.67893 10.5 6.75 10.5C8.82107 10.5 10.5 8.82107 10.5 6.75Z"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M21 17.25C21 15.1789 19.3211 13.5 17.25 13.5C15.1789 13.5 13.5 15.1789 13.5 17.25C13.5 19.3211 15.1789 21 17.25 21C19.3211 21 21 19.3211 21 17.25Z"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M10.5 17.25C10.5 15.1789 8.82107 13.5 6.75 13.5C4.67893 13.5 3 15.1789 3 17.25C3 19.3211 4.67893 21 6.75 21C8.82107 21 10.5 19.3211 10.5 17.25Z"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <span class="text">Dashboard</span>
+        </a>
+      </li>
+
+      <li class="dashboard-sidebar-menu__item">
+        <a class="dashboard-sidebar-menu__link" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="injected-svg"
+            data-src="https://cdn.hugeicons.com/icons/appointment-01-duotone-standard.svg?v=1.0.0"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            role="img"
+            color="CurrentColor"
+          >
+            <path
+              opacity="0.4"
+              d="M19 4H5C3.89543 4 3 4.89543 3 6V10H21V6C21 4.89543 20.1046 4 19 4Z"
+              fill="CurrentColor"
+            ></path>
+            <path
+              d="M16.5 2V6M7.5 2V6"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M21 13V6C21 4.89543 20.1046 4 19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H11"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M3 10H21"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M13 19.5L15.5 22L21 16"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <span class="text">Today Appointment</span>
+        </a>
+      </li>
+
+      <li class="dashboard-sidebar-menu__item">
+        <a
+          class="dashboard-sidebar-menu__link"
+          data-bs-toggle="collapse"
+          href="#dashboard-collapse-1"
+          role="button"
+          aria-expanded="false"
+          aria-controls="dashboard-collapse-1"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="injected-svg"
+            data-src="https://cdn.hugeicons.com/icons/calendar-02-duotone-standard.svg?v=1.0.0"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            role="img"
+            color="CurrentColor"
+          >
+            <path
+              opacity="0.4"
+              d="M19 4H5C3.89543 4 3 4.89543 3 6V10H21V6C21 4.89543 20.1046 4 19 4Z"
+              fill="CurrentColor"
+            ></path>
+            <path
+              d="M11 14H16M8 14H8.00898M13 18H8M16 18H15.991"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M16.5 2V6M7.5 2V6"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M3 10H21"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <span class="text">Manage Appointment</span>
+        </a>
+        <div class="dashboard-collapse collapse" id="dashboard-collapse-1">
+          <ul class="dashboard-sidebar-submenu">
+            <li class="dashboard-sidebar-submenu__item">
+              <a href="my-bids.html" class="dashboard-sidebar-submenu__link">
+                <span class="text"> New Appointment </span>
+              </a>
+            </li>
+            <li class="dashboard-sidebar-submenu__item">
+              <a
+                href="bid-winners.html"
+                class="dashboard-sidebar-submenu__link"
+              >
+                <span class="text"> Not Consulted </span>
+              </a>
+            </li>
+            <li class="dashboard-sidebar-submenu__item">
+              <a
+                href="bid-winners.html"
+                class="dashboard-sidebar-submenu__link"
+              >
+                <span class="text"> Appointment History </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="dashboard-sidebar-menu__item">
+        <a
+          class="dashboard-sidebar-menu__link"
+          data-bs-toggle="collapse"
+          href="#dashboard-collapse-2"
+          role="button"
+          aria-expanded="false"
+          aria-controls="dashboard-collapse-1"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="injected-svg"
+            data-src="https://cdn.hugeicons.com/icons/live-streaming-01-duotone-standard.svg?v=1.0.0"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            role="img"
+            color="CurrententColor"
+          >
+            <path
+              opacity="0.4"
+              d="M20 20.5C21.1046 20.5 22 19.6046 22 18.5V12.5C22 11.3954 21.1046 10.5 20 10.5H4C2.89543 10.5 2 11.3954 2 12.5V18.5C2 19.6046 2.89543 20.5 4 20.5H20Z"
+              fill="CurrenentColor"
+            ></path>
+            <path
+              d="M20 20.5C21.1046 20.5 22 19.6046 22 18.5V12.5C22 11.3954 21.1046 10.5 20 10.5H4C2.89543 10.5 2 11.3954 2 12.5V18.5C2 19.6046 2.89543 20.5 4 20.5H20Z"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M16 5.5C15.0227 4.27354 13.5929 3.5 12 3.5C10.4071 3.5 8.97726 4.27354 8 5.5"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M14 7.5C13.5114 6.88677 12.7965 6.5 12 6.5C11.2035 6.5 10.4886 6.88677 10 7.5"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M5 13.5V17.5H6.5M19 17.5H17V15.5M17 15.5V13.5H19M17 15.5H18.5M9 13.5V17.5M11.5 13.5L13 17.5L14.5 13.5"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <span class="text">Live Consultation</span>
+        </a>
+        <div class="dashboard-collapse collapse" id="dashboard-collapse-2">
+          <ul class="dashboard-sidebar-submenu">
+            <li class="dashboard-sidebar-submenu__item">
+              <a href="my-bids.html" class="dashboard-sidebar-submenu__link">
+                <span class="text"> Zoom Meeting </span>
+              </a>
+            </li>
+            <li class="dashboard-sidebar-submenu__item">
+              <a
+                href="bid-winners.html"
+                class="dashboard-sidebar-submenu__link"
+              >
+                <span class="text"> Upcoming Meeting </span>
+              </a>
+            </li>
+            <li class="dashboard-sidebar-submenu__item">
+              <a
+                href="bid-winners.html"
+                class="dashboard-sidebar-submenu__link"
+              >
+                <span class="text"> Meeting History </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="dashboard-sidebar-menu__item">
+        <a class="dashboard-sidebar-menu__link" href="deposit.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="injected-svg"
+            data-src="https://cdn.hugeicons.com/icons/wallet-add-01-duotone-standard.svg?v=1.0.0"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            role="img"
+            color=" CurrentColor"
+          >
+            <g opacity="0.4">
+              <path
+                d="M16 3H5C3.89543 3 3 3.89543 3 5C3 6.10457 3.89543 7 5 7H18V5C18 3.89543 17.1046 3 16 3Z"
+                fill="CurrentColor"
+              ></path>
+              <path
+                d="M18 12H21V16H18C17.4477 16 17 15.5523 17 15V13C17 12.4477 17.4477 12 18 12Z"
+                fill="CurrentColor"
+              ></path>
+            </g>
+            <path
+              d="M10 17.5H6.5M6.5 17.5H3M6.5 17.5V14M6.5 17.5V21"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M16 3H5C3.89543 3 3 3.89543 3 5C3 6.10457 3.89543 7 5 7H18V5C18 3.89543 17.1046 3 16 3Z"
+              stroke="  CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M11 21H19C20.1046 21 21 20.1046 21 19V9C21 7.89543 20.1046 7 19 7H7M3 13V5"
+              stroke="  CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M21 12H18C17.4477 12 17 12.4477 17 13V15C17 15.5523 17.4477 16 18 16H21"
+              stroke="  CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <span class="text">Deposit</span>
+        </a>
+      </li>
+      <li class="dashboard-sidebar-menu__item">
+        <a class="dashboard-sidebar-menu__link" href="message.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="injected-svg"
+            data-src="https://cdn.hugeicons.com/icons/message-01-duotone-standard.svg?v=1.0.0"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            role="img"
+            color="CurrentColor"
+          >
+            <path
+              opacity="0.4"
+              d="M14.1706 20.8905C18.3536 20.6125 21.6856 17.2332 21.9598 12.9909C22.0134 12.1607 22.0134 11.3009 21.9598 10.4707C21.6856 6.22838 18.3536 2.84913 14.1706 2.57107C12.7435 2.47621 11.2536 2.47641 9.8294 2.57107C5.64639 2.84913 2.31441 6.22838 2.04024 10.4707C1.98659 11.3009 1.98659 12.1607 2.04024 12.9909C2.1401 14.536 2.82343 15.9666 3.62791 17.1746C4.09501 18.0203 3.78674 19.0758 3.30021 19.9978C2.94941 20.6626 2.77401 20.995 2.91484 21.2351C3.05568 21.4752 3.37026 21.4829 3.99943 21.4982C5.24367 21.5285 6.08268 21.1757 6.74868 20.6846C7.1264 20.4061 7.31527 20.2668 7.44544 20.2508C7.5756 20.2348 7.83177 20.3403 8.34401 20.5513C8.8044 20.7409 9.33896 20.8579 9.8294 20.8905C11.2536 20.9852 12.7435 20.9854 14.1706 20.8905Z"
+              fill="CurrentColor"
+            ></path>
+            <path
+              d="M14.1706 20.8905C18.3536 20.6125 21.6856 17.2332 21.9598 12.9909C22.0134 12.1607 22.0134 11.3009 21.9598 10.4707C21.6856 6.22838 18.3536 2.84913 14.1706 2.57107C12.7435 2.47621 11.2536 2.47641 9.8294 2.57107C5.64639 2.84913 2.31441 6.22838 2.04024 10.4707C1.98659 11.3009 1.98659 12.1607 2.04024 12.9909C2.1401 14.536 2.82343 15.9666 3.62791 17.1746C4.09501 18.0203 3.78674 19.0758 3.30021 19.9978C2.94941 20.6626 2.77401 20.995 2.91484 21.2351C3.05568 21.4752 3.37026 21.4829 3.99943 21.4982C5.24367 21.5285 6.08268 21.1757 6.74868 20.6846C7.1264 20.4061 7.31527 20.2668 7.44544 20.2508C7.5756 20.2348 7.83177 20.3403 8.34401 20.5513C8.8044 20.7409 9.33896 20.8579 9.8294 20.8905C11.2536 20.9852 12.7435 20.9854 14.1706 20.8905Z"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M8.5 14.5H15.5M8.5 9.5H12"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <span class="text">Message</span>
+        </a>
+      </li>
+      <li class="dashboard-sidebar-menu__item">
+        <a class="dashboard-sidebar-menu__link" href="withdraw.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="injected-svg"
+            data-src="https://cdn.hugeicons.com/icons/bank-duotone-standard.svg?v=1.0.0"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            role="img"
+            color="CurrentColor"
+          >
+            <path
+              opacity="0.4"
+              d="M21 19H3L3.0003 21.9999H21V19Z"
+              fill="CurrentColor"
+            ></path>
+            <path
+              opacity="0.4"
+              d="M3 7L12 2L21 7V9.99502H3V7Z"
+              fill="CurrentColor"
+            ></path>
+            <path
+              d="M11.9959 7H12.0049"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M5 9.99512V18.9998M9 9.99512V18.9998"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M15 9.99512V18.9998M19 9.99512V18.9998"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M21 19H3L3.0003 21.9999H21V19Z"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M3 7L12 2L21 7V9.99502H3V7Z"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <span class="text">Withdraw</span>
+        </a>
+      </li>
+
+      <li class="dashboard-sidebar-menu__item">
+        <a class="dashboard-sidebar-menu__link" href="transactions.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="injected-svg"
+            data-src="https://cdn.hugeicons.com/icons/transaction-duotone-standard.svg?v=1.0.0"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            role="img"
+            color="CurrentColor"
+          >
+            <path
+              opacity="0.4"
+              d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+              fill="CurrentColor"
+            ></path>
+            <path
+              d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12L5 10.5"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M13.3721 10.4102C13.5986 10.757 14.0634 10.8544 14.4102 10.6279C14.7569 10.4013 14.8544 9.93654 14.6278 9.58978L13.9999 10L13.3721 10.4102ZM10.6279 13.5898C10.4014 13.243 9.93659 13.1456 9.58983 13.3721C9.24307 13.5987 9.14563 14.0635 9.37219 14.4102L10.0001 14L10.6279 13.5898ZM12.75 8C12.75 7.58579 12.4142 7.25 12 7.25C11.5858 7.25 11.25 7.58579 11.25 8H12H12.75ZM11.25 16C11.25 16.4142 11.5858 16.75 12 16.75C12.4142 16.75 12.75 16.4142 12.75 16H12H11.25ZM12 9V9.75C12.6154 9.75 13.1369 10.0503 13.3721 10.4102L13.9999 10L14.6278 9.58978C14.0818 8.75412 13.0568 8.25 12 8.25V9ZM12 9V8.25C11.3909 8.25 10.7373 8.4008 10.2116 8.75061C9.66407 9.11495 9.25 9.70746 9.25 10.5H10H10.75C10.75 10.2925 10.8387 10.1351 11.0426 9.99939C11.2683 9.8492 11.6146 9.75 12 9.75V9ZM10 10.5H9.25C9.25 10.9235 9.34013 11.3083 9.53242 11.6398C9.72536 11.9724 9.99533 12.2068 10.2854 12.3681C10.8358 12.674 11.4922 12.7335 11.975 12.7496L12 12L12.025 11.2504C11.574 11.2354 11.2303 11.1771 11.0142 11.057C10.921 11.0052 10.8661 10.9495 10.8299 10.8872C10.7931 10.8237 10.75 10.7088 10.75 10.5H10ZM12 15V14.25C11.3846 14.25 10.8631 13.9497 10.6279 13.5898L10.0001 14L9.37219 14.4102C9.91817 15.2459 10.9432 15.75 12 15.75V15ZM12 15V15.75C12.6091 15.75 13.2627 15.5992 13.7884 15.2494C14.3359 14.8851 14.75 14.2925 14.75 13.5H14H13.25C13.25 13.7075 13.1613 13.8649 12.9574 14.0006C12.7317 14.1508 12.3854 14.25 12 14.25V15ZM14 13.5H14.75C14.75 13.0765 14.6599 12.6917 14.4676 12.3602C14.2746 12.0276 14.0047 11.7932 13.7146 11.6319C13.1642 11.326 12.5078 11.2665 12.025 11.2504L12 12L11.975 12.7496C12.426 12.7646 12.7697 12.8229 12.9858 12.943C13.079 12.9948 13.1339 13.0505 13.1701 13.1128C13.2069 13.1763 13.25 13.2912 13.25 13.5H14ZM12 9H12.75V8H12H11.25V9H12ZM12 15H11.25V16H12H12.75V15H12Z"
+              fill="CurrentColor"
+            ></path>
+            <path
+              d="M9 21.5C8.53238 21.3531 8.07966 21.1726 7.64467 20.9613M5.52258 19.5699C5.13082 19.2345 4.76547 18.8692 4.43008 18.4774M3.10556 16.4903C2.86525 16.0142 2.66213 15.5162 2.5 15"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <span class="text">Transactions</span>
+        </a>
+      </li>
+      <li class="dashboard-sidebar-menu__item">
+        <a
+          class="dashboard-sidebar-menu__link"
+          data-bs-toggle="collapse"
+          href="#dashboard-collapse-3"
+          role="button"
+          aria-expanded="false"
+          aria-controls="dashboard-collapse-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="injected-svg"
+            data-src="https://cdn.hugeicons.com/icons/setting-07-duotone-standard.svg?v=1.0.0"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            role="img"
+            color="CurrentColor"
+          >
+            <path
+              opacity="0.4"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.3596 2.5328C11.7305 2.22421 12.2693 2.22398 12.6399 2.5328L14.7219 4.26816C14.9015 4.41784 15.1278 4.50047 15.3616 4.50058H18.5003C19.0524 4.50074 19.5003 4.9484 19.5003 5.50058V8.63827C19.5003 8.87176 19.5815 9.09836 19.7307 9.27792L21.4631 11.3609C21.7714 11.7315 21.7714 12.2686 21.4631 12.6392L19.7307 14.7223C19.5814 14.9018 19.5003 15.1284 19.5003 15.3619V18.5006C19.5 19.0526 19.0523 19.5004 18.5003 19.5006H15.3616C15.1278 19.5007 14.9015 19.5824 14.7219 19.732L12.6399 21.4674C12.2693 21.7762 11.7305 21.776 11.3596 21.4674L9.27369 19.731C9.09411 19.5817 8.86763 19.5006 8.63405 19.5006H5.49537C4.94331 19.5005 4.4956 19.0526 4.49537 18.5006V15.3619C4.49537 15.1283 4.41334 14.9019 4.26393 14.7223L2.53248 12.6392C2.2242 12.2686 2.2242 11.7315 2.53248 11.3609L4.26393 9.27792C4.41334 9.09831 4.49537 8.87191 4.49537 8.63827V5.50058C4.49537 4.94835 4.94317 4.50067 5.49537 4.50058H8.63405C8.86766 4.50054 9.09411 4.41855 9.27369 4.26913L11.3596 2.5328ZM12.0003 8.4996C10.0674 8.4996 8.50047 10.0668 8.50026 11.9996C8.50026 13.9326 10.0673 15.4996 12.0003 15.4996C13.9331 15.4995 15.5003 13.9325 15.5003 11.9996C15.5 10.0669 13.933 8.49972 12.0003 8.4996Z"
+              fill="CurrentColor"
+            ></path>
+            <path
+              d="M15.362 19.5001H18.5C19.0523 19.5001 19.5 19.0524 19.5 18.5001V15.3617C19.5 15.128 19.5818 14.9018 19.7312 14.7221L21.4635 12.6396C21.7718 12.269 21.7718 11.7312 21.4635 11.3606L19.7312 9.27806C19.5818 9.09845 19.5 8.87219 19.5 8.63855V5.50011C19.5 4.94782 19.0523 4.50011 18.5 4.50011H15.3621C15.1281 4.50011 14.9016 4.41808 14.7218 4.2683L12.6398 2.5331C12.2692 2.2242 11.7308 2.224 11.3599 2.53262L9.27358 4.26877C9.09395 4.41826 8.86763 4.50011 8.63393 4.50011H5.49559C4.9433 4.50011 4.49559 4.94782 4.49559 5.50011V8.63855C4.49559 8.87219 4.41378 9.09845 4.26437 9.27806L2.53203 11.3606C2.22374 11.7312 2.22374 12.269 2.53203 12.6396L4.26437 14.7221C4.41378 14.9018 4.49559 15.128 4.49559 15.3617V18.5001C4.49559 19.0524 4.9433 19.5001 5.49559 19.5001H8.63395C8.86763 19.5001 9.09394 19.5819 9.27358 19.7314L11.3599 21.4675C11.7307 21.7761 12.2691 21.7759 12.6397 21.467L14.7218 19.7319C14.9016 19.5821 15.1281 19.5001 15.362 19.5001Z"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M15.5 12C15.5 13.933 13.933 15.5 12 15.5C10.067 15.5 8.5 13.933 8.5 12C8.5 10.067 10.067 8.5 12 8.5C13.933 8.5 15.5 10.067 15.5 12Z"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+            ></path>
+          </svg>
+          <span class="text">Settings</span>
+        </a>
+        <div class="dashboard-collapse collapse" id="dashboard-collapse-3">
+          <ul class="dashboard-sidebar-submenu">
+            <li class="dashboard-sidebar-submenu__item">
+              <a href="#" class="dashboard-sidebar-submenu__link">
+                <span class="text">Profile</span>
+              </a>
+            </li>
+            <li class="dashboard-sidebar-submenu__item">
+              <a href="#" class="dashboard-sidebar-submenu__link">
+                <span class="text">Change Password</span>
+              </a>
+            </li>
+            <li class="dashboard-sidebar-submenu__item">
+              <a href="#" class="dashboard-sidebar-submenu__link">
+                <span class="text">2FA Security</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="dashboard-sidebar-menu__item">
+        <a class="dashboard-sidebar-menu__link" href="transactions.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="128"
+            height="128"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="injected-svg"
+            data-src="https://cdn.hugeicons.com/icons/customer-service-01-duotone-standard.svg?v=1.0.0"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            role="img"
+            color="CurrentColor"
+          >
+            <path
+              opacity="0.4"
+              d="M5.51906 10.2596L6.44721 10.7237C6.786 10.8931 7 11.2394 7 11.6181V16.3821C7 16.7608 6.786 17.1071 6.44721 17.2765L5.51906 17.7406C5.19808 17.901 4.81541 17.8773 4.53212 17.657C3.68867 17.0011 2 15.5006 2 14.0001C2 12.4996 3.68867 10.9991 4.53212 10.3432C4.81541 10.1229 5.19808 10.0991 5.51906 10.2596Z"
+              fill="CurrentColor"
+            ></path>
+            <path
+              opacity="0.4"
+              d="M19.4679 10.3432C19.1846 10.1229 18.8019 10.0991 18.4809 10.2596L17.5528 10.7237C17.214 10.8931 17 11.2394 17 11.6181V16.3821C17 16.7608 17.214 17.1071 17.5528 17.2765L18.4809 17.7406C18.8019 17.901 19.1846 17.8773 19.4679 17.657C20.3113 17.0011 22 15.5006 22 14.0001C22 12.4996 20.3113 10.9991 19.4679 10.3432Z"
+              fill="CurrentColor"
+            ></path>
+            <path
+              d="M5.51906 10.2596L6.44721 10.7237C6.786 10.8931 7 11.2394 7 11.6181V16.3821C7 16.7608 6.786 17.1071 6.44721 17.2765L5.51906 17.7406C5.19808 17.901 4.81541 17.8773 4.53212 17.657C3.68867 17.0011 2 15.5006 2 14.0001C2 12.4996 3.68867 10.9991 4.53212 10.3432C4.81541 10.1229 5.19808 10.0991 5.51906 10.2596Z"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M4 10.5V10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10V10.5"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M20 17.5V18C20 20.2091 18.2091 22 16 22H12"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M19.4679 10.3432C19.1846 10.1229 18.8019 10.0991 18.4809 10.2596L17.5528 10.7237C17.214 10.8931 17 11.2394 17 11.6181V16.3821C17 16.7608 17.214 17.1071 17.5528 17.2765L18.4809 17.7406C18.8019 17.901 19.1846 17.8773 19.4679 17.657C20.3113 17.0011 22 15.5006 22 14.0001C22 12.4996 20.3113 10.9991 19.4679 10.3432Z"
+              stroke="CurrentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <span class="text">Support Tickets</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="dashboard-sidebar__footer">
+    <a class="w-100 btn btn-outline--danger" href="#">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-log-out-icon lucide-log-out"
+      >
+        <path d="m16 17 5-5-5-5"></path>
+        <path d="M21 12H9"></path>
+        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+      </svg>
+      Logout
+    </a>
+  </div>
+</aside>
+
+  <div class="dashboard-content">
+    <div class="dashboard-header">
+  <div class="dashboard-header__left">
+    <button
+      class="btn btn--icon btn--xsm btn--dark d-lg-none"
+      type="button"
+      data-toggle="offcanvas-sidebar"
+      data-target="#dashboard-sidebar"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <h6 class="dashboard-title">Dashboard</h6>
+  </div>
+  <div class="dashboard-header__right">
+    <div class="dropdown dropdown--profile">
+      <button
+        class="dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <img src="assets/images/thumbs/6.png" alt="" />
+      </button>
+      <div class="dropdown-menu dropdown-menu-end">
+        <div class="dropdown-menu__header">
+          <div class="dropdown-user">
+            <img
+              class="dropdown-user__thumb"
+              src="assets/images/thumbs/6.png"
+              alt=""
+            />
+            <div class="dropdown-user__content">
+              <p class="dropdown-user__name">username</p>
+              <span class="dropdown-user__balance">$6,889.56 USD</span>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown-menu__body">
+          <a class="dropdown-item" href="profile.html">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12C13.6569 12 15 10.6569 15 9Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M17 17C17 14.2386 14.7614 12 12 12C9.23858 12 7 14.2386 7 17"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <span class="text">Profile Setting</span>
+          </a>
+          <a class="dropdown-item" href="change-password.html">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.26781 18.8447C4.49269 20.515 5.87613 21.8235 7.55966 21.9009C8.97627 21.966 10.4153 22 12 22C13.5847 22 15.0237 21.966 16.4403 21.9009C18.1239 21.8235 19.5073 20.515 19.7322 18.8447C19.879 17.7547 20 16.6376 20 15.5C20 14.3624 19.879 13.2453 19.7322 12.1553C19.5073 10.485 18.1239 9.17649 16.4403 9.09909C15.0237 9.03397 13.5847 9 12 9C10.4153 9 8.97627 9.03397 7.55966 9.09909C5.87613 9.17649 4.49269 10.485 4.26781 12.1553C4.12105 13.2453 4 14.3624 4 15.5C4 16.6376 4.12105 17.7547 4.26781 18.8447Z"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+              <path
+                d="M7.5 9V6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5V9"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M16 15.49V15.5"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M12 15.49V15.5"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M8 15.49V15.5"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <span class="text">Change Password</span>
+          </a>
+          <a class="dropdown-item" href="change-password.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-scan-qr-code-icon lucide-scan-qr-code"
+            >
+              <path d="M17 12v4a1 1 0 0 1-1 1h-4" />
+              <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+              <path d="M17 8V7" />
+              <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+              <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+              <path d="M7 17h.01" />
+              <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+              <rect x="7" y="7" width="5" height="5" rx="1" />
+            </svg>
+            <span class="text">2FA Security</span>
+          </a>
+          <a class="dropdown-item" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="injected-svg"
+              role="img"
+              color="currentColor"
+            >
+              <path
+                d="M2 9.5V6C2 4.89543 2.89543 4 4 4H20C21.1046 4 22 4.89543 22 6V9.5C20.6193 9.5 19.5 10.6193 19.5 12C19.5 13.3807 20.6193 14.5 22 14.5V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V14.5C3.38071 14.5 4.5 13.3807 4.5 12C4.5 10.6193 3.38071 9.5 2 9.5Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <span class="text">Support Tickets</span>
+          </a>
+          <a class="dropdown-item logout" href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 17.625C14.9264 19.4769 13.3831 21.0494 11.3156 20.9988C10.8346 20.987 10.2401 20.8194 9.05112 20.484C6.18961 19.6768 3.70555 18.3203 3.10956 15.2815C3 14.723 3 14.0944 3 12.8373V11.1627C3 9.90561 3 9.27705 3.10956 8.71846C3.70555 5.67965 6.18961 4.32316 9.05112 3.51603C10.2401 3.18064 10.8346 3.01295 11.3156 3.00119C13.3831 2.95061 14.9264 4.52307 15 6.37501"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M21 12H10M21 12C21 11.2998 19.0057 9.99153 18.5 9.5M21 12C21 12.7002 19.0057 14.0085 18.5 14.5"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span class="text">Logout</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="dashboard-body">
+      <div class="alert alert--warning" role="alert">
+        <div class="alert__icon">
+          <i class="las la-bell"></i>
+        </div>
+        <div class="alert__content">
+          <h6 class="alert__title">
+            Please Allow / Reset Browser Notification
+          </h6>
+          <p class="alert__desc">
+            If you want to get push notification then you have to allow
+            notification from your browser
+          </p>
+        </div>
+      </div>
+      <div class="row gy-4 mb-4">
+        <div class="col-xxl-3 col-sm-6">
+          <a href="#" class="dashboard-widget">
+            <div class="dashboard-widget__header">
+              <div class="dashboard-widget__icon">
+                <i class="las la-money-bill-wave"></i>
+              </div>
+              <span class="dashboard-widget__balance">Current Balance</span>
+              <div class="dashboard-widget__arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.667 16H21.3337"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M16 21.3333L21.3333 16L16 10.6667"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="dashboard-widget__content">
+              <h6 class="dashboard-widget__title">$6,889.56 USD</h6>
+            </div>
+
+            <div class="dashboard-widget__shape">
+              <i class="las la-money-bill-wave"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+          <a href="#" class="dashboard-widget">
+            <div class="dashboard-widget__header">
+              <div class="dashboard-widget__icon">
+                <i class="las la-wallet"></i>
+              </div>
+              <span class="dashboard-widget__balance"> Total Earning</span>
+              <div class="dashboard-widget__arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.667 16H21.3337"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M16 21.3333L21.3333 16L16 10.6667"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="dashboard-widget__content">
+              <h6 class="dashboard-widget__title">$6,889.56 USD</h6>
+            </div>
+            <div class="dashboard-widget__shape">
+              <i class="las la-hand-holding-usd"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+          <a href="#" class="dashboard-widget">
+            <div class="dashboard-widget__header">
+              <div class="dashboard-widget__icon">
+                <i class="las la-hand-holding-usd"></i>
+              </div>
+              <span class="dashboard-widget__balance">Total Withdraw</span>
+              <div class="dashboard-widget__arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.667 16H21.3337"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M16 21.3333L21.3333 16L16 10.6667"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="dashboard-widget__content">
+              <h6 class="dashboard-widget__title">$6,889.56 USD</h6>
+            </div>
+            <div class="dashboard-widget__shape">
+              <i class="las la-hand-holding-usd"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+          <a href="#" class="dashboard-widget">
+            <div class="dashboard-widget__header">
+              <div class="dashboard-widget__icon">
+                <i class="las la-money-check-alt"></i>
+              </div>
+              <span class="dashboard-widget__balance">Pending Withdraw</span>
+              <div class="dashboard-widget__arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.667 16H21.3337"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M16 21.3333L21.3333 16L16 10.6667"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="dashboard-widget__content">
+              <h6 class="dashboard-widget__title">$6,889.56 USD</h6>
+            </div>
+            <div class="dashboard-widget__shape">
+              <i class="las la-money-check-alt"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row gy-4 mb-4">
+        <div class="col-xxl-3 col-sm-6">
+          <a href="#" class="dashboard-widget">
+            <div class="dashboard-widget__header">
+              <div class="dashboard-widget__icon">
+                <i class="las la-clock"></i>
+              </div>
+              <span class="dashboard-widget__balance"> Today Appointment</span>
+              <div class="dashboard-widget__arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.667 16H21.3337"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M16 21.3333L21.3333 16L16 10.6667"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="dashboard-widget__content">
+              <h6 class="dashboard-widget__title">240</h6>
+            </div>
+
+            <div class="dashboard-widget__shape">
+              <i class="las la-clock"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+          <a href="#" class="dashboard-widget">
+            <div class="dashboard-widget__header">
+              <div class="dashboard-widget__icon">
+                <i class="las la-clipboard-list"></i>
+              </div>
+              <span class="dashboard-widget__balance"> New Appointment</span>
+              <div class="dashboard-widget__arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.667 16H21.3337"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M16 21.3333L21.3333 16L16 10.6667"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="dashboard-widget__content">
+              <h6 class="dashboard-widget__title">45</h6>
+            </div>
+            <div class="dashboard-widget__shape">
+              <i class="las la-clipboard-list"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+          <a href="#" class="dashboard-widget">
+            <div class="dashboard-widget__header">
+              <div class="dashboard-widget__icon">
+                <i class="las la-calendar-check"></i>
+              </div>
+              <span class="dashboard-widget__balance"
+                >Successful Appointment</span
+              >
+              <div class="dashboard-widget__arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.667 16H21.3337"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M16 21.3333L21.3333 16L16 10.6667"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="dashboard-widget__content">
+              <h6 class="dashboard-widget__title">783</h6>
+            </div>
+            <div class="dashboard-widget__shape">
+              <i class="las la-calendar-check"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+          <a href="#" class="dashboard-widget">
+            <div class="dashboard-widget__header">
+              <div class="dashboard-widget__icon">
+                <i class="las la-user"></i>
+              </div>
+              <span class="dashboard-widget__balance">Total Client</span>
+              <div class="dashboard-widget__arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.667 16H21.3337"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M16 21.3333L21.3333 16L16 10.6667"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="dashboard-widget__content">
+              <h6 class="dashboard-widget__title">$6,889.56 USD</h6>
+            </div>
+            <div class="dashboard-widget__shape">
+              <i class="las la-user"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="data-table">
+        <div class="data-table__header">
+          <h6 class="data-table__title">My Case List</h6>
+        </div>
+        <div class="data-table__body">
+          <div class="table--responsive">
+            <table class="table table--custom table--responsive-md">
+              <thead>
+                <tr>
+                  <th>Case ID</th>
+                  <th>Client Name</th>
+                  <th>Case Type</th>
+                  <th>Hearing Date</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Case ID">#LC-1025</td>
+                  <td data-label="Client Name">Rahim Uddin</td>
+                  <td data-label="Case Type">Criminal Case</td>
+                  <td data-label="Hearing Date">15 March 2026</td>
+                  <td data-label="Status">
+                    <span class="badge badge--warning">Ongoing</span>
+                  </td>
+                  <td data-label="Action">
+                    <a href="#" class="btn btn--icon btn--sm btn--base-two">
+                      <i class="las la-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-label="Case ID">#LC-1026</td>
+                  <td data-label="Client Name">Nusrat Jahan</td>
+                  <td data-label="Case Type">Family Law</td>
+                  <td data-label="Hearing Date">22 March 2026</td>
+                  <td data-label="Status">
+                    <span class="badge badge--success">Completed</span>
+                  </td>
+                  <td data-label="Action">
+                    <a href="#" class="btn btn--icon btn--sm btn--base-two">
+                      <i class="las la-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-label="Case ID">#LC-1027</td>
+                  <td data-label="Client Name">Arif Hossain</td>
+                  <td data-label="Case Type">Property Dispute</td>
+                  <td data-label="Hearing Date">05 April 2026</td>
+                  <td data-label="Status">
+                    <span class="badge badge--danger">Pending</span>
+                  </td>
+                  <td data-label="Action">
+                    <a href="#" class="btn btn--icon btn--sm btn--base-two">
+                      <i class="las la-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ==================== Dashboard End ==================== -->
+
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- Select js -->
+<script src="assets/js/select2.min.js"></script>
+<!-- scrollreveal-->
+<script src="assets/js/scrollreveal.min.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
+

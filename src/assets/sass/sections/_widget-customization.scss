@@ -1,0 +1,181 @@
+.widget-customization {
+  background-color: hsl(var(--white));
+
+  &__title {
+    font-size: clamp(2rem, 1.55rem + 2.2vw, 3.1rem);
+    line-height: 1.08;
+    margin-bottom: 16px;
+  }
+
+  &__desc {
+    font-size: 18px;
+    color: hsl(var(--gray-d-100));
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0 0 30px;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+
+    li {
+      display: flex;
+      gap: 10px;
+      align-items: start;
+      color: hsl(var(--gray-d-200));
+      font-weight: 500;
+
+      i {
+        color: hsl(var(--base-two));
+        margin-top: 4px;
+      }
+    }
+  }
+
+  &__lab {
+    background-color: hsl(var(--lab-bg, var(--base)));
+    border-radius: 22px;
+    padding: 20px;
+    min-height: 420px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.35s ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 1px solid hsl(var(--white) / 0.14);
+      right: -90px;
+      top: -90px;
+    }
+  }
+
+  &__screen {
+    border-radius: 16px;
+    border: 1px solid hsl(var(--white) / 0.2);
+    background-color: hsl(var(--white));
+    padding: 18px;
+    max-width: 320px;
+    box-shadow: 0 16px 30px hsl(var(--black) / 0.2);
+    transform: rotate(var(--widget-tilt, 0deg));
+    animation: widgetFloat 6s ease-in-out infinite;
+
+    h6 {
+      margin-bottom: 6px;
+      color: hsl(var(--base));
+      font-size: 20px;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: hsl(var(--gray-d-100));
+      font-size: 14px;
+    }
+
+    &--one {
+      position: absolute;
+      top: 24px;
+      left: 18px;
+      --widget-tilt: -5deg;
+      animation-duration: 6.5s;
+    }
+
+    &--two {
+      position: absolute;
+      top: 120px;
+      right: 16px;
+      --widget-tilt: 4deg;
+      animation-duration: 7.5s;
+    }
+
+    &--three {
+      position: absolute;
+      bottom: 24px;
+      left: 84px;
+      --widget-tilt: -2deg;
+      animation-duration: 5.8s;
+    }
+  }
+
+  &__swatches {
+    position: absolute;
+    right: 16px;
+    bottom: 18px;
+    display: inline-flex;
+    gap: 8px;
+
+    button {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2px solid hsl(var(--white) / 0.42);
+      background-color: hsl(var(--swatch));
+      padding: 0;
+      cursor: pointer;
+      outline: none;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+
+      &.is-active {
+        transform: scale(1.08);
+        border-color: hsl(var(--white));
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .widget-customization {
+    &__lab {
+      min-height: 520px;
+    }
+
+    &__screen {
+      max-width: 86%;
+
+      &--three {
+        left: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .widget-customization {
+    &__lab {
+      min-height: 362px;
+      padding: 12px;
+    }
+
+    &__screen {
+      max-width: 100%;
+      transform: none !important;
+      position: static;
+      animation: none;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__swatches {
+      position: static;
+      margin-top: 10px;
+    }
+  }
+}
+
+@keyframes widgetFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--widget-tilt, 0deg));
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(var(--widget-tilt, 0deg));
+  }
+}

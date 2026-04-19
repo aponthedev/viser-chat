@@ -1,0 +1,123 @@
+.integrations {
+  background-color: hsl(var(--gray-l-500));
+
+  .section-heading {
+    max-width: 760px;
+    margin-inline: auto;
+    margin-bottom: 44px;
+  }
+
+  &__cloud {
+    display: grid;
+    gap: 16px;
+    overflow: hidden;
+    padding-block: 6px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 40px;
+      pointer-events: none;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding-block: 6px;
+  }
+
+  &__track {
+    display: inline-flex;
+    gap: 14px;
+    align-items: center;
+    animation: integrations-marquee 22s linear infinite;
+    will-change: transform;
+    white-space: nowrap;
+  }
+
+  &__row--rtl .integrations__track {
+    animation-direction: reverse;
+  }
+
+  &__row:hover .integrations__track {
+    animation-play-state: paused;
+  }
+
+  article {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid hsl(var(--gray-l-300));
+    border-radius: 999px;
+    padding: 12px 18px;
+    background-color: hsl(var(--white));
+    transition: 0.3s ease-in-out;
+    min-width: 160px;
+    justify-content: center;
+    flex: 0 0 auto;
+
+    i {
+      font-size: 18px;
+      color: hsl(var(--base));
+    }
+
+    span {
+      color: hsl(var(--gray-d-300));
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    &:hover {
+      border-color: hsl(var(--gray-l-300));
+      transform: none;
+      box-shadow: none;
+    }
+  }
+
+  &__footer {
+    margin-top: 34px;
+  }
+}
+
+@media (min-width: 992px) {
+  .integrations {
+    &__row {
+      article:nth-child(5n) {
+        min-width: 180px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+
+  .integrations__cloud{
+    gap: 4px !important;
+  }
+ .integrations .section-heading{
+  margin-bottom: 24px;
+ }
+  .integrations {
+    &__track {
+      animation-duration: 28s;
+    }
+  }
+}
+
+@keyframes integrations-marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

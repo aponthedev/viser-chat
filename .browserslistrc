@@ -1,0 +1,23 @@
+# Browsers that we support
+
+# Specify usage percentage for each browser version
+defaults
+not dead
+
+# Modern browsers
+> 1%
+last 2 versions
+
+# Specific browser versions
+Firefox >= 78
+Chrome >= 85
+Edge >= 85
+iOS >= 14
+Safari >= 14
+
+# Internet Explorer support
+ie >= 11
+# Custom configuration for specific versions
+
+# Firefox ESR (Extended Support Release)
+firefox ESR

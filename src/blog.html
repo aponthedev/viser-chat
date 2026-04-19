@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>ViserChat - AI Live Chat SaaS Template</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <!-- Slick -->
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <!-- line awesome -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <!-- Odometer -->
+  <link rel="stylesheet" href="assets/css/odometer.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="assets/css/select2.min.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+
+  <!--==================== Body Overlay Start ====================-->
+  <div class="body-overlay"></div>
+  <!--==================== Body Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="sidebar-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!--==================== Scroll To Top Start ====================-->
+  <button class="scroll-top" type="button">
+    <svg class="scroll-top-progress" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98">
+      </path>
+    </svg>
+  </button>
+  <!--==================== Scroll to Top End ====================-->
+ <!-- ==================== Header Start Here ==================== -->
+<header class="header" id="header">
+  <div class="container">
+    <nav class="header__frame" aria-label="Main navigation">
+      <a class="header__logo" href="index.html">Viser<span>Chat</span></a>
+
+      <div class="header__desktop d-none d-lg-flex">
+        <ul class="header-menu">
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="index.html">Home</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="about.html">About</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="blog.html">Blog</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__actions d-none d-lg-flex">
+        <a href="login.html" class="header__login">Login</a>
+        <a href="registration.html" class="btn btn--base-two header__trial-btn"
+          >Start Free Trial</a
+        >
+      </div>
+
+      <button
+        class="header__toggle d-lg-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#headerOffcanvas"
+        aria-controls="headerOffcanvas"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+
+  <div
+    class="offcanvas offcanvas-end header-offcanvas"
+    tabindex="-1"
+    id="headerOffcanvas"
+    aria-labelledby="headerOffcanvasLabel"
+  >
+    <div class="offcanvas-header">
+      <h5
+        class="offcanvas-title header-offcanvas__title"
+        id="headerOffcanvasLabel"
+      >
+        Viser<span>Chat</span>
+      </h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="header-offcanvas__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="header-offcanvas__actions">
+        <a href="login.html" class="btn btn-outline--base">Login</a>
+        <a href="registration.html" class="btn btn--base-two"
+          >Start Free Trial</a
+        >
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+
+<main class="page-wrapper">
+  <section class="page-banner">
+    <div class="container position-relative">
+        <span class="page-banner__shape page-banner__shape--ring" aria-hidden="true"></span>
+        <span class="page-banner__shape page-banner__shape--dot" aria-hidden="true"></span>
+
+        <div class="page-banner__content text-center">
+            <h1>Our Blog</h1>
+            <p>Practical guides, playbooks, and ideas to improve support and conversion performance.</p>
+            <ul class="page-banner__breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><span>Blog</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+  <section class="blog-grid py-120">
+  <div class="container">
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-4 col-md-6">
+        <article class="blog-card">
+          <div class="blog-card__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&h=600&fit=crop"
+              alt="Live chat metrics dashboard"
+            />
+            <span class="blog-card__badge">Customer Support</span>
+          </div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">
+              <span><i class="fas fa-calendar"></i>Jan 12, 2026</span
+              ><span><i class="fas fa-clock"></i>8 min read</span>
+            </p>
+            <h5>
+              <a href="blog-details.html"
+                >10 Live Chat Metrics Every Support Team Should Track</a
+              >
+            </h5>
+            <p>
+              Benchmarks and habits that help teams improve speed, quality, and
+              conversion outcomes.
+            </p>
+            <a href="blog-details.html" class="section-link"
+              >Read More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="blog-card">
+          <div class="blog-card__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=900&h=600&fit=crop"
+              alt="AI chatbot workflow"
+            />
+            <span class="blog-card__badge">AI &amp; Automation</span>
+          </div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">
+              <span><i class="fas fa-calendar"></i>Jan 24, 2026</span
+              ><span><i class="fas fa-clock"></i>9 min read</span>
+            </p>
+            <h5>
+              <a href="blog-details.html"
+                >The Complete Guide to AI Chatbot Training</a
+              >
+            </h5>
+            <p>
+              How to prepare source content, prompts, and escalation rules that
+              keep AI accurate.
+            </p>
+            <a href="blog-details.html" class="section-link"
+              >Read More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="blog-card">
+          <div class="blog-card__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&h=600&fit=crop"
+              alt="Team planning proactive support"
+            />
+            <span class="blog-card__badge">Live Chat Tips</span>
+          </div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">
+              <span><i class="fas fa-calendar"></i>Feb 02, 2026</span
+              ><span><i class="fas fa-clock"></i>6 min read</span>
+            </p>
+            <h5>
+              <a href="blog-details.html"
+                >Why Proactive Chat Beats Reactive Support</a
+              >
+            </h5>
+            <p>
+              A practical framework for triggering outreach before visitors
+              bounce from key pages.
+            </p>
+            <a href="blog-details.html" class="section-link"
+              >Read More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="blog-card">
+          <div class="blog-card__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=900&h=600&fit=crop"
+              alt="Support team replying faster"
+            />
+            <span class="blog-card__badge">Customer Support</span>
+          </div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">
+              <span><i class="fas fa-calendar"></i>Feb 14, 2026</span
+              ><span><i class="fas fa-clock"></i>7 min read</span>
+            </p>
+            <h5>
+              <a href="blog-details.html"
+                >How to Reduce First Response Time by 50%</a
+              >
+            </h5>
+            <p>
+              Queue strategy, triage rules, and team workflows that shorten
+              response windows fast.
+            </p>
+            <a href="blog-details.html" class="section-link"
+              >Read More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="blog-card">
+          <div class="blog-card__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=900&h=600&fit=crop"
+              alt="Knowledge base management"
+            />
+            <span class="blog-card__badge">AI &amp; Automation</span>
+          </div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">
+              <span><i class="fas fa-calendar"></i>Feb 25, 2026</span
+              ><span><i class="fas fa-clock"></i>8 min read</span>
+            </p>
+            <h5>
+              <a href="blog-details.html"
+                >Building a Knowledge Base Your AI Bot Will Love</a
+              >
+            </h5>
+            <p>
+              Structure, formatting, and maintenance tactics that improve answer
+              quality over time.
+            </p>
+            <a href="blog-details.html" class="section-link"
+              >Read More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="blog-card">
+          <div class="blog-card__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=600&fit=crop"
+              alt="Customer monitoring analytics"
+            />
+            <span class="blog-card__badge">Business Growth</span>
+          </div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">
+              <span><i class="fas fa-calendar"></i>Mar 05, 2026</span
+              ><span><i class="fas fa-clock"></i>6 min read</span>
+            </p>
+            <h5>
+              <a href="blog-details.html"
+                >Customer Monitoring: What It Is and Why It Matters</a
+              >
+            </h5>
+            <p>
+              How visitor intent signals help teams prioritize outreach and
+              close better leads.
+            </p>
+            <a href="blog-details.html" class="section-link"
+              >Read More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="blog-card">
+          <div class="blog-card__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&h=600&fit=crop"
+              alt="AI support trends"
+            />
+            <span class="blog-card__badge">AI &amp; Automation</span>
+          </div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">
+              <span><i class="fas fa-calendar"></i>Mar 18, 2026</span
+              ><span><i class="fas fa-clock"></i>9 min read</span>
+            </p>
+            <h5>
+              <a href="blog-details.html"
+                >How AI is Reshaping Customer Support in 2025</a
+              >
+            </h5>
+            <p>
+              What leading teams are automating now, and where human specialists
+              still matter most.
+            </p>
+            <a href="blog-details.html" class="section-link"
+              >Read More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="blog-card">
+          <div class="blog-card__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&h=600&fit=crop"
+              alt="ROI analysis with live chat"
+            />
+            <span class="blog-card__badge">Business Growth</span>
+          </div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">
+              <span><i class="fas fa-calendar"></i>Mar 27, 2026</span
+              ><span><i class="fas fa-clock"></i>7 min read</span>
+            </p>
+            <h5>
+              <a href="blog-details.html"
+                >The ROI of Live Chat: Numbers That Matter</a
+              >
+            </h5>
+            <p>
+              A measurement model for linking faster responses to revenue and
+              retention impact.
+            </p>
+            <a href="blog-details.html" class="section-link"
+              >Read More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="blog-card">
+          <div class="blog-card__thumb">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&h=600&fit=crop"
+              alt="Proactive trigger setup"
+            />
+            <span class="blog-card__badge">Product Updates</span>
+          </div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">
+              <span><i class="fas fa-calendar"></i>Apr 02, 2026</span
+              ><span><i class="fas fa-clock"></i>8 min read</span>
+            </p>
+            <h5>
+              <a href="blog-details.html"
+                >Setting Up Proactive Triggers That Actually Convert</a
+              >
+            </h5>
+            <p>
+              Trigger logic examples for pricing, checkout, and feature pages
+              that drive action.
+            </p>
+            <a href="blog-details.html" class="section-link"
+              >Read More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <nav class="blog-grid__pagination" aria-label="Blog pagination">
+      <ul class="pagination justify-content-center">
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item disabled"><span class="page-link">...</span></li>
+        <li class="page-item"><a class="page-link" href="#">8</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next page"
+            ><i class="fas fa-arrow-right"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+  <section class="newsletter py-120">
+  <div class="container">
+    <div class="newsletter__shell">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7">
+          <div class="newsletter__content">
+            <i class="fas fa-paper-plane"></i>
+            <h2>
+              Weekly Tactics for
+              <span class="title-highlight"
+                >Faster Support and More Revenue</span
+              >
+            </h2>
+            <p>
+              Join 10,000+ operators getting practical customer conversation
+              playbooks every week.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <form class="newsletter__form" action="#">
+            <input
+              type="email"
+              class="form-control form--control"
+              placeholder="Enter your work email"
+              required
+            />
+            <button type="submit" class="btn btn--base-two">Subscribe</button>
+          </form>
+          <span class="newsletter__note"
+            ><i class="fas fa-lock"></i>No spam, unsubscribe anytime.</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== Footer Start Here ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__cta">
+        <div class="footer__cta-content">
+          <span class="footer__eyebrow"
+            ><i class="fas fa-gem"></i> Premium Conversation Stack</span
+          >
+          <h3>
+            Transform every visitor message into trusted revenue momentum.
+          </h3>
+          <p>
+            Combine AI automation, context-rich live support, and performance
+            analytics in one intentionally crafted workspace.
+          </p>
+        </div>
+        <div class="footer__cta-actions">
+          <a href="registration.html" class="btn btn--base-two btn--lg"
+            >Start Free Trial</a
+          >
+          <a href="#" class="btn footer__ghost-btn btn--lg">Book a Demo</a>
+        </div>
+      </div>
+
+      <div class="row gy-4 footer__main">
+        <div class="col-lg-5 col-md-12">
+          <div class="footer__brand">
+            <a href="index.html" class="footer__logo">Viser<span>Chat</span></a>
+            <p class="footer__desc">
+              ViserChat helps teams turn customer conversations into faster
+              resolutions, stronger trust, and measurable growth across every
+              channel.
+            </p>
+            <ul class="footer__highlights">
+              <li><strong>3,000+</strong><span>Teams Active</span></li>
+              <li><strong>15M+</strong><span>Chats Processed</span></li>
+              <li><strong>99.99%</strong><span>Platform Uptime</span></li>
+            </ul>
+            <div class="footer__social-wrap">
+              <ul class="footer__social-list">
+                <li>
+                  <a href="https://www.facebook.com" aria-label="Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com" aria-label="X"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com" aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com" aria-label="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com" aria-label="YouTube"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-sm-center"
+        >
+          <div class="footer__widget">
+            <h5 class="footer__widget-title">Platform</h5>
+            <ul class="footer__links">
+              <li><a href="#">Live Chat</a></li>
+              <li><a href="#">AI Assistant</a></li>
+              <li><a href="#">Team Inbox</a></li>
+              <li><a href="#">Visitor Analytics</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-sm-center"
+        >
+          <div class="footer__widget">
+            <h5 class="footer__widget-title">Resources</h5>
+            <ul class="footer__links">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">API Reference</a></li>
+              <li><a href="#">System Guides</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Release Notes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-sm-center"
+        >
+          <div class="footer__widget">
+            <h5 class="footer__widget-title">Company</h5>
+            <ul class="footer__links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#">Customer Stories</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Status Page</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        2026 ViserChat. Crafted for modern support teams.
+      </p>
+      <ul class="footer__legal">
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+      <p class="footer__status"><span></span> All systems operational</p>
+    </div>
+  </div>
+</footer>
+<!-- ==================== Footer End Here ==================== -->
+ <!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- Select js -->
+<script src="assets/js/select2.min.js"></script>
+<!-- scrollreveal-->
+<script src="assets/js/scrollreveal.min.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
+

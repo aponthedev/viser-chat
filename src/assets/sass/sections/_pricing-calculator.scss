@@ -1,0 +1,118 @@
+.pricing-calculator {
+  background-color: hsl(var(--gray-l-500));
+
+  &__title {
+    font-size: clamp(2rem, 1.6rem + 1.9vw, 3rem);
+    line-height: 1.1;
+    margin-bottom: 18px;
+    max-width: 17ch;
+  }
+
+  &__sliders {
+    display: grid;
+    gap: 16px;
+
+    article {
+      border-radius: 14px;
+      border: 1px solid hsl(var(--gray-l-300));
+      background-color: hsl(var(--white));
+      padding: 14px;
+    }
+
+    input[type='range'] {
+      width: 100%;
+      accent-color: hsl(var(--base-two));
+    }
+  }
+
+  &__slider-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+
+    h6 {
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+
+    span {
+      font-weight: 700;
+      color: hsl(var(--base));
+    }
+  }
+
+  &__result-card {
+    border-radius: 16px;
+    border: 1px solid hsl(var(--gray-l-300));
+    background-color: hsl(var(--white));
+    box-shadow: 0 14px 28px hsl(var(--black) / 0.08);
+    padding: 30px;
+
+    h5 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    > strong {
+      display: block;
+      font-size: clamp(2.2rem, 1.8rem + 2vw, 3.2rem);
+      color: hsl(var(--base-two));
+      margin-bottom: 14px;
+      line-height: 1;
+    }
+
+    ul {
+      margin: 0 0 20px;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        border-radius: 10px;
+        border: 1px solid hsl(var(--gray-l-300));
+        background-color: hsl(var(--gray-l-500));
+        padding: 10px 12px;
+        color: hsl(var(--gray-d-200));
+
+        b {
+          color: hsl(var(--base));
+          font-size: 15px;
+        }
+      }
+    }
+
+    > p {
+      margin: 12px 0 0;
+      font-size: 13px;
+      color: hsl(var(--gray));
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .pricing-calculator {
+    &__result-card {
+      padding: 20px;
+
+      ul li {
+        display: grid;
+      }
+    }
+  }
+}
+
+@media (max-width: 424px) {
+  .pricing-calculator__result-card > strong{
+    font-size: 24px;
+  }
+
+  .pricing-calculator__result-card h5{
+    font-size: 20px;
+  }
+}

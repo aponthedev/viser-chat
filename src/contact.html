@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>ViserChat - AI Live Chat SaaS Template</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <!-- Slick -->
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <!-- line awesome -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <!-- Odometer -->
+  <link rel="stylesheet" href="assets/css/odometer.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="assets/css/select2.min.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+
+  <!--==================== Body Overlay Start ====================-->
+  <div class="body-overlay"></div>
+  <!--==================== Body Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="sidebar-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!--==================== Scroll To Top Start ====================-->
+  <button class="scroll-top" type="button">
+    <svg class="scroll-top-progress" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98">
+      </path>
+    </svg>
+  </button>
+  <!--==================== Scroll to Top End ====================-->
+
+<!-- ==================== Header Start Here ==================== -->
+<header class="header" id="header">
+  <div class="container">
+    <nav class="header__frame" aria-label="Main navigation">
+      <a class="header__logo" href="index.html">Viser<span>Chat</span></a>
+
+      <div class="header__desktop d-none d-lg-flex">
+        <ul class="header-menu">
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="index.html">Home</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="about.html">About</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="blog.html">Blog</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__actions d-none d-lg-flex">
+        <a href="login.html" class="header__login">Login</a>
+        <a href="registration.html" class="btn btn--base-two header__trial-btn"
+          >Start Free Trial</a
+        >
+      </div>
+
+      <button
+        class="header__toggle d-lg-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#headerOffcanvas"
+        aria-controls="headerOffcanvas"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+
+  <div
+    class="offcanvas offcanvas-end header-offcanvas"
+    tabindex="-1"
+    id="headerOffcanvas"
+    aria-labelledby="headerOffcanvasLabel"
+  >
+    <div class="offcanvas-header">
+      <h5
+        class="offcanvas-title header-offcanvas__title"
+        id="headerOffcanvasLabel"
+      >
+        Viser<span>Chat</span>
+      </h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="header-offcanvas__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="header-offcanvas__actions">
+        <a href="login.html" class="btn btn-outline--base">Login</a>
+        <a href="registration.html" class="btn btn--base-two"
+          >Start Free Trial</a
+        >
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+
+<main class="page-wrapper">
+    <section class="page-banner">
+    <div class="container position-relative">
+        <span class="page-banner__shape page-banner__shape--ring" aria-hidden="true"></span>
+        <span class="page-banner__shape page-banner__shape--dot" aria-hidden="true"></span>
+
+        <div class="page-banner__content text-center">
+            <h1>Get in Touch</h1>
+            <p>Have a question about ViserChat, pricing, or setup. Our team is ready to help.</p>
+            <ul class="page-banner__breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><span>Contact</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+    <section class="contact-info py-120">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <article class="contact-info__card text-center">
+                    <span class="contact-info__icon"><i class="fas fa-phone"></i></span>
+                    <h5>Call Us</h5>
+                    <a href="tel:+15559876543">+1 (555) 987-6543</a>
+                    <p>Mon to Fri, 9am to 6pm EST</p>
+                </article>
+            </div>
+
+            <div class="col-lg-4">
+                <article class="contact-info__card text-center">
+                    <span class="contact-info__icon"><i class="fas fa-envelope"></i></span>
+                    <h5>Email Us</h5>
+                    <a href="mailto:support@viserchat.com">support@viserchat.com</a>
+                    <p>We typically reply within 2 hours</p>
+                </article>
+            </div>
+
+            <div class="col-lg-4">
+                <article class="contact-info__card text-center">
+                    <span class="contact-info__icon"><i class="fas fa-map-marker-alt"></i></span>
+                    <h5>Visit Us</h5>
+                    <span class="contact-info__address">350 Fifth Avenue, Suite 4200, New York, NY 10118</span>
+                    <p>By appointment only</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="contact-form-section py-120">
+    <div class="container">
+        <div class="row gy-5">
+            <div class="col-lg-7">
+                <div class="contact-form-section__card">
+                    <h3>Send Us a Message</h3>
+                    <p>Fill out the form and our team will get back to you within 24 hours.</p>
+
+                    <form action="#">
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <label class="form--label required">Full Name</label>
+                                <input type="text" class="form-control form--control" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form--label required">Email Address</label>
+                                <input type="email" class="form-control form--control" placeholder="Enter your email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form--label">Phone Number</label>
+                                <input type="tel" class="form-control form--control" placeholder="+1 (555) 000-0000">
+                            </div>
+                            <div class="col-md-6 contact-form-section__subject-col">
+                                <label class="form--label required">Subject</label>
+                                <select class="form-select form--select select2 contact-form-section__subject" data-placeholder="Select a subject" required>
+                                    <option value=""></option>
+                                    <option>General Inquiry</option>
+                                    <option>Technical Support</option>
+                                    <option>Sales Question</option>
+                                    <option>Partnership</option>
+                                    <option>Bug Report</option>
+                                    <option>Feature Request</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form--label required">Message</label>
+                                <textarea class="form-control form--control" rows="5" placeholder="Tell us how we can help" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check form--check form--check-base-two">
+                                    <input class="form-check-input" type="checkbox" id="contactPolicy" required>
+                                    <label class="form-check-label" for="contactPolicy">I agree to the <a href="#">Privacy Policy</a></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn--base-two"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="contact-form-section__side">
+                    <div class="contact-form-section__map">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Manhattan%2C%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            title="ViserChat office location"
+                            loading="lazy"
+                            allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="contact-form-section__hours">
+                        <h6>Business Hours</h6>
+                        <ul>
+                            <li><span>Monday to Friday</span><b>9:00 AM to 6:00 PM EST</b></li>
+                            <li><span>Saturday</span><b>10:00 AM to 2:00 PM EST</b></li>
+                            <li><span>Sunday</span><b>Closed</b></li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-form-section__chat-note">
+                        <i class="fas fa-comments"></i>
+                        <p>Prefer live chat? Click the chat widget in the bottom right corner.</p>
+                    </div>
+
+                    <ul class="contact-form-section__social">
+                        <li><a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.twitter.com" aria-label="X"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="faq py-120">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-xl-5 col-lg-6">
+        <div class="faq__intro">
+          <div class="faq__intro__wrap">
+            <div>
+              <span class="section-eyebrow">FAQ</span>
+              <h2>
+                Questions Teams Ask Before
+                <span class="title-highlight">Scaling with ViserChat</span>
+              </h2>
+              <p>
+                Everything you need to evaluate setup time, AI behavior, support
+                capacity, and scaling options.
+              </p>
+            </div>
+          </div>
+          <div>
+            <a href="contact.html" class="btn btn-outline--base"
+              >Contact Support</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-7 col-lg-6">
+        <div class="accordion custom--accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqOne"
+                aria-expanded="true"
+                aria-controls="faqOne"
+              >
+                What is ViserChat?
+              </button>
+            </h2>
+            <div
+              id="faqOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="faqHeadingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  ViserChat is an AI-powered live chat and visitor tracking
+                  platform that helps teams improve support and conversion
+                  performance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqTwo"
+                aria-expanded="false"
+                aria-controls="faqTwo"
+              >
+                How does the AI chatbot work?
+              </button>
+            </h2>
+            <div
+              id="faqTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  AI learns from your docs and site content, resolves common
+                  requests, and routes high-value conversations to the right
+                  agent.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqThree"
+                aria-expanded="false"
+                aria-controls="faqThree"
+              >
+                How long does setup take?
+              </button>
+            </h2>
+            <div
+              id="faqThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  Most teams launch in under five minutes by adding one script
+                  and configuring routing rules.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqFour"
+                aria-expanded="false"
+                aria-controls="faqFour"
+              >
+                Can I try ViserChat for free?
+              </button>
+            </h2>
+            <div
+              id="faqFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  Yes. Every plan starts with a 14-day free trial and does not
+                  require a credit card.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqFive"
+                aria-expanded="false"
+                aria-controls="faqFive"
+              >
+                Does ViserChat work on mobile?
+              </button>
+            </h2>
+            <div
+              id="faqFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingFive"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  Yes. The chat widget is fully responsive and agents can manage
+                  conversations through mobile-friendly workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqSix"
+                aria-expanded="false"
+                aria-controls="faqSix"
+              >
+                How many agents can I add?
+              </button>
+            </h2>
+            <div
+              id="faqSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingSix"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  Agent seats depend on plan tier, with unlimited seats
+                  available on Enterprise.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingSeven">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqSeven"
+                aria-expanded="false"
+                aria-controls="faqSeven"
+              >
+                Can I use ViserChat on multiple websites?
+              </button>
+            </h2>
+            <div
+              id="faqSeven"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingSeven"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p class="accordion-text">
+                  Yes. Multi-site support is available on Pro and Enterprise
+                  plans.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="cta-banner py-120">
+  <div class="container">
+    <div class="cta-banner__shell">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-8">
+          <h2>Ready to Turn Traffic into Pipeline Conversations?</h2>
+          <p>
+            Join 3,000+ teams using ViserChat to improve support speed, capture
+            better leads, and close faster.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <div class="cta-banner__actions">
+            <a href="registration.html" class="btn btn--base"
+              >Start Free Trial</a
+            >
+            <a href="#" class="btn cta-banner__outline-btn">Book a Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== Footer Start Here ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__cta">
+        <div class="footer__cta-content">
+          <span class="footer__eyebrow"
+            ><i class="fas fa-gem"></i> Premium Conversation Stack</span
+          >
+          <h3>
+            Transform every visitor message into trusted revenue momentum.
+          </h3>
+          <p>
+            Combine AI automation, context-rich live support, and performance
+            analytics in one intentionally crafted workspace.
+          </p>
+        </div>
+        <div class="footer__cta-actions">
+          <a href="registration.html" class="btn btn--base-two btn--lg"
+            >Start Free Trial</a
+          >
+          <a href="#" class="btn footer__ghost-btn btn--lg">Book a Demo</a>
+        </div>
+      </div>
+
+      <div class="row gy-4 footer__main">
+        <div class="col-lg-5 col-md-12">
+          <div class="footer__brand">
+            <a href="index.html" class="footer__logo">Viser<span>Chat</span></a>
+            <p class="footer__desc">
+              ViserChat helps teams turn customer conversations into faster
+              resolutions, stronger trust, and measurable growth across every
+              channel.
+            </p>
+            <ul class="footer__highlights">
+              <li><strong>3,000+</strong><span>Teams Active</span></li>
+              <li><strong>15M+</strong><span>Chats Processed</span></li>
+              <li><strong>99.99%</strong><span>Platform Uptime</span></li>
+            </ul>
+            <div class="footer__social-wrap">
+              <ul class="footer__social-list">
+                <li>
+                  <a href="https://www.facebook.com" aria-label="Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com" aria-label="X"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com" aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com" aria-label="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com" aria-label="YouTube"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-sm-center"
+        >
+          <div class="footer__widget">
+            <h5 class="footer__widget-title">Platform</h5>
+            <ul class="footer__links">
+              <li><a href="#">Live Chat</a></li>
+              <li><a href="#">AI Assistant</a></li>
+              <li><a href="#">Team Inbox</a></li>
+              <li><a href="#">Visitor Analytics</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-sm-center"
+        >
+          <div class="footer__widget">
+            <h5 class="footer__widget-title">Resources</h5>
+            <ul class="footer__links">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">API Reference</a></li>
+              <li><a href="#">System Guides</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Release Notes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-sm-center"
+        >
+          <div class="footer__widget">
+            <h5 class="footer__widget-title">Company</h5>
+            <ul class="footer__links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#">Customer Stories</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Status Page</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        2026 ViserChat. Crafted for modern support teams.
+      </p>
+      <ul class="footer__legal">
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+      <p class="footer__status"><span></span> All systems operational</p>
+    </div>
+  </div>
+</footer>
+<!-- ==================== Footer End Here ==================== -->
+
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- Select js -->
+<script src="assets/js/select2.min.js"></script>
+<!-- scrollreveal-->
+<script src="assets/js/scrollreveal.min.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
+

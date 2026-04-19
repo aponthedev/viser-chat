@@ -1,0 +1,139 @@
+/* ========================= Alert CSS Start ======================= */
+.alert {
+  $alert: &;
+  --color: transparent;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border: 1px solid hsl(var(--color) / 0.15);
+  background-color: hsl(var(--color) / 0.15);
+  border-radius: 6px;
+  margin-bottom: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__icon {
+    --size: 40px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    padding: 0px !important;
+    background: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(var(--size) * 0.5);
+    color: hsl(var(--color));
+    background-color: hsl(var(--color)/0.15);
+    border: 1px solid hsl(var(--color) / 0.15);
+    line-height: 1;
+    flex-shrink: 0;
+
+    @include msm-screen {
+      --size: 32px;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__title {
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: hsl(var(--heading-color));
+  }
+
+  &__desc {
+    font-size: rem(16px);
+    font-weight: 400;
+    line-height: 150%;
+    color: hsl(var(--body-color));
+  }
+
+  .btn--close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: hsl(var(--color));
+
+    @include msm-screen {
+      --size: 40px;
+    }
+  }
+
+  &--gradient {
+    background: var(--gradient-l-100);
+    background-color: unset;
+
+    &.border--gradient {
+      --border-gradient: var(--gradient-l-100);
+    }
+
+    #{$alert}__icon {
+      color: transparent;
+      background: var(--gradient);
+      background-clip: text;
+      background-color: unset;
+      position: relative;
+      z-index: 1;
+
+      &::after {
+        content: '';
+        position: absolute;
+        border-radius: inherit;
+        inset: 0;
+        background: var(--gradient-l-100);
+        z-index: -1;
+      }
+
+      &.border--gradient {
+        --border-gradient: var(--gradient-l-100);
+      }
+    }
+
+    .btn--close {
+      &::after {
+        color: transparent;
+        background: var(--gradient);
+        background-clip: text;
+      }
+    }
+  }
+
+  &--base {
+    --color: var(--base);
+  }
+
+  &--base-two {
+    --color: var(--base-two);
+  }
+
+  &--primary {
+    --color: var(--primary);
+  }
+
+  &--secondary {
+    --color: var(--secondary);
+  }
+
+  &--success {
+    --color: var(--success);
+  }
+
+  &--danger {
+    --color: var(--danger);
+  }
+
+  &--warning {
+    --color: var(--warning);
+  }
+
+  &--info {
+    --color: var(--info);
+  }
+}
+
+/* ========================= Alert CSS End ======================= */

@@ -1,0 +1,46 @@
+/* ========================= Social Auth CSS Start =================== */
+.social-auth {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+
+    &__btn {
+        flex: 1 1 auto;
+        color: hsl(var(--gray));
+        font-size: rem(20px);
+        font-weight: 500;
+        line-height: 140%;
+        white-space: nowrap;
+        padding: 11.5px 12px;
+        border-radius: 12px;
+        border: 1px solid hsl(var(--border-color));
+        background-color: hsl(var(--white));
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        @include lg-screen {
+            font-size: rem(18px);
+        }
+
+        img {
+            --size: 24px;
+            width: var(--size);
+            height: var(--size);
+            object-fit: cover;
+        }
+
+        &:hover,
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            color: hsl(var(--black));
+            border-color: hsl(var(--gray)/0.25);
+            background-color: hsl(var(--gray)/0.05);
+        }
+    }
+}
+
+/* ========================= Social Auth CSS End ===================== */

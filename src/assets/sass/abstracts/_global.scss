@@ -1,0 +1,221 @@
+/* ========================= Global CSS Start ========================= */
+.section-heading {
+  width: 100%;
+  text-align: stert;
+  margin-bottom: 40px;
+
+  &__desc{
+      margin-top: 24px;
+      font-size: 16px;
+  }
+  &__title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: hsl(var(--gray-d-500));
+    margin-bottom: 14px;
+    letter-spacing: -0.02em;
+    display: inline;
+    span{
+    color: hsl(var(--base-two));
+    display: inline;
+    border-radius: 999px;
+    padding-inline: 0.04em;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(var(--base-two) / 0.24)), to(hsl(var(--base-two) / 0.24)));
+    background-image: linear-gradient(hsl(var(--base-two) / 0.24), hsl(var(--base-two) / 0.24));
+    background-repeat: no-repeat;
+    background-size: 100% 0.22em;
+    background-position: 0 calc(100% - 0.08em);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  
+    }
+  }
+
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.55;
+    color: hsl(var(--base-two));
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: center;
+  
+  }
+
+  &.style-left {
+    text-align: left;
+
+    .section-heading__subtitle {
+      margin-inline: 0;
+    }
+  }
+}
+
+.title-highlight {
+  color: hsl(var(--base-two));
+  display: inline;
+  border-radius: 999px;
+  padding-inline: 0.04em;
+  background-image: linear-gradient(
+    hsl(var(--base-two) / 0.24),
+    hsl(var(--base-two) / 0.24)
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.22em;
+  background-position: 0 calc(100% - 0.08em);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.latest-blog {
+  &-item {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid hsl(var(--black) / 0.1);
+
+    &:last-of-type {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+
+    &__thumb {
+      width: 80px;
+      max-height: 80px;
+      display: flex;
+      border-radius: 5px;
+      overflow: hidden;
+
+      a {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &__content {
+      width: calc(100% - 80px);
+      padding-left: 15px;
+    }
+
+    &__title {
+      margin-bottom: 5px;
+
+      a {
+        color: hsl(var(--heading-color));
+        font-weight: 500;
+        font-size: rem(16px);
+        @include line-clamp(2);
+
+        &:hover {
+          color: hsl(var(--base));
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  .section-heading {
+    margin-bottom: 32px;
+
+    &__title{
+      font-size: 38px !important;
+    }
+
+   
+  }
+}
+@media (max-width: 575px) {
+  .section-heading {
+    margin-bottom: 32px;
+
+    &__title{
+      font-size: 28px !important;
+    }
+   
+  }
+
+  .why-viserchat{
+    &__content{
+      margin-bottom: 24px;
+    }
+
+    &__metrics{
+      display:unset !important;
+    }
+    
+    &__metric{
+      margin-bottom: 10px !important;
+
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section-heading {
+    margin-bottom: 24px;
+
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+
+  .latest-blog-item {
+    &__thumb {
+      width: 60px;
+    }
+
+    &__content {
+      width: calc(100% - 60px);
+    }
+  }
+}
+@media (max-width: 424px) {
+  .section-heading {
+    margin-bottom: 24px;
+
+    &__subtitle {
+      font-size: 16px;
+    }
+    &__title{
+      font-size: 28px !important;
+    }
+  }
+  .why-viserchat__metric strong{
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 375px) {
+  .section-heading {
+    margin-bottom: 24px;
+
+    &__subtitle {
+      font-size: 16px;
+    }
+    &__title{
+      font-size: 22px !important;
+    }
+  }
+
+   .why-viserchat{
+ 
+    
+    &__metric{
+      margin-bottom: 10px !important;
+ 
+    }    
+  }
+}
+
+.heading-animation{
+  opacity: 1;
+}
+
+/* ========================= Global CSS End ========================= */

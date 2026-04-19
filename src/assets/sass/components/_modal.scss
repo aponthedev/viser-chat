@@ -1,0 +1,38 @@
+/* ========================= Modal CSS Start ========================= */
+.custom--modal {
+  .modal-content {
+    border: 1px solid hsl(var(--border-color));
+    background-color: hsl(var(--white));
+    border-radius: 12px;
+  }
+
+  .modal-header {
+    border-bottom: 1px solid hsl(var(--border-color));
+    padding: 1rem;
+  }
+
+  .modal-body {
+    padding: 1rem;
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid hsl(var(--border-color));
+  }
+
+  .modal-title {
+    line-height: normal;
+  }
+
+  .btn--close {
+    --size: 24px;
+  }
+}
+
+/* ========================= Modal CSS End =========================*/

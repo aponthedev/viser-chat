@@ -1,0 +1,219 @@
+.analytics {
+  background-color: hsl(var(--gray-l-500));
+
+  &__title {
+    font-size: clamp(2rem, 1.55rem + 2.2vw, 3.12rem);
+    line-height: 1.08;
+    margin-bottom: 16px;
+    max-width: 18ch;
+  }
+
+  &__desc {
+    font-size: 18px;
+    color: hsl(var(--gray-d-100));
+    margin-bottom: 0;
+    max-width: 50ch;
+  }
+
+  &__quick-kpis {
+    border-radius: 16px;
+    border: 1px solid hsl(var(--gray-l-300));
+    background-color: hsl(var(--white));
+    padding: 12px;
+    display: grid;
+    gap: 8px;
+
+    article {
+      border-radius: 10px;
+      border: 1px solid hsl(var(--gray-l-300));
+      background-color: hsl(var(--gray-l-500));
+      padding: 10px;
+    }
+
+    strong {
+      display: block;
+      color: hsl(var(--base));
+      font-size: 28px;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: hsl(var(--gray-d-100));
+      font-size: 13px;
+    }
+  }
+
+  &__dashboard {
+    background-color: hsl(var(--base));
+    border-radius: 22px;
+    padding: 20px;
+    color: hsl(var(--white));
+    box-shadow: 0 18px 34px hsl(var(--black) / 0.16);
+  }
+
+  &__dashboard-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 14px;
+
+    h6 {
+      margin-bottom: 0;
+      color: hsl(var(--white));
+      font-size: 22px;
+    }
+
+    span {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: hsl(var(--base-two));
+    }
+  }
+
+  &__chart-area {
+    border-radius: 16px;
+    border: 1px solid hsl(var(--white) / 0.16);
+    background-color: hsl(var(--white) / 0.04);
+    padding: 14px;
+  }
+
+  &__bars {
+    min-height: 200px;
+    border-radius: 12px;
+    border: 1px solid hsl(var(--white) / 0.14);
+    padding: 14px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: end;
+    gap: 10px;
+
+    span {
+      flex: 1;
+      border-radius: 8px 8px 2px 2px;
+      background-color: hsl(var(--white) / 0.24);
+
+      &:nth-child(1) { height: 28%; }
+      &:nth-child(2) { height: 54%; }
+      &:nth-child(3) { height: 42%; }
+      &:nth-child(4) { height: 78%; background-color: hsl(var(--base-two)); }
+      &:nth-child(5) { height: 60%; }
+      &:nth-child(6) { height: 88%; background-color: hsl(var(--white) / 0.35); }
+      &:nth-child(7) { height: 48%; }
+    }
+  }
+
+  &__summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+
+    article {
+      border-radius: 12px;
+      background-color: hsl(var(--white) / 0.08);
+      border: 1px solid hsl(var(--white) / 0.14);
+      padding: 10px;
+    }
+
+    strong {
+      display: block;
+      color: hsl(var(--base-two));
+      font-size: 28px;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: hsl(var(--white) / 0.7);
+      font-size: 13px;
+    }
+  }
+
+  &__insights {
+    border-radius: 18px;
+    border: 1px solid hsl(var(--gray-l-300));
+    background-color: hsl(var(--white));
+    padding: 16px;
+    display: grid;
+    gap: 10px;
+    height: 100%;
+
+    article {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 10px 0;
+      border-top: 1px solid hsl(var(--gray-l-300));
+
+      &:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+    }
+
+    i {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: hsl(var(--base));
+      background-color: hsl(var(--base-two) / 0.14);
+    }
+
+    h6 {
+      margin-bottom: 4px;
+      font-size: 22px;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: hsl(var(--gray-d-100));
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .analytics {
+    &__quick-kpis {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .analytics__dashboard-head h6{
+    font-size: 16px;
+  }
+  .analytics {
+    &__quick-kpis {
+      grid-template-columns: 1fr;
+    }
+
+    &__summary {
+      grid-template-columns: 1fr;
+    }
+
+    &__bars {
+      min-height: 150px;
+    }
+  }
+}
+@media (max-width: 424px) {
+.analytics__summary strong{
+  font-size: 20px;
+}
+.analytics__insights h6{
+  font-size: 18px;
+}
+.analytics__quick-kpis strong{
+  font-size: 20px;
+}
+}

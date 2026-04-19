@@ -1,0 +1,109 @@
+.counter {
+  background-color: hsl(var(--base));
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.22;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22'%3E%3Ccircle cx='2' cy='2' r='1' fill='white' fill-opacity='0.58'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    pointer-events: none;
+  }
+
+  &__strip {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  &__heading {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin: 0 auto 26px;
+  }
+
+  &__title {
+    color: hsl(var(--white));
+    margin-bottom: 10px;
+    font-size: clamp(2rem, 1.6rem + 2vw, 3rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+  }
+
+  &__subtitle {
+    margin: 0 auto;
+    color: hsl(var(--white) / 0.78);
+    font-size: 17px;
+    max-width: 52ch;
+  }
+
+  &__item {
+    border-radius: 16px;
+    border: 1px solid hsl(var(--white) / 0.16);
+    background-color: hsl(var(--white) / 0.04);
+    padding: 22px 20px;
+    text-align: center;
+    color: hsl(var(--white));
+
+    h3 {
+      margin-bottom: 6px;
+      color: hsl(var(--base-two));
+      font-size: clamp(2rem, 1.6rem + 1.4vw, 3rem);
+      line-height: 1;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: hsl(var(--white) / 0.85);
+      font-weight: 500;
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+.counter__strip{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+}
+@media (max-width: 991px) {
+  .counter {
+    &__strip {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .counter__item h3{
+        display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .counter {
+    &__heading {
+      margin-bottom: 20px;
+    }
+
+    &__subtitle {
+      font-size: 15px;
+    }
+
+    &__strip {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    &__item {
+      padding: 16px;
+    }
+  }
+}

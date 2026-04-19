@@ -1,0 +1,30 @@
+.blog-cta {
+  background-color: hsl(var(--white));
+
+  &__content {
+    border-radius: 18px;
+    border: 1px solid hsl(var(--gray-l-300));
+    padding: 34px;
+
+    h3 {
+      font-size: clamp(1.75rem, 1.45rem + 1.2vw, 2.45rem);
+      margin-bottom: 10px;
+      color: hsl(var(--gray-d-500));
+    }
+
+    p {
+      color: hsl(var(--gray-d-100));
+      font-size: 18px;
+      max-width: 50ch;
+      margin: 0 auto 20px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .blog-cta {
+    &__content {
+      padding: 22px;
+    }
+  }
+}

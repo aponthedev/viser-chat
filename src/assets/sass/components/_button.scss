@@ -1,0 +1,113 @@
+/* ========================= Button CSS Start ========================= */
+.btn {
+  $btn: &;
+  font-size: rem(16px);
+  font-weight: 600;
+  line-height: 100%;
+  text-align: center;
+  padding: 15px 24px;
+  border-radius: 8px;
+  border-color: transparent;
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    box-shadow: none !important;
+  }
+
+  &--xl {
+    padding: 21.5px 32px;
+    font-size: rem(20px);
+  }
+
+  &--lg {
+    padding: 18.5px 28px;
+    font-size: rem(18px);
+  }
+
+  &--sm {
+    font-size: rem(14px);
+    padding: 12.5px 18px;
+  }
+
+  &--icon {
+    --size: 48px;
+    width: var(--size);
+    height: var(--size);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    line-height: 1;
+    padding: 0;
+    font-size: calc(var(--size) * 0.5);
+
+    > svg,
+    > img {
+      width: calc(var(--size) * 0.5);
+      height: calc(var(--size) * 0.5);
+    }
+
+    &#{$btn}--sm {
+      --size: 40px;
+    }
+
+    &#{$btn}--lg {
+      --size: 56px;
+    }
+
+    &#{$btn}--xl {
+      --size: 64px;
+    }
+  }
+
+  &--close {
+    --size: 48px;
+    width: var(--size);
+    height: var(--size);
+    padding: 0 !important;
+    background: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      content: '\f00d';
+      font-size: calc(var(--size) * 0.5);
+      font-family: 'Line Awesome Free';
+      font-weight: 900;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &#{$btn}--sm {
+      --size: 40px;
+    }
+
+    &#{$btn}--lg {
+      --size: 56px;
+    }
+
+    &#{$btn}--xl {
+      --size: 64px;
+    }
+  }
+
+  @include btn-style(--base);
+  @include btn-style(--base-two, --black);
+  @include btn-style(--base-three, --black);
+  @include btn-style(--primary);
+  @include btn-style(--secondary);
+  @include btn-style(--success);
+  @include btn-style(--danger);
+  @include btn-style(--warning, --black);
+  @include btn-style(--info);
+}
+
+/* ========================= Button CSS End =========================== */

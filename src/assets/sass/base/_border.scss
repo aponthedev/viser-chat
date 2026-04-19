@@ -1,0 +1,56 @@
+/* ========================= Border Utilities CSS Start ========================= */
+.border {
+  &--base {
+    border-color: hsl(var(--base)) !important;
+  }
+
+  &--base-two {
+    border-color: hsl(var(--base-two)) !important;
+  }
+
+  &--primary {
+    border-color: hsl(var(--primary)) !important;
+  }
+
+  &--secondary {
+    border-color: hsl(var(--secondary)) !important;
+  }
+
+  &--success {
+    border-color: hsl(var(--success)) !important;
+  }
+
+  &--danger {
+    border-color: hsl(var(--danger)) !important;
+  }
+
+  &--warning {
+    border-color: hsl(var(--warning)) !important;
+  }
+
+  &--info {
+    border-color: hsl(var(--info)) !important;
+  }
+
+  &--gradient {
+    --border-width: 1px;
+    --border-gradient: var(--gradient);
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      border-radius: inherit;
+      position: absolute;
+      inset: 0;
+      background: var(--border-gradient) border-box;
+      border: var(--border-width) solid transparent;
+      mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+      z-index: -1;
+    }
+  }
+}
+
+/* ========================= Border Utilities CSS End =========================== */

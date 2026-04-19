@@ -1,0 +1,36 @@
+/* ========================= BG Utilities CSS Start ========================= */
+.bg {
+  &--base {
+    background-color: hsl(var(--base)) !important;
+  }
+
+  &--base-two {
+    background-color: hsl(var(--base-two)) !important;
+  }
+
+  &--primary {
+    background-color: hsl(var(--primary)) !important;
+  }
+
+  &--secondary {
+    background-color: hsl(var(--secondary)) !important;
+  }
+
+  &--success {
+    background-color: hsl(var(--success)) !important;
+  }
+
+  &--danger {
+    background-color: hsl(var(--danger)) !important;
+  }
+
+  &--warning {
+    background-color: hsl(var(--warning)) !important;
+  }
+
+  &--info {
+    background-color: hsl(var(--info)) !important;
+  }
+}
+
+/* ========================= BG Utilities CSS End ========================= */

@@ -1,0 +1,27 @@
+/* ========================= Spacing Utilities CSS Start ========================= */
+// Global Section Spacing
+$section: (
+  120: (xl: 120px,
+    md: 80px,
+    msm: 60px),
+  100: (xl: 100px,
+    md: 80px,
+    msm: 50px),
+  80: (xl: 80px,
+    md: 60px,
+    msm: 40px),
+  60: (xl: 60px,
+    md: 40px,
+    msm: 30px),
+  50: (xl: 50px,
+    md: 40px,
+    msm: 30px),
+  40: (xl: 40px,
+    md: 30px,
+    msm: 20px)
+);
+
+// Generate padding and margin classes separately
+@include createSpace(padding, $section);
+@include createSpace(margin, $section);
+/* ========================= Spacing Utilities CSS End ========================= */

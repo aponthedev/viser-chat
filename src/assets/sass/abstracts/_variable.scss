@@ -1,0 +1,46 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+/* ========================= CSS Variables Start ========================= */
+:root {
+  /* Font Family */
+  --heading-font: 'Plus Jakarta Sans', sans-serif;
+  --body-font: 'Inter', sans-serif;
+
+  /* Brand Colors */
+  @include colorVariable(--base, #121212, 9);
+  @include colorVariable(--base-two, #2ecc71, 9);
+  @include colorVariable(--base-three, #f6aa22, 9);
+
+  /* Utility Brand Colors */
+  @include colorVariable(--primary, #3c83f6, 9);
+  @include colorVariable(--secondary, #585b5e, 9);
+  @include colorVariable(--success, #35c75a, 9);
+  @include colorVariable(--danger, #eb4e3d, 9);
+  @include colorVariable(--warning, #ffcc00, 9);
+  @include colorVariable(--info, #0ea5e9, 9);
+
+  /* Neutral Colors */
+  --white: 0 0% 100%;
+  --black: 220 15% 8%;
+  --gray: 215 16% 47%;
+  --gray-d-100: 215 19% 35%;
+  --gray-d-200: 215 25% 27%;
+  --gray-d-300: 217 33% 17%;
+  --gray-d-400: 222 47% 11%;
+  --gray-d-500: 229 84% 5%;
+  --gray-l-100: 215 20% 65%;
+  --gray-l-200: 213 27% 84%;
+  --gray-l-300: 214 32% 91%;
+  --gray-l-400: 210 40% 96%;
+  --gray-l-500: 210 40% 98%;
+
+  --body-bg: var(--white);
+  --section-bg: var(--gray-l-100);
+  --body-color: var(--gray);
+  --heading-color: var(--gray-d-500);
+  --border-color: var(--gray-l-300);
+
+  --box-shadow: 0px 2px 15px hsl(var(--black) / 0.05);
+}
+
+/* ========================= CSS Variables End ========================= */

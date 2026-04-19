@@ -1,0 +1,224 @@
+@@include('../layout/_template-top.html')
+
+<section class="registration-page">
+  <div class="container-fluid px-0">
+    <div class="row g-0 registration-page__row">
+      <div class="col-md-5 col-lg-6">
+        <div class="registration-page__brand">
+          <span
+            class="registration-page__bubble registration-page__bubble--one"
+            aria-hidden="true"
+          ></span>
+          <span
+            class="registration-page__bubble registration-page__bubble--two"
+            aria-hidden="true"
+          ></span>
+          <span
+            class="registration-page__bubble registration-page__bubble--three"
+            aria-hidden="true"
+          ></span>
+
+          <a class="registration-page__logo" href="index.html"
+            >Viser<span>Chat</span></a
+          >
+
+          <div class="registration-page__brand-content">
+            <h2>Start Your Free 14-Day Trial</h2>
+            <p>
+              Join 3,000+ businesses that use ViserChat to convert visitors into
+              customers. No credit card required.
+            </p>
+
+            <ul class="registration-page__benefits">
+              <li>
+                <i class="fas fa-check"></i
+                ><span>AI chatbot that handles 89% of queries</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i
+                ><span>Real-time visitor tracking and insights</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i
+                ><span>Full team inbox and chat routing</span>
+              </li>
+              <li>
+                <i class="fas fa-check"></i
+                ><span>Set up in under 5 minutes</span>
+              </li>
+            </ul>
+          </div>
+
+          <p class="registration-page__signin-note d-none d-lg-block">
+            Already have an account?
+            <a href="login.html">Sign In</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-7 col-lg-6">
+        <div class="registration-page__panel">
+          <div class="registration-page__form-wrap">
+            <h2>Create Your Account</h2>
+            <p>Get started with ViserChat in 30 seconds</p>
+
+            <div class="registration-page__social">
+              <a
+                href="#"
+                class="registration-page__social-btn"
+                aria-label="Continue with Google"
+                ><i class="fab fa-google"></i><span>Google</span></a
+              >
+              <a
+                href="#"
+                class="registration-page__social-btn"
+                aria-label="Continue with Facebook"
+                ><i class="fab fa-facebook-f"></i><span>Facebook</span></a
+              >
+              <a
+                href="#"
+                class="registration-page__social-btn"
+                aria-label="Continue with Apple"
+                ><i class="fab fa-apple"></i><span>Apple</span></a
+              >
+            </div>
+
+            <div class="registration-page__divider">
+              <span>Or sign up with email</span>
+            </div>
+
+            <form class="registration-page__form" action="#">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form--label required" for="regFirstName"
+                    >First Name</label
+                  >
+                  <div class="registration-page__input-wrap">
+                    <i class="fas fa-user registration-page__field-icon"></i>
+                    <input
+                      id="regFirstName"
+                      class="form-control form--control"
+                      type="text"
+                      placeholder="First name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form--label required" for="regLastName"
+                    >Last Name</label
+                  >
+                  <div class="registration-page__input-wrap">
+                    <i class="fas fa-user registration-page__field-icon"></i>
+                    <input
+                      id="regLastName"
+                      class="form-control form--control"
+                      type="text"
+                      placeholder="Last name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label class="form--label required" for="regEmail"
+                    >Email Address</label
+                  >
+                  <div class="registration-page__input-wrap">
+                    <i
+                      class="fas fa-envelope registration-page__field-icon"
+                    ></i>
+                    <input
+                      id="regEmail"
+                      class="form-control form--control"
+                      type="email"
+                      placeholder="you@company.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label class="form--label" for="regCompany"
+                    >Company Name <small>(Optional)</small></label
+                  >
+                  <div class="registration-page__input-wrap">
+                    <i
+                      class="fas fa-building registration-page__field-icon"
+                    ></i>
+                    <input
+                      id="regCompany"
+                      class="form-control form--control"
+                      type="text"
+                      placeholder="Your company name"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label class="form--label required" for="regPassword"
+                    >Password</label
+                  >
+                  <div
+                    class="registration-page__input-wrap input--group-password"
+                  >
+                    <i class="fas fa-lock registration-page__field-icon"></i>
+                    <input
+                      id="regPassword"
+                      class="form-control form--control"
+                      type="password"
+                      placeholder="Create a strong password"
+                      required
+                    />
+                    <button
+                      class="registration-page__toggle input-group-btn"
+                      type="button"
+                      aria-label="Show password"
+                    >
+                      <i class="far fa-eye-slash"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check form--check form--check-base-two">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="regTerms"
+                      required
+                    />
+                    <label class="form-check-label" for="regTerms">
+                      I agree to the <a href="#">Terms of Service</a> and
+                      <a href="#">Privacy Policy</a>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <button
+                    class="btn btn--base-two w-100 registration-page__submit-btn"
+                    type="submit"
+                  >
+                    Create Account
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <p class="registration-page__trust">
+              <i class="fas fa-lock"></i> Your data is encrypted and secure
+            </p>
+
+            <p class="registration-page__mobile-signin d-lg-none">
+              Already have an account?
+              <a href="login.html">Sign In</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('../layout/_template-bottom.html')

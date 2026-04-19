@@ -1,0 +1,87 @@
+/* ========================= Accordion CSS Start ============================= */
+.custom--accordion {
+  .accordion-item {
+    border-radius: 6px !important;
+    border: 1px solid hsl(var(--border-color));
+
+    &:not(:has(.accordion-button.collapsed)) {
+      border-color: hsl(var(--base-two));
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .accordion-body {
+    padding: 16px;
+  }
+
+  .accordion-button {
+    font-size: rem(18px);
+    font-weight: 700;
+    line-height: 120%;
+    padding: 16px;
+    color: hsl(var(--black));
+    background-color: transparent;
+    border-radius: 4px 4px 0px 0px !important;
+    gap: 8px;
+
+    @include msm-screen {
+      font-size: rem(16px);
+    }
+
+    &::after {
+      --size: 24px;
+      content: '\2b';
+      width: var(--size);
+      height: var(--size);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: hsl(var(--body-color));
+      border: 1px solid hsl(var(--body-color));
+      background-image: none;
+      font-family: 'Font Awesome 6 Free';
+      font-size: calc(var(--size) * 0.6);
+      font-weight: 900;
+
+      @include msm-screen {
+        --size: 20px;
+      }
+    }
+
+    &:not(.collapsed) {
+      box-shadow: none;
+      color: hsl(var(--white));
+      background-color: hsl(var(--base));
+
+      &::after {
+        color: hsl(var(--base));
+        border-color: hsl(var(--white));
+        background-color: hsl(var(--white));
+        transform: rotate(45deg);
+      }
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .accordion-text {
+    font-size: rem(16px);
+    font-weight: 400;
+    line-height: 150%;
+    color: hsl(var(--gray));
+    padding-top: 16px;
+    border-top: 1px solid hsl(var(--white) / 0.15);
+
+    @include msm-screen {
+      font-size: rem(14px);
+    }
+  }
+}
+
+/* ========================= Accordion CSS End =============================== */
