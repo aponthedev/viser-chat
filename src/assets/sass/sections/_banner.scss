@@ -90,6 +90,7 @@
     line-height: 1.08;
     letter-spacing: -0.03em;
     text-wrap: balance;
+
   
   }
 
@@ -487,6 +488,13 @@
   }
 }
 
+@media (max-width: 1399px) {
+  .banner{
+    &__title{
+          font-size: 48px;
+    }
+  }
+}
 @media (max-width: 1199px) {
   .banner {
     &__texture {
@@ -502,7 +510,7 @@
     }
 
     &__title {
-     font-size: 60px !important;
+     font-size: 40px !important;
     }
 
     &__visual{
@@ -667,4 +675,12 @@ grid-template-columns: repeat(3, 1fr);
   50% {
     transform: translateY(-8px);
   }
+}
+
+@media (max-width: 412px) {
+    .banner__proof {
+     
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
 }

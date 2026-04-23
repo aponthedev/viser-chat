@@ -18,7 +18,7 @@
 
   .card-header {
     border-bottom: 1px solid hsl(var(--border-color));
-    background-color: hsl(var(--gray-l-400));
+    background-color: hsl(var(--black) / 0.01);
 
     &:first-child {
       border-top-left-radius: inherit;

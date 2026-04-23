@@ -78,8 +78,15 @@
   &__chart-area {
     border-radius: 16px;
     border: 1px solid hsl(var(--white) / 0.16);
-    background-color: hsl(var(--white) / 0.04);
+    background:
+      radial-gradient(circle at top right, hsl(var(--base-two) / 0.12), transparent 32%),
+      hsl(var(--white) / 0.04);
     padding: 14px;
+  }
+
+  &__chart {
+    min-height: 260px;
+    margin-bottom: 14px;
   }
 
   &__bars {
@@ -117,6 +124,7 @@
       background-color: hsl(var(--white) / 0.08);
       border: 1px solid hsl(var(--white) / 0.14);
       padding: 10px;
+      text-align: center;
     }
 
     strong {
@@ -203,6 +211,10 @@
 
     &__bars {
       min-height: 150px;
+    }
+
+    &__chart {
+      min-height: 240px;
     }
   }
 }

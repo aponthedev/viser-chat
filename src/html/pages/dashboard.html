@@ -1,474 +1,859 @@
 @@include('../layout/_template-top.html')
 
 <!-- ==================== Dashboard Start ==================== -->
+@@include('../layout/_dashboard-header.html')
 <div class="dashboard">
-  @@include('../layout/_dashboard-sidebar.html')
-  <div class="dashboard-content">
-    @@include('../layout/_dashboard-header.html')
+  <div class="sidebar-menu flex-between">
+    <span class="sidebar-menu__close d-lg-none d-block"
+      ><i class="fas fa-times"></i
+    ></span>
+    @@include('../layout/_dashboard-sidebar.html')
+  </div>
+
+  <div class="dashboard__right">
     <div class="dashboard-body">
-      <div class="alert alert--warning" role="alert">
-        <div class="alert__icon">
-          <i class="las la-bell"></i>
-        </div>
-        <div class="alert__content">
-          <h6 class="alert__title">
-            Please Allow / Reset Browser Notification
-          </h6>
-          <p class="alert__desc">
-            If you want to get push notification then you have to allow
-            notification from your browser
-          </p>
-        </div>
-      </div>
-      <div class="row gy-4 mb-4">
-        <div class="col-xxl-3 col-sm-6">
-          <a href="#" class="dashboard-widget">
-            <div class="dashboard-widget__header">
-              <div class="dashboard-widget__icon">
-                <i class="las la-money-bill-wave"></i>
-              </div>
-              <span class="dashboard-widget__balance">Current Balance</span>
-              <div class="dashboard-widget__arrow">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                >
-                  <path
-                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M10.667 16H21.3337"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M16 21.3333L21.3333 16L16 10.6667"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <div class="dashboard-widget__content">
-              <h6 class="dashboard-widget__title">$6,889.56 USD</h6>
-            </div>
+      <div class="notice"></div>
 
-            <div class="dashboard-widget__shape">
-              <i class="las la-money-bill-wave"></i>
-            </div>
-          </a>
-        </div>
-        <div class="col-xxl-3 col-sm-6">
-          <a href="#" class="dashboard-widget">
-            <div class="dashboard-widget__header">
-              <div class="dashboard-widget__icon">
-                <i class="las la-wallet"></i>
-              </div>
-              <span class="dashboard-widget__balance"> Total Earning</span>
-              <div class="dashboard-widget__arrow">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                >
-                  <path
-                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M10.667 16H21.3337"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M16 21.3333L21.3333 16L16 10.6667"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <div class="dashboard-widget__content">
-              <h6 class="dashboard-widget__title">$6,889.56 USD</h6>
-            </div>
-            <div class="dashboard-widget__shape">
-              <i class="las la-hand-holding-usd"></i>
-            </div>
-          </a>
-        </div>
-        <div class="col-xxl-3 col-sm-6">
-          <a href="#" class="dashboard-widget">
-            <div class="dashboard-widget__header">
-              <div class="dashboard-widget__icon">
-                <i class="las la-hand-holding-usd"></i>
-              </div>
-              <span class="dashboard-widget__balance">Total Withdraw</span>
-              <div class="dashboard-widget__arrow">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                >
-                  <path
-                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M10.667 16H21.3337"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M16 21.3333L21.3333 16L16 10.6667"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <div class="dashboard-widget__content">
-              <h6 class="dashboard-widget__title">$6,889.56 USD</h6>
-            </div>
-            <div class="dashboard-widget__shape">
-              <i class="las la-hand-holding-usd"></i>
-            </div>
-          </a>
-        </div>
-        <div class="col-xxl-3 col-sm-6">
-          <a href="#" class="dashboard-widget">
-            <div class="dashboard-widget__header">
-              <div class="dashboard-widget__icon">
-                <i class="las la-money-check-alt"></i>
-              </div>
-              <span class="dashboard-widget__balance">Pending Withdraw</span>
-              <div class="dashboard-widget__arrow">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                >
-                  <path
-                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M10.667 16H21.3337"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M16 21.3333L21.3333 16L16 10.6667"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <div class="dashboard-widget__content">
-              <h6 class="dashboard-widget__title">$6,889.56 USD</h6>
-            </div>
-            <div class="dashboard-widget__shape">
-              <i class="las la-money-check-alt"></i>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="row gy-4 mb-4">
-        <div class="col-xxl-3 col-sm-6">
-          <a href="#" class="dashboard-widget">
-            <div class="dashboard-widget__header">
-              <div class="dashboard-widget__icon">
-                <i class="las la-clock"></i>
-              </div>
-              <span class="dashboard-widget__balance"> Today Appointment</span>
-              <div class="dashboard-widget__arrow">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                >
-                  <path
-                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M10.667 16H21.3337"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M16 21.3333L21.3333 16L16 10.6667"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <div class="dashboard-widget__content">
-              <h6 class="dashboard-widget__title">240</h6>
-            </div>
-
-            <div class="dashboard-widget__shape">
-              <i class="las la-clock"></i>
-            </div>
-          </a>
-        </div>
-        <div class="col-xxl-3 col-sm-6">
-          <a href="#" class="dashboard-widget">
-            <div class="dashboard-widget__header">
-              <div class="dashboard-widget__icon">
-                <i class="las la-clipboard-list"></i>
-              </div>
-              <span class="dashboard-widget__balance"> New Appointment</span>
-              <div class="dashboard-widget__arrow">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                >
-                  <path
-                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M10.667 16H21.3337"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M16 21.3333L21.3333 16L16 10.6667"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <div class="dashboard-widget__content">
-              <h6 class="dashboard-widget__title">45</h6>
-            </div>
-            <div class="dashboard-widget__shape">
-              <i class="las la-clipboard-list"></i>
-            </div>
-          </a>
-        </div>
-        <div class="col-xxl-3 col-sm-6">
-          <a href="#" class="dashboard-widget">
-            <div class="dashboard-widget__header">
-              <div class="dashboard-widget__icon">
-                <i class="las la-calendar-check"></i>
-              </div>
-              <span class="dashboard-widget__balance"
-                >Successful Appointment</span
+      <div class="row gy-4">
+        <div class="col-sm-6 col-xxl-3">
+          <div
+            class="dashboard-card bg-img"
+            data-background-image="https://script.viserlab.com/viserchat/assets/templates/basic/images/dashboard-card-bg.png"
+          >
+            <div class="dashboard-card-header">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-              <div class="dashboard-widget__arrow">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                >
-                  <path
-                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M10.667 16H21.3337"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M16 21.3333L21.3333 16L16 10.6667"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
+                <path
+                  d="M4.14178 6.06511C4.89087 6 5.83828 6 7.11114 6H8.88892C11.378 6 12.6226 6 13.5733 6.48693C14.4096 6.91524 15.0895 7.59868 15.5156 8.43929C16 9.39494 16 10.646 16 13.148V15.5594C16 15.8093 16 15.9342 15.995 16.0398C15.9173 17.6899 14.9536 19.1034 13.5704 19.8113L14.9415 20.7893C15.8365 21.4277 17.0126 20.5058 16.6041 19.486C16.3147 18.7636 16.8475 17.9779 17.6266 17.9779H18.2283C20.3114 17.9779 22 16.2916 22 14.2114V9.98893C22 7.19254 22 5.79435 21.455 4.72627C20.9757 3.78676 20.2108 3.02292 19.27 2.54421C18.2004 2 16.8003 2 14 2H12C9.19976 2 7.79962 2 6.73007 2.54421C5.78926 3.02292 5.02435 3.78676 4.54499 4.72627C4.3479 5.11254 4.22209 5.54198 4.14178 6.06511Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.5761 9.15232C15 9.99554 15 11.0994 15 13.3071V15.4348C15 15.6552 15 15.7655 14.9956 15.8586C14.9008 17.8891 13.2982 19.5136 11.295 19.6097C11.2031 19.6141 11.0818 19.6141 10.8392 19.6141L10.7769 19.6142C9.98339 19.6193 9.21041 19.8704 8.56175 20.3337L8.5205 20.3635L6.48993 21.8337C5.79383 22.3377 4.87911 21.6098 5.19681 20.8048C5.42186 20.2345 5.00751 19.6141 4.40154 19.6141H3.93351C2.31338 19.6141 1 18.2828 1 16.6406V13.3071C1 11.0994 1 9.99554 1.42386 9.15232C1.7967 8.4106 2.39163 7.80757 3.12337 7.42964C3.95525 7 5.04424 7 7.22222 7H8.77778C10.9558 7 12.0448 7 12.8766 7.42964C13.6084 7.80757 14.2033 8.4106 14.5761 9.15232ZM5 15C5.55228 15 6 14.5523 6 14C6 13.4477 5.55228 13 5 13C4.44772 13 4 13.4477 4 14C4 14.5523 4.44772 15 5 15ZM9 14C9 14.5523 8.55228 15 8 15C7.44772 15 7 14.5523 7 14C7 13.4477 7.44772 13 8 13C8.55228 13 9 13.4477 9 14ZM11 15C11.5523 15 12 14.5523 12 14C12 13.4477 11.5523 13 11 13C10.4477 13 10 13.4477 10 14C10 14.5523 10.4477 15 11 15Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              Visitors
+            </div>
+            <div class="dashboard-card-content">
+              <div class="dashboard-card-left">
+                <p>Today</p>
+                <div class="dashboard-card-number">
+                  <h6>5</h6>
+                  <span class="text--success">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.59998 11.2008L5.18398 7.75463L8.25597 10.7085L14.4 4.80078M14.4 4.80078H9.79198M14.4 4.80078V9.23155"
+                        stroke="#198754"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    100%
+                  </span>
+                </div>
+              </div>
+              <div class="dashboard-card-right">
+                Last 7 days
+                <span class="text--success">
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.146647 6.14625L6.14665 0.14625C6.19308 0.0997626 6.24823 0.0628821 6.30893 0.0377203C6.36963 0.0125586 6.43469 -0.00039234 6.5004 -0.000392346C6.56611 -0.000392351 6.63117 0.0125585 6.69187 0.0377203C6.75257 0.062882 6.80771 0.0997625 6.85415 0.14625L12.8541 6.14625C12.9242 6.21618 12.9718 6.3053 12.9912 6.40235C13.0105 6.49939 13.0006 6.59998 12.9627 6.69139C12.9248 6.78281 12.8607 6.86092 12.7784 6.91586C12.6961 6.9708 12.5993 7.00008 12.5004 7L10.0004 7L10.0004 12C10.0004 12.2652 9.89504 12.5196 9.70751 12.7071C9.51997 12.8946 9.26562 13 9.0004 13L4.0004 13C3.73518 13 3.48083 12.8946 3.29329 12.7071C3.10576 12.5196 3.0004 12.2652 3.0004 12L3.0004 7L0.500397 7C0.40145 7.00008 0.304703 6.9708 0.222406 6.91586C0.140109 6.86093 0.0759625 6.78281 0.0380863 6.6914C0.000210203 6.59998 -0.00969276 6.49939 0.00963249 6.40235C0.0289577 6.30531 0.0766414 6.21618 0.146647 6.14625Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  2
+                </span>
               </div>
             </div>
-            <div class="dashboard-widget__content">
-              <h6 class="dashboard-widget__title">783</h6>
-            </div>
-            <div class="dashboard-widget__shape">
-              <i class="las la-calendar-check"></i>
-            </div>
-          </a>
+          </div>
         </div>
-        <div class="col-xxl-3 col-sm-6">
-          <a href="#" class="dashboard-widget">
-            <div class="dashboard-widget__header">
-              <div class="dashboard-widget__icon">
-                <i class="las la-user"></i>
+        <div class="col-sm-6 col-xxl-3">
+          <div
+            class="dashboard-card bg-img"
+            data-background-image="https://script.viserlab.com/viserchat/assets/templates/basic/images/dashboard-card-bg.png"
+          >
+            <div class="dashboard-card-header">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.14178 6.06511C4.89087 6 5.83828 6 7.11114 6H8.88892C11.378 6 12.6226 6 13.5733 6.48693C14.4096 6.91524 15.0895 7.59868 15.5156 8.43929C16 9.39494 16 10.646 16 13.148V15.5594C16 15.8093 16 15.9342 15.995 16.0398C15.9173 17.6899 14.9536 19.1034 13.5704 19.8113L14.9415 20.7893C15.8365 21.4277 17.0126 20.5058 16.6041 19.486C16.3147 18.7636 16.8475 17.9779 17.6266 17.9779H18.2283C20.3114 17.9779 22 16.2916 22 14.2114V9.98893C22 7.19254 22 5.79435 21.455 4.72627C20.9757 3.78676 20.2108 3.02292 19.27 2.54421C18.2004 2 16.8003 2 14 2H12C9.19976 2 7.79962 2 6.73007 2.54421C5.78926 3.02292 5.02435 3.78676 4.54499 4.72627C4.3479 5.11254 4.22209 5.54198 4.14178 6.06511Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.5761 9.15232C15 9.99554 15 11.0994 15 13.3071V15.4348C15 15.6552 15 15.7655 14.9956 15.8586C14.9008 17.8891 13.2982 19.5136 11.295 19.6097C11.2031 19.6141 11.0818 19.6141 10.8392 19.6141L10.7769 19.6142C9.98339 19.6193 9.21041 19.8704 8.56175 20.3337L8.5205 20.3635L6.48993 21.8337C5.79383 22.3377 4.87911 21.6098 5.19681 20.8048C5.42186 20.2345 5.00751 19.6141 4.40154 19.6141H3.93351C2.31338 19.6141 1 18.2828 1 16.6406V13.3071C1 11.0994 1 9.99554 1.42386 9.15232C1.7967 8.4106 2.39163 7.80757 3.12337 7.42964C3.95525 7 5.04424 7 7.22222 7H8.77778C10.9558 7 12.0448 7 12.8766 7.42964C13.6084 7.80757 14.2033 8.4106 14.5761 9.15232ZM5 15C5.55228 15 6 14.5523 6 14C6 13.4477 5.55228 13 5 13C4.44772 13 4 13.4477 4 14C4 14.5523 4.44772 15 5 15ZM9 14C9 14.5523 8.55228 15 8 15C7.44772 15 7 14.5523 7 14C7 13.4477 7.44772 13 8 13C8.55228 13 9 13.4477 9 14ZM11 15C11.5523 15 12 14.5523 12 14C12 13.4477 11.5523 13 11 13C10.4477 13 10 13.4477 10 14C10 14.5523 10.4477 15 11 15Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              Chats
+            </div>
+            <div class="dashboard-card-content">
+              <div class="dashboard-card-left">
+                <p>Today</p>
+                <div class="dashboard-card-number">
+                  <h6>5</h6>
+                  <span class="text--success">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.59998 11.2008L5.18398 7.75463L8.25597 10.7085L14.4 4.80078M14.4 4.80078H9.79198M14.4 4.80078V9.23155"
+                        stroke="#198754"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    50%
+                  </span>
+                </div>
               </div>
-              <span class="dashboard-widget__balance">Total Client</span>
-              <div class="dashboard-widget__arrow">
+              <div class="dashboard-card-right">
+                Last 7 days
+                <span class="text--success">
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.146647 6.14625L6.14665 0.14625C6.19308 0.0997626 6.24823 0.0628821 6.30893 0.0377203C6.36963 0.0125586 6.43469 -0.00039234 6.5004 -0.000392346C6.56611 -0.000392351 6.63117 0.0125585 6.69187 0.0377203C6.75257 0.062882 6.80771 0.0997625 6.85415 0.14625L12.8541 6.14625C12.9242 6.21618 12.9718 6.3053 12.9912 6.40235C13.0105 6.49939 13.0006 6.59998 12.9627 6.69139C12.9248 6.78281 12.8607 6.86092 12.7784 6.91586C12.6961 6.9708 12.5993 7.00008 12.5004 7L10.0004 7L10.0004 12C10.0004 12.2652 9.89504 12.5196 9.70751 12.7071C9.51997 12.8946 9.26562 13 9.0004 13L4.0004 13C3.73518 13 3.48083 12.8946 3.29329 12.7071C3.10576 12.5196 3.0004 12.2652 3.0004 12L3.0004 7L0.500397 7C0.40145 7.00008 0.304703 6.9708 0.222406 6.91586C0.140109 6.86093 0.0759625 6.78281 0.0380863 6.6914C0.000210203 6.59998 -0.00969276 6.49939 0.00963249 6.40235C0.0289577 6.30531 0.0766414 6.21618 0.146647 6.14625Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  2
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xxl-3">
+          <div
+            class="dashboard-card bg-img"
+            data-background-image="https://script.viserlab.com/viserchat/assets/templates/basic/images/dashboard-card-bg.png"
+          >
+            <div
+              class="dashboard-card-header d-flex flex-wrap align-items-center gap-1 justify-content-between"
+            >
+              <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
                   fill="none"
+                  color="currentColor"
                 >
                   <path
-                    d="M25.3333 4H6.66667C5.19391 4 4 5.19391 4 6.66667V25.3333C4 26.8061 5.19391 28 6.66667 28H25.3333C26.8061 28 28 26.8061 28 25.3333V6.66667C28 5.19391 26.8061 4 25.3333 4Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    d="M21.5 19.45C21.5 19.0634 21.1866 18.75 20.8 18.75H2.70006C2.31344 18.75 2.00002 19.0634 2.00006 19.4501L2.00029 21.75C2.00033 22.1642 2.33611 22.4999 2.75029 22.4999H20.75C21.1642 22.4999 21.5 22.1642 21.5 21.7499V19.45Z"
+                    fill="currentColor"
                   ></path>
                   <path
-                    d="M10.667 16H21.3337"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    d="M14 17.25H19.5V11.2451H14V17.25Z"
+                    fill="currentColor"
                   ></path>
                   <path
-                    d="M16 21.3333L21.3333 16L16 10.6667"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    d="M4 17.25H9.5V11.2451H4V17.25Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.3858 1.09438C11.6123 0.968539 11.8877 0.968539 12.1142 1.09438L21.1142 6.09438C21.3523 6.22666 21.5 6.47762 21.5 6.75V9.04503C21.5 9.43163 21.1866 9.74503 20.8 9.74503L2.7 9.74511C2.3134 9.74512 2 9.43171 2 9.04511V6.75C2 6.47762 2.14767 6.22666 2.38577 6.09438L11.3858 1.09438ZM11.7461 5.75C11.1938 5.75 10.7461 6.19772 10.7461 6.75C10.7461 7.30228 11.1938 7.75 11.7461 7.75H11.7551C12.3074 7.75 12.7551 7.30228 12.7551 6.75C12.7551 6.19772 12.3074 5.75 11.7551 5.75H11.7461Z"
+                    fill="currentColor"
                   ></path>
                 </svg>
+                Balance
+              </div>
+
+              <div>
+                <a
+                  href="https://script.viserlab.com/viserchat/user/deposit"
+                  class="btn btn--outline--base btn--xs"
+                  >Add Funds</a
+                >
               </div>
             </div>
-            <div class="dashboard-widget__content">
-              <h6 class="dashboard-widget__title">$6,889.56 USD</h6>
+            <div class="dashboard-card-content">
+              <div class="dashboard-card-left">
+                <p>Current Balance</p>
+                <div class="dashboard-card-number">
+                  <h6>$24.00 USD</h6>
+                </div>
+              </div>
             </div>
-            <div class="dashboard-widget__shape">
-              <i class="las la-user"></i>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xxl-3">
+          <div
+            class="dashboard-card bg-img"
+            data-background-image="https://script.viserlab.com/viserchat/assets/templates/basic/images/dashboard-card-bg.png"
+          >
+            <div
+              class="dashboard-card-header d-flex flex-wrap align-items-center gap-1 justify-content-between"
+            >
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.975 8.442C13.9961 8.64398 12.9994 8.74717 12 8.75C11.0005 8.74717 10.0038 8.64398 9.02496 8.442C8.6583 10.7998 8.6583 13.2002 9.02496 15.558C10.987 15.1473 13.0129 15.1473 14.975 15.558C15.16 14.3811 15.2519 13.1914 15.25 12C15.2519 10.8086 15.16 9.61893 14.975 8.442ZM9.31996 17.026C9.95196 19.606 11.013 21.25 12 21.25C12.987 21.25 14.048 19.606 14.68 17.026C12.9122 16.658 11.0877 16.658 9.31996 17.026ZM16.431 8.067C16.6441 9.36714 16.7508 10.6825 16.75 12C16.7508 13.3175 16.6441 14.6329 16.431 15.933C18.0022 16.4177 19.47 17.1894 20.76 18.209C22.0543 16.3973 22.75 14.2265 22.75 12C22.75 9.7735 22.0543 7.60266 20.76 5.791C19.4697 6.81022 18.002 7.58188 16.431 8.067ZM7.24996 12C7.24913 10.6825 7.35581 9.36714 7.56896 8.067C5.99791 7.58188 4.5302 6.81022 3.23996 5.791C1.94567 7.60266 1.24988 9.7735 1.24988 12C1.24988 14.2265 1.94567 16.3973 3.23996 18.209C4.52995 17.1894 5.99773 16.4177 7.56896 15.933C7.35581 14.6329 7.24913 13.3175 7.24996 12ZM16.128 17.4C15.386 20.44 13.99 22.75 12 22.75C13.465 22.7493 14.9144 22.4481 16.2584 21.8651C17.6024 21.282 18.8125 20.4294 19.814 19.36C18.7121 18.492 17.4637 17.8282 16.128 17.4ZM7.87196 6.6C8.61396 3.56 10.01 1.25 12 1.25C10.5349 1.25067 9.08555 1.55186 7.74153 2.13495C6.3975 2.71804 5.18737 3.57062 4.18596 4.64C5.28785 5.50801 6.5362 6.1718 7.87196 6.6ZM7.87196 17.4C6.5362 17.8282 5.28785 18.492 4.18596 19.36C5.18737 20.4294 6.3975 21.282 7.74153 21.8651C9.08555 22.4481 10.5349 22.7493 12 22.75C10.01 22.75 8.61396 20.44 7.87196 17.4ZM14.68 6.974C14.048 4.394 12.987 2.75 12 2.75C11.013 2.75 9.95196 4.394 9.31996 6.974C10.2019 7.15513 11.0997 7.24759 12 7.25C12.9003 7.24759 13.7981 7.15513 14.68 6.974ZM16.128 6.6C17.4637 6.1718 18.7121 5.50801 19.814 4.64C18.8125 3.57062 17.6024 2.71804 16.2584 2.13495C14.9144 1.55186 13.465 1.25067 12 1.25C13.99 1.25 15.386 3.56 16.128 6.6Z"
+                    fill="#64676C"
+                  ></path>
+                </svg>
+                Active Plan
+              </div>
+              <div>
+                <a
+                  href="https://script.viserlab.com/viserchat/pricing"
+                  class="btn btn--outline--base btn--xs"
+                >
+                  Upgrade
+                </a>
+              </div>
             </div>
-          </a>
+            <div class="dashboard-card-content">
+              <div class="dashboard-card-left">
+                <p>Premium</p>
+
+                <div class="dashboard-card-number">
+                  <h6>20 May 2026</h6>
+                  <span class="text--success"> Expire on </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="data-table">
-        <div class="data-table__header">
-          <h6 class="data-table__title">My Case List</h6>
+
+      <div class="row gy-4 mt-4">
+        <div class="col-xxl-6">
+          <div class="card custom--card dashboard__card average-chat-card">
+            <div class="card-header">
+              <h4 class="card-header__title">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_10287_9229)">
+                    <path
+                      d="M11.6522 18.9783C11.6526 17.792 11.9726 16.6278 12.5787 15.6081C13.1848 14.5884 14.0545 13.7509 15.0964 13.1837C16.1382 12.6165 17.3137 12.3405 18.4991 12.3849C19.6845 12.4293 20.836 12.7923 21.8325 13.4358C21.8396 12.9469 21.8433 12.4252 21.8433 11.8622C21.8433 8.96766 21.7449 7.16109 21.5504 5.28984H21.578C21.4704 4.24712 21.0722 3.25556 20.4287 2.42808C19.7852 1.60059 18.9223 0.970436 17.9382 0.609375C17.8861 0.589688 17.8341 0.570938 17.7816 0.553125C17.3927 0.422396 16.9906 0.334838 16.5825 0.292031L16.5436 0.287813C14.9869 0.127969 14.7371 0 11.4544 0C8.17176 0 7.64066 0.127969 6.08535 0.290156L6.04645 0.294375C5.6181 0.339359 5.19639 0.433736 4.78973 0.575625V0.554531C3.77574 0.899286 2.88187 1.52754 2.21407 2.36483C1.54626 3.20212 1.13253 4.21333 1.02191 5.27859C0.826914 7.15359 0.727539 8.96203 0.727539 11.8622C0.727539 14.7623 0.826914 16.5708 1.02191 18.4458C1.15507 19.7253 1.72422 20.92 2.63388 21.8296C3.54354 22.7392 4.73836 23.3082 6.01785 23.4412L6.05676 23.4455C7.61348 23.6077 7.86285 23.7356 11.1455 23.7356C12.233 23.7356 13.0205 23.7216 13.6388 23.6967C13.0092 23.0829 12.509 22.3491 12.1677 21.5386C11.8265 20.7282 11.6512 19.8576 11.6522 18.9783ZM6.16785 6.24141H16.4011C16.6973 6.24141 16.9813 6.35904 17.1907 6.56844C17.4001 6.77784 17.5177 7.06184 17.5177 7.35797C17.5177 7.6541 17.4001 7.9381 17.1907 8.1475C16.9813 8.35689 16.6973 8.47453 16.4011 8.47453H6.1702C5.87406 8.47453 5.59006 8.35689 5.38067 8.1475C5.17127 7.9381 5.05363 7.6541 5.05363 7.35797C5.05363 7.06184 5.17127 6.77784 5.38067 6.56844C5.59006 6.35904 5.87406 6.24141 6.1702 6.24141H6.16785ZM6.16785 13.2525C5.87562 13.2465 5.59738 13.1262 5.39282 12.9174C5.18827 12.7086 5.0737 12.428 5.0737 12.1357C5.0737 11.8434 5.18827 11.5628 5.39282 11.354C5.59738 11.1452 5.87562 11.0249 6.16785 11.0189H12.0043C12.1528 11.0159 12.3005 11.0425 12.4387 11.0973C12.5769 11.152 12.7027 11.2338 12.8089 11.3378C12.915 11.4418 12.9994 11.5659 13.0569 11.703C13.1145 11.84 13.1442 11.9871 13.1442 12.1357C13.1442 12.2843 13.1145 12.4314 13.0569 12.5685C12.9994 12.7055 12.915 12.8296 12.8089 12.9336C12.7027 13.0376 12.5769 13.1194 12.4387 13.1742C12.3005 13.2289 12.1528 13.2555 12.0043 13.2525H6.16785Z"
+                      fill="#64676C"
+                    ></path>
+                    <path
+                      d="M18.2508 13.957C17.2576 13.957 16.2867 14.2515 15.4609 14.8033C14.6351 15.3551 13.9915 16.1394 13.6114 17.057C13.2313 17.9746 13.1319 18.9843 13.3256 19.9584C13.5194 20.9326 13.9977 21.8273 14.7 22.5296C15.4023 23.2319 16.297 23.7102 17.2712 23.904C18.2453 24.0977 19.255 23.9983 20.1726 23.6182C21.0902 23.2381 21.8745 22.5945 22.4263 21.7687C22.978 20.9429 23.2726 19.972 23.2726 18.9788C23.2726 17.6469 22.7435 16.3696 21.8017 15.4279C20.86 14.4861 19.5827 13.957 18.2508 13.957ZM20.2412 19.7137H18.151C17.9925 19.7137 17.8405 19.6508 17.7284 19.5387C17.6163 19.4266 17.5533 19.2746 17.5533 19.1161V15.9052C17.5533 15.7466 17.6163 15.5946 17.7284 15.4826C17.8405 15.3705 17.9925 15.3075 18.151 15.3075C18.3095 15.3075 18.4615 15.3705 18.5736 15.4826C18.6857 15.5946 18.7487 15.7466 18.7487 15.9052V18.5184H20.2412C20.3997 18.5184 20.5517 18.5814 20.6638 18.6935C20.7758 18.8056 20.8388 18.9576 20.8388 19.1161C20.8388 19.2746 20.7758 19.4266 20.6638 19.5387C20.5517 19.6508 20.3997 19.7137 20.2412 19.7137Z"
+                      fill="#64676C"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_10287_9229">
+                      <rect width="24" height="24" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>Average Chat Duration</span>
+              </h4>
+              <div class="dropdown">
+                <div
+                  id="avg-chat-date"
+                  class="datepicker-wrapper"
+                  data-date-filter
+                >
+                  <div class="datepicker-inner">
+                    <label for="date_label" class="datepicker-content">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.83337 11.7029V11.6465M8.20837 11.7029V11.6465M8.20837 8.64652V8.59012M11.2084 8.64652V8.59012M2.58337 5.64648H13.0834M3.94052 1.33398V2.45912M11.5834 1.33398V2.45898M11.5834 2.45898H4.08337C2.84073 2.45898 1.83337 3.46634 1.83337 4.70898V12.2091C1.83337 13.4517 2.84073 14.4591 4.08337 14.4591H11.5834C12.826 14.4591 13.8334 13.4517 13.8334 12.2091L13.8334 4.70898C13.8334 3.46634 12.826 2.45898 11.5834 2.45898Z"
+                          stroke="#181609"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <input
+                        name="date_label"
+                        type="search"
+                        class="form--control date-range"
+                        placeholder="Select Range"
+                        autocomplete="off"
+                        value=""
+                        readonly
+                      />
+                    </label>
+                    <input
+                      type="hidden"
+                      name="date"
+                      class="date-range-value"
+                      value="April 16, 2026 - April 22, 2026"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body d-none">
+              <div class="average-chat-meta">
+                <div class="average-chat-stat average-chat-stat--shortest">
+                  <span class="average-chat-badge average-chat-badge--shortest">
+                    <svg
+                      class="services-shape"
+                      width="227"
+                      height="155"
+                      viewBox="0 0 227 155"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        clip-path="url(#id_e9baa06c_3ea5_4a60_bba9_5afa095661c3)"
+                      >
+                        <g opacity="0.16">
+                          <path
+                            d="M-354.426 -254.267C-351.998 -249.688 -348.601 -245.609 -344.27 -242.361C-328.738 -230.711 -306.624 -233.8 -292.7 -248.802C-292.191 -246.484 -290.932 -244.38 -288.964 -242.904C-287.478 -241.789 -285.77 -241.172 -284.016 -241.014C-283.793 -232.723 -280.168 -224.844 -273.393 -219.763C-266.619 -214.682 -258.12 -213.467 -250.224 -215.669C-249.563 -214.016 -248.483 -212.541 -246.996 -211.427C-245.028 -209.951 -242.673 -209.345 -240.335 -209.527C-250.446 -191.665 -246.916 -169.344 -231.384 -157.694C-218.984 -148.394 -202.39 -148.487 -189.117 -156.535C-188.954 -154.592 -188.046 -152.775 -186.445 -151.574C-185.49 -150.857 -184.398 -150.444 -183.274 -150.314C-183.454 -150.077 -183.634 -149.839 -183.81 -149.598C-198.097 -130.063 -195.208 -103.374 -177.358 -89.9865C-159.508 -76.5987 -133.456 -81.5814 -119.17 -101.116C-118.993 -101.357 -118.822 -101.601 -118.65 -101.845C-118.199 -100.793 -117.491 -99.8568 -116.535 -99.14C-114.934 -97.9391 -112.953 -97.5901 -111.07 -97.9981C-114.801 -82.794 -110.052 -66.6932 -97.6519 -57.393C-82.1188 -45.743 -60.0056 -48.8318 -46.0818 -63.8343C-45.5727 -61.516 -44.3138 -59.4115 -42.3461 -57.9358C-40.8596 -56.821 -39.1524 -56.2041 -37.3973 -56.0463C-37.1747 -47.7545 -33.5497 -39.8759 -26.775 -34.7951C-20.0003 -29.7143 -11.5015 -28.4993 -3.60465 -30.7011C-2.94375 -29.0476 -1.86355 -27.5733 -0.377029 -26.4584C1.59069 -24.9826 3.94477 -24.377 6.28387 -24.5592C-3.82828 -6.69708 -0.29816 15.6243 15.235 27.2743C27.6353 36.5746 44.2276 36.4811 57.5015 28.4327C57.6652 30.3764 58.5717 32.1932 60.1731 33.3942C61.1285 34.111 62.2196 34.5239 63.3448 34.6545C63.1641 34.8916 62.9844 35.129 62.8077 35.3704C48.5215 54.9051 51.4107 81.5939 69.2609 94.9817C87.1102 108.369 113.163 103.387 127.449 83.8521C127.626 83.6107 127.797 83.3674 127.968 83.1236C128.419 84.1752 129.128 85.1114 130.084 85.8282C131.685 87.0292 133.666 87.3781 135.549 86.97C131.817 102.174 136.566 118.275 148.966 127.575C164.499 139.225 186.612 136.136 200.536 121.134C201.046 123.452 202.305 125.557 204.272 127.032C205.758 128.147 207.467 128.764 209.221 128.922C209.443 137.214 213.069 145.092 219.843 150.173C226.618 155.254 235.116 156.469 243.013 154.267C243.674 155.921 244.754 157.395 246.241 158.51C248.209 159.985 250.564 160.591 252.902 160.409C242.791 178.271 246.321 200.593 261.854 212.243C274.253 221.543 290.847 221.449 304.119 213.401C304.283 215.345 305.191 217.161 306.792 218.362C307.747 219.079 308.839 219.492 309.963 219.623C309.783 219.86 309.603 220.097 309.427 220.339C304.024 227.726 301.079 236.138 300.47 244.466L426.704 71.8575L-231.757 -422L-354.426 -254.267Z"
+                          ></path>
+                          <path
+                            d="M-338.885 -249.71C-323.353 -238.06 -301.24 -241.149 -287.316 -256.151C-286.807 -253.833 -285.548 -251.729 -283.58 -250.253C-282.094 -249.138 -280.386 -248.521 -278.632 -248.363C-278.409 -240.072 -274.784 -232.193 -268.009 -227.113C-261.235 -222.032 -252.737 -220.817 -244.84 -223.019C-244.18 -221.366 -243.099 -219.891 -241.612 -218.776C-239.644 -217.301 -237.29 -216.695 -234.952 -216.877C-245.063 -199.016 -241.533 -176.695 -226 -165.045C-213.601 -155.745 -197.007 -155.838 -183.735 -163.887C-183.571 -161.943 -182.664 -160.126 -181.063 -158.925C-180.108 -158.208 -179.016 -157.796 -177.891 -157.665C-178.072 -157.428 -178.252 -157.19 -178.428 -156.949C-192.715 -137.415 -189.825 -110.727 -171.976 -97.3392C-154.126 -83.9518 -128.075 -88.9344 -113.788 -108.469C-113.612 -108.71 -113.441 -108.953 -113.269 -109.197C-112.818 -108.146 -112.11 -107.209 -111.153 -106.493C-109.552 -105.292 -107.572 -104.943 -105.689 -105.351C-109.42 -90.1469 -104.671 -74.0466 -92.271 -64.7465C-76.7388 -53.0968 -54.6257 -56.1856 -40.7019 -71.1877C-40.1928 -68.8695 -38.9339 -66.7651 -36.9661 -65.2894C-35.4796 -64.1746 -33.7725 -63.5576 -32.0174 -63.3999C-31.7947 -55.1083 -28.1698 -47.23 -21.3951 -42.1492C-14.6214 -37.0685 -6.12254 -35.8535 1.7743 -38.0553C2.43519 -36.4018 3.5154 -34.9276 5.00192 -33.8128C6.96964 -32.337 9.32471 -31.7314 11.6628 -31.9136C1.55167 -14.0519 5.08079 8.26897 20.6139 19.9187C33.0132 29.2187 49.6066 29.1253 62.8795 21.077C63.0432 23.0207 63.9497 24.8374 65.551 26.0384C66.5064 26.7552 67.5976 27.1681 68.7227 27.2987C68.542 27.5358 68.3623 27.7732 68.1856 28.0145C53.8994 47.5488 56.7886 74.2369 74.6379 87.6244C92.4881 101.012 118.54 96.0293 132.826 76.4951C133.003 76.2537 133.174 76.0104 133.345 75.7666C133.796 76.8181 134.505 77.7544 135.461 78.4711C137.062 79.6721 139.043 80.021 140.925 79.6129C137.194 94.8167 141.943 110.917 154.343 120.217C169.875 131.867 191.988 128.778 205.912 113.776C206.421 116.094 207.68 118.198 209.648 119.674C211.134 120.789 212.842 121.406 214.597 121.564C214.819 129.855 218.444 137.734 225.219 142.814C231.993 147.895 240.491 149.11 248.388 146.908C249.049 148.562 250.129 150.036 251.616 151.151C253.584 152.627 255.939 153.232 258.277 153.05C248.166 170.912 251.695 193.233 267.228 204.882C279.628 214.182 296.221 214.089 309.493 206.041C309.657 207.984 310.565 209.801 312.165 211.002C313.121 211.719 314.212 212.132 315.337 212.262C315.156 212.499 314.976 212.737 314.801 212.978C309.398 220.366 306.453 228.777 305.844 237.105L426.704 71.8457L-231.745 -422L-349.042 -261.616C-346.612 -257.036 -343.216 -252.958 -338.885 -249.71Z"
+                          ></path>
+                          <path
+                            d="M-324.496 -269.347C-308.963 -257.699 -286.852 -260.787 -272.929 -275.788C-272.42 -273.47 -271.161 -271.366 -269.193 -269.89C-267.707 -268.776 -265.999 -268.159 -264.244 -268.001C-264.023 -259.71 -260.397 -251.832 -253.623 -246.752C-246.849 -241.671 -238.351 -240.457 -230.455 -242.658C-229.794 -241.005 -228.714 -239.531 -227.227 -238.416C-225.259 -236.94 -222.905 -236.335 -220.567 -236.517C-230.677 -218.656 -227.148 -196.337 -211.616 -184.688C-199.217 -175.389 -182.624 -175.482 -169.352 -183.53C-169.189 -181.586 -168.282 -179.77 -166.681 -178.569C-165.725 -177.852 -164.634 -177.439 -163.509 -177.309C-163.69 -177.071 -163.87 -176.834 -164.046 -176.593C-178.332 -157.06 -175.442 -130.374 -157.594 -116.987C-139.745 -103.6 -113.695 -108.583 -99.409 -128.116C-99.2323 -128.357 -99.0606 -128.6 -98.8899 -128.844C-98.4387 -127.792 -97.7298 -126.856 -96.7744 -126.14C-95.1731 -124.939 -93.1934 -124.59 -91.3095 -124.998C-95.0413 -109.795 -90.2922 -93.6959 -77.8929 -84.3965C-62.3608 -72.7475 -40.2496 -75.8359 -26.3269 -90.8371C-25.8167 -88.5191 -24.5578 -86.4149 -22.5911 -84.9393C-21.1046 -83.8245 -19.3964 -83.2077 -17.6423 -83.05C-17.4197 -74.7588 -13.7947 -66.8811 -7.02102 -61.8007C-0.246307 -56.7203 8.25154 -55.5053 16.1484 -57.7072C16.8083 -56.0537 17.8895 -54.5795 19.375 -53.4648C21.3427 -51.9892 23.6978 -51.3835 26.0359 -51.5656C15.9247 -33.7051 19.4549 -11.3859 34.987 0.263031C47.3863 9.56242 63.9776 9.46894 77.2505 1.42136C77.4142 3.36504 78.3208 5.18149 79.9221 6.38235C80.8775 7.09906 81.9686 7.51211 83.0928 7.64258C82.9131 7.87978 82.7334 8.11705 82.5567 8.35837C68.2715 27.8914 71.1597 54.5776 89.0089 67.9642C106.857 81.3508 132.908 76.3686 147.193 56.8356C147.37 56.5942 147.541 56.351 147.713 56.1072C148.164 57.1589 148.872 58.0948 149.828 58.8115C151.429 60.0124 153.41 60.3614 155.293 59.9533C151.561 75.1561 156.31 91.2552 168.709 100.555C184.241 112.204 206.353 109.115 220.276 94.114C220.785 96.432 222.044 98.5362 224.012 100.012C225.498 101.127 227.206 101.743 228.96 101.901C229.182 110.192 232.808 118.07 239.582 123.15C246.356 128.231 254.855 129.446 262.75 127.244C263.411 128.897 264.492 130.372 265.978 131.486C267.946 132.962 270.3 133.568 272.638 133.386C262.528 151.246 266.057 173.565 281.589 185.214C293.988 194.514 310.581 194.42 323.853 186.372C324.016 188.316 324.924 190.133 326.524 191.333C327.481 192.05 328.571 192.463 329.696 192.594C329.515 192.831 329.335 193.068 329.159 193.309C323.757 200.697 320.812 209.107 320.203 217.434L426.705 71.8123L-231.714 -422L-334.651 -281.252C-332.222 -276.673 -328.826 -272.595 -324.496 -269.347Z"
+                          ></path>
+                          <path
+                            d="M158.605 -90.0092C168.741 -69.6218 193.569 -62.8563 214.06 -74.8983C214.313 -75.0473 214.563 -75.1998 214.812 -75.3531C214.777 -74.1693 215.013 -72.9805 215.556 -71.8891C216.465 -70.0601 218.055 -68.8636 219.87 -68.419C210.384 -55.8037 207.95 -38.624 214.991 -24.4614C223.811 -6.72057 244.419 0.0915332 262.738 -7.86078C262.235 -5.46361 262.476 -2.93813 263.593 -0.690735C264.437 1.00681 265.679 2.33491 267.148 3.25299C263.95 11.1244 263.898 20.1022 267.744 27.8395C271.592 35.5767 278.528 40.4469 286.338 41.8493C286.239 43.6896 286.581 45.5462 287.425 47.2437C288.542 49.4911 290.354 51.0926 292.475 51.9484C276.321 64.2552 270.274 86.7312 279.094 104.472C286.136 118.635 300.689 125.832 315.593 124.113C314.941 126.008 314.991 128.109 315.901 129.938C316.443 131.029 317.229 131.895 318.159 132.511C317.904 132.655 317.65 132.798 317.396 132.947C296.907 144.989 288.513 171.278 298.649 191.665C304.016 202.46 313.501 209.434 324.281 211.822L426.704 71.7789L159.084 -128.931C153.121 -116.759 152.489 -102.31 158.605 -90.0092ZM-307.594 -263.005C-285.381 -259.13 -262.995 -274.926 -257.594 -298.285C-257.527 -298.574 -257.466 -298.862 -257.405 -299.15C-256.552 -298.428 -255.505 -297.92 -254.315 -297.713C-252.322 -297.366 -250.323 -297.93 -248.724 -299.113C-246.002 -284.176 -234.96 -272.177 -219.529 -269.486C-200.199 -266.114 -180.73 -278.524 -173.815 -297.76C-172.388 -295.956 -170.348 -294.667 -167.899 -294.24C-166.049 -293.917 -164.196 -294.128 -162.487 -294.76C-158.885 -287.605 -152.262 -282.305 -143.832 -280.834C-135.401 -279.364 -126.936 -282.032 -120.433 -287.425C-119.137 -286.269 -117.521 -285.454 -115.671 -285.131C-113.222 -284.704 -110.767 -285.208 -108.649 -286.394C-110.82 -266.33 -98.3767 -248.355 -79.0469 -244.984C-63.6156 -242.292 -48.0965 -249.659 -38.9457 -262.525C-37.9973 -260.897 -36.403 -259.706 -34.4103 -259.359C-33.2213 -259.151 -32.0293 -259.269 -30.9211 -259.648C-30.994 -259.362 -31.0649 -259.075 -31.1318 -258.787C-36.5327 -235.428 -22.9025 -213.351 -0.689475 -209.476C12.7132 -207.139 26.1777 -211.964 35.9375 -221.289L-231.684 -421.999L-334.107 -281.957C-328.709 -272.211 -319.356 -265.056 -307.594 -263.005Z"
+                          ></path>
+                          <path
+                            d="M-354.603 -254.026C-352.084 -249.312 -348.664 -245.312 -344.433 -242.139C-336.913 -236.499 -327.479 -234.077 -317.869 -235.32C-308.492 -236.533 -299.624 -241.128 -292.846 -248.276C-292.245 -245.988 -290.966 -244.061 -289.127 -242.682C-287.716 -241.624 -286.041 -240.964 -284.269 -240.767C-283.976 -232.161 -280.08 -224.434 -273.556 -219.541C-267.032 -214.648 -258.598 -213.126 -250.382 -215.352C-249.68 -213.693 -248.568 -212.262 -247.158 -211.204C-245.32 -209.825 -243.126 -209.148 -240.789 -209.233C-245.564 -200.583 -247.32 -190.653 -245.732 -181.216C-244.104 -171.544 -239.066 -163.112 -231.546 -157.472C-225.51 -152.944 -218.268 -150.478 -210.602 -150.34C-203.254 -150.207 -195.908 -152.199 -189.334 -156.104C-189.075 -154.16 -188.116 -152.483 -186.608 -151.352C-185.767 -150.721 -184.786 -150.296 -183.746 -150.109C-183.836 -149.99 -183.925 -149.87 -184.013 -149.749C-190.966 -140.242 -194.12 -128.767 -192.893 -117.437C-191.667 -106.107 -186.207 -96.2797 -177.52 -89.7641C-168.833 -83.2485 -157.958 -80.8253 -146.899 -82.9403C-135.839 -85.0557 -125.92 -91.4564 -118.967 -100.963C-118.879 -101.084 -118.792 -101.205 -118.705 -101.327C-118.225 -100.375 -117.537 -99.5477 -116.697 -98.9175C-115.189 -97.7863 -113.325 -97.3466 -111.413 -97.6622C-113.185 -90.1548 -112.925 -82.4586 -110.657 -75.3795C-108.291 -67.9941 -103.851 -61.6975 -97.8146 -57.1705C-90.2942 -51.5302 -80.8599 -49.1084 -71.2499 -50.3515C-61.8736 -51.5643 -53.0054 -56.1598 -46.2277 -63.3077C-45.6257 -61.0196 -44.3468 -59.0923 -42.5078 -57.7133C-41.0972 -56.6554 -39.422 -55.9959 -37.6499 -55.7989C-37.3574 -47.1924 -33.4609 -39.4653 -26.9368 -34.5725C-20.4136 -29.6797 -11.9787 -28.1578 -3.76342 -30.3835C-3.06159 -28.7246 -1.94944 -27.2938 -0.538787 -26.2359C1.29915 -24.8568 3.49249 -24.1796 5.8296 -24.2643C1.05356 -15.6147 -0.701506 -5.68418 0.886846 3.7529C2.51513 13.4244 7.55273 21.8568 15.0732 27.4969C21.1091 32.024 28.3511 34.4903 36.0173 34.6289C43.365 34.762 50.7108 32.7696 57.2849 28.864C57.5444 30.8087 58.5028 32.4856 60.0113 33.6168C60.8519 34.2471 61.8333 34.6724 62.8725 34.8597C62.7837 34.9789 62.6938 35.0986 62.606 35.2194C55.6526 44.7264 52.4988 56.2017 53.7258 67.5314C54.9517 78.861 60.4116 88.6888 69.0991 95.2043C77.7857 101.72 88.6605 104.143 99.7201 102.028C110.78 99.9128 120.699 93.5121 127.652 84.005C127.74 83.8843 127.827 83.7631 127.914 83.6417C128.393 84.5937 129.082 85.4208 129.922 86.051C131.43 87.1823 133.294 87.622 135.206 87.3064C133.434 94.8138 133.693 102.51 135.962 109.589C138.328 116.975 142.768 123.271 148.804 127.798C156.325 133.438 165.759 135.86 175.369 134.617C184.745 133.404 193.614 128.809 200.392 121.661C200.993 123.949 202.272 125.876 204.111 127.255C205.522 128.313 207.197 128.973 208.969 129.17C209.262 137.776 213.158 145.503 219.682 150.396C226.205 155.289 234.64 156.811 242.856 154.585C243.557 156.244 244.669 157.675 246.08 158.733C247.918 160.112 250.111 160.789 252.449 160.704C247.673 169.354 245.917 179.285 247.506 188.722C249.134 198.393 254.172 206.825 261.692 212.466C267.728 216.993 274.97 219.459 282.636 219.598C289.984 219.731 297.33 217.738 303.904 213.833C304.163 215.777 305.122 217.454 306.63 218.586C307.471 219.216 308.452 219.641 309.491 219.828C309.403 219.947 309.313 220.067 309.225 220.188C303.965 227.381 300.848 235.776 300.211 244.467C300.205 244.557 300.243 244.639 300.309 244.688L426.705 71.8588L-231.756 -421.999L-354.603 -254.026ZM-231.717 -421.626L426.34 71.928L300.802 243.583C301.571 235.317 304.613 227.351 309.629 220.491C309.805 220.251 309.984 220.016 310.162 219.78C310.221 219.702 310.238 219.601 310.207 219.514C310.176 219.427 310.101 219.367 310.011 219.356C308.898 219.227 307.841 218.807 306.955 218.141C305.458 217.02 304.544 215.321 304.378 213.359C304.371 213.271 304.321 213.195 304.245 213.158C304.17 213.12 304.078 213.126 304.002 213.172C290.413 221.411 273.934 220.96 262.016 212.021C246.793 200.604 242.97 178.469 253.123 160.533C253.172 160.446 253.174 160.342 253.128 160.261C253.082 160.18 252.997 160.134 252.902 160.142C250.515 160.328 248.268 159.687 246.404 158.289C245.007 157.241 243.919 155.81 243.255 154.15C243.209 154.034 243.086 153.975 242.964 154.009C234.834 156.276 226.466 154.797 220.007 149.952C213.546 145.107 209.71 137.432 209.481 128.895C209.477 128.767 209.386 128.666 209.262 128.655C207.501 128.496 205.831 127.859 204.435 126.811C202.571 125.413 201.311 123.423 200.791 121.057C200.77 120.964 200.702 120.893 200.611 120.872C200.521 120.851 200.424 120.883 200.356 120.956C186.375 136.021 164.351 138.771 149.129 127.354C137.212 118.416 131.98 102.583 135.801 87.0187C135.823 86.9306 135.801 86.8403 135.744 86.7781C135.686 86.7158 135.6 86.6894 135.514 86.7081C133.613 87.12 131.742 86.7291 130.246 85.6074C129.359 84.9417 128.654 84.0403 128.208 83.0005C128.172 82.9158 128.093 82.8608 128.001 82.8561C127.91 82.8513 127.819 82.8973 127.763 82.977C127.593 83.2193 127.422 83.4612 127.246 83.7011C113.073 103.082 87.1331 108.044 69.4226 94.761C51.7131 81.4784 48.8369 54.9043 63.0113 35.5233C63.186 35.2834 63.3647 35.0475 63.5444 34.8117C63.6033 34.7342 63.6203 34.633 63.5893 34.5458C63.5584 34.4588 63.4835 34.3985 63.3927 34.3882C62.2805 34.2591 61.2233 33.839 60.3358 33.1733C58.8403 32.0515 57.9258 30.3532 57.76 28.3907C57.7531 28.3023 57.7031 28.2267 57.6273 28.1894C57.5514 28.1519 57.4606 28.1575 57.3837 28.204C43.7953 36.4433 27.3148 35.9916 15.3977 27.0534C0.175036 15.6361 -3.64761 -6.49925 6.50547 -24.4356C6.55439 -24.5221 6.55639 -24.6259 6.51047 -24.7071C6.46455 -24.7881 6.37767 -24.8339 6.28383 -24.8264C3.8968 -24.6405 1.64958 -25.2812 -0.214315 -26.6794C-1.61099 -27.7269 -2.70019 -29.1582 -3.36309 -30.8184C-3.40901 -30.9346 -3.53179 -30.9936 -3.65359 -30.9596C-11.785 -28.6927 -20.1531 -30.1713 -26.6123 -35.0162C-33.0726 -39.8611 -36.9082 -47.5359 -37.1378 -56.0729C-37.1408 -56.2015 -37.2326 -56.3023 -37.3554 -56.3135C-39.1175 -56.472 -40.7867 -57.1094 -42.1834 -58.1569C-44.0473 -59.555 -45.3082 -61.545 -45.8283 -63.9116C-45.8483 -64.0045 -45.9172 -64.0749 -46.007 -64.0962C-46.0969 -64.1172 -46.1947 -64.085 -46.2626 -64.0123C-60.2443 -48.9474 -82.2666 -46.1967 -97.4892 -57.6139C-109.406 -66.5521 -114.639 -82.3848 -110.818 -97.9495C-110.796 -98.0375 -110.817 -98.1279 -110.875 -98.1902C-110.932 -98.252 -111.018 -98.2788 -111.104 -98.2601C-113.005 -97.8482 -114.876 -98.2391 -116.372 -99.3608C-117.26 -100.027 -117.965 -100.928 -118.411 -101.968C-118.447 -102.053 -118.526 -102.107 -118.617 -102.112C-118.709 -102.117 -118.8 -102.071 -118.856 -101.991C-119.025 -101.749 -119.196 -101.507 -119.372 -101.267C-133.546 -81.8861 -159.486 -76.9246 -177.195 -90.2072C-194.905 -103.49 -197.782 -130.064 -183.608 -149.445C-183.432 -149.685 -183.253 -149.921 -183.075 -150.157C-183.016 -150.234 -182.998 -150.335 -183.03 -150.422C-183.061 -150.509 -183.135 -150.57 -183.226 -150.58C-184.338 -150.709 -185.395 -151.129 -186.282 -151.795C-187.778 -152.917 -188.693 -154.615 -188.859 -156.578C-188.866 -156.666 -188.916 -156.742 -188.991 -156.779C-189.067 -156.816 -189.158 -156.811 -189.235 -156.764C-202.824 -148.525 -219.303 -148.977 -231.22 -157.915C-246.444 -169.332 -250.267 -191.468 -240.113 -209.404C-240.064 -209.49 -240.062 -209.594 -240.108 -209.675C-240.153 -209.756 -240.24 -209.802 -240.334 -209.795C-242.722 -209.609 -244.968 -210.249 -246.833 -211.648C-248.229 -212.695 -249.318 -214.126 -249.982 -215.787C-250.028 -215.903 -250.15 -215.962 -250.273 -215.928C-258.403 -213.661 -266.771 -215.139 -273.231 -219.984C-279.691 -224.829 -283.527 -232.504 -283.756 -241.041C-283.76 -241.17 -283.851 -241.27 -283.974 -241.282C-285.736 -241.44 -287.405 -242.078 -288.802 -243.125C-290.666 -244.523 -291.926 -246.513 -292.447 -248.88C-292.467 -248.973 -292.536 -249.043 -292.625 -249.064C-292.715 -249.085 -292.813 -249.053 -292.88 -248.98C-306.862 -233.915 -328.885 -231.165 -344.108 -242.582C-348.268 -245.702 -351.635 -249.631 -354.117 -254.26L-231.715 -421.625L-231.717 -421.626Z"
+                          ></path>
+                          <path
+                            d="M217.49 11.7818C217.49 11.7818 207.025 39.5549 178.379 40.4766C154.867 41.8809 140.833 22.2718 140.833 22.2718C140.833 22.2718 131.738 28.4858 122.075 25.0451C112.411 21.6046 108.85 14.2699 108.557 8.32617C108.557 8.32617 110.954 20.2558 124.47 22.9629C124.47 22.9629 133.407 25.1969 142.388 17.916C142.388 17.916 153.26 37.7947 178.63 36.8194C178.63 36.8194 203.153 37.0408 217.49 11.7818Z"
+                          ></path>
+                          <path
+                            d="M218.072 10.7651C218.17 10.8387 218.199 10.9815 218.135 11.1027C215.778 15.5409 212.77 19.6015 209.195 23.1714C200.401 31.9501 189.08 36.9 177.315 37.1091C165.55 37.3183 154.75 32.7623 146.905 24.2789C144.271 21.4319 142.051 18.2192 140.306 14.73C140.242 14.6022 140.294 14.4372 140.422 14.3614C140.551 14.2854 140.707 14.3274 140.771 14.4553C142.496 17.9032 144.689 21.0782 147.292 23.892C163.296 41.1968 190.911 40.7064 208.848 22.7975C212.382 19.2692 215.356 15.2565 217.684 10.8708C217.755 10.7368 217.913 10.68 218.038 10.7441C218.05 10.7502 218.061 10.7573 218.072 10.7651Z"
+                          ></path>
+                          <path
+                            d="M142.544 17.753C142.56 17.7654 142.575 17.7803 142.589 17.7973C142.675 17.9088 142.653 18.0786 142.538 18.1768C141.919 18.7082 141.622 18.9155 140.971 19.3696L140.937 19.3931C130.511 26.6678 116.927 24.2138 110.659 13.9229C109.348 11.7714 108.431 9.40533 107.932 6.89021C107.904 6.7472 107.995 6.59879 108.136 6.55887C108.277 6.51872 108.414 6.60256 108.442 6.74538C108.928 9.20085 109.823 11.5113 111.103 13.6124C117.225 23.6611 130.489 26.0576 140.67 18.954L140.704 18.9305C141.358 18.4743 141.628 18.2855 142.224 17.7731C142.321 17.6902 142.453 17.6851 142.544 17.753Z"
+                          ></path>
+                          <path
+                            d="M227.431 76.5587C227.431 76.5587 221.503 86.5277 208.332 85.0882C194.391 83.5644 192.353 69.7456 192.353 69.7456C192.353 69.7456 196.022 81.7014 209.031 83.2636C212.947 83.7174 220.458 83.42 227.431 76.5587Z"
+                          ></path>
+                          <path
+                            d="M228.102 75.8193C228.111 75.8264 228.12 75.8342 228.129 75.843C228.227 75.9434 228.222 76.1135 228.118 76.223C227.544 76.8248 226.933 77.4052 226.302 77.948C221.605 81.9866 215.802 84 209.962 83.6172C204.123 83.2343 198.947 80.5014 195.386 75.9218C193.848 73.9446 192.683 71.7124 191.924 69.2876C191.881 69.1497 191.956 68.9932 192.093 68.9381C192.23 68.8832 192.376 68.9504 192.419 69.088C193.16 71.4556 194.297 73.6351 195.799 75.5659C199.276 80.0382 204.332 82.7066 210.033 83.0803C215.735 83.4539 221.401 81.488 225.988 77.5446C226.605 77.0143 227.202 76.4475 227.762 75.8596C227.858 75.7596 228.002 75.7447 228.102 75.8193Z"
+                          ></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="id_e9baa06c_3ea5_4a60_bba9_5afa095661c3">
+                          <rect width="227" height="155" fill="white"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div class="average-chat-label">Shortest</div>
+                  <div class="average-chat-value" id="avgChatShortest">--</div>
+                </div>
+                <div class="average-chat-stat average-chat-stat--average">
+                  <span class="average-chat-badge average-chat-badge--average">
+                    <svg
+                      class="services-shape"
+                      width="227"
+                      height="155"
+                      viewBox="0 0 227 155"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        clip-path="url(#id_17a8207d_f4d0_4119_88dc_355b72557cf4)"
+                      >
+                        <g opacity="0.16">
+                          <path
+                            d="M-354.426 -254.267C-351.998 -249.688 -348.601 -245.609 -344.27 -242.361C-328.738 -230.711 -306.624 -233.8 -292.7 -248.802C-292.191 -246.484 -290.932 -244.38 -288.964 -242.904C-287.478 -241.789 -285.77 -241.172 -284.016 -241.014C-283.793 -232.723 -280.168 -224.844 -273.393 -219.763C-266.619 -214.682 -258.12 -213.467 -250.224 -215.669C-249.563 -214.016 -248.483 -212.541 -246.996 -211.427C-245.028 -209.951 -242.673 -209.345 -240.335 -209.527C-250.446 -191.665 -246.916 -169.344 -231.384 -157.694C-218.984 -148.394 -202.39 -148.487 -189.117 -156.535C-188.954 -154.592 -188.046 -152.775 -186.445 -151.574C-185.49 -150.857 -184.398 -150.444 -183.274 -150.314C-183.454 -150.077 -183.634 -149.839 -183.81 -149.598C-198.097 -130.063 -195.208 -103.374 -177.358 -89.9865C-159.508 -76.5987 -133.456 -81.5814 -119.17 -101.116C-118.993 -101.357 -118.822 -101.601 -118.65 -101.845C-118.199 -100.793 -117.491 -99.8568 -116.535 -99.14C-114.934 -97.9391 -112.953 -97.5901 -111.07 -97.9981C-114.801 -82.794 -110.052 -66.6932 -97.6519 -57.393C-82.1188 -45.743 -60.0056 -48.8318 -46.0818 -63.8343C-45.5727 -61.516 -44.3138 -59.4115 -42.3461 -57.9358C-40.8596 -56.821 -39.1524 -56.2041 -37.3973 -56.0463C-37.1747 -47.7545 -33.5497 -39.8759 -26.775 -34.7951C-20.0003 -29.7143 -11.5015 -28.4993 -3.60465 -30.7011C-2.94375 -29.0476 -1.86355 -27.5733 -0.377029 -26.4584C1.59069 -24.9826 3.94477 -24.377 6.28387 -24.5592C-3.82828 -6.69708 -0.29816 15.6243 15.235 27.2743C27.6353 36.5746 44.2276 36.4811 57.5015 28.4327C57.6652 30.3764 58.5717 32.1932 60.1731 33.3942C61.1285 34.111 62.2196 34.5239 63.3448 34.6545C63.1641 34.8916 62.9844 35.129 62.8077 35.3704C48.5215 54.9051 51.4107 81.5939 69.2609 94.9817C87.1102 108.369 113.163 103.387 127.449 83.8521C127.626 83.6107 127.797 83.3674 127.968 83.1236C128.419 84.1752 129.128 85.1114 130.084 85.8282C131.685 87.0292 133.666 87.3781 135.549 86.97C131.817 102.174 136.566 118.275 148.966 127.575C164.499 139.225 186.612 136.136 200.536 121.134C201.046 123.452 202.305 125.557 204.272 127.032C205.758 128.147 207.467 128.764 209.221 128.922C209.443 137.214 213.069 145.092 219.843 150.173C226.618 155.254 235.116 156.469 243.013 154.267C243.674 155.921 244.754 157.395 246.241 158.51C248.209 159.985 250.564 160.591 252.902 160.409C242.791 178.271 246.321 200.593 261.854 212.243C274.253 221.543 290.847 221.449 304.119 213.401C304.283 215.345 305.191 217.161 306.792 218.362C307.747 219.079 308.839 219.492 309.963 219.623C309.783 219.86 309.603 220.097 309.427 220.339C304.024 227.726 301.079 236.138 300.47 244.466L426.704 71.8575L-231.757 -422L-354.426 -254.267Z"
+                          ></path>
+                          <path
+                            d="M-338.885 -249.71C-323.353 -238.06 -301.24 -241.149 -287.316 -256.151C-286.807 -253.833 -285.548 -251.729 -283.58 -250.253C-282.094 -249.138 -280.386 -248.521 -278.632 -248.363C-278.409 -240.072 -274.784 -232.193 -268.009 -227.113C-261.235 -222.032 -252.737 -220.817 -244.84 -223.019C-244.18 -221.366 -243.099 -219.891 -241.612 -218.776C-239.644 -217.301 -237.29 -216.695 -234.952 -216.877C-245.063 -199.016 -241.533 -176.695 -226 -165.045C-213.601 -155.745 -197.007 -155.838 -183.735 -163.887C-183.571 -161.943 -182.664 -160.126 -181.063 -158.925C-180.108 -158.208 -179.016 -157.796 -177.891 -157.665C-178.072 -157.428 -178.252 -157.19 -178.428 -156.949C-192.715 -137.415 -189.825 -110.727 -171.976 -97.3392C-154.126 -83.9518 -128.075 -88.9344 -113.788 -108.469C-113.612 -108.71 -113.441 -108.953 -113.269 -109.197C-112.818 -108.146 -112.11 -107.209 -111.153 -106.493C-109.552 -105.292 -107.572 -104.943 -105.689 -105.351C-109.42 -90.1469 -104.671 -74.0466 -92.271 -64.7465C-76.7388 -53.0968 -54.6257 -56.1856 -40.7019 -71.1877C-40.1928 -68.8695 -38.9339 -66.7651 -36.9661 -65.2894C-35.4796 -64.1746 -33.7725 -63.5576 -32.0174 -63.3999C-31.7947 -55.1083 -28.1698 -47.23 -21.3951 -42.1492C-14.6214 -37.0685 -6.12254 -35.8535 1.7743 -38.0553C2.43519 -36.4018 3.5154 -34.9276 5.00192 -33.8128C6.96964 -32.337 9.32471 -31.7314 11.6628 -31.9136C1.55167 -14.0519 5.08079 8.26897 20.6139 19.9187C33.0132 29.2187 49.6066 29.1253 62.8795 21.077C63.0432 23.0207 63.9497 24.8374 65.551 26.0384C66.5064 26.7552 67.5976 27.1681 68.7227 27.2987C68.542 27.5358 68.3623 27.7732 68.1856 28.0145C53.8994 47.5488 56.7886 74.2369 74.6379 87.6244C92.4881 101.012 118.54 96.0293 132.826 76.4951C133.003 76.2537 133.174 76.0104 133.345 75.7666C133.796 76.8181 134.505 77.7544 135.461 78.4711C137.062 79.6721 139.043 80.021 140.925 79.6129C137.194 94.8167 141.943 110.917 154.343 120.217C169.875 131.867 191.988 128.778 205.912 113.776C206.421 116.094 207.68 118.198 209.648 119.674C211.134 120.789 212.842 121.406 214.597 121.564C214.819 129.855 218.444 137.734 225.219 142.814C231.993 147.895 240.491 149.11 248.388 146.908C249.049 148.562 250.129 150.036 251.616 151.151C253.584 152.627 255.939 153.232 258.277 153.05C248.166 170.912 251.695 193.233 267.228 204.882C279.628 214.182 296.221 214.089 309.493 206.041C309.657 207.984 310.565 209.801 312.165 211.002C313.121 211.719 314.212 212.132 315.337 212.262C315.156 212.499 314.976 212.737 314.801 212.978C309.398 220.366 306.453 228.777 305.844 237.105L426.704 71.8457L-231.745 -422L-349.042 -261.616C-346.612 -257.036 -343.216 -252.958 -338.885 -249.71Z"
+                          ></path>
+                          <path
+                            d="M-324.496 -269.347C-308.963 -257.699 -286.852 -260.787 -272.929 -275.788C-272.42 -273.47 -271.161 -271.366 -269.193 -269.89C-267.707 -268.776 -265.999 -268.159 -264.244 -268.001C-264.023 -259.71 -260.397 -251.832 -253.623 -246.752C-246.849 -241.671 -238.351 -240.457 -230.455 -242.658C-229.794 -241.005 -228.714 -239.531 -227.227 -238.416C-225.259 -236.94 -222.905 -236.335 -220.567 -236.517C-230.677 -218.656 -227.148 -196.337 -211.616 -184.688C-199.217 -175.389 -182.624 -175.482 -169.352 -183.53C-169.189 -181.586 -168.282 -179.77 -166.681 -178.569C-165.725 -177.852 -164.634 -177.439 -163.509 -177.309C-163.69 -177.071 -163.87 -176.834 -164.046 -176.593C-178.332 -157.06 -175.442 -130.374 -157.594 -116.987C-139.745 -103.6 -113.695 -108.583 -99.409 -128.116C-99.2323 -128.357 -99.0606 -128.6 -98.8899 -128.844C-98.4387 -127.792 -97.7298 -126.856 -96.7744 -126.14C-95.1731 -124.939 -93.1934 -124.59 -91.3095 -124.998C-95.0413 -109.795 -90.2922 -93.6959 -77.8929 -84.3965C-62.3608 -72.7475 -40.2496 -75.8359 -26.3269 -90.8371C-25.8167 -88.5191 -24.5578 -86.4149 -22.5911 -84.9393C-21.1046 -83.8245 -19.3964 -83.2077 -17.6423 -83.05C-17.4197 -74.7588 -13.7947 -66.8811 -7.02102 -61.8007C-0.246307 -56.7203 8.25154 -55.5053 16.1484 -57.7072C16.8083 -56.0537 17.8895 -54.5795 19.375 -53.4648C21.3427 -51.9892 23.6978 -51.3835 26.0359 -51.5656C15.9247 -33.7051 19.4549 -11.3859 34.987 0.263031C47.3863 9.56242 63.9776 9.46894 77.2505 1.42136C77.4142 3.36504 78.3208 5.18149 79.9221 6.38235C80.8775 7.09906 81.9686 7.51211 83.0928 7.64258C82.9131 7.87978 82.7334 8.11705 82.5567 8.35837C68.2715 27.8914 71.1597 54.5776 89.0089 67.9642C106.857 81.3508 132.908 76.3686 147.193 56.8356C147.37 56.5942 147.541 56.351 147.713 56.1072C148.164 57.1589 148.872 58.0948 149.828 58.8115C151.429 60.0124 153.41 60.3614 155.293 59.9533C151.561 75.1561 156.31 91.2552 168.709 100.555C184.241 112.204 206.353 109.115 220.276 94.114C220.785 96.432 222.044 98.5362 224.012 100.012C225.498 101.127 227.206 101.743 228.96 101.901C229.182 110.192 232.808 118.07 239.582 123.15C246.356 128.231 254.855 129.446 262.75 127.244C263.411 128.897 264.492 130.372 265.978 131.486C267.946 132.962 270.3 133.568 272.638 133.386C262.528 151.246 266.057 173.565 281.589 185.214C293.988 194.514 310.581 194.42 323.853 186.372C324.016 188.316 324.924 190.133 326.524 191.333C327.481 192.05 328.571 192.463 329.696 192.594C329.515 192.831 329.335 193.068 329.159 193.309C323.757 200.697 320.812 209.107 320.203 217.434L426.705 71.8123L-231.714 -422L-334.651 -281.252C-332.222 -276.673 -328.826 -272.595 -324.496 -269.347Z"
+                          ></path>
+                          <path
+                            d="M158.605 -90.0092C168.741 -69.6218 193.569 -62.8563 214.06 -74.8983C214.313 -75.0473 214.563 -75.1998 214.812 -75.3531C214.777 -74.1693 215.013 -72.9805 215.556 -71.8891C216.465 -70.0601 218.055 -68.8636 219.87 -68.419C210.384 -55.8037 207.95 -38.624 214.991 -24.4614C223.811 -6.72057 244.419 0.0915332 262.738 -7.86078C262.235 -5.46361 262.476 -2.93813 263.593 -0.690735C264.437 1.00681 265.679 2.33491 267.148 3.25299C263.95 11.1244 263.898 20.1022 267.744 27.8395C271.592 35.5767 278.528 40.4469 286.338 41.8493C286.239 43.6896 286.581 45.5462 287.425 47.2437C288.542 49.4911 290.354 51.0926 292.475 51.9484C276.321 64.2552 270.274 86.7312 279.094 104.472C286.136 118.635 300.689 125.832 315.593 124.113C314.941 126.008 314.991 128.109 315.901 129.938C316.443 131.029 317.229 131.895 318.159 132.511C317.904 132.655 317.65 132.798 317.396 132.947C296.907 144.989 288.513 171.278 298.649 191.665C304.016 202.46 313.501 209.434 324.281 211.822L426.704 71.7789L159.084 -128.931C153.121 -116.759 152.489 -102.31 158.605 -90.0092ZM-307.594 -263.005C-285.381 -259.13 -262.995 -274.926 -257.594 -298.285C-257.527 -298.574 -257.466 -298.862 -257.405 -299.15C-256.552 -298.428 -255.505 -297.92 -254.315 -297.713C-252.322 -297.366 -250.323 -297.93 -248.724 -299.113C-246.002 -284.176 -234.96 -272.177 -219.529 -269.486C-200.199 -266.114 -180.73 -278.524 -173.815 -297.76C-172.388 -295.956 -170.348 -294.667 -167.899 -294.24C-166.049 -293.917 -164.196 -294.128 -162.487 -294.76C-158.885 -287.605 -152.262 -282.305 -143.832 -280.834C-135.401 -279.364 -126.936 -282.032 -120.433 -287.425C-119.137 -286.269 -117.521 -285.454 -115.671 -285.131C-113.222 -284.704 -110.767 -285.208 -108.649 -286.394C-110.82 -266.33 -98.3767 -248.355 -79.0469 -244.984C-63.6156 -242.292 -48.0965 -249.659 -38.9457 -262.525C-37.9973 -260.897 -36.403 -259.706 -34.4103 -259.359C-33.2213 -259.151 -32.0293 -259.269 -30.9211 -259.648C-30.994 -259.362 -31.0649 -259.075 -31.1318 -258.787C-36.5327 -235.428 -22.9025 -213.351 -0.689475 -209.476C12.7132 -207.139 26.1777 -211.964 35.9375 -221.289L-231.684 -421.999L-334.107 -281.957C-328.709 -272.211 -319.356 -265.056 -307.594 -263.005Z"
+                          ></path>
+                          <path
+                            d="M-354.603 -254.026C-352.084 -249.312 -348.664 -245.312 -344.433 -242.139C-336.913 -236.499 -327.479 -234.077 -317.869 -235.32C-308.492 -236.533 -299.624 -241.128 -292.846 -248.276C-292.245 -245.988 -290.966 -244.061 -289.127 -242.682C-287.716 -241.624 -286.041 -240.964 -284.269 -240.767C-283.976 -232.161 -280.08 -224.434 -273.556 -219.541C-267.032 -214.648 -258.598 -213.126 -250.382 -215.352C-249.68 -213.693 -248.568 -212.262 -247.158 -211.204C-245.32 -209.825 -243.126 -209.148 -240.789 -209.233C-245.564 -200.583 -247.32 -190.653 -245.732 -181.216C-244.104 -171.544 -239.066 -163.112 -231.546 -157.472C-225.51 -152.944 -218.268 -150.478 -210.602 -150.34C-203.254 -150.207 -195.908 -152.199 -189.334 -156.104C-189.075 -154.16 -188.116 -152.483 -186.608 -151.352C-185.767 -150.721 -184.786 -150.296 -183.746 -150.109C-183.836 -149.99 -183.925 -149.87 -184.013 -149.749C-190.966 -140.242 -194.12 -128.767 -192.893 -117.437C-191.667 -106.107 -186.207 -96.2797 -177.52 -89.7641C-168.833 -83.2485 -157.958 -80.8253 -146.899 -82.9403C-135.839 -85.0557 -125.92 -91.4564 -118.967 -100.963C-118.879 -101.084 -118.792 -101.205 -118.705 -101.327C-118.225 -100.375 -117.537 -99.5477 -116.697 -98.9175C-115.189 -97.7863 -113.325 -97.3466 -111.413 -97.6622C-113.185 -90.1548 -112.925 -82.4586 -110.657 -75.3795C-108.291 -67.9941 -103.851 -61.6975 -97.8146 -57.1705C-90.2942 -51.5302 -80.8599 -49.1084 -71.2499 -50.3515C-61.8736 -51.5643 -53.0054 -56.1598 -46.2277 -63.3077C-45.6257 -61.0196 -44.3468 -59.0923 -42.5078 -57.7133C-41.0972 -56.6554 -39.422 -55.9959 -37.6499 -55.7989C-37.3574 -47.1924 -33.4609 -39.4653 -26.9368 -34.5725C-20.4136 -29.6797 -11.9787 -28.1578 -3.76342 -30.3835C-3.06159 -28.7246 -1.94944 -27.2938 -0.538787 -26.2359C1.29915 -24.8568 3.49249 -24.1796 5.8296 -24.2643C1.05356 -15.6147 -0.701506 -5.68418 0.886846 3.7529C2.51513 13.4244 7.55273 21.8568 15.0732 27.4969C21.1091 32.024 28.3511 34.4903 36.0173 34.6289C43.365 34.762 50.7108 32.7696 57.2849 28.864C57.5444 30.8087 58.5028 32.4856 60.0113 33.6168C60.8519 34.2471 61.8333 34.6724 62.8725 34.8597C62.7837 34.9789 62.6938 35.0986 62.606 35.2194C55.6526 44.7264 52.4988 56.2017 53.7258 67.5314C54.9517 78.861 60.4116 88.6888 69.0991 95.2043C77.7857 101.72 88.6605 104.143 99.7201 102.028C110.78 99.9128 120.699 93.5121 127.652 84.005C127.74 83.8843 127.827 83.7631 127.914 83.6417C128.393 84.5937 129.082 85.4208 129.922 86.051C131.43 87.1823 133.294 87.622 135.206 87.3064C133.434 94.8138 133.693 102.51 135.962 109.589C138.328 116.975 142.768 123.271 148.804 127.798C156.325 133.438 165.759 135.86 175.369 134.617C184.745 133.404 193.614 128.809 200.392 121.661C200.993 123.949 202.272 125.876 204.111 127.255C205.522 128.313 207.197 128.973 208.969 129.17C209.262 137.776 213.158 145.503 219.682 150.396C226.205 155.289 234.64 156.811 242.856 154.585C243.557 156.244 244.669 157.675 246.08 158.733C247.918 160.112 250.111 160.789 252.449 160.704C247.673 169.354 245.917 179.285 247.506 188.722C249.134 198.393 254.172 206.825 261.692 212.466C267.728 216.993 274.97 219.459 282.636 219.598C289.984 219.731 297.33 217.738 303.904 213.833C304.163 215.777 305.122 217.454 306.63 218.586C307.471 219.216 308.452 219.641 309.491 219.828C309.403 219.947 309.313 220.067 309.225 220.188C303.965 227.381 300.848 235.776 300.211 244.467C300.205 244.557 300.243 244.639 300.309 244.688L426.705 71.8588L-231.756 -421.999L-354.603 -254.026ZM-231.717 -421.626L426.34 71.928L300.802 243.583C301.571 235.317 304.613 227.351 309.629 220.491C309.805 220.251 309.984 220.016 310.162 219.78C310.221 219.702 310.238 219.601 310.207 219.514C310.176 219.427 310.101 219.367 310.011 219.356C308.898 219.227 307.841 218.807 306.955 218.141C305.458 217.02 304.544 215.321 304.378 213.359C304.371 213.271 304.321 213.195 304.245 213.158C304.17 213.12 304.078 213.126 304.002 213.172C290.413 221.411 273.934 220.96 262.016 212.021C246.793 200.604 242.97 178.469 253.123 160.533C253.172 160.446 253.174 160.342 253.128 160.261C253.082 160.18 252.997 160.134 252.902 160.142C250.515 160.328 248.268 159.687 246.404 158.289C245.007 157.241 243.919 155.81 243.255 154.15C243.209 154.034 243.086 153.975 242.964 154.009C234.834 156.276 226.466 154.797 220.007 149.952C213.546 145.107 209.71 137.432 209.481 128.895C209.477 128.767 209.386 128.666 209.262 128.655C207.501 128.496 205.831 127.859 204.435 126.811C202.571 125.413 201.311 123.423 200.791 121.057C200.77 120.964 200.702 120.893 200.611 120.872C200.521 120.851 200.424 120.883 200.356 120.956C186.375 136.021 164.351 138.771 149.129 127.354C137.212 118.416 131.98 102.583 135.801 87.0187C135.823 86.9306 135.801 86.8403 135.744 86.7781C135.686 86.7158 135.6 86.6894 135.514 86.7081C133.613 87.12 131.742 86.7291 130.246 85.6074C129.359 84.9417 128.654 84.0403 128.208 83.0005C128.172 82.9158 128.093 82.8608 128.001 82.8561C127.91 82.8513 127.819 82.8973 127.763 82.977C127.593 83.2193 127.422 83.4612 127.246 83.7011C113.073 103.082 87.1331 108.044 69.4226 94.761C51.7131 81.4784 48.8369 54.9043 63.0113 35.5233C63.186 35.2834 63.3647 35.0475 63.5444 34.8117C63.6033 34.7342 63.6203 34.633 63.5893 34.5458C63.5584 34.4588 63.4835 34.3985 63.3927 34.3882C62.2805 34.2591 61.2233 33.839 60.3358 33.1733C58.8403 32.0515 57.9258 30.3532 57.76 28.3907C57.7531 28.3023 57.7031 28.2267 57.6273 28.1894C57.5514 28.1519 57.4606 28.1575 57.3837 28.204C43.7953 36.4433 27.3148 35.9916 15.3977 27.0534C0.175036 15.6361 -3.64761 -6.49925 6.50547 -24.4356C6.55439 -24.5221 6.55639 -24.6259 6.51047 -24.7071C6.46455 -24.7881 6.37767 -24.8339 6.28383 -24.8264C3.8968 -24.6405 1.64958 -25.2812 -0.214315 -26.6794C-1.61099 -27.7269 -2.70019 -29.1582 -3.36309 -30.8184C-3.40901 -30.9346 -3.53179 -30.9936 -3.65359 -30.9596C-11.785 -28.6927 -20.1531 -30.1713 -26.6123 -35.0162C-33.0726 -39.8611 -36.9082 -47.5359 -37.1378 -56.0729C-37.1408 -56.2015 -37.2326 -56.3023 -37.3554 -56.3135C-39.1175 -56.472 -40.7867 -57.1094 -42.1834 -58.1569C-44.0473 -59.555 -45.3082 -61.545 -45.8283 -63.9116C-45.8483 -64.0045 -45.9172 -64.0749 -46.007 -64.0962C-46.0969 -64.1172 -46.1947 -64.085 -46.2626 -64.0123C-60.2443 -48.9474 -82.2666 -46.1967 -97.4892 -57.6139C-109.406 -66.5521 -114.639 -82.3848 -110.818 -97.9495C-110.796 -98.0375 -110.817 -98.1279 -110.875 -98.1902C-110.932 -98.252 -111.018 -98.2788 -111.104 -98.2601C-113.005 -97.8482 -114.876 -98.2391 -116.372 -99.3608C-117.26 -100.027 -117.965 -100.928 -118.411 -101.968C-118.447 -102.053 -118.526 -102.107 -118.617 -102.112C-118.709 -102.117 -118.8 -102.071 -118.856 -101.991C-119.025 -101.749 -119.196 -101.507 -119.372 -101.267C-133.546 -81.8861 -159.486 -76.9246 -177.195 -90.2072C-194.905 -103.49 -197.782 -130.064 -183.608 -149.445C-183.432 -149.685 -183.253 -149.921 -183.075 -150.157C-183.016 -150.234 -182.998 -150.335 -183.03 -150.422C-183.061 -150.509 -183.135 -150.57 -183.226 -150.58C-184.338 -150.709 -185.395 -151.129 -186.282 -151.795C-187.778 -152.917 -188.693 -154.615 -188.859 -156.578C-188.866 -156.666 -188.916 -156.742 -188.991 -156.779C-189.067 -156.816 -189.158 -156.811 -189.235 -156.764C-202.824 -148.525 -219.303 -148.977 -231.22 -157.915C-246.444 -169.332 -250.267 -191.468 -240.113 -209.404C-240.064 -209.49 -240.062 -209.594 -240.108 -209.675C-240.153 -209.756 -240.24 -209.802 -240.334 -209.795C-242.722 -209.609 -244.968 -210.249 -246.833 -211.648C-248.229 -212.695 -249.318 -214.126 -249.982 -215.787C-250.028 -215.903 -250.15 -215.962 -250.273 -215.928C-258.403 -213.661 -266.771 -215.139 -273.231 -219.984C-279.691 -224.829 -283.527 -232.504 -283.756 -241.041C-283.76 -241.17 -283.851 -241.27 -283.974 -241.282C-285.736 -241.44 -287.405 -242.078 -288.802 -243.125C-290.666 -244.523 -291.926 -246.513 -292.447 -248.88C-292.467 -248.973 -292.536 -249.043 -292.625 -249.064C-292.715 -249.085 -292.813 -249.053 -292.88 -248.98C-306.862 -233.915 -328.885 -231.165 -344.108 -242.582C-348.268 -245.702 -351.635 -249.631 -354.117 -254.26L-231.715 -421.625L-231.717 -421.626Z"
+                          ></path>
+                          <path
+                            d="M217.49 11.7818C217.49 11.7818 207.025 39.5549 178.379 40.4766C154.867 41.8809 140.833 22.2718 140.833 22.2718C140.833 22.2718 131.738 28.4858 122.075 25.0451C112.411 21.6046 108.85 14.2699 108.557 8.32617C108.557 8.32617 110.954 20.2558 124.47 22.9629C124.47 22.9629 133.407 25.1969 142.388 17.916C142.388 17.916 153.26 37.7947 178.63 36.8194C178.63 36.8194 203.153 37.0408 217.49 11.7818Z"
+                          ></path>
+                          <path
+                            d="M218.072 10.7651C218.17 10.8387 218.199 10.9815 218.135 11.1027C215.778 15.5409 212.77 19.6015 209.195 23.1714C200.401 31.9501 189.08 36.9 177.315 37.1091C165.55 37.3183 154.75 32.7623 146.905 24.2789C144.271 21.4319 142.051 18.2192 140.306 14.73C140.242 14.6022 140.294 14.4372 140.422 14.3614C140.551 14.2854 140.707 14.3274 140.771 14.4553C142.496 17.9032 144.689 21.0782 147.292 23.892C163.296 41.1968 190.911 40.7064 208.848 22.7975C212.382 19.2692 215.356 15.2565 217.684 10.8708C217.755 10.7368 217.913 10.68 218.038 10.7441C218.05 10.7502 218.061 10.7573 218.072 10.7651Z"
+                          ></path>
+                          <path
+                            d="M142.544 17.753C142.56 17.7654 142.575 17.7803 142.589 17.7973C142.675 17.9088 142.653 18.0786 142.538 18.1768C141.919 18.7082 141.622 18.9155 140.971 19.3696L140.937 19.3931C130.511 26.6678 116.927 24.2138 110.659 13.9229C109.348 11.7714 108.431 9.40533 107.932 6.89021C107.904 6.7472 107.995 6.59879 108.136 6.55887C108.277 6.51872 108.414 6.60256 108.442 6.74538C108.928 9.20085 109.823 11.5113 111.103 13.6124C117.225 23.6611 130.489 26.0576 140.67 18.954L140.704 18.9305C141.358 18.4743 141.628 18.2855 142.224 17.7731C142.321 17.6902 142.453 17.6851 142.544 17.753Z"
+                          ></path>
+                          <path
+                            d="M227.431 76.5587C227.431 76.5587 221.503 86.5277 208.332 85.0882C194.391 83.5644 192.353 69.7456 192.353 69.7456C192.353 69.7456 196.022 81.7014 209.031 83.2636C212.947 83.7174 220.458 83.42 227.431 76.5587Z"
+                          ></path>
+                          <path
+                            d="M228.102 75.8193C228.111 75.8264 228.12 75.8342 228.129 75.843C228.227 75.9434 228.222 76.1135 228.118 76.223C227.544 76.8248 226.933 77.4052 226.302 77.948C221.605 81.9866 215.802 84 209.962 83.6172C204.123 83.2343 198.947 80.5014 195.386 75.9218C193.848 73.9446 192.683 71.7124 191.924 69.2876C191.881 69.1497 191.956 68.9932 192.093 68.9381C192.23 68.8832 192.376 68.9504 192.419 69.088C193.16 71.4556 194.297 73.6351 195.799 75.5659C199.276 80.0382 204.332 82.7066 210.033 83.0803C215.735 83.4539 221.401 81.488 225.988 77.5446C226.605 77.0143 227.202 76.4475 227.762 75.8596C227.858 75.7596 228.002 75.7447 228.102 75.8193Z"
+                          ></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="id_17a8207d_f4d0_4119_88dc_355b72557cf4">
+                          <rect width="227" height="155" fill="white"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div class="average-chat-label">Average</div>
+                  <div class="average-chat-value" id="avgChatAverage">--</div>
+                </div>
+                <div class="average-chat-stat average-chat-stat--longest">
+                  <span class="average-chat-badge average-chat-badge--longest">
+                    <svg
+                      class="services-shape"
+                      width="227"
+                      height="155"
+                      viewBox="0 0 227 155"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        clip-path="url(#id_a332dc30_2e5b_4049_af54_41cd05916047)"
+                      >
+                        <g opacity="0.16">
+                          <path
+                            d="M-354.426 -254.267C-351.998 -249.688 -348.601 -245.609 -344.27 -242.361C-328.738 -230.711 -306.624 -233.8 -292.7 -248.802C-292.191 -246.484 -290.932 -244.38 -288.964 -242.904C-287.478 -241.789 -285.77 -241.172 -284.016 -241.014C-283.793 -232.723 -280.168 -224.844 -273.393 -219.763C-266.619 -214.682 -258.12 -213.467 -250.224 -215.669C-249.563 -214.016 -248.483 -212.541 -246.996 -211.427C-245.028 -209.951 -242.673 -209.345 -240.335 -209.527C-250.446 -191.665 -246.916 -169.344 -231.384 -157.694C-218.984 -148.394 -202.39 -148.487 -189.117 -156.535C-188.954 -154.592 -188.046 -152.775 -186.445 -151.574C-185.49 -150.857 -184.398 -150.444 -183.274 -150.314C-183.454 -150.077 -183.634 -149.839 -183.81 -149.598C-198.097 -130.063 -195.208 -103.374 -177.358 -89.9865C-159.508 -76.5987 -133.456 -81.5814 -119.17 -101.116C-118.993 -101.357 -118.822 -101.601 -118.65 -101.845C-118.199 -100.793 -117.491 -99.8568 -116.535 -99.14C-114.934 -97.9391 -112.953 -97.5901 -111.07 -97.9981C-114.801 -82.794 -110.052 -66.6932 -97.6519 -57.393C-82.1188 -45.743 -60.0056 -48.8318 -46.0818 -63.8343C-45.5727 -61.516 -44.3138 -59.4115 -42.3461 -57.9358C-40.8596 -56.821 -39.1524 -56.2041 -37.3973 -56.0463C-37.1747 -47.7545 -33.5497 -39.8759 -26.775 -34.7951C-20.0003 -29.7143 -11.5015 -28.4993 -3.60465 -30.7011C-2.94375 -29.0476 -1.86355 -27.5733 -0.377029 -26.4584C1.59069 -24.9826 3.94477 -24.377 6.28387 -24.5592C-3.82828 -6.69708 -0.29816 15.6243 15.235 27.2743C27.6353 36.5746 44.2276 36.4811 57.5015 28.4327C57.6652 30.3764 58.5717 32.1932 60.1731 33.3942C61.1285 34.111 62.2196 34.5239 63.3448 34.6545C63.1641 34.8916 62.9844 35.129 62.8077 35.3704C48.5215 54.9051 51.4107 81.5939 69.2609 94.9817C87.1102 108.369 113.163 103.387 127.449 83.8521C127.626 83.6107 127.797 83.3674 127.968 83.1236C128.419 84.1752 129.128 85.1114 130.084 85.8282C131.685 87.0292 133.666 87.3781 135.549 86.97C131.817 102.174 136.566 118.275 148.966 127.575C164.499 139.225 186.612 136.136 200.536 121.134C201.046 123.452 202.305 125.557 204.272 127.032C205.758 128.147 207.467 128.764 209.221 128.922C209.443 137.214 213.069 145.092 219.843 150.173C226.618 155.254 235.116 156.469 243.013 154.267C243.674 155.921 244.754 157.395 246.241 158.51C248.209 159.985 250.564 160.591 252.902 160.409C242.791 178.271 246.321 200.593 261.854 212.243C274.253 221.543 290.847 221.449 304.119 213.401C304.283 215.345 305.191 217.161 306.792 218.362C307.747 219.079 308.839 219.492 309.963 219.623C309.783 219.86 309.603 220.097 309.427 220.339C304.024 227.726 301.079 236.138 300.47 244.466L426.704 71.8575L-231.757 -422L-354.426 -254.267Z"
+                          ></path>
+                          <path
+                            d="M-338.885 -249.71C-323.353 -238.06 -301.24 -241.149 -287.316 -256.151C-286.807 -253.833 -285.548 -251.729 -283.58 -250.253C-282.094 -249.138 -280.386 -248.521 -278.632 -248.363C-278.409 -240.072 -274.784 -232.193 -268.009 -227.113C-261.235 -222.032 -252.737 -220.817 -244.84 -223.019C-244.18 -221.366 -243.099 -219.891 -241.612 -218.776C-239.644 -217.301 -237.29 -216.695 -234.952 -216.877C-245.063 -199.016 -241.533 -176.695 -226 -165.045C-213.601 -155.745 -197.007 -155.838 -183.735 -163.887C-183.571 -161.943 -182.664 -160.126 -181.063 -158.925C-180.108 -158.208 -179.016 -157.796 -177.891 -157.665C-178.072 -157.428 -178.252 -157.19 -178.428 -156.949C-192.715 -137.415 -189.825 -110.727 -171.976 -97.3392C-154.126 -83.9518 -128.075 -88.9344 -113.788 -108.469C-113.612 -108.71 -113.441 -108.953 -113.269 -109.197C-112.818 -108.146 -112.11 -107.209 -111.153 -106.493C-109.552 -105.292 -107.572 -104.943 -105.689 -105.351C-109.42 -90.1469 -104.671 -74.0466 -92.271 -64.7465C-76.7388 -53.0968 -54.6257 -56.1856 -40.7019 -71.1877C-40.1928 -68.8695 -38.9339 -66.7651 -36.9661 -65.2894C-35.4796 -64.1746 -33.7725 -63.5576 -32.0174 -63.3999C-31.7947 -55.1083 -28.1698 -47.23 -21.3951 -42.1492C-14.6214 -37.0685 -6.12254 -35.8535 1.7743 -38.0553C2.43519 -36.4018 3.5154 -34.9276 5.00192 -33.8128C6.96964 -32.337 9.32471 -31.7314 11.6628 -31.9136C1.55167 -14.0519 5.08079 8.26897 20.6139 19.9187C33.0132 29.2187 49.6066 29.1253 62.8795 21.077C63.0432 23.0207 63.9497 24.8374 65.551 26.0384C66.5064 26.7552 67.5976 27.1681 68.7227 27.2987C68.542 27.5358 68.3623 27.7732 68.1856 28.0145C53.8994 47.5488 56.7886 74.2369 74.6379 87.6244C92.4881 101.012 118.54 96.0293 132.826 76.4951C133.003 76.2537 133.174 76.0104 133.345 75.7666C133.796 76.8181 134.505 77.7544 135.461 78.4711C137.062 79.6721 139.043 80.021 140.925 79.6129C137.194 94.8167 141.943 110.917 154.343 120.217C169.875 131.867 191.988 128.778 205.912 113.776C206.421 116.094 207.68 118.198 209.648 119.674C211.134 120.789 212.842 121.406 214.597 121.564C214.819 129.855 218.444 137.734 225.219 142.814C231.993 147.895 240.491 149.11 248.388 146.908C249.049 148.562 250.129 150.036 251.616 151.151C253.584 152.627 255.939 153.232 258.277 153.05C248.166 170.912 251.695 193.233 267.228 204.882C279.628 214.182 296.221 214.089 309.493 206.041C309.657 207.984 310.565 209.801 312.165 211.002C313.121 211.719 314.212 212.132 315.337 212.262C315.156 212.499 314.976 212.737 314.801 212.978C309.398 220.366 306.453 228.777 305.844 237.105L426.704 71.8457L-231.745 -422L-349.042 -261.616C-346.612 -257.036 -343.216 -252.958 -338.885 -249.71Z"
+                          ></path>
+                          <path
+                            d="M-324.496 -269.347C-308.963 -257.699 -286.852 -260.787 -272.929 -275.788C-272.42 -273.47 -271.161 -271.366 -269.193 -269.89C-267.707 -268.776 -265.999 -268.159 -264.244 -268.001C-264.023 -259.71 -260.397 -251.832 -253.623 -246.752C-246.849 -241.671 -238.351 -240.457 -230.455 -242.658C-229.794 -241.005 -228.714 -239.531 -227.227 -238.416C-225.259 -236.94 -222.905 -236.335 -220.567 -236.517C-230.677 -218.656 -227.148 -196.337 -211.616 -184.688C-199.217 -175.389 -182.624 -175.482 -169.352 -183.53C-169.189 -181.586 -168.282 -179.77 -166.681 -178.569C-165.725 -177.852 -164.634 -177.439 -163.509 -177.309C-163.69 -177.071 -163.87 -176.834 -164.046 -176.593C-178.332 -157.06 -175.442 -130.374 -157.594 -116.987C-139.745 -103.6 -113.695 -108.583 -99.409 -128.116C-99.2323 -128.357 -99.0606 -128.6 -98.8899 -128.844C-98.4387 -127.792 -97.7298 -126.856 -96.7744 -126.14C-95.1731 -124.939 -93.1934 -124.59 -91.3095 -124.998C-95.0413 -109.795 -90.2922 -93.6959 -77.8929 -84.3965C-62.3608 -72.7475 -40.2496 -75.8359 -26.3269 -90.8371C-25.8167 -88.5191 -24.5578 -86.4149 -22.5911 -84.9393C-21.1046 -83.8245 -19.3964 -83.2077 -17.6423 -83.05C-17.4197 -74.7588 -13.7947 -66.8811 -7.02102 -61.8007C-0.246307 -56.7203 8.25154 -55.5053 16.1484 -57.7072C16.8083 -56.0537 17.8895 -54.5795 19.375 -53.4648C21.3427 -51.9892 23.6978 -51.3835 26.0359 -51.5656C15.9247 -33.7051 19.4549 -11.3859 34.987 0.263031C47.3863 9.56242 63.9776 9.46894 77.2505 1.42136C77.4142 3.36504 78.3208 5.18149 79.9221 6.38235C80.8775 7.09906 81.9686 7.51211 83.0928 7.64258C82.9131 7.87978 82.7334 8.11705 82.5567 8.35837C68.2715 27.8914 71.1597 54.5776 89.0089 67.9642C106.857 81.3508 132.908 76.3686 147.193 56.8356C147.37 56.5942 147.541 56.351 147.713 56.1072C148.164 57.1589 148.872 58.0948 149.828 58.8115C151.429 60.0124 153.41 60.3614 155.293 59.9533C151.561 75.1561 156.31 91.2552 168.709 100.555C184.241 112.204 206.353 109.115 220.276 94.114C220.785 96.432 222.044 98.5362 224.012 100.012C225.498 101.127 227.206 101.743 228.96 101.901C229.182 110.192 232.808 118.07 239.582 123.15C246.356 128.231 254.855 129.446 262.75 127.244C263.411 128.897 264.492 130.372 265.978 131.486C267.946 132.962 270.3 133.568 272.638 133.386C262.528 151.246 266.057 173.565 281.589 185.214C293.988 194.514 310.581 194.42 323.853 186.372C324.016 188.316 324.924 190.133 326.524 191.333C327.481 192.05 328.571 192.463 329.696 192.594C329.515 192.831 329.335 193.068 329.159 193.309C323.757 200.697 320.812 209.107 320.203 217.434L426.705 71.8123L-231.714 -422L-334.651 -281.252C-332.222 -276.673 -328.826 -272.595 -324.496 -269.347Z"
+                          ></path>
+                          <path
+                            d="M158.605 -90.0092C168.741 -69.6218 193.569 -62.8563 214.06 -74.8983C214.313 -75.0473 214.563 -75.1998 214.812 -75.3531C214.777 -74.1693 215.013 -72.9805 215.556 -71.8891C216.465 -70.0601 218.055 -68.8636 219.87 -68.419C210.384 -55.8037 207.95 -38.624 214.991 -24.4614C223.811 -6.72057 244.419 0.0915332 262.738 -7.86078C262.235 -5.46361 262.476 -2.93813 263.593 -0.690735C264.437 1.00681 265.679 2.33491 267.148 3.25299C263.95 11.1244 263.898 20.1022 267.744 27.8395C271.592 35.5767 278.528 40.4469 286.338 41.8493C286.239 43.6896 286.581 45.5462 287.425 47.2437C288.542 49.4911 290.354 51.0926 292.475 51.9484C276.321 64.2552 270.274 86.7312 279.094 104.472C286.136 118.635 300.689 125.832 315.593 124.113C314.941 126.008 314.991 128.109 315.901 129.938C316.443 131.029 317.229 131.895 318.159 132.511C317.904 132.655 317.65 132.798 317.396 132.947C296.907 144.989 288.513 171.278 298.649 191.665C304.016 202.46 313.501 209.434 324.281 211.822L426.704 71.7789L159.084 -128.931C153.121 -116.759 152.489 -102.31 158.605 -90.0092ZM-307.594 -263.005C-285.381 -259.13 -262.995 -274.926 -257.594 -298.285C-257.527 -298.574 -257.466 -298.862 -257.405 -299.15C-256.552 -298.428 -255.505 -297.92 -254.315 -297.713C-252.322 -297.366 -250.323 -297.93 -248.724 -299.113C-246.002 -284.176 -234.96 -272.177 -219.529 -269.486C-200.199 -266.114 -180.73 -278.524 -173.815 -297.76C-172.388 -295.956 -170.348 -294.667 -167.899 -294.24C-166.049 -293.917 -164.196 -294.128 -162.487 -294.76C-158.885 -287.605 -152.262 -282.305 -143.832 -280.834C-135.401 -279.364 -126.936 -282.032 -120.433 -287.425C-119.137 -286.269 -117.521 -285.454 -115.671 -285.131C-113.222 -284.704 -110.767 -285.208 -108.649 -286.394C-110.82 -266.33 -98.3767 -248.355 -79.0469 -244.984C-63.6156 -242.292 -48.0965 -249.659 -38.9457 -262.525C-37.9973 -260.897 -36.403 -259.706 -34.4103 -259.359C-33.2213 -259.151 -32.0293 -259.269 -30.9211 -259.648C-30.994 -259.362 -31.0649 -259.075 -31.1318 -258.787C-36.5327 -235.428 -22.9025 -213.351 -0.689475 -209.476C12.7132 -207.139 26.1777 -211.964 35.9375 -221.289L-231.684 -421.999L-334.107 -281.957C-328.709 -272.211 -319.356 -265.056 -307.594 -263.005Z"
+                          ></path>
+                          <path
+                            d="M-354.603 -254.026C-352.084 -249.312 -348.664 -245.312 -344.433 -242.139C-336.913 -236.499 -327.479 -234.077 -317.869 -235.32C-308.492 -236.533 -299.624 -241.128 -292.846 -248.276C-292.245 -245.988 -290.966 -244.061 -289.127 -242.682C-287.716 -241.624 -286.041 -240.964 -284.269 -240.767C-283.976 -232.161 -280.08 -224.434 -273.556 -219.541C-267.032 -214.648 -258.598 -213.126 -250.382 -215.352C-249.68 -213.693 -248.568 -212.262 -247.158 -211.204C-245.32 -209.825 -243.126 -209.148 -240.789 -209.233C-245.564 -200.583 -247.32 -190.653 -245.732 -181.216C-244.104 -171.544 -239.066 -163.112 -231.546 -157.472C-225.51 -152.944 -218.268 -150.478 -210.602 -150.34C-203.254 -150.207 -195.908 -152.199 -189.334 -156.104C-189.075 -154.16 -188.116 -152.483 -186.608 -151.352C-185.767 -150.721 -184.786 -150.296 -183.746 -150.109C-183.836 -149.99 -183.925 -149.87 -184.013 -149.749C-190.966 -140.242 -194.12 -128.767 -192.893 -117.437C-191.667 -106.107 -186.207 -96.2797 -177.52 -89.7641C-168.833 -83.2485 -157.958 -80.8253 -146.899 -82.9403C-135.839 -85.0557 -125.92 -91.4564 -118.967 -100.963C-118.879 -101.084 -118.792 -101.205 -118.705 -101.327C-118.225 -100.375 -117.537 -99.5477 -116.697 -98.9175C-115.189 -97.7863 -113.325 -97.3466 -111.413 -97.6622C-113.185 -90.1548 -112.925 -82.4586 -110.657 -75.3795C-108.291 -67.9941 -103.851 -61.6975 -97.8146 -57.1705C-90.2942 -51.5302 -80.8599 -49.1084 -71.2499 -50.3515C-61.8736 -51.5643 -53.0054 -56.1598 -46.2277 -63.3077C-45.6257 -61.0196 -44.3468 -59.0923 -42.5078 -57.7133C-41.0972 -56.6554 -39.422 -55.9959 -37.6499 -55.7989C-37.3574 -47.1924 -33.4609 -39.4653 -26.9368 -34.5725C-20.4136 -29.6797 -11.9787 -28.1578 -3.76342 -30.3835C-3.06159 -28.7246 -1.94944 -27.2938 -0.538787 -26.2359C1.29915 -24.8568 3.49249 -24.1796 5.8296 -24.2643C1.05356 -15.6147 -0.701506 -5.68418 0.886846 3.7529C2.51513 13.4244 7.55273 21.8568 15.0732 27.4969C21.1091 32.024 28.3511 34.4903 36.0173 34.6289C43.365 34.762 50.7108 32.7696 57.2849 28.864C57.5444 30.8087 58.5028 32.4856 60.0113 33.6168C60.8519 34.2471 61.8333 34.6724 62.8725 34.8597C62.7837 34.9789 62.6938 35.0986 62.606 35.2194C55.6526 44.7264 52.4988 56.2017 53.7258 67.5314C54.9517 78.861 60.4116 88.6888 69.0991 95.2043C77.7857 101.72 88.6605 104.143 99.7201 102.028C110.78 99.9128 120.699 93.5121 127.652 84.005C127.74 83.8843 127.827 83.7631 127.914 83.6417C128.393 84.5937 129.082 85.4208 129.922 86.051C131.43 87.1823 133.294 87.622 135.206 87.3064C133.434 94.8138 133.693 102.51 135.962 109.589C138.328 116.975 142.768 123.271 148.804 127.798C156.325 133.438 165.759 135.86 175.369 134.617C184.745 133.404 193.614 128.809 200.392 121.661C200.993 123.949 202.272 125.876 204.111 127.255C205.522 128.313 207.197 128.973 208.969 129.17C209.262 137.776 213.158 145.503 219.682 150.396C226.205 155.289 234.64 156.811 242.856 154.585C243.557 156.244 244.669 157.675 246.08 158.733C247.918 160.112 250.111 160.789 252.449 160.704C247.673 169.354 245.917 179.285 247.506 188.722C249.134 198.393 254.172 206.825 261.692 212.466C267.728 216.993 274.97 219.459 282.636 219.598C289.984 219.731 297.33 217.738 303.904 213.833C304.163 215.777 305.122 217.454 306.63 218.586C307.471 219.216 308.452 219.641 309.491 219.828C309.403 219.947 309.313 220.067 309.225 220.188C303.965 227.381 300.848 235.776 300.211 244.467C300.205 244.557 300.243 244.639 300.309 244.688L426.705 71.8588L-231.756 -421.999L-354.603 -254.026ZM-231.717 -421.626L426.34 71.928L300.802 243.583C301.571 235.317 304.613 227.351 309.629 220.491C309.805 220.251 309.984 220.016 310.162 219.78C310.221 219.702 310.238 219.601 310.207 219.514C310.176 219.427 310.101 219.367 310.011 219.356C308.898 219.227 307.841 218.807 306.955 218.141C305.458 217.02 304.544 215.321 304.378 213.359C304.371 213.271 304.321 213.195 304.245 213.158C304.17 213.12 304.078 213.126 304.002 213.172C290.413 221.411 273.934 220.96 262.016 212.021C246.793 200.604 242.97 178.469 253.123 160.533C253.172 160.446 253.174 160.342 253.128 160.261C253.082 160.18 252.997 160.134 252.902 160.142C250.515 160.328 248.268 159.687 246.404 158.289C245.007 157.241 243.919 155.81 243.255 154.15C243.209 154.034 243.086 153.975 242.964 154.009C234.834 156.276 226.466 154.797 220.007 149.952C213.546 145.107 209.71 137.432 209.481 128.895C209.477 128.767 209.386 128.666 209.262 128.655C207.501 128.496 205.831 127.859 204.435 126.811C202.571 125.413 201.311 123.423 200.791 121.057C200.77 120.964 200.702 120.893 200.611 120.872C200.521 120.851 200.424 120.883 200.356 120.956C186.375 136.021 164.351 138.771 149.129 127.354C137.212 118.416 131.98 102.583 135.801 87.0187C135.823 86.9306 135.801 86.8403 135.744 86.7781C135.686 86.7158 135.6 86.6894 135.514 86.7081C133.613 87.12 131.742 86.7291 130.246 85.6074C129.359 84.9417 128.654 84.0403 128.208 83.0005C128.172 82.9158 128.093 82.8608 128.001 82.8561C127.91 82.8513 127.819 82.8973 127.763 82.977C127.593 83.2193 127.422 83.4612 127.246 83.7011C113.073 103.082 87.1331 108.044 69.4226 94.761C51.7131 81.4784 48.8369 54.9043 63.0113 35.5233C63.186 35.2834 63.3647 35.0475 63.5444 34.8117C63.6033 34.7342 63.6203 34.633 63.5893 34.5458C63.5584 34.4588 63.4835 34.3985 63.3927 34.3882C62.2805 34.2591 61.2233 33.839 60.3358 33.1733C58.8403 32.0515 57.9258 30.3532 57.76 28.3907C57.7531 28.3023 57.7031 28.2267 57.6273 28.1894C57.5514 28.1519 57.4606 28.1575 57.3837 28.204C43.7953 36.4433 27.3148 35.9916 15.3977 27.0534C0.175036 15.6361 -3.64761 -6.49925 6.50547 -24.4356C6.55439 -24.5221 6.55639 -24.6259 6.51047 -24.7071C6.46455 -24.7881 6.37767 -24.8339 6.28383 -24.8264C3.8968 -24.6405 1.64958 -25.2812 -0.214315 -26.6794C-1.61099 -27.7269 -2.70019 -29.1582 -3.36309 -30.8184C-3.40901 -30.9346 -3.53179 -30.9936 -3.65359 -30.9596C-11.785 -28.6927 -20.1531 -30.1713 -26.6123 -35.0162C-33.0726 -39.8611 -36.9082 -47.5359 -37.1378 -56.0729C-37.1408 -56.2015 -37.2326 -56.3023 -37.3554 -56.3135C-39.1175 -56.472 -40.7867 -57.1094 -42.1834 -58.1569C-44.0473 -59.555 -45.3082 -61.545 -45.8283 -63.9116C-45.8483 -64.0045 -45.9172 -64.0749 -46.007 -64.0962C-46.0969 -64.1172 -46.1947 -64.085 -46.2626 -64.0123C-60.2443 -48.9474 -82.2666 -46.1967 -97.4892 -57.6139C-109.406 -66.5521 -114.639 -82.3848 -110.818 -97.9495C-110.796 -98.0375 -110.817 -98.1279 -110.875 -98.1902C-110.932 -98.252 -111.018 -98.2788 -111.104 -98.2601C-113.005 -97.8482 -114.876 -98.2391 -116.372 -99.3608C-117.26 -100.027 -117.965 -100.928 -118.411 -101.968C-118.447 -102.053 -118.526 -102.107 -118.617 -102.112C-118.709 -102.117 -118.8 -102.071 -118.856 -101.991C-119.025 -101.749 -119.196 -101.507 -119.372 -101.267C-133.546 -81.8861 -159.486 -76.9246 -177.195 -90.2072C-194.905 -103.49 -197.782 -130.064 -183.608 -149.445C-183.432 -149.685 -183.253 -149.921 -183.075 -150.157C-183.016 -150.234 -182.998 -150.335 -183.03 -150.422C-183.061 -150.509 -183.135 -150.57 -183.226 -150.58C-184.338 -150.709 -185.395 -151.129 -186.282 -151.795C-187.778 -152.917 -188.693 -154.615 -188.859 -156.578C-188.866 -156.666 -188.916 -156.742 -188.991 -156.779C-189.067 -156.816 -189.158 -156.811 -189.235 -156.764C-202.824 -148.525 -219.303 -148.977 -231.22 -157.915C-246.444 -169.332 -250.267 -191.468 -240.113 -209.404C-240.064 -209.49 -240.062 -209.594 -240.108 -209.675C-240.153 -209.756 -240.24 -209.802 -240.334 -209.795C-242.722 -209.609 -244.968 -210.249 -246.833 -211.648C-248.229 -212.695 -249.318 -214.126 -249.982 -215.787C-250.028 -215.903 -250.15 -215.962 -250.273 -215.928C-258.403 -213.661 -266.771 -215.139 -273.231 -219.984C-279.691 -224.829 -283.527 -232.504 -283.756 -241.041C-283.76 -241.17 -283.851 -241.27 -283.974 -241.282C-285.736 -241.44 -287.405 -242.078 -288.802 -243.125C-290.666 -244.523 -291.926 -246.513 -292.447 -248.88C-292.467 -248.973 -292.536 -249.043 -292.625 -249.064C-292.715 -249.085 -292.813 -249.053 -292.88 -248.98C-306.862 -233.915 -328.885 -231.165 -344.108 -242.582C-348.268 -245.702 -351.635 -249.631 -354.117 -254.26L-231.715 -421.625L-231.717 -421.626Z"
+                          ></path>
+                          <path
+                            d="M217.49 11.7818C217.49 11.7818 207.025 39.5549 178.379 40.4766C154.867 41.8809 140.833 22.2718 140.833 22.2718C140.833 22.2718 131.738 28.4858 122.075 25.0451C112.411 21.6046 108.85 14.2699 108.557 8.32617C108.557 8.32617 110.954 20.2558 124.47 22.9629C124.47 22.9629 133.407 25.1969 142.388 17.916C142.388 17.916 153.26 37.7947 178.63 36.8194C178.63 36.8194 203.153 37.0408 217.49 11.7818Z"
+                          ></path>
+                          <path
+                            d="M218.072 10.7651C218.17 10.8387 218.199 10.9815 218.135 11.1027C215.778 15.5409 212.77 19.6015 209.195 23.1714C200.401 31.9501 189.08 36.9 177.315 37.1091C165.55 37.3183 154.75 32.7623 146.905 24.2789C144.271 21.4319 142.051 18.2192 140.306 14.73C140.242 14.6022 140.294 14.4372 140.422 14.3614C140.551 14.2854 140.707 14.3274 140.771 14.4553C142.496 17.9032 144.689 21.0782 147.292 23.892C163.296 41.1968 190.911 40.7064 208.848 22.7975C212.382 19.2692 215.356 15.2565 217.684 10.8708C217.755 10.7368 217.913 10.68 218.038 10.7441C218.05 10.7502 218.061 10.7573 218.072 10.7651Z"
+                          ></path>
+                          <path
+                            d="M142.544 17.753C142.56 17.7654 142.575 17.7803 142.589 17.7973C142.675 17.9088 142.653 18.0786 142.538 18.1768C141.919 18.7082 141.622 18.9155 140.971 19.3696L140.937 19.3931C130.511 26.6678 116.927 24.2138 110.659 13.9229C109.348 11.7714 108.431 9.40533 107.932 6.89021C107.904 6.7472 107.995 6.59879 108.136 6.55887C108.277 6.51872 108.414 6.60256 108.442 6.74538C108.928 9.20085 109.823 11.5113 111.103 13.6124C117.225 23.6611 130.489 26.0576 140.67 18.954L140.704 18.9305C141.358 18.4743 141.628 18.2855 142.224 17.7731C142.321 17.6902 142.453 17.6851 142.544 17.753Z"
+                          ></path>
+                          <path
+                            d="M227.431 76.5587C227.431 76.5587 221.503 86.5277 208.332 85.0882C194.391 83.5644 192.353 69.7456 192.353 69.7456C192.353 69.7456 196.022 81.7014 209.031 83.2636C212.947 83.7174 220.458 83.42 227.431 76.5587Z"
+                          ></path>
+                          <path
+                            d="M228.102 75.8193C228.111 75.8264 228.12 75.8342 228.129 75.843C228.227 75.9434 228.222 76.1135 228.118 76.223C227.544 76.8248 226.933 77.4052 226.302 77.948C221.605 81.9866 215.802 84 209.962 83.6172C204.123 83.2343 198.947 80.5014 195.386 75.9218C193.848 73.9446 192.683 71.7124 191.924 69.2876C191.881 69.1497 191.956 68.9932 192.093 68.9381C192.23 68.8832 192.376 68.9504 192.419 69.088C193.16 71.4556 194.297 73.6351 195.799 75.5659C199.276 80.0382 204.332 82.7066 210.033 83.0803C215.735 83.4539 221.401 81.488 225.988 77.5446C226.605 77.0143 227.202 76.4475 227.762 75.8596C227.858 75.7596 228.002 75.7447 228.102 75.8193Z"
+                          ></path>
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="id_a332dc30_2e5b_4049_af54_41cd05916047">
+                          <rect width="227" height="155" fill="white"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div class="average-chat-label">Longest</div>
+                  <div class="average-chat-value" id="avgChatLongest">--</div>
+                </div>
+              </div>
+              <div class="table-wrapper-body">
+                <div id="avgChatDurationChart" class="h-100"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="data-table__body">
-          <div class="table--responsive">
-            <table class="table table--custom table--responsive-md">
-              <thead>
-                <tr>
-                  <th>Case ID</th>
-                  <th>Client Name</th>
-                  <th>Case Type</th>
-                  <th>Hearing Date</th>
-                  <th>Status</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-label="Case ID">#LC-1025</td>
-                  <td data-label="Client Name">Rahim Uddin</td>
-                  <td data-label="Case Type">Criminal Case</td>
-                  <td data-label="Hearing Date">15 March 2026</td>
-                  <td data-label="Status">
-                    <span class="badge badge--warning">Ongoing</span>
-                  </td>
-                  <td data-label="Action">
-                    <a href="#" class="btn btn--icon btn--sm btn--base-two">
-                      <i class="las la-eye"></i>
-                    </a>
-                  </td>
-                </tr>
+        <div class="col-xxl-6">
+          <div class="card custom--card dashboard__card h-100">
+            <div class="card-header">
+              <h4 class="card-header__title">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.08373 9.58268C8.91706 9.58268 10.4171 8.08268 10.4171 6.24935C10.4171 4.41602 8.91706 2.91602 7.08373 2.91602C5.25039 2.91602 3.75039 4.41602 3.75039 6.24935C3.75039 8.08268 5.25039 9.58268 7.08373 9.58268ZM10.8337 8.83268C12.2504 9.99935 14.3337 9.74935 15.5004 8.33268C16.6671 6.91602 16.4171 4.83268 15.0004 3.66602C14.4171 3.16602 13.6671 2.91602 12.9171 2.91602C12.1671 2.91602 11.4171 3.16602 10.8337 3.66602C12.2504 4.83268 12.5004 6.83268 11.3337 8.33268C11.2504 8.49935 11.0004 8.66602 10.8337 8.83268ZM19.0837 16.166C18.5837 13.0827 16.0004 10.8327 12.9171 10.8327C12.1671 10.8327 11.5004 10.916 10.8337 11.166C13.0004 11.916 14.5837 13.8327 14.9171 16.0827C15.0004 16.4993 14.6671 16.9993 14.1671 16.9993H14.0837H18.2504C18.7504 16.9993 19.0837 16.666 19.0837 16.166ZM7.08373 10.8327C4.00039 10.8327 1.33373 13.0827 0.917059 16.166C0.833726 16.5827 1.16706 17.0827 1.66706 17.0827H1.75039H12.4171C12.9171 17.0827 13.2504 16.7493 13.2504 16.2493V16.166C12.8337 13.0827 10.1671 10.8327 7.08373 10.8327Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <span>Visitors</span>
+              </h4>
+              <div class="dropdown">
+                <div
+                  id="visitor-date"
+                  class="datepicker-wrapper"
+                  data-date-filter
+                >
+                  <div class="datepicker-inner">
+                    <label for="date_label" class="datepicker-content">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.83337 11.7029V11.6465M8.20837 11.7029V11.6465M8.20837 8.64652V8.59012M11.2084 8.64652V8.59012M2.58337 5.64648H13.0834M3.94052 1.33398V2.45912M11.5834 1.33398V2.45898M11.5834 2.45898H4.08337C2.84073 2.45898 1.83337 3.46634 1.83337 4.70898V12.2091C1.83337 13.4517 2.84073 14.4591 4.08337 14.4591H11.5834C12.826 14.4591 13.8334 13.4517 13.8334 12.2091L13.8334 4.70898C13.8334 3.46634 12.826 2.45898 11.5834 2.45898Z"
+                          stroke="#181609"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <input
+                        name="date_label"
+                        type="search"
+                        class="form--control date-range"
+                        placeholder="Select Range"
+                        autocomplete="off"
+                        value=""
+                        readonly
+                      />
+                    </label>
+                    <input
+                      type="hidden"
+                      name="date"
+                      class="date-range-value"
+                      value="April 16, 2026 - April 22, 2026"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body d-none">
+              <div class="table-wrapper-body">
+                <div id="visitorChart" class="h-100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-6">
+          <div class="card custom--card dashboard__card missed-chat-card">
+            <div class="card-header">
+              <h4 class="card-header__title">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_10287_9229)">
+                    <path
+                      d="M11.6522 18.9783C11.6526 17.792 11.9726 16.6278 12.5787 15.6081C13.1848 14.5884 14.0545 13.7509 15.0964 13.1837C16.1382 12.6165 17.3137 12.3405 18.4991 12.3849C19.6845 12.4293 20.836 12.7923 21.8325 13.4358C21.8396 12.9469 21.8433 12.4252 21.8433 11.8622C21.8433 8.96766 21.7449 7.16109 21.5504 5.28984H21.578C21.4704 4.24712 21.0722 3.25556 20.4287 2.42808C19.7852 1.60059 18.9223 0.970436 17.9382 0.609375C17.8861 0.589688 17.8341 0.570938 17.7816 0.553125C17.3927 0.422396 16.9906 0.334838 16.5825 0.292031L16.5436 0.287813C14.9869 0.127969 14.7371 0 11.4544 0C8.17176 0 7.64066 0.127969 6.08535 0.290156L6.04645 0.294375C5.6181 0.339359 5.19639 0.433736 4.78973 0.575625V0.554531C3.77574 0.899286 2.88187 1.52754 2.21407 2.36483C1.54626 3.20212 1.13253 4.21333 1.02191 5.27859C0.826914 7.15359 0.727539 8.96203 0.727539 11.8622C0.727539 14.7623 0.826914 16.5708 1.02191 18.4458C1.15507 19.7253 1.72422 20.92 2.63388 21.8296C3.54354 22.7392 4.73836 23.3082 6.01785 23.4412L6.05676 23.4455C7.61348 23.6077 7.86285 23.7356 11.1455 23.7356C12.233 23.7356 13.0205 23.7216 13.6388 23.6967C13.0092 23.0829 12.509 22.3491 12.1677 21.5386C11.8265 20.7282 11.6512 19.8576 11.6522 18.9783ZM6.16785 6.24141H16.4011C16.6973 6.24141 16.9813 6.35904 17.1907 6.56844C17.4001 6.77784 17.5177 7.06184 17.5177 7.35797C17.5177 7.6541 17.4001 7.9381 17.1907 8.1475C16.9813 8.35689 16.6973 8.47453 16.4011 8.47453H6.1702C5.87406 8.47453 5.59006 8.35689 5.38067 8.1475C5.17127 7.9381 5.05363 7.6541 5.05363 7.35797C5.05363 7.06184 5.17127 6.77784 5.38067 6.56844C5.59006 6.35904 5.87406 6.24141 6.1702 6.24141H6.16785ZM6.16785 13.2525C5.87562 13.2465 5.59738 13.1262 5.39282 12.9174C5.18827 12.7086 5.0737 12.428 5.0737 12.1357C5.0737 11.8434 5.18827 11.5628 5.39282 11.354C5.59738 11.1452 5.87562 11.0249 6.16785 11.0189H12.0043C12.1528 11.0159 12.3005 11.0425 12.4387 11.0973C12.5769 11.152 12.7027 11.2338 12.8089 11.3378C12.915 11.4418 12.9994 11.5659 13.0569 11.703C13.1145 11.84 13.1442 11.9871 13.1442 12.1357C13.1442 12.2843 13.1145 12.4314 13.0569 12.5685C12.9994 12.7055 12.915 12.8296 12.8089 12.9336C12.7027 13.0376 12.5769 13.1194 12.4387 13.1742C12.3005 13.2289 12.1528 13.2555 12.0043 13.2525H6.16785Z"
+                      fill="#64676C"
+                    ></path>
+                    <path
+                      d="M18.2508 13.957C17.2576 13.957 16.2867 14.2515 15.4609 14.8033C14.6351 15.3551 13.9915 16.1394 13.6114 17.057C13.2313 17.9746 13.1319 18.9843 13.3256 19.9584C13.5194 20.9326 13.9977 21.8273 14.7 22.5296C15.4023 23.2319 16.297 23.7102 17.2712 23.904C18.2453 24.0977 19.255 23.9983 20.1726 23.6182C21.0902 23.2381 21.8745 22.5945 22.4263 21.7687C22.978 20.9429 23.2726 19.972 23.2726 18.9788C23.2726 17.6469 22.7435 16.3696 21.8017 15.4279C20.86 14.4861 19.5827 13.957 18.2508 13.957ZM20.2412 19.7137H18.151C17.9925 19.7137 17.8405 19.6508 17.7284 19.5387C17.6163 19.4266 17.5533 19.2746 17.5533 19.1161V15.9052C17.5533 15.7466 17.6163 15.5946 17.7284 15.4826C17.8405 15.3705 17.9925 15.3075 18.151 15.3075C18.3095 15.3075 18.4615 15.3705 18.5736 15.4826C18.6857 15.5946 18.7487 15.7466 18.7487 15.9052V18.5184H20.2412C20.3997 18.5184 20.5517 18.5814 20.6638 18.6935C20.7758 18.8056 20.8388 18.9576 20.8388 19.1161C20.8388 19.2746 20.7758 19.4266 20.6638 19.5387C20.5517 19.6508 20.3997 19.7137 20.2412 19.7137Z"
+                      fill="#64676C"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_10287_9229">
+                      <rect width="24" height="24" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>Missed Chats</span>
+              </h4>
+              <div class="dropdown">
+                <div
+                  id="missed-chat-date"
+                  class="datepicker-wrapper"
+                  data-date-filter
+                >
+                  <div class="datepicker-inner">
+                    <label for="date_label" class="datepicker-content">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.83337 11.7029V11.6465M8.20837 11.7029V11.6465M8.20837 8.64652V8.59012M11.2084 8.64652V8.59012M2.58337 5.64648H13.0834M3.94052 1.33398V2.45912M11.5834 1.33398V2.45898M11.5834 2.45898H4.08337C2.84073 2.45898 1.83337 3.46634 1.83337 4.70898V12.2091C1.83337 13.4517 2.84073 14.4591 4.08337 14.4591H11.5834C12.826 14.4591 13.8334 13.4517 13.8334 12.2091L13.8334 4.70898C13.8334 3.46634 12.826 2.45898 11.5834 2.45898Z"
+                          stroke="#181609"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <input
+                        name="date_label"
+                        type="search"
+                        class="form--control date-range"
+                        placeholder="Select Range"
+                        autocomplete="off"
+                        value=""
+                        readonly
+                      />
+                    </label>
+                    <input
+                      type="hidden"
+                      name="date"
+                      class="date-range-value"
+                      value="April 16, 2026 - April 22, 2026"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body d-none">
+              <div class="table-wrapper-body">
+                <div id="missedChatChart" class="h-100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-6">
+          <div class="card custom--card dashboard__card h-100">
+            <div class="card-header">
+              <h4 class="card-header__title">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_10287_9229)">
+                    <path
+                      d="M11.6522 18.9783C11.6526 17.792 11.9726 16.6278 12.5787 15.6081C13.1848 14.5884 14.0545 13.7509 15.0964 13.1837C16.1382 12.6165 17.3137 12.3405 18.4991 12.3849C19.6845 12.4293 20.836 12.7923 21.8325 13.4358C21.8396 12.9469 21.8433 12.4252 21.8433 11.8622C21.8433 8.96766 21.7449 7.16109 21.5504 5.28984H21.578C21.4704 4.24712 21.0722 3.25556 20.4287 2.42808C19.7852 1.60059 18.9223 0.970436 17.9382 0.609375C17.8861 0.589688 17.8341 0.570938 17.7816 0.553125C17.3927 0.422396 16.9906 0.334838 16.5825 0.292031L16.5436 0.287813C14.9869 0.127969 14.7371 0 11.4544 0C8.17176 0 7.64066 0.127969 6.08535 0.290156L6.04645 0.294375C5.6181 0.339359 5.19639 0.433736 4.78973 0.575625V0.554531C3.77574 0.899286 2.88187 1.52754 2.21407 2.36483C1.54626 3.20212 1.13253 4.21333 1.02191 5.27859C0.826914 7.15359 0.727539 8.96203 0.727539 11.8622C0.727539 14.7623 0.826914 16.5708 1.02191 18.4458C1.15507 19.7253 1.72422 20.92 2.63388 21.8296C3.54354 22.7392 4.73836 23.3082 6.01785 23.4412L6.05676 23.4455C7.61348 23.6077 7.86285 23.7356 11.1455 23.7356C12.233 23.7356 13.0205 23.7216 13.6388 23.6967C13.0092 23.0829 12.509 22.3491 12.1677 21.5386C11.8265 20.7282 11.6512 19.8576 11.6522 18.9783ZM6.16785 6.24141H16.4011C16.6973 6.24141 16.9813 6.35904 17.1907 6.56844C17.4001 6.77784 17.5177 7.06184 17.5177 7.35797C17.5177 7.6541 17.4001 7.9381 17.1907 8.1475C16.9813 8.35689 16.6973 8.47453 16.4011 8.47453H6.1702C5.87406 8.47453 5.59006 8.35689 5.38067 8.1475C5.17127 7.9381 5.05363 7.6541 5.05363 7.35797C5.05363 7.06184 5.17127 6.77784 5.38067 6.56844C5.59006 6.35904 5.87406 6.24141 6.1702 6.24141H6.16785ZM6.16785 13.2525C5.87562 13.2465 5.59738 13.1262 5.39282 12.9174C5.18827 12.7086 5.0737 12.428 5.0737 12.1357C5.0737 11.8434 5.18827 11.5628 5.39282 11.354C5.59738 11.1452 5.87562 11.0249 6.16785 11.0189H12.0043C12.1528 11.0159 12.3005 11.0425 12.4387 11.0973C12.5769 11.152 12.7027 11.2338 12.8089 11.3378C12.915 11.4418 12.9994 11.5659 13.0569 11.703C13.1145 11.84 13.1442 11.9871 13.1442 12.1357C13.1442 12.2843 13.1145 12.4314 13.0569 12.5685C12.9994 12.7055 12.915 12.8296 12.8089 12.9336C12.7027 13.0376 12.5769 13.1194 12.4387 13.1742C12.3005 13.2289 12.1528 13.2555 12.0043 13.2525H6.16785Z"
+                      fill="#64676C"
+                    ></path>
+                    <path
+                      d="M18.2508 13.957C17.2576 13.957 16.2867 14.2515 15.4609 14.8033C14.6351 15.3551 13.9915 16.1394 13.6114 17.057C13.2313 17.9746 13.1319 18.9843 13.3256 19.9584C13.5194 20.9326 13.9977 21.8273 14.7 22.5296C15.4023 23.2319 16.297 23.7102 17.2712 23.904C18.2453 24.0977 19.255 23.9983 20.1726 23.6182C21.0902 23.2381 21.8745 22.5945 22.4263 21.7687C22.978 20.9429 23.2726 19.972 23.2726 18.9788C23.2726 17.6469 22.7435 16.3696 21.8017 15.4279C20.86 14.4861 19.5827 13.957 18.2508 13.957ZM20.2412 19.7137H18.151C17.9925 19.7137 17.8405 19.6508 17.7284 19.5387C17.6163 19.4266 17.5533 19.2746 17.5533 19.1161V15.9052C17.5533 15.7466 17.6163 15.5946 17.7284 15.4826C17.8405 15.3705 17.9925 15.3075 18.151 15.3075C18.3095 15.3075 18.4615 15.3705 18.5736 15.4826C18.6857 15.5946 18.7487 15.7466 18.7487 15.9052V18.5184H20.2412C20.3997 18.5184 20.5517 18.5814 20.6638 18.6935C20.7758 18.8056 20.8388 18.9576 20.8388 19.1161C20.8388 19.2746 20.7758 19.4266 20.6638 19.5387C20.5517 19.6508 20.3997 19.7137 20.2412 19.7137Z"
+                      fill="#64676C"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_10287_9229">
+                      <rect width="24" height="24" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>History</span>
+              </h4>
+              <div class="dropdown">
+                <a
+                  href="https://script.viserlab.com/viserchat/user/chat"
+                  class="btn btn--outline--base btn--xs"
+                >
+                  View All
+                </a>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="table-wrapper-body table__wrapper__body">
+                <table
+                  class="table table-striped table--responsive--md dashboard-history-table"
+                >
+                  <thead class="position-sticky top-0">
+                    <tr>
+                      <th>Visitor</th>
+                      <th>Agent</th>
+                      <th>Time</th>
+                    </tr>
+                  </thead>
 
-                <tr>
-                  <td data-label="Case ID">#LC-1026</td>
-                  <td data-label="Client Name">Nusrat Jahan</td>
-                  <td data-label="Case Type">Family Law</td>
-                  <td data-label="Hearing Date">22 March 2026</td>
-                  <td data-label="Status">
-                    <span class="badge badge--success">Completed</span>
-                  </td>
-                  <td data-label="Action">
-                    <a href="#" class="btn btn--icon btn--sm btn--base-two">
-                      <i class="las la-eye"></i>
-                    </a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td data-label="Case ID">#LC-1027</td>
-                  <td data-label="Client Name">Arif Hossain</td>
-                  <td data-label="Case Type">Property Dispute</td>
-                  <td data-label="Hearing Date">05 April 2026</td>
-                  <td data-label="Status">
-                    <span class="badge badge--danger">Pending</span>
-                  </td>
-                  <td data-label="Action">
-                    <a href="#" class="btn btn--icon btn--sm btn--base-two">
-                      <i class="las la-eye"></i>
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                  <tbody>
+                    <tr>
+                      <td data-label="Visitor">
+                        <a
+                          href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=323"
+                          class="customer-history visitor-country"
+                        >
+                          <figure>
+                            <img
+                              src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                              alt="Image"
+                            />
+                          </figure>
+                          <span>V566641497749156</span>
+                        </a>
+                      </td>
+                      <td data-label="Agent"></td>
+                      <td data-label="Time">2026-04-22 11:26 AM</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Visitor">
+                        <a
+                          href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=322"
+                          class="customer-history visitor-country"
+                        >
+                          <figure>
+                            <img
+                              src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                              alt="Image"
+                            />
+                          </figure>
+                          <span>Md Abu Sayed</span>
+                        </a>
+                      </td>
+                      <td data-label="Agent"></td>
+                      <td data-label="Time">2026-04-22 10:37 AM</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Visitor">
+                        <a
+                          href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=321"
+                          class="customer-history visitor-country"
+                        >
+                          <figure>
+                            <img
+                              src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                              alt="Image"
+                            />
+                          </figure>
+                          <span>temp</span>
+                        </a>
+                      </td>
+                      <td data-label="Agent"></td>
+                      <td data-label="Time">2026-04-22 10:35 AM</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Visitor">
+                        <a
+                          href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=320"
+                          class="customer-history visitor-country"
+                        >
+                          <figure>
+                            <img
+                              src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                              alt="Image"
+                            />
+                          </figure>
+                          <span>V566641497749156</span>
+                        </a>
+                      </td>
+                      <td data-label="Agent"></td>
+                      <td data-label="Time">2026-04-22 10:04 AM</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Visitor">
+                        <a
+                          href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=319"
+                          class="customer-history visitor-country"
+                        >
+                          <figure>
+                            <img
+                              src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                              alt="Image"
+                            />
+                          </figure>
+                          <span>V547401427119117</span>
+                        </a>
+                      </td>
+                      <td data-label="Agent"></td>
+                      <td data-label="Time">2026-04-22 10:00 AM</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Visitor">
+                        <a
+                          href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=318"
+                          class="customer-history visitor-country"
+                        >
+                          <figure>
+                            <img
+                              src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                              alt="Image"
+                            />
+                          </figure>
+                          <span>V648597736607375</span>
+                        </a>
+                      </td>
+                      <td data-label="Agent"></td>
+                      <td data-label="Time">2026-04-18 03:10 PM</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Visitor">
+                        <a
+                          href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=317"
+                          class="customer-history visitor-country"
+                        >
+                          <figure>
+                            <img
+                              src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                              alt="Image"
+                            />
+                          </figure>
+                          <span>V823180399871738</span>
+                        </a>
+                      </td>
+                      <td data-label="Agent"></td>
+                      <td data-label="Time">2026-04-14 10:50 AM</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Visitor">
+                        <a
+                          href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=316"
+                          class="customer-history visitor-country"
+                        >
+                          <figure>
+                            <img
+                              src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                              alt="Image"
+                            />
+                          </figure>
+                          <span>V566641497749156</span>
+                        </a>
+                      </td>
+                      <td data-label="Agent"></td>
+                      <td data-label="Time">2026-04-12 04:37 AM</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>

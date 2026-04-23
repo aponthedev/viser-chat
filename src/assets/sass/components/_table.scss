@@ -207,4 +207,8 @@
   }
 }
 
+.table-striped>tbody>tr:nth-of-type(odd)>*{
+  background-color: hsl(var(--base) / 0.01);
+}
+
 /* ========================= Table CSS End =========================== */

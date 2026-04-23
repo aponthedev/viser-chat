@@ -122,13 +122,106 @@
 
         /* ==================== Select2 Initialization JS Start ==================== */
         $('.select2').each((index, select) => {
+            const renderCountryOption = function (option) {
+                if (!option.id) {
+                    return option.text;
+                }
+
+                const flag = option.element?.dataset?.flag;
+
+                if (!flag) {
+                    return option.text;
+                }
+
+                return $(`
+                    <span class="country-select-option">
+                        <span class="country-select-option__flag">${flag}</span>
+                        <span class="country-select-option__name">${option.text}</span>
+                    </span>
+                `);
+            };
+
             $(select).wrap('<div class="select2-wrapper"></div>').select2({
                 dropdownParent: $(select).closest('.select2-wrapper'),
                 placeholder: $(select).data('placeholder') || '',
-                minimumResultsForSearch: Infinity
+                minimumResultsForSearch: Infinity,
+                templateResult: $(select).closest('.country-option').length ? renderCountryOption : undefined,
+                templateSelection: $(select).closest('.country-option').length ? renderCountryOption : undefined
             });
         });
         /* ==================== Select2 Initialization JS End ==================== */
+
+        /* ==================== Date Range Picker JS Start ==================== */
+        if ($.fn.daterangepicker && typeof moment !== 'undefined') {
+            $('[data-date-filter]').each(function () {
+                const wrapper = $(this);
+                const labelInput = wrapper.find('.date-range');
+                const valueInput = wrapper.find('.date-range-value');
+
+                if (!labelInput.length) return;
+
+                const today = moment();
+                let startDate = today.clone().subtract(6, 'days');
+                let endDate = today.clone();
+                const storedValue = valueInput.val();
+
+                if (storedValue) {
+                    const parts = storedValue.split(' - ');
+                    if (parts.length === 2) {
+                        const parsedStart = moment(parts[0], 'MMMM D, YYYY', true);
+                        const parsedEnd = moment(parts[1], 'MMMM D, YYYY', true);
+
+                        if (parsedStart.isValid() && parsedEnd.isValid()) {
+                            startDate = parsedStart;
+                            endDate = parsedEnd;
+                        }
+                    }
+                }
+
+                const updateDateRange = function (start, end) {
+                    labelInput.val(`${start.format('MMM D')} - ${end.format('MMM D')}`);
+                    valueInput.val(`${start.format('MMMM D, YYYY')} - ${end.format('MMMM D, YYYY')}`);
+                };
+
+                labelInput.daterangepicker({
+                    autoUpdateInput: false,
+                    startDate: startDate,
+                    endDate: endDate,
+                    opens: 'left',
+                    locale: {
+                        cancelLabel: 'Clear',
+                    },
+                });
+
+                updateDateRange(startDate, endDate);
+
+                labelInput.on('apply.daterangepicker', function (ev, picker) {
+                    updateDateRange(picker.startDate, picker.endDate);
+                });
+
+                labelInput.on('cancel.daterangepicker', function () {
+                    labelInput.val('');
+                    valueInput.val('');
+                });
+            });
+        }
+        /* ==================== Date Range Picker JS End ==================== */
+        /* ==================== chat-list Picker JS End ==================== */
+             $('.chat-list').on('click', '.chat-list__item', function() {
+                $(".empty-conversation").remove();
+                $(".chatbox-area__body").removeClass('d-none');
+                window.conversation_id = $(this).data('id');
+                messagePage = 1;
+                loadMessages();
+                loadContact();
+
+                $('.chat-list__item').removeClass('active');
+                $(this).addClass('active');
+                changeURL("conversation", window.conversation_id);
+                $('.chatbox-area .chatbox-area__left').removeClass('show-sidebar');
+                $('.sidebar-overlay').removeClass('show');
+            });
+        /* ==================== chat-list Picker JS End ==================== */
 
         /* ==================== Slick Slider Initialization JS Start ==================== */
         if ($('.brand-slider').length && !$('.brand-slider').hasClass('slick-initialized')) {
@@ -202,6 +295,82 @@
             });
         }
         /* ==================== Slick Slider Initialization JS End ====================== */
+        // ========================= Slick Slider Js Start ==============
+    (() => {
+      const sliderConfig = {
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        speed: 1500,
+        dots: true,
+        pauseOnHover: true,
+        arrows: false,
+        prevArrow:
+          '<button type="button" class="slick-prev"><i class="fas fa-long-arrow-left"></i></button>',
+        nextArrow:
+          '<button type="button" class="slick-next"><i class="fas fa-long-arrow-right"></i></button>',
+      };
+
+      $(".client-slider").slick({
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 15000,
+        arrows: false,
+        swipe: false,
+        dots: false,
+        slidesToShow: 6,
+        cssEase: "linear",
+        pauseOnFocus: false,
+        pauseOnHover: false,
+
+        responsive: [
+          {
+            breakpoint: 1399,
+            settings: {
+              slidesToShow: 5,
+            },
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 4,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 575,
+            settings: {
+              slidesToShow: 2,
+              variableWidth: true,
+            },
+          },
+        ],
+      });
+
+      $(".testimonial-slider").slick({
+        infinite: true,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 15000,
+        swipe: false,
+        dots: false,
+        cssEase: "linear",
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        variableWidth: true,
+        arrows: false,
+      });
+    })();
+    // ========================= Slick Slider Js End ===================
+
+
+        
 
         /* ==================== Odometer JS Start ====================== */
         $('.odometer').each(function () {
@@ -283,6 +452,179 @@
         }
         /* ==================== Widget Customization Swatch JS End ======================== */
 
+        /* ==================== Analytics Chart JS Start ====================== */
+        function initAnalyticsChart() {
+            const chartEl = document.querySelector('#analyticsPerformanceChart');
+
+            if (!chartEl || typeof ApexCharts === 'undefined') return;
+
+            if (chartEl._apexchart) {
+                chartEl._apexchart.destroy();
+            }
+
+            const options = {
+                chart: {
+                    type: 'line',
+                    height: 260,
+                    toolbar: { show: false },
+                    zoom: { enabled: false },
+                    foreColor: '#a7b4c8',
+                    fontFamily: 'Plus Jakarta Sans, sans-serif',
+                    stacked: false,
+                },
+                series: [
+                    {
+                        name: 'Chat Volume',
+                        type: 'bar',
+                        data: [44, 52, 49, 68, 74, 70, 86],
+                    },
+                    {
+                        name: 'Qualified Leads',
+                        type: 'line',
+                        data: [18, 22, 24, 31, 36, 34, 43],
+                    },
+                    {
+                        name: 'Conversion Rate',
+                        type: 'line',
+                        data: [12, 14, 15, 18, 22, 21, 25],
+                    },
+                ],
+                colors: ['#2dd36f', '#8fb7ff', '#ffd166'],
+                plotOptions: {
+                    bar: {
+                        columnWidth: '42%',
+                        borderRadius: 8,
+                        borderRadiusApplication: 'end',
+                    },
+                },
+                stroke: {
+                    curve: 'smooth',
+                    width: [0, 3, 3],
+                },
+                fill: {
+                    type: ['solid', 'gradient', 'gradient'],
+                    gradient: {
+                        shadeIntensity: 1,
+                        inverseColors: false,
+                        opacityFrom: 0.34,
+                        opacityTo: 0.08,
+                        stops: [0, 100],
+                    },
+                },
+                dataLabels: {
+                    enabled: false,
+                },
+                markers: {
+                    size: [0, 4, 4],
+                    strokeWidth: 0,
+                    hover: {
+                        size: 6,
+                    },
+                },
+                grid: {
+                    borderColor: 'rgba(255,255,255,0.10)',
+                    strokeDashArray: 4,
+                    xaxis: {
+                        lines: { show: false },
+                    },
+                    yaxis: {
+                        lines: { show: true },
+                    },
+                },
+                legend: {
+                    position: 'top',
+                    horizontalAlign: 'left',
+                    fontSize: '13px',
+                    labels: {
+                        colors: '#d9e2ef',
+                    },
+                    markers: {
+                        width: 10,
+                        height: 10,
+                        radius: 12,
+                    },
+                },
+                xaxis: {
+                    categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                    labels: {
+                        style: {
+                            colors: '#8da0ba',
+                        },
+                    },
+                    axisBorder: { show: false },
+                    axisTicks: { show: false },
+                },
+                yaxis: {
+                    min: 0,
+                    max: 90,
+                    tickAmount: 5,
+                    labels: {
+                        formatter: function (value) {
+                            return `${Math.round(value)}`;
+                        },
+                        style: {
+                            colors: '#8da0ba',
+                        },
+                    },
+                },
+                tooltip: {
+                    theme: 'dark',
+                    shared: true,
+                    intersect: false,
+                },
+                responsive: [
+                    {
+                        breakpoint: 576,
+                        options: {
+                            chart: {
+                                height: 240,
+                            },
+                            plotOptions: {
+                                bar: {
+                                    columnWidth: '55%',
+                                },
+                            },
+                            legend: {
+                                position: 'bottom',
+                            },
+                        },
+                    },
+                ],
+                annotations: {
+                    points: [
+                        {
+                            x: 'Sun',
+                            y: 43,
+                            seriesIndex: 1,
+                            marker: {
+                                size: 5,
+                                fillColor: '#8fb7ff',
+                                strokeColor: '#8fb7ff',
+                            },
+                            label: {
+                                borderColor: '#8fb7ff',
+                                offsetY: -8,
+                                style: {
+                                    background: '#8fb7ff',
+                                    color: '#0b1020',
+                                    fontSize: '11px',
+                                    fontWeight: 700,
+                                },
+                                text: 'Peak lead day',
+                            },
+                        },
+                    ],
+                },
+            };
+
+            const chart = new ApexCharts(chartEl, options);
+            chart.render();
+            chartEl._apexchart = chart;
+        }
+
+        initAnalyticsChart();
+        /* ==================== Analytics Chart JS End ======================== */
+
         /* ==================== Password Toggle JS Start ================================ */
         $('.input--group-password').each(function (index, inputGroup) {
             let inputGroupBtn = $(inputGroup).find('.input-group-btn');
@@ -346,38 +688,6 @@
     });
     /* ==================== Header Fixed JS End ============================= */
 
-
-
-
-   // ========================= Scroll Reveal Js Start ===================
-const sr = ScrollReveal({
-  origin: 'top',
-  distance: '60px',
-  duration: 1500,
-  delay: 100,
-  reset: false,
-})
-
-// Top reveal
-sr.reveal('.banner__content, .why-viserchat__content, .heading-animation, .features-overview__intro-card, .ai-chat__checklist, .visitor-tracking__feature-panel, .live-chat__window, .team-inbox__feature-grid, .widget-customization__list, .analytics__dashboard, .analytics__quick-kpis, .analytics__insights, .cta-banner__shell, .faq__intro, .accordion-item, .blog-card, .newsletter__shell, .mobile-app__mockup, .chatbot-builder', {
-  delay: 100,
-  origin: 'top',
-})
-
-// Bottom reveal (FIXED)
-sr.reveal('.banner__thumb, .why-viserchat__panel, .ai-chat__thumb, .visitor-tracking__board, .live-chat__window, .live-chat__capabilities, .team-inbox__workspace, .widget-customization__lab, .security__grid', {
-  delay: 100,
-  origin: 'bottom',
-})
-
-// Stagger animation
-sr.reveal('.features-overview-card, .how-it-works__step, .counter__item, .use-cases__card', {
-  delay: 100,
-  interval: 100,
-  origin: 'bottom',
-})
-  // ========================= Scroll Reveal Js End ===================
-
     /* ==================== Scroll To Top Button JS Start ==================== */
     let scrollTopBtn = $('.scroll-top');
 
@@ -427,7 +737,17 @@ sr.reveal('.features-overview-card, .how-it-works__step, .counter__item, .use-ca
     /* ==================== Scroll To Top Button JS End ==================== */
 
     /* ==================== Preloader JS Start ============================== */
-    $(window).on('load', () => $('.preloader').fadeOut());
+    $(window).on('load', () => {
+        $('.preloader').fadeOut();
+        AOS.init({
+            offset: 0,
+            once: true,
+            disable() {
+                var maxWidth = 1200; // breakpoint for mobile
+                return window.innerWidth < maxWidth;
+            },
+        });
+    });
     /* ==================== Preloader JS End ================================ */
 
 })(jQuery);

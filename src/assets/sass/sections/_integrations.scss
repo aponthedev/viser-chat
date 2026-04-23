@@ -32,19 +32,23 @@
     overflow: hidden;
     position: relative;
     padding-block: 6px;
+    width: 100%;
   }
 
   &__track {
-    display: inline-flex;
+    display: flex;
     gap: 14px;
     align-items: center;
-    animation: integrations-marquee 22s linear infinite;
+    flex: 0 0 auto;
+    width: max-content;
+    min-width: max-content;
+    animation: integrations-marquee 54s linear infinite;
     will-change: transform;
     white-space: nowrap;
   }
 
   &__row--rtl .integrations__track {
-    animation-direction: reverse;
+    animation-name: integrations-marquee-reverse;
   }
 
   &__row:hover .integrations__track {
@@ -56,13 +60,23 @@
     align-items: center;
     gap: 10px;
     border: 1px solid hsl(var(--gray-l-300));
-    border-radius: 999px;
-    padding: 12px 18px;
+    border-radius: 20px;
+    padding: 12px 20px;
     background-color: hsl(var(--white));
     transition: 0.3s ease-in-out;
-    min-width: 160px;
+    min-width: auto;
     justify-content: center;
     flex: 0 0 auto;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: auto;
+      height: 34px;
+      max-width: 130px;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
 
     i {
       font-size: 18px;
@@ -91,7 +105,7 @@
   .integrations {
     &__row {
       article:nth-child(5n) {
-        min-width: 180px;
+        min-width: auto;
       }
     }
   }
@@ -107,7 +121,16 @@
  }
   .integrations {
     &__track {
-      animation-duration: 28s;
+      animation-duration: 62s;
+    }
+
+    article {
+      padding: 10px 16px;
+    }
+
+    article img {
+      height: 22px;
+      max-width: 92px;
     }
   }
 }
@@ -119,5 +142,15 @@
 
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes integrations-marquee-reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }

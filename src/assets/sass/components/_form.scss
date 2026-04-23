@@ -327,7 +327,7 @@ input[type='number'] {
     margin-top: 0px;
     border-radius: 999px;
     position: relative;
-    background: hsl(var(--gray)/0.5) !important;
+    background: hsl(var(--base-two)/0.5) !important;
     cursor: pointer;
     transition: 0.2s linear;
 
@@ -352,7 +352,7 @@ input[type='number'] {
 
     &:checked {
       background-image: none;
-      background: var(--color) !important;
+      background:hsl(var(--base-two)) !important;
 
       &::before {
         left: calc(100% - (var(--size) + var(--offset)));
@@ -429,7 +429,8 @@ input[type='number'] {
   align-items: center;
   border: 1px solid hsl(var(--border-color));
   background-color: hsl(var(--white));
-  border-radius: 6px;
+  border-radius: 12px;
+  overflow: hidden;
 
   &:focus-within {
     border-color: hsl(var(--base));

@@ -219,3 +219,41 @@
 }
 
 /* ========================= Global CSS End ========================= */
+// pagination
+
+.pagination__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.pagination__wrapper p.small.text-muted {
+    display: none;
+}
+
+.pagination__wrapper .pagination {
+    gap: 16px;
+}
+
+.pagination__wrapper .pagination .page-item {
+    display: none;
+}
+
+.pagination__wrapper .pagination .page-item:first-child,
+.pagination__wrapper .pagination .page-item:last-child {
+    display: block;
+}
+
+.pagination__wrapper .pagination .page-link {
+    width: unset;
+    height: unset;
+}
+
+.pagination__wrapper .pagination .page-link:hover,
+.pagination__wrapper .pagination .page-link:focus {
+    color: hsl(var(--black));
+    background-color: transparent !important;
+
+}
+
+// pagination

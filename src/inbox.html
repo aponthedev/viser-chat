@@ -1,0 +1,1620 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>ViserChat - AI Live Chat SaaS Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <!-- line awesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+    <!-- aos.css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Odometer -->
+    <link rel="stylesheet" href="assets/css/odometer.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/daterangepicker.css" />
+    <!-- Select2 -->
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+
+    <!--==================== Body Overlay Start ====================-->
+    <div class="body-overlay"></div>
+    <!--==================== Body Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="sidebar-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!--==================== Scroll To Top Start ====================-->
+    <button class="scroll-top" type="button">
+      <svg
+        class="scroll-top-progress"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+      </svg>
+    </button>
+    <!--==================== Scroll to Top End ====================-->
+  </body>
+</html>
+
+
+<!-- ==================== Dashboard Start ==================== -->
+<div class="dashboard-header">
+  <div class="dashboard-header__inner flex-between">
+    <div class="dashboard-header__left">
+      <div class="dashboard-header-bar">
+        <div class="navigation-bar"><i class="fa-solid fa-bars"></i></div>
+        <a href="index.html" class="sidebar-logo__link"
+          ><img src="assets/images/logo/logo.png" alt="logo"
+        /></a>
+      </div>
+    </div>
+    <div class="dashboard-header__right d-flex">
+      <div class="dropdown lang-box">
+        <button class="header-not" data-bs-toggle="dropdown">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.57109 20.0246H20.43C20.8984 20.0246 21.164 19.3606 20.8882 18.9801C20.2495 18.0992 19.6291 16.8006 19.6291 15.2346L19.6566 13.0927C19.6566 8.84392 16.2286 5.39961 12 5.39961C7.83278 5.39961 4.45458 8.79392 4.45458 12.981L4.42712 15.2346C4.42712 16.7899 3.78453 18.0815 3.11877 18.962C2.83186 19.3415 3.09677 20.0246 3.57109 20.0246Z"
+              fill="white"
+            ></path>
+            <path
+              d="M14.4 2.99961C14.4 4.32509 13.3255 5.39961 12 5.39961C10.6745 5.39961 9.6 4.32509 9.6 2.99961C9.6 1.67413 10.6745 0.599609 12 0.599609C13.3255 0.599609 14.4 1.67413 14.4 2.99961Z"
+              fill="white"
+            ></path>
+            <path
+              d="M3.11877 18.962L2.71993 18.6605L2.71993 18.6605L3.11877 18.962ZM4.42712 15.2346L3.92712 15.2285V15.2346H4.42712ZM4.45458 12.981L4.95458 12.9871V12.981H4.45458ZM20.8882 18.9801L21.293 18.6867L21.293 18.6867L20.8882 18.9801ZM19.6291 15.2346L19.1291 15.2282V15.2346H19.6291ZM19.6566 13.0927L20.1566 13.0991V13.0927H19.6566ZM3.11877 18.962L3.51761 19.2636C4.22766 18.3244 4.92712 16.9295 4.92712 15.2346H4.42712H3.92712C3.92712 16.6503 3.3414 17.8385 2.71993 18.6605L3.11877 18.962ZM4.42712 15.2346L4.92708 15.2407L4.95455 12.9871L4.45458 12.981L3.95462 12.9749L3.92716 15.2285L4.42712 15.2346ZM20.8882 18.9801L21.293 18.6867C20.6973 17.865 20.1291 16.667 20.1291 15.2346H19.6291H19.1291C19.1291 16.9342 19.8017 18.3334 20.4834 19.2736L20.8882 18.9801ZM19.6291 15.2346L20.1291 15.241L20.1565 13.0991L19.6566 13.0927L19.1566 13.0863L19.1291 15.2282L19.6291 15.2346ZM19.6566 13.0927H20.1566C20.1566 8.57002 16.507 4.89961 12 4.89961V5.39961V5.89961C15.9502 5.89961 19.1566 9.11782 19.1566 13.0927H19.6566ZM20.43 20.0246V20.5246C20.927 20.5246 21.2572 20.1738 21.3986 19.8401C21.5397 19.5071 21.5579 19.052 21.293 18.6867L20.8882 18.9801L20.4834 19.2736C20.4884 19.2805 20.4977 19.2979 20.4997 19.3322C20.5017 19.3676 20.4947 19.41 20.4778 19.45C20.4607 19.4904 20.4399 19.5132 20.4284 19.5223C20.4202 19.5287 20.4228 19.5246 20.43 19.5246V20.0246ZM4.45458 12.981H4.95458C4.95458 9.06782 8.11116 5.89961 12 5.89961V5.39961V4.89961C7.5544 4.89961 3.95458 8.52002 3.95458 12.981H4.45458ZM3.57109 20.0246V19.5246C3.5791 19.5246 3.58185 19.5292 3.57319 19.5222C3.56104 19.5124 3.53943 19.4881 3.52195 19.4456C3.50468 19.4036 3.49799 19.3592 3.50052 19.3226C3.50297 19.2871 3.51286 19.2699 3.51761 19.2636L3.11877 18.962L2.71993 18.6605C2.44358 19.026 2.45849 19.4886 2.59699 19.8257C2.73564 20.1631 3.06631 20.5246 3.57109 20.5246V20.0246ZM20.43 20.0246V19.5246H3.57109V20.0246V20.5246H20.43V20.0246ZM15.6 20.0246H15.1C15.1 21.5825 13.743 22.8996 12 22.8996V23.3996V23.8996C14.2335 23.8996 16.1 22.1946 16.1 20.0246H15.6ZM12 23.3996V22.8996C10.257 22.8996 8.9 21.5825 8.9 20.0246H8.4H7.9C7.9 22.1946 9.76652 23.8996 12 23.8996V23.3996ZM14.4 2.99961H13.9C13.9 4.04895 13.0493 4.89961 12 4.89961V5.39961V5.89961C13.6016 5.89961 14.9 4.60124 14.9 2.99961H14.4ZM12 5.39961V4.89961C10.9507 4.89961 10.1 4.04895 10.1 2.99961H9.6H9.1C9.1 4.60124 10.3984 5.89961 12 5.89961V5.39961ZM9.6 2.99961H10.1C10.1 1.95027 10.9507 1.09961 12 1.09961V0.599609V0.0996094C10.3984 0.0996094 9.1 1.39798 9.1 2.99961H9.6ZM12 0.599609V1.09961C13.0493 1.09961 13.9 1.95027 13.9 2.99961H14.4H14.9C14.9 1.39798 13.6016 0.0996094 12 0.0996094V0.599609Z"
+              fill="white"
+            ></path>
+          </svg>
+          <span class="not-dot">3</span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-end notification-menu">
+          <div class="notification-menu-top">
+            <h5 class="title">Notifications</h5>
+          </div>
+
+          <div class="dropdown-menu__body">
+            <ul>
+              <li class="notification-menu-item">
+                <a
+                  href="https://script.viserlab.com/viserchat/user/notification/read/23"
+                  class="notification-menu-link"
+                >
+                  <span class="notification-menu-thumb">
+                    <img
+                      src="https://script.viserlab.com/viserchat/assets/images/logo_icon/favicon.png"
+                      alt="image"
+                    />
+                  </span>
+                  <span class="notification-menu-content">
+                    <h6 class="name">Plan renew successfully</h6>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="desc flex-grow-1"></p>
+                      <span class="time">3 days ago</span>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li class="notification-menu-item">
+                <a
+                  href="https://script.viserlab.com/viserchat/user/notification/read/6"
+                  class="notification-menu-link"
+                >
+                  <span class="notification-menu-thumb">
+                    <img
+                      src="https://script.viserlab.com/viserchat/assets/images/logo_icon/favicon.png"
+                      alt="image"
+                    />
+                  </span>
+                  <span class="notification-menu-content">
+                    <h6 class="name">Renew your subscription...</h6>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="desc flex-grow-1"></p>
+                      <span class="time">1 month ago</span>
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li class="notification-menu-item">
+                <a
+                  href="https://script.viserlab.com/viserchat/user/notification/read/4"
+                  class="notification-menu-link"
+                >
+                  <span class="notification-menu-thumb">
+                    <img
+                      src="https://script.viserlab.com/viserchat/assets/images/logo_icon/favicon.png"
+                      alt="image"
+                    />
+                  </span>
+                  <span class="notification-menu-content">
+                    <h6 class="name">Plan renew successfully</h6>
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="desc flex-grow-1"></p>
+                      <span class="time">1 month ago</span>
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="dropdown-menu__footer mt-4">
+            <a
+              href="https://script.viserlab.com/viserchat/user/notifications"
+              class="view-all-message btn btn--base-two"
+            >
+              View All Notifications
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown lang-box">
+        <button class="lang-box-btn header-not" data-bs-toggle="dropdown">
+          <img
+            src="https://script.viserlab.com/viserchat/assets/images/language/660b94fa876ac1712035066.png"
+            alt="Language"
+          />
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li class="lang-box-item">
+            <a
+              href="https://script.viserlab.com/viserchat/change/en"
+              class="lang-box-link"
+            >
+              <div class="thumb">
+                <img
+                  src="https://script.viserlab.com/viserchat/assets/images/language/660b94fa876ac1712035066.png"
+                  alt="Language"
+                />
+              </div>
+              <span class="text">English</span>
+            </a>
+          </li>
+          <li class="lang-box-item">
+            <a
+              href="https://script.viserlab.com/viserchat/change/es"
+              class="lang-box-link"
+            >
+              <div class="thumb">
+                <img
+                  src="https://script.viserlab.com/viserchat/assets/images/language/69b953cc7f5e51773753292.png"
+                  alt="Language"
+                />
+              </div>
+              <span class="text">Spain</span>
+            </a>
+          </li>
+          <li class="lang-box-item">
+            <a
+              href="https://script.viserlab.com/viserchat/change/hi"
+              class="lang-box-link"
+            >
+              <div class="thumb">
+                <img
+                  src="https://script.viserlab.com/viserchat/assets/images/language/69b9549a07d231773753498.png"
+                  alt="Language"
+                />
+              </div>
+              <span class="text">Hindi</span>
+            </a>
+          </li>
+          <li class="lang-box-item">
+            <a
+              href="https://script.viserlab.com/viserchat/change/bn"
+              class="lang-box-link"
+            >
+              <div class="thumb">
+                <img
+                  src="https://script.viserlab.com/viserchat/assets/images/language/69b954a9405d81773753513.png"
+                  alt="Language"
+                />
+              </div>
+              <span class="text">Bangla</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="dashboard-header__user-info d-none d-sm-block">
+        <svg
+          width="1"
+          height="32"
+          viewBox="0 0 1 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            width="1"
+            height="32"
+            fill="url(#paint0_linear_10287_6707)"
+          ></rect>
+          <defs>
+            <linearGradient
+              id="paint0_linear_10287_6707"
+              x1="0.5"
+              y1="0"
+              x2="0.5"
+              y2="32"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="white" stop-opacity="0"></stop>
+              <stop offset="0.5" stop-color="white"></stop>
+              <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="user-info">
+        <div class="dropdown profile--dropdown">
+          <button
+            class="header-user header-not"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.3999 20.5128C2.3999 16.7373 5.55419 13.6766 11.9999 13.6766C18.4456 13.6766 21.5999 16.7373 21.5999 20.5128C21.5999 21.1135 21.1617 21.6004 20.6211 21.6004H3.37873C2.83814 21.6004 2.3999 21.1135 2.3999 20.5128Z"
+                fill="white"
+              ></path>
+              <path
+                d="M15.5999 6.00039C15.5999 7.98862 13.9881 9.60039 11.9999 9.60039C10.0117 9.60039 8.3999 7.98862 8.3999 6.00039C8.3999 4.01217 10.0117 2.40039 11.9999 2.40039C13.9881 2.40039 15.5999 4.01217 15.5999 6.00039Z"
+                fill="white"
+              ></path>
+              <path
+                d="M2.3999 20.5128C2.3999 16.7373 5.55419 13.6766 11.9999 13.6766C18.4456 13.6766 21.5999 16.7373 21.5999 20.5128C21.5999 21.1135 21.1617 21.6004 20.6211 21.6004H3.37873C2.83814 21.6004 2.3999 21.1135 2.3999 20.5128Z"
+                stroke="white"
+              ></path>
+              <path
+                d="M15.5999 6.00039C15.5999 7.98862 13.9881 9.60039 11.9999 9.60039C10.0117 9.60039 8.3999 7.98862 8.3999 6.00039C8.3999 4.01217 10.0117 2.40039 11.9999 2.40039C13.9881 2.40039 15.5999 4.01217 15.5999 6.00039Z"
+                stroke="white"
+              ></path>
+            </svg>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end" style="">
+            <div class="dropdown-menu__header">
+              <div class="user-meta mb-2">
+                <img
+                  class="user-meta__thumb"
+                  src="https://script.viserlab.com/viserchat/assets/images/avatar.png"
+                  alt="image"
+                />
+                <div class="user-meta__content">
+                  <p class="user-meta__name">Usersss Name</p>
+                </div>
+              </div>
+              <div class="user-credit">
+                <div class="user-credit__item">
+                  <span class="label">
+                    <svg
+                      height="24"
+                      width="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="injected-svg"
+                      color="currentColor"
+                    >
+                      <path
+                        d="M11 4.317C9.95915 4.10426 9.14574 3.29085 8.933 2.25H8.067C7.85426 3.29085 7.04085 4.10426 6 4.317V5.183C7.04085 5.39574 7.85426 6.20915 8.067 7.25L8.933 7.25C9.14574 6.20915 9.95915 5.39574 11 5.183L11 4.317Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M18.6387 14.25L18.7613 14.8498C19.0072 16.0527 19.9473 16.9928 21.1502 17.2387L21.75 17.3613V18.6387L21.1502 18.7613C19.9473 19.0072 19.0072 19.9473 18.7613 21.1502L18.6387 21.75H17.3613L17.2387 21.1502C16.9928 19.9473 16.0527 19.0072 14.8498 18.7613L14.25 18.6387L14.25 17.3613L14.8498 17.2387C16.0527 16.9928 16.9928 16.0527 17.2387 14.8498L17.3613 14.25L18.6387 14.25Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M19.0137 4.98629C18.032 4.00457 16.4403 4.00457 15.4586 4.98629L14.1966 6.24826L17.7517 9.80338L19.0137 8.54141C19.9954 7.55969 19.9954 5.96801 19.0137 4.98629Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M16.6911 10.864L13.136 7.30892L2.98629 17.4586C2.00457 18.4403 2.00457 20.032 2.98629 21.0137C3.96801 21.9954 5.55969 21.9954 6.54141 21.0137L16.6911 10.864Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    Reply Credit
+                  </span>
+                  <span class="value"> 28749 </span>
+                </div>
+                <div class="user-credit__item">
+                  <span class="label">
+                    <svg
+                      height="24"
+                      width="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="injected-svg"
+                      color="currentColor"
+                    >
+                      <path
+                        d="M11 4.317C9.95915 4.10426 9.14574 3.29085 8.933 2.25H8.067C7.85426 3.29085 7.04085 4.10426 6 4.317V5.183C7.04085 5.39574 7.85426 6.20915 8.067 7.25L8.933 7.25C9.14574 6.20915 9.95915 5.39574 11 5.183L11 4.317Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M18.6387 14.25L18.7613 14.8498C19.0072 16.0527 19.9473 16.9928 21.1502 17.2387L21.75 17.3613V18.6387L21.1502 18.7613C19.9473 19.0072 19.0072 19.9473 18.7613 21.1502L18.6387 21.75H17.3613L17.2387 21.1502C16.9928 19.9473 16.0527 19.0072 14.8498 18.7613L14.25 18.6387L14.25 17.3613L14.8498 17.2387C16.0527 16.9928 16.9928 16.0527 17.2387 14.8498L17.3613 14.25L18.6387 14.25Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M19.0137 4.98629C18.032 4.00457 16.4403 4.00457 15.4586 4.98629L14.1966 6.24826L17.7517 9.80338L19.0137 8.54141C19.9954 7.55969 19.9954 5.96801 19.0137 4.98629Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M16.6911 10.864L13.136 7.30892L2.98629 17.4586C2.00457 18.4403 2.00457 20.032 2.98629 21.0137C3.96801 21.9954 5.55969 21.9954 6.54141 21.0137L16.6911 10.864Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    Rewrite Credit
+                  </span>
+                  <span class="value"> 5060 </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown-menu__body">
+              <a
+                class="dropdown-item"
+                href="https://script.viserlab.com/viserchat/user/profile-setting"
+              >
+                <i class="las la-user"></i>
+                <span>Profile Setting</span>
+              </a>
+
+              <a
+                class="dropdown-item"
+                href="https://script.viserlab.com/viserchat/user/deposit/history"
+              >
+                <i class="las la-wallet"></i>
+                <span>Deposits</span>
+              </a>
+
+              <a
+                class="dropdown-item"
+                href="https://script.viserlab.com/viserchat/user/transactions"
+              >
+                <i class="las la-exchange-alt"></i>
+                <span>Transactions</span>
+              </a>
+
+              <a
+                class="dropdown-item"
+                href="https://script.viserlab.com/viserchat/ticket"
+              >
+                <i class="las la-ticket-alt"></i>
+                <span>Support Ticket</span>
+              </a>
+
+              <a
+                class="dropdown-item"
+                href="https://script.viserlab.com/viserchat/user/change-password"
+              >
+                <i class="las la-lock"></i>
+                <span>Change Password</span>
+              </a>
+
+              <a
+                class="dropdown-item"
+                href="https://script.viserlab.com/viserchat/user/twofactor"
+              >
+                <i class="las la-key"></i>
+                <span>2FA Security</span>
+              </a>
+
+              <a
+                class="dropdown-item logout"
+                href="https://script.viserlab.com/viserchat/user/logout"
+              >
+                <i class="las la-sign-out-alt"></i>
+                <span>Sign Out</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dashboard">
+  <div class="sidebar-menu flex-between">
+    <span class="sidebar-menu__close d-lg-none d-block"
+      ><i class="fas fa-times"></i
+    ></span>
+    <div class="sidebar-menu__inner">
+  <div class="sidebar-menu__right">
+    <ul>
+      <li>
+        <a href="dashboard.html" class="active">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.968 7.21305L14.968 2.41305C14.1276 1.73502 13.0803 1.36523 12.0005 1.36523C10.9207 1.36523 9.87342 1.73502 9.03301 2.41305L3.03301 7.21305C2.47551 7.65694 2.02556 8.22111 1.7168 8.86338C1.40804 9.50566 1.24847 10.2094 1.25001 10.9221V18.0001C1.2516 19.2593 1.75255 20.4666 2.64301 21.3571C3.53346 22.2475 4.74072 22.7485 6.00001 22.7501H18C19.2593 22.7485 20.4666 22.2475 21.357 21.3571C22.2475 20.4666 22.7484 19.2593 22.75 18.0001V10.9221C22.7517 10.2095 22.5923 9.50579 22.2837 8.86352C21.9751 8.22125 21.5253 7.65704 20.968 7.21305ZM15 18.7501H9.00001C8.8011 18.7501 8.61033 18.671 8.46968 18.5304C8.32903 18.3897 8.25001 18.199 8.25001 18.0001C8.25001 17.8011 8.32903 17.6104 8.46968 17.4697C8.61033 17.3291 8.8011 17.2501 9.00001 17.2501H15C15.1989 17.2501 15.3897 17.3291 15.5303 17.4697C15.671 17.6104 15.75 17.8011 15.75 18.0001C15.75 18.199 15.671 18.3897 15.5303 18.5304C15.3897 18.671 15.1989 18.7501 15 18.7501Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <span>Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="inbox.html" class="">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.14178 6.06511C4.89087 6 5.83828 6 7.11114 6H8.88892C11.378 6 12.6226 6 13.5733 6.48693C14.4096 6.91524 15.0895 7.59868 15.5156 8.43929C16 9.39494 16 10.646 16 13.148V15.5594C16 15.8093 16 15.9342 15.995 16.0398C15.9173 17.6899 14.9536 19.1034 13.5704 19.8113L14.9415 20.7893C15.8365 21.4277 17.0126 20.5058 16.6041 19.486C16.3147 18.7636 16.8475 17.9779 17.6266 17.9779H18.2283C20.3114 17.9779 22 16.2916 22 14.2114V9.98893C22 7.19254 22 5.79435 21.455 4.72627C20.9757 3.78676 20.2108 3.02292 19.27 2.54421C18.2004 2 16.8003 2 14 2H12C9.19976 2 7.79962 2 6.73007 2.54421C5.78926 3.02292 5.02435 3.78676 4.54499 4.72627C4.3479 5.11254 4.22209 5.54198 4.14178 6.06511Z"
+              fill="currentColor"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.5761 9.15232C15 9.99554 15 11.0994 15 13.3071V15.4348C15 15.6552 15 15.7655 14.9956 15.8586C14.9008 17.8891 13.2982 19.5136 11.295 19.6097C11.2031 19.6141 11.0818 19.6141 10.8392 19.6141L10.7769 19.6142C9.98339 19.6193 9.21041 19.8704 8.56175 20.3337L8.5205 20.3635L6.48993 21.8337C5.79383 22.3377 4.87911 21.6098 5.19681 20.8048C5.42186 20.2345 5.00751 19.6141 4.40154 19.6141H3.93351C2.31338 19.6141 1 18.2828 1 16.6406V13.3071C1 11.0994 1 9.99554 1.42386 9.15232C1.7967 8.4106 2.39163 7.80757 3.12337 7.42964C3.95525 7 5.04424 7 7.22222 7H8.77778C10.9558 7 12.0448 7 12.8766 7.42964C13.6084 7.80757 14.2033 8.4106 14.5761 9.15232ZM5 15C5.55228 15 6 14.5523 6 14C6 13.4477 5.55228 13 5 13C4.44772 13 4 13.4477 4 14C4 14.5523 4.44772 15 5 15ZM9 14C9 14.5523 8.55228 15 8 15C7.44772 15 7 14.5523 7 14C7 13.4477 7.44772 13 8 13C8.55228 13 9 13.4477 9 14ZM11 15C11.5523 15 12 14.5523 12 14C12 13.4477 11.5523 13 11 13C10.4477 13 10 13.4477 10 14C10 14.5523 10.4477 15 11 15Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <span>Inbox</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://script.viserlab.com/viserchat/user/analytics" class="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20"
+            width="20"
+            viewBox="0 0 640 640"
+            fill="currentColor"
+          >
+            <path
+              d="M544.4 304L368.4 304C350.7 304 336.4 289.7 336.4 272L336.4 96C336.4 78.3 350.8 63.8 368.3 66.1C475.3 80.3 560.1 165.1 574.3 272.1C576.6 289.6 562.1 304 544.4 304zM254.6 101.2C272.7 97.4 288.4 112.2 288.4 130.7L288.4 328C288.4 333.6 290.4 339 293.9 343.3L426 502.7C437.7 516.8 435.2 538.1 419.1 546.8C385 565.4 345.9 576 304.4 576C171.9 576 64.4 468.5 64.4 336C64.4 220.5 145.9 124.1 254.6 101.2zM509.8 352L573.8 352C592.3 352 607.1 367.7 603.3 385.8C593.1 434.2 568.3 477.2 533.7 510C521.4 521.7 502.1 519.2 491.3 506.1L406.9 404.4C389.6 383.5 404.5 352 431.5 352L509.7 352z"
+            />
+          </svg>
+          <span>Analytics</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://script.viserlab.com/viserchat/user/organization/setting"
+          class=""
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.3 9.6L19.4 9L20.3 7.2C20.5 6.8 20.4 6.3 20.1 6L18 3.9C17.7 3.6 17.2 3.5 16.8 3.7L15 4.6L14.4 2.7C14.3 2.3 13.9 2 13.5 2H10.5C10.1 2 9.7 2.3 9.6 2.7L8.9 4.6L7.1 3.7C6.8 3.5 6.3 3.6 6 3.9L3.9 6C3.6 6.3 3.5 6.8 3.7 7.1L4.6 8.9L2.7 9.6C2.3 9.7 2 10.1 2 10.5V13.5C2 13.9 2.3 14.3 2.7 14.4L4.6 15L3.7 16.8C3.5 17.2 3.6 17.7 3.9 18L6 20.1C6.3 20.4 6.8 20.5 7.2 20.3L9 19.4L9.6 21.3C9.7 21.7 10.1 22 10.5 22H13.5C13.9 22 14.3 21.7 14.4 21.3L15 19.4L16.8 20.3C17.2 20.5 17.6 20.4 18 20.1L20.1 18C20.4 17.7 20.5 17.2 20.3 16.8L19.4 15L21.3 14.4C21.7 14.3 22 13.9 22 13.5V10.5C22 10.1 21.7 9.7 21.3 9.6ZM12 15C10.3 15 9 13.7 9 12C9 10.3 10.3 9 12 9C13.7 9 15 10.3 15 12C15 13.7 13.7 15 12 15Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <span>Setting</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-menu__left">
+    <div class="sidebar-menu__left-header">
+      <ul class="sidebar-analytics">
+        <li>
+          <a
+            href="https://script.viserlab.com/viserchat/user/chat/live"
+            class=""
+          >
+            <span class="position-relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                color="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.5 1.75C2.98059 1.75 1.74911 2.9822 1.75 4.50161L1.75879 19.5016C1.75968 21.0198 2.99064 22.25 4.50879 22.25H19.4968C21.0155 22.25 22.2466 21.019 22.2468 19.5003L22.2486 4.50032C22.2488 2.98141 21.0175 1.75 19.4986 1.75H4.5ZM15.7184 7.78449C15.6232 7.46725 15.3312 7.25 15 7.25C14.6688 7.25 14.3768 7.46725 14.2816 7.78449L12.942 12.25H12C11.7159 12.25 11.4562 12.4105 11.3292 12.6646L10.7854 13.7522L9.73335 8.84285C9.66358 8.51723 9.38744 8.27661 9.05533 8.25204C8.72322 8.22748 8.41468 8.42484 8.29775 8.73666L6.98025 12.25H6C5.58579 12.25 5.25 12.5858 5.25 13C5.25 13.4142 5.58579 13.75 6 13.75H7.5C7.81263 13.75 8.09247 13.5561 8.20225 13.2633L8.80317 11.6609L9.76665 16.1571C9.83339 16.4686 10.0896 16.7039 10.4055 16.744C10.7215 16.7841 11.0284 16.6203 11.1708 16.3354L12.4635 13.75H13.5C13.8312 13.75 14.1232 13.5327 14.2184 13.2155L15 10.6101L15.7816 13.2155C15.8768 13.5327 16.1688 13.75 16.5 13.75H18C18.4142 13.75 18.75 13.4142 18.75 13C18.75 12.5858 18.4142 12.25 18 12.25H17.058L15.7184 7.78449Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            Monitoring
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://script.viserlab.com/viserchat/user/chat/conversation"
+            class=""
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.14178 6.06511C4.89087 6 5.83828 6 7.11114 6H8.88892C11.378 6 12.6226 6 13.5733 6.48693C14.4096 6.91524 15.0895 7.59868 15.5156 8.43929C16 9.39494 16 10.646 16 13.148V15.5594C16 15.8093 16 15.9342 15.995 16.0398C15.9173 17.6899 14.9536 19.1034 13.5704 19.8113L14.9415 20.7893C15.8365 21.4277 17.0126 20.5058 16.6041 19.486C16.3147 18.7636 16.8475 17.9779 17.6266 17.9779H18.2283C20.3114 17.9779 22 16.2916 22 14.2114V9.98893C22 7.19254 22 5.79435 21.455 4.72627C20.9757 3.78676 20.2108 3.02292 19.27 2.54421C18.2004 2 16.8003 2 14 2H12C9.19976 2 7.79962 2 6.73007 2.54421C5.78926 3.02292 5.02435 3.78676 4.54499 4.72627C4.3479 5.11254 4.22209 5.54198 4.14178 6.06511Z"
+                fill="currentColor"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M14.5761 9.15232C15 9.99554 15 11.0994 15 13.3071V15.4348C15 15.6552 15 15.7655 14.9956 15.8586C14.9008 17.8891 13.2982 19.5136 11.295 19.6097C11.2031 19.6141 11.0818 19.6141 10.8392 19.6141L10.7769 19.6142C9.98339 19.6193 9.21041 19.8704 8.56175 20.3337L8.5205 20.3635L6.48993 21.8337C5.79383 22.3377 4.87911 21.6098 5.19681 20.8048C5.42186 20.2345 5.00751 19.6141 4.40154 19.6141H3.93351C2.31338 19.6141 1 18.2828 1 16.6406V13.3071C1 11.0994 1 9.99554 1.42386 9.15232C1.7967 8.4106 2.39163 7.80757 3.12337 7.42964C3.95525 7 5.04424 7 7.22222 7H8.77778C10.9558 7 12.0448 7 12.8766 7.42964C13.6084 7.80757 14.2033 8.4106 14.5761 9.15232ZM5 15C5.55228 15 6 14.5523 6 14C6 13.4477 5.55228 13 5 13C4.44772 13 4 13.4477 4 14C4 14.5523 4.44772 15 5 15ZM9 14C9 14.5523 8.55228 15 8 15C7.44772 15 7 14.5523 7 14C7 13.4477 7.44772 13 8 13C8.55228 13 9 13.4477 9 14ZM11 15C11.5523 15 12 14.5523 12 14C12 13.4477 11.5523 13 11 13C10.4477 13 10 13.4477 10 14C10 14.5523 10.4477 15 11 15Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            Active Chats
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar-menu__list">
+        <div class="sidebar-menu__list-item">
+          <button
+            class="sidebar-menu__list-btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#activeChatList"
+          >
+            <span>
+              Active Chats (<span id="activeChatCount" data-count="1">1</span>)
+            </span>
+          </button>
+
+          <div class="collapse show" id="activeChatList">
+            <ul class="sidebar-menu__list-inner" id="active-chat-list">
+              <li>
+                <a
+                  href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=320"
+                  class="active-chat active-chat320"
+                >
+                  <span class="sites-location">
+                    <figure>
+                      <img
+                        src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                      />
+                      <span class="bg--success"></span>
+                    </figure>
+
+                    V566641497749156
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sidebar-menu__list-item">
+          <button
+            class="sidebar-menu__list-btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#incomingChatList"
+          >
+            <span>
+              Incoming Chats (<span id="incomingChatCount" data-count="1">
+                1 </span
+              >)
+            </span>
+          </button>
+
+          <div class="collapse show" id="incomingChatList">
+            <ul class="sidebar-menu__list-inner" id="incoming-chat-list">
+              <li class="incoming-chat322 incoming-chat">
+                <a
+                  href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=322"
+                >
+                  <span class="sites-location">
+                    <figure>
+                      <img
+                        src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                      />
+                      <span class="bg--success"></span>
+                    </figure>
+
+                    V566641497749156
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sidebar-menu__list-item">
+          <button
+            class="sidebar-menu__list-btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#activeAgentList"
+          >
+            <span> Active Agents (<span id="activeAgentCount">1</span>) </span>
+          </button>
+
+          <div class="collapse show" id="activeAgentList">
+            <ul class="sidebar-menu__list-inner" id="active-agent-list">
+              <li data-agent-id="1">
+                <a
+                  href="https://script.viserlab.com/viserchat/user/agents?search=[Email is protected for the demo]"
+                >
+                  <span class="sites-location">
+                    <figure>
+                      <img
+                        src="https://script.viserlab.com/viserchat/assets/images/avatar.png"
+                      />
+                      <span class="bg--success"></span>
+                    </figure>
+
+                    Usersss Name
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-menu__left-footer">
+      <div
+        class="user-status user-status-btn online"
+        data-user-id="1"
+        data-name="Usersss Name"
+        data-email="[Email is protected for the demo]"
+        data-image="https://script.viserlab.com/viserchat/assets/images/avatar.png"
+      >
+        <div class="user-status__thumb">
+          <img
+            src="https://script.viserlab.com/viserchat/assets/images/avatar.png"
+            alt="image"
+          />
+          <span id="userStatusIndicator" class="user-status__indicator"></span>
+        </div>
+        <div class="user-status__content">
+          <div class="user-status__content-left">
+            <p class="user-status__username">Usersss Name</p>
+            <span class="badge badge--success">Organizer</span>
+          </div>
+          <div class="user-status__content-right">
+            <div class="form--switch">
+              <input
+                id="userOnlineToggle"
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                checked
+                data-url="https://script.viserlab.com/viserchat/user/status/change"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="dashboard__right">
+    <div class="dashboard-body">
+      <div class="dash-inbox">
+        <div class="dash-inbox-header">
+          <div class="dash-inbox-header__left">
+            <div>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.14178 6.06511C4.89087 6 5.83828 6 7.11114 6H8.88892C11.378 6 12.6226 6 13.5733 6.48693C14.4096 6.91524 15.0895 7.59868 15.5156 8.43929C16 9.39494 16 10.646 16 13.148V15.5594C16 15.8093 16 15.9342 15.995 16.0398C15.9173 17.6899 14.9536 19.1034 13.5704 19.8113L14.9415 20.7893C15.8365 21.4277 17.0126 20.5058 16.6041 19.486C16.3147 18.7636 16.8475 17.9779 17.6266 17.9779H18.2283C20.3114 17.9779 22 16.2916 22 14.2114V9.98893C22 7.19254 22 5.79435 21.455 4.72627C20.9757 3.78676 20.2108 3.02292 19.27 2.54421C18.2004 2 16.8003 2 14 2H12C9.19976 2 7.79962 2 6.73007 2.54421C5.78926 3.02292 5.02435 3.78676 4.54499 4.72627C4.3479 5.11254 4.22209 5.54198 4.14178 6.06511Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.5761 9.15232C15 9.99554 15 11.0994 15 13.3071V15.4348C15 15.6552 15 15.7655 14.9956 15.8586C14.9008 17.8891 13.2982 19.5136 11.295 19.6097C11.2031 19.6141 11.0818 19.6141 10.8392 19.6141L10.7769 19.6142C9.98339 19.6193 9.21041 19.8704 8.56175 20.3337L8.5205 20.3635L6.48993 21.8337C5.79383 22.3377 4.87911 21.6098 5.19681 20.8048C5.42186 20.2345 5.00751 19.6141 4.40154 19.6141H3.93351C2.31338 19.6141 1 18.2828 1 16.6406V13.3071C1 11.0994 1 9.99554 1.42386 9.15232C1.7967 8.4106 2.39163 7.80757 3.12337 7.42964C3.95525 7 5.04424 7 7.22222 7H8.77778C10.9558 7 12.0448 7 12.8766 7.42964C13.6084 7.80757 14.2033 8.4106 14.5761 9.15232ZM5 15C5.55228 15 6 14.5523 6 14C6 13.4477 5.55228 13 5 13C4.44772 13 4 13.4477 4 14C4 14.5523 4.44772 15 5 15ZM9 14C9 14.5523 8.55228 15 8 15C7.44772 15 7 14.5523 7 14C7 13.4477 7.44772 13 8 13C8.55228 13 9 13.4477 9 14ZM11 15C11.5523 15 12 14.5523 12 14C12 13.4477 11.5523 13 11 13C10.4477 13 10 13.4477 10 14C10 14.5523 10.4477 15 11 15Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <span>Inbox</span>
+            </div>
+            <button class="inbox-sidebar-toggle">
+              <i class="fa-solid fa-angles-left"></i>
+            </button>
+          </div>
+          <div class="dash-inbox-header__right">
+            <form class="dash-inbox-header__search">
+              <input type="hidden" name="status" value="" />
+              <div class="input-group input--group">
+                <input
+                  type="search"
+                  class="form-control form--control form--control-sm"
+                  name="search"
+                  value=""
+                  placeholder="Search by UID, name, ip"
+                  id="search"
+                />
+                <button class="input-group-text" type="submit">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.2845 11.3604L13.5999 13.6004M12.8532 7.62706C12.8532 10.5137 10.5132 12.8537 7.62657 12.8537C4.73996 12.8537 2.3999 10.5137 2.3999 7.62706C2.3999 4.74045 4.73996 2.40039 7.62657 2.40039C10.5132 2.40039 12.8532 4.74045 12.8532 7.62706Z"
+                      stroke="#181609"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </form>
+            <div class="dash-inbox-header__action">
+              <a
+                class="filter-dropdown__btn btn btn--base"
+                href="#offcanvasRight"
+                data-bs-toggle="offcanvas"
+                role="button"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 10H15M2.5 5H17.5M7.5 15H12.5"
+                    stroke="currentColor"
+                    stroke-width="1.67"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                <span>Filters</span>
+              </a>
+              <div class="pagination__wrapper">
+                <span class="text--black fs-14"> Page 1 of 9 </span>
+                <nav
+                  class="d-flex justify-items-center justify-content-between"
+                >
+                  <div
+                    class="d-flex justify-content-between flex-fill d-sm-none"
+                  >
+                    <ul class="pagination">
+                      <li class="page-item disabled" aria-disabled="true">
+                        <span class="page-link">‹</span>
+                      </li>
+
+                      <li class="page-item">
+                        <a
+                          class="page-link"
+                          href="https://script.viserlab.com/viserchat/user/chat?page=2"
+                          rel="next"
+                          >›</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div
+                    class="d-none flex-sm-fill d-sm-flex align-items-sm-center justify-content-sm-between"
+                  >
+                    <div>
+                      <ul class="pagination">
+                        <li
+                          class="page-item disabled"
+                          aria-disabled="true"
+                          aria-label="‹"
+                        >
+                          <span class="page-link" aria-hidden="true">‹</span>
+                        </li>
+
+                        <li class="page-item active" aria-current="page">
+                          <span class="page-link">1</span>
+                        </li>
+                        <li class="page-item">
+                          <a
+                            class="page-link"
+                            href="https://script.viserlab.com/viserchat/user/chat?page=2"
+                            >2</a
+                          >
+                        </li>
+                        <li class="page-item">
+                          <a
+                            class="page-link"
+                            href="https://script.viserlab.com/viserchat/user/chat?page=3"
+                            >3</a
+                          >
+                        </li>
+                        <li class="page-item">
+                          <a
+                            class="page-link"
+                            href="https://script.viserlab.com/viserchat/user/chat?page=4"
+                            >4</a
+                          >
+                        </li>
+                        <li class="page-item">
+                          <a
+                            class="page-link"
+                            href="https://script.viserlab.com/viserchat/user/chat?page=5"
+                            >5</a
+                          >
+                        </li>
+                        <li class="page-item">
+                          <a
+                            class="page-link"
+                            href="https://script.viserlab.com/viserchat/user/chat?page=6"
+                            >6</a
+                          >
+                        </li>
+                        <li class="page-item">
+                          <a
+                            class="page-link"
+                            href="https://script.viserlab.com/viserchat/user/chat?page=7"
+                            >7</a
+                          >
+                        </li>
+                        <li class="page-item">
+                          <a
+                            class="page-link"
+                            href="https://script.viserlab.com/viserchat/user/chat?page=8"
+                            >8</a
+                          >
+                        </li>
+                        <li class="page-item">
+                          <a
+                            class="page-link"
+                            href="https://script.viserlab.com/viserchat/user/chat?page=9"
+                            >9</a
+                          >
+                        </li>
+
+                        <li class="page-item">
+                          <a
+                            class="page-link"
+                            href="https://script.viserlab.com/viserchat/user/chat?page=2"
+                            rel="next"
+                            aria-label="›"
+                            >›</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dash-inbox-main">
+          <div class="dash-inbox__left">
+            <ul class="dash-inbox-list">
+              <li>
+                <a href="inbox.html" class="active">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 9.52501C19.9915 9.3925 19.9515 9.26393 19.8833 9.15001L16.1333 2.90001C16.0585 2.77717 15.9532 2.67576 15.8277 2.60567C15.7021 2.53557 15.5605 2.49918 15.4167 2.50001H4.58333C4.43871 2.50004 4.29659 2.5377 4.17094 2.60929C4.04528 2.68089 3.94042 2.78395 3.86667 2.90835L0.116667 9.16668C0.0484578 9.2806 0.00845823 9.40917 0 9.54168L0 15.8333C0 16.2754 0.175595 16.6993 0.488155 17.0119C0.800716 17.3244 1.22464 17.5 1.66667 17.5H18.3333C18.7754 17.5 19.1993 17.3244 19.5118 17.0119C19.8244 16.6993 20 16.2754 20 15.8333C20 15.8333 20 9.55001 20 9.52501ZM5.05833 4.16668H14.9417L17.9417 9.16668H15.8333C15.3913 9.16668 14.9674 9.34228 14.6548 9.65484C14.3423 9.9674 14.1667 10.3913 14.1667 10.8333C14.1667 11.0544 14.0789 11.2663 13.9226 11.4226C13.7663 11.5789 13.5543 11.6667 13.3333 11.6667H6.66667C6.44565 11.6667 6.23369 11.5789 6.07741 11.4226C5.92113 11.2663 5.83333 11.0544 5.83333 10.8333C5.83333 10.3913 5.65774 9.9674 5.34518 9.65484C5.03262 9.34228 4.60869 9.16668 4.16667 9.16668H2.05833L5.05833 4.16668Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  <span>All Chats</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://script.viserlab.com/viserchat/user/chat/my"
+                  class=""
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.14178 6.06511C4.89087 6 5.83828 6 7.11114 6H8.88892C11.378 6 12.6226 6 13.5733 6.48693C14.4096 6.91524 15.0895 7.59868 15.5156 8.43929C16 9.39494 16 10.646 16 13.148V15.5594C16 15.8093 16 15.9342 15.995 16.0398C15.9173 17.6899 14.9536 19.1034 13.5704 19.8113L14.9415 20.7893C15.8365 21.4277 17.0126 20.5058 16.6041 19.486C16.3147 18.7636 16.8475 17.9779 17.6266 17.9779H18.2283C20.3114 17.9779 22 16.2916 22 14.2114V9.98893C22 7.19254 22 5.79435 21.455 4.72627C20.9757 3.78676 20.2108 3.02292 19.27 2.54421C18.2004 2 16.8003 2 14 2H12C9.19976 2 7.79962 2 6.73007 2.54421C5.78926 3.02292 5.02435 3.78676 4.54499 4.72627C4.3479 5.11254 4.22209 5.54198 4.14178 6.06511Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.5761 9.15232C15 9.99554 15 11.0994 15 13.3071V15.4348C15 15.6552 15 15.7655 14.9956 15.8586C14.9008 17.8891 13.2982 19.5136 11.295 19.6097C11.2031 19.6141 11.0818 19.6141 10.8392 19.6141L10.7769 19.6142C9.98339 19.6193 9.21041 19.8704 8.56175 20.3337L8.5205 20.3635L6.48993 21.8337C5.79383 22.3377 4.87911 21.6098 5.19681 20.8048C5.42186 20.2345 5.00751 19.6141 4.40154 19.6141H3.93351C2.31338 19.6141 1 18.2828 1 16.6406V13.3071C1 11.0994 1 9.99554 1.42386 9.15232C1.7967 8.4106 2.39163 7.80757 3.12337 7.42964C3.95525 7 5.04424 7 7.22222 7H8.77778C10.9558 7 12.0448 7 12.8766 7.42964C13.6084 7.80757 14.2033 8.4106 14.5761 9.15232ZM5 15C5.55228 15 6 14.5523 6 14C6 13.4477 5.55228 13 5 13C4.44772 13 4 13.4477 4 14C4 14.5523 4.44772 15 5 15ZM9 14C9 14.5523 8.55228 15 8 15C7.44772 15 7 14.5523 7 14C7 13.4477 7.44772 13 8 13C8.55228 13 9 13.4477 9 14ZM11 15C11.5523 15 12 14.5523 12 14C12 13.4477 11.5523 13 11 13C10.4477 13 10 13.4477 10 14C10 14.5523 10.4477 15 11 15Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  <span>My Chats</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="dash-inbox__right">
+            <div class="table-inbox table-responsive">
+              <table
+                class="table table__custom table-striped table--responsive--lg"
+              >
+                <thead>
+                  <tr>
+                    <th>Visitor</th>
+                    <th>IP</th>
+                    <th>Agent</th>
+                    <th>Total Messages</th>
+                    <th>Duration</th>
+                    <th>Status</th>
+                    <th>Updated</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=326"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V566641497749156</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.54.148.91</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">0 seconds</td>
+                    <td data-label="Status">
+                      <span class="badge badge--base-two">Open</span>
+                    </td>
+                    <td data-label="Updated">2026-04-23 05:08 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=325"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V566641497749156</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.54.148.91</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">16 hours</td>
+                    <td data-label="Status">
+                      <span class="badge badge--secondary">Closed</span>
+                    </td>
+                    <td data-label="Updated">2026-04-23 05:08 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=324"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/ca.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V980800843746740</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">180.210.222.242</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">9 minutes</td>
+                    <td data-label="Status">
+                      <span class="badge badge--base-two">Open</span>
+                    </td>
+                    <td data-label="Updated">2026-04-22 11:48 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=323"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V566641497749156</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.54.148.91</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">17 hours</td>
+                    <td data-label="Status">
+                      <span class="badge badge--secondary">Closed</span>
+                    </td>
+                    <td data-label="Updated">2026-04-23 05:08 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=322"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>Md Abu Sayed</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.54.148.91</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">4</td>
+                    <td data-label="Duration">18 hours</td>
+                    <td data-label="Status">
+                      <span class="badge badge--secondary">Closed</span>
+                    </td>
+                    <td data-label="Updated">2026-04-23 05:08 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=321"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>temp</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.54.148.90</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">3</td>
+                    <td data-label="Duration">43 seconds</td>
+                    <td data-label="Status">
+                      <span class="badge badge--base-two">Open</span>
+                    </td>
+                    <td data-label="Updated">2026-04-22 10:36 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=320"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V566641497749156</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.54.148.91</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">19 hours</td>
+                    <td data-label="Status">
+                      <span class="badge badge--secondary">Closed</span>
+                    </td>
+                    <td data-label="Updated">2026-04-23 05:08 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=319"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V547401427119117</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.54.148.90</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">35 minutes</td>
+                    <td data-label="Status">
+                      <span class="badge badge--secondary">Closed</span>
+                    </td>
+                    <td data-label="Updated">2026-04-22 10:36 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=318"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V648597736607375</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.205.134.10</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">38 seconds</td>
+                    <td data-label="Status">
+                      <span class="badge badge--base-two">Open</span>
+                    </td>
+                    <td data-label="Updated">2026-04-18 03:10 PM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=317"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V823180399871738</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.54.148.90</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">0 seconds</td>
+                    <td data-label="Status">
+                      <span class="badge badge--base-two">Open</span>
+                    </td>
+                    <td data-label="Updated">2026-04-14 10:50 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=316"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V566641497749156</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.54.148.91</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">1 week</td>
+                    <td data-label="Status">
+                      <span class="badge badge--secondary">Closed</span>
+                    </td>
+                    <td data-label="Updated">2026-04-23 05:08 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=315"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V566641497749156</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.54.148.91</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">1 week</td>
+                    <td data-label="Status">
+                      <span class="badge badge--secondary">Closed</span>
+                    </td>
+                    <td data-label="Updated">2026-04-23 05:08 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=314"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V566641497749156</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.54.148.91</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">1 week</td>
+                    <td data-label="Status">
+                      <span class="badge badge--secondary">Closed</span>
+                    </td>
+                    <td data-label="Updated">2026-04-23 05:08 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=313"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V566641497749156</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.54.148.91</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">2 weeks</td>
+                    <td data-label="Status">
+                      <span class="badge badge--secondary">Closed</span>
+                    </td>
+                    <td data-label="Updated">2026-04-23 05:08 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=312"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V566641497749156</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.54.148.91</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">2 weeks</td>
+                    <td data-label="Status">
+                      <span class="badge badge--secondary">Closed</span>
+                    </td>
+                    <td data-label="Updated">2026-04-23 05:08 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=311"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V547401427119117</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.54.148.90</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">2 weeks</td>
+                    <td data-label="Status">
+                      <span class="badge badge--secondary">Closed</span>
+                    </td>
+                    <td data-label="Updated">2026-04-22 10:36 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=310"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V680849557955990</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.205.134.10</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">0 seconds</td>
+                    <td data-label="Status">
+                      <span class="badge badge--base-two">Open</span>
+                    </td>
+                    <td data-label="Updated">2026-04-07 04:40 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=309"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V680849557955990</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.205.134.10</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">2 hours</td>
+                    <td data-label="Status">
+                      <span class="badge badge--secondary">Closed</span>
+                    </td>
+                    <td data-label="Updated">2026-04-07 04:40 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a
+                        href="https://script.viserlab.com/viserchat/user/chat/conversation?chat_id=308"
+                        class="customer-history"
+                      >
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V648597736607375</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.205.134.10</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">1 week</td>
+                    <td data-label="Status">
+                      <span class="badge badge--secondary">Closed</span>
+                    </td>
+                    <td data-label="Updated">2026-04-18 03:10 PM</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Visitor">
+                      <a href="#" class="customer-history">
+                        <figure>
+                          <img
+                            src="https://script.viserlab.com/viserchat/assets/images/country/bd.svg"
+                            alt="Image"
+                          />
+                        </figure>
+                        <span>V522594144596332</span>
+                      </a>
+                    </td>
+                    <td data-label="IP">103.54.148.90</td>
+                    <td data-label="Agent">
+                      <div class="d-grid gap-2"></div>
+                    </td>
+                    <td data-label="Total Messages">1</td>
+                    <td data-label="Duration">0 seconds</td>
+                    <td data-label="Status">
+                      <span class="badge badge--base-two">Open</span>
+                    </td>
+                    <td data-label="Updated">2026-04-06 02:01 PM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ==================== Dashboard End ==================== -->
+
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- Select js -->
+<script src="assets/js/select2.min.js"></script>
+<!-- aos.js-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- scrollreveal-->
+<script src="assets/js/scrollreveal.min.js"></script>
+<!-- scrollreveal-->
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/min/moment.min.js"></script>
+<script src="assets/js/daterangepicker.min.js"></script>
+<!-- ApexCharts -->
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+<div
+  class="offcanvas offcanvas-end"
+  tabindex="-1"
+  id="offcanvasRight"
+  aria-labelledby="offcanvasRightLabel"
+>
+  <div class="offcanvas-header">
+    <h6 id="offcanvasRightLabel">Filter Chats</h6>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="filter-chat__option mb-4">
+      <label class="form--label" for="">status</label>
+      <select class="form-select select2" aria-label="Default select example">
+        <option selected>All Chats</option>
+        <option value="1">All Chats</option>
+        <option value="2">open chat</option>
+        <option value="3">closed chats</option>
+      </select>
+    </div>
+    <div class="filter-chat__option mb-4">
+      <label class="form--label" for="">All Agents</label>
+      <select class="form-select select2" aria-label="Default select example">
+        <option selected>All Agents</option>
+        <option value="1">
+          <i class="fa-regular fa-circle-user"></i> Usersss Name
+        </option>
+        <option value="2">
+          <i class="fa-regular fa-circle-user"></i> Usersss Name
+        </option>
+        <option value="3">
+          <i class="fa-regular fa-circle-user"></i> Usersss Name
+        </option>
+      </select>
+    </div>
+    <div class="filter-chat__option">
+      <label class="form--label" for="">Country</label>
+      <select
+        class="form-select select2"
+        aria-label="Country select example"
+        data-placeholder="Select Country"
+      >
+        <option value="">Select Country</option>
+        <option value="bd" data-flag="🇧🇩">Bangladesh</option>
+        <option value="us" data-flag="🇺🇸">United States</option>
+        <option value="gb" data-flag="🇬🇧">United Kingdom</option>
+        <option value="ca" data-flag="🇨🇦">Canada</option>
+        <option value="au" data-flag="🇦🇺">Australia</option>
+      </select>
+    </div>
+  </div>
+</div>
